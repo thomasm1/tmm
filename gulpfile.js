@@ -1,5 +1,6 @@
-const gulp = require('gulp');
-
+const gulp = require('gulp'); 
+ 
+ 
 /* 
 -top-level function-
 gulp.task -define tasks
@@ -26,8 +27,8 @@ gulp.task('copyJS', function(){
 gulp.task('copyCSS', function(){
     gulp.src('src/css/*.css')
         .pipe(gulp.dest('dist/css'));
-});
+}); 
+
 gulp.task('default', function() {
     return console.log('gulp is running default');
-});
-// 
+}); 
