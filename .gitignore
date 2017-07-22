@@ -1,7 +1,7 @@
 log.txt
 *.txt
-/data
-/php
-/docs
-/php
-
+*.csv
+*.docx
+*.pdf
+*.tsv
+*.json
