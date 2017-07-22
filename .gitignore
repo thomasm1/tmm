@@ -3,6 +3,10 @@ log.txt
 *.csv
 *.docx
 *.pdf
+/docs/*
+/data/*
+/bootstrap*
+
 # TMM ignore above specific
 
 
