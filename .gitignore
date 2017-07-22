@@ -3,5 +3,4 @@ log.txt
 *.csv
 *.docx
 *.pdf
-*.tsv
-*.json
+
