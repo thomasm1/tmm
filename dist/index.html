@@ -26,7 +26,7 @@ function draw(geo_data) {
  .delay(100)
  .style("background-color", "silver");
 
- var svg = d3.select("#div5")
+ var svg = d3.select("#tmm")
  .append("svg")
  .attr("width", width + margin)
  .attr("height", height + margin) 
@@ -67,12 +67,12 @@ function updateString(value) {
 </head>
 <body class="with-top-navbar">
 <h2 id="title">tmm</h2>
-<nav>first old nav</nav>
-<nav id="nav">second old nav</nav>
-<div class="nav">third old nav</div>
-<body>
+
 <div class="growl" id="app-growl"></div>
 
+                <nav>first old nav</nav>
+<nav id="tmm">second old nav</nav>
+<div class="tmm">third old nav</div> 
 <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary app-navbar">
   <button
     class="navbar-toggler navbar-toggler-right hidden-md-up"
@@ -86,7 +86,7 @@ function updateString(value) {
   </button>
 
   <a class="navbar-brand" href="index.html">
-    <img src="assets/img/TMM.jpg" alt="" width="100" class="tmm"/>
+    <img src="src/img/TMMblueTrans.png" alt="" width="100" class="tmm"/>
   </a>
 
   <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -98,7 +98,7 @@ function updateString(value) {
         <a class="nav-link" href="profile/index.html">Profile</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" href="#msgModal">Messages</a>
+        <a class="nav-link" data-toggle="modal" href="#usarModal">Messages</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/thomasm1/ReproductionOfCapitalRevisited.git">Reproduction of Capital Data</a>
@@ -111,7 +111,7 @@ function updateString(value) {
         <a class="nav-link" data-action="growl">.</a>
       </li>
       <li class="nav-item hidden-md-up">
-        <a class="nav-link" href="login/index.html">.</a>
+        <a class="nav-link" href="login/index.html"></a>
       </li>
 
     </ul>
@@ -362,14 +362,17 @@ function updateString(value) {
     </div>
   </div>
 </div>
---> END MESSAGES
+-->  
 
 <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title"></h4>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> 
+                <nav>first old nav</nav>
+<nav id="tmm">second old nav</nav>
+<div class="tmm">third old nav</div> </button>
       </div>
 
       <div class="modal-body p-0">
@@ -377,8 +380,9 @@ function updateString(value) {
           <ul class="media-list media-list-users list-group">
             <li class="list-group-item">
               <div class="media w-100">
-                <img class="media-object d-flex align-self-start mr-3" src=" ">
+                <img class="media-object d-flex align-self-start mr-3" >
                 <div class="media-body">
+                    
                   <button class="btn btn-secondary btn-sm float-right">
                     <span class="glyphicon glyphicon-user"></span> 
                   </button>
@@ -635,7 +639,7 @@ function updateString(value) {
         <div class="card-block">
           <h6 class="mb-3"> </h6>
           <div data-grid="images" data-target-height="150">
-            <img class="media-object" data-width="640" data-height="640" data-action="zoom" src="assets/img/instagram_2.jpg">
+            <img class="media-object" data-width="640" data-height="640" data-action="zoom" class="img" src="src/img/TMMmoonscape.jpg">
           </div>
           <p>  </p>
           <button class="btn btn-outline-primary btn-sm">.</button>
@@ -698,11 +702,11 @@ function updateString(value) {
 </div>
 
 
-    <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/tether.min.js"></script>
-    <script src="assets/js/chart.js"></script>
-    <script src="assets/js/toolkit.js"></script>
-    <script src="assets/js/application.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/toolkit.js"></script>
+    <script src="js/application.js"></script>
     <script>
       // execute/clear BS loaders for docs
       $(function(){

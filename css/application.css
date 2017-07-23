@@ -38,7 +38,18 @@ strong {
 opacity: .9;
 
 }
+img.media-object {
+  max-width:450px;
+}
+.profile img {
+  min-height: 90px;
 
+  min-width: 90px;
+}
+img {
+  vertical-align: middle; 
+max-width:450px;}
+ 
 /* navbar */
 .app-navbar {
   font-weight: 400;
