@@ -59,16 +59,658 @@ function updateString(value) {
  inputString += value; 
  document.forms[1].input.value = inputString; 
 } 
-</script> 
+</script>  
 <link href="dist/scss/bootstrap.css"  rel="stylesheet"> 
-<link href="dist/scss/tmm.css"  rel="stylesheet">   
+  <link href="css/toolkit.css" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet">
+
 </head>
-<body>
+<body class="with-top-navbar">
 <h2 id="title">tmm</h2>
 <nav>first old nav</nav>
 <nav id="nav">second old nav</nav>
 <div class="nav">third old nav</div>
+<body>
+<div class="growl" id="app-growl"></div>
 
+<nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary app-navbar">
+  <button
+    class="navbar-toggler navbar-toggler-right hidden-md-up"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarResponsive"
+    aria-controls="navbarResponsive"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <a class="navbar-brand" href="index.html">
+    <img src="assets/img/TMM.jpg" alt="" width="100" class="tmm"/>
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="profile/index.html">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="modal" href="#msgModal">Messages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/thomasm1/ReproductionOfCapitalRevisited.git">Reproduction of Capital Data</a>
+      </li>
+
+      <li class="nav-item hidden-md-up">
+        <a class="nav-link" href="notifications/index.html">Notifications</a>
+      </li>
+      <li class="nav-item hidden-md-up">
+        <a class="nav-link" data-action="growl">.</a>
+      </li>
+      <li class="nav-item hidden-md-up">
+        <a class="nav-link" href="login/index.html">.</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline float-right hidden-sm-down">
+      <input class="form-control" type="text" data-action="grow" placeholder="Search">
+    </form>
+
+    <ul id="#js-popoverContent" class="nav navbar-nav float-right mr-0 hidden-sm-down">
+      <li class="nav-item">
+        <a class="app-notifications nav-link" href="notifications/index.html">
+          <span class="icon icon-bell"></span>
+        </a>
+      </li>
+      <li class="nav-item ml-2">
+        <button class="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
+          <img class="rounded-circle" src="">
+        </button>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav hidden-xs-up" id="js-popoverContent">
+      <li class="nav-item"><a class="nav-link" href="#" data-action="growl">Growl</a></li>
+      <li class="nav-item"><a class="nav-link" href="login/index.html">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<!--
+<div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="msgModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Action</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+
+      <div class="modal-body p-0 js-modalBody">
+        <div class="modal-body-scroller">
+          <div class="media-list media-list-users list-group js-msgGroup">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="g">
+                <div class="media-body">
+                  <strong>Thomas Maestas</strong> and <strong>1 other</strong>
+                  <div class="media-body-secondary">
+                    &hellip;
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong>Thoamas Maestas</strong> and <strong>3 others</strong>
+                  <div class="media-body-secondary">
+                    bicycle rights yeah…
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong></strong>
+                  <div class="media-body-secondary">
+         bicycle rights yeah…
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong></strong> and <strong>1 other</strong>
+                  <div class="media-body-secondary">
+                      &hellip;
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong></strong> and <strong>3 </strong>
+                  <div class="media-body-secondary">
+                     bicycle rights  
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong></strong>
+                  <div class="media-body-secondary">
+                     bicycle rights 
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong></strong> and <strong>1 other</strong>
+                  <div class="media-body-secondary">
+                   &hellip;
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong></strong> <strong></strong>
+                  <div class="media-body-secondary">
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <strong>Thoamas Maestas</strong>
+                  <div class="media-body-secondary">
+                   sustainable  bicycle rights 
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="hidden-xs-up m-3 js-conversation">
+            <ul class="media-list media-list-conversation">
+              <li class="media media-current-user mb-4">
+                <div class="media-body">
+                  <div class="media-body-text">
+                    Aenean 
+                  </div>
+                  <div class="media-footer">
+                    <small class="text-muted">
+                      <a href="#">Thoamas Maestas </a> at 4:
+                    </small>
+                  </div>
+                </div>
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+              </li>
+
+              <li class="media mb-4">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <div class="media-body-text">
+     
+                  </div>
+                  <div class="media-body-text">
+               
+                  </div>
+                  <div class="media-body-text">
+        
+                  </div>
+                  <div class="media-footer">
+                    <small class="text-muted">
+                      <a href="#"></a>
+                    </small>
+                  </div>
+                </div>
+              </li>
+
+              <li class="media mb-4">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+                <div class="media-body">
+                  <div class="media-body-text">
+                   
+                  </div>
+                  <div class="media-body-text">
+                  
+                  </div>
+                  <div class="media-footer">
+                    <small class="text-muted">
+                      <a href="#">Thoamas Maestas</a> 
+                    </small>
+                  </div>
+                </div>
+              </li>
+
+              <li class="media media-current-user mb-4">
+                <div class="media-body">
+                  <div class="media-body-text">
+           
+                  </div>
+                  <div class="media-footer">
+                    <small class="text-muted">
+                      <a href="#">Thoamas Maestas</a> 
+                    </small>
+                  </div>
+                </div>
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src="">
+              </li>
+
+              <li class="media mb-4">
+                <img class="rounded-circle media-object d-flex align-self-start mr-3" src=" ">
+                <div class="media-body">
+                  <div class="media-body-text">
+                
+                  </div>
+                  <div class="media-body-text">
+               
+                  </div>
+                  <div class="media-body-text">
+                  
+                  </div>
+                  <div class="media-footer">
+                    <small class="text-muted">
+                      <a href="#"></a> 
+                    </small>
+                  </div>
+                </div>
+              </li>
+
+              <li class="media mb-4">
+<!--  <img class="rounded-circle media-object d-flex align-self-start mr-3" src=" ">
+           <div class="media-body">
+                  <div class="media-body-text">
+                  
+                  </div>
+                  <div class="media-body-text">
+                
+                  </div>
+                  <div class="media-footer">
+                    <small class="text-muted">
+                      <a href="#">o</a> 
+                    </small>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+--> END MESSAGES
+
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title"></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+
+      <div class="modal-body p-0">
+        <div class="modal-body-scroller">
+          <ul class="media-list media-list-users list-group">
+            <li class="list-group-item">
+              <div class="media w-100">
+                <img class="media-object d-flex align-self-start mr-3" src=" ">
+                <div class="media-body">
+                  <button class="btn btn-secondary btn-sm float-right">
+                    <span class="glyphicon glyphicon-user"></span> 
+                  </button>
+                  <strong> </strong>
+                  <p>@-  </p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media w-100">
+                <img class="media-object d-flex align-self-start mr-3" src=" ">
+                <div class="media-body">
+                  <button class="btn btn-secondary btn-sm float-right">
+                    <span class="glyphicon glyphicon-user"></span> 
+                  </button>
+                  <strong> </strong>
+                  <p></p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media w-100">
+                <img class="media-object d-flex align-self-start mr-3" src=" ">
+                <div class="media-body">
+                  <button class="btn btn-secondary btn-sm float-right">
+                    <span class="glyphicon glyphicon-user"></span> 
+                  </button>
+                  <strong></strong>
+                  <p>Montreal</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="card card-profile mb-4">
+        <div class="card-header" style="background-image: url(assets/img/Reykjavikbanner.jpg);"></div>
+        <div class="card-block text-center">
+          <a href="profile/index.html">
+            <img
+              class="card-profile-img"
+              src="">
+          </a>
+
+          <h6 class="card-title">
+            <a class="text-inherit" href="profile/index.html">Thomas M Maestas</a>
+          </h6>
+
+          <p class="mb-4">Welcome</p>
+
+          <ul class="card-menu">
+            <li class="card-menu-item">
+              <a href="#userModal" class="text-inherit" data-toggle="modal">
+                 
+                <h6 class="my-0">Data Analysis</h6>
+              </a>
+            </li>
+
+            <li class="card-menu-item">
+              <a href="#userModal" class="text-inherit" data-toggle="modal">
+                
+                <h6 class="my-0">Web Development</h6>
+              </a>
+            </li>
+             <li class="card-menu-item">
+              <a href="#userModal" class="text-inherit" data-toggle="modal">
+                 
+                <h6 class="my-0">Sociology</h6>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card visible-md-block visible-lg-block mb-4">
+        <div class="card-block">
+          <h6 class="mb-3">About Me <small>· <a ></a></small></h6>
+          <ul class="list-unstyled list-spaced">
+            <li><span class="text-muted icon icon-calendar mr-3"></span>Went to <a href="#">University of New Mexico</a>
+            <li><span class="text-muted icon icon-users mr-3"></span>Social Media<a href="#">Quora, Historium, Instagram, Facebook, Meet-Up Hiking Group, and Alliance Francaise</a>
+            <li><span class="text-muted icon icon-github mr-3"></span>Provides Short- and Long-Term Contracts <a href="http://www.tmaestas.net"> T M M </a>
+            <li><span class="text-muted icon icon-home mr-3"></span>Lives in <a href="#">Albuquerque and Santa Fe, New Mexico and Montreal, Quebec</a>
+            <li><span class="text-muted icon icon-location-pin mr-3"></span>From <a href="#">Paris, France, New York, Texas, and Albuquerque, NM</a>
+          </ul>
+        </div>
+      </div>
+
+       <div class="card visible-md-block visible-lg-block">
+        <div class="card-block">
+          <h6 class="mb-3">Photos <small>· <a href="#">Edit</a></small></h6>
+          <div data-grid="images" data-target-height="150">
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="">
+            </div>
+
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="">
+            </div>
+
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="">
+            </div>
+
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="">
+            </div>
+
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="">
+            </div>
+
+            <div>
+              <img data-width="640" data-height="640" data-action="zoom" src="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+
+      <ul class="list-group media-list media-list-stream mb-4">
+
+        <li class="media list-group-item p-4">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Message">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-secondary">
+                <span class="icon icon-camera"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="media list-group-item p-4">
+          <img
+            class="media-object d-flex align-self-start mr-3"
+            src="">
+          <div class="media-body">
+            <div class="media-heading">
+              <small class="float-right text-muted">.</small>
+              <h6>.</h6>
+            </div>
+
+            <p>
+             .
+            </p>
+
+            <div class="media-body-inline-grid" data-grid="images">
+              <div style="display: none">
+                <img data-action="zoom" data-width="1050" data-height="700" src="assets/img/unsplash_1.jpg">
+              </div>
+
+              <div style="display: none">
+                <img data-action="zoom" data-width="640" data-height="640" src="assets/img/instagram_1.jpg">
+              </div>
+
+              <div style="display: none">
+                <img data-action="zoom" data-width="640" data-height="640" src="assets/img/instagram_13.jpg">
+              </div>
+
+              <div style="display: none">
+                <img data-action="zoom" data-width="1048" data-height="700" src="assets/img/unsplash_2.jpg">
+              </div>
+            </div>
+
+            <ul class="media-list mb-2">
+              <li class="media mb-3">
+                <img
+                  class="media-object d-flex align-self-start mr-3"
+                  src="">
+                <div class="media-body">
+                  <strong>   : </strong>
+                  
+                </div>
+              </li>
+              <li class="media">
+                <img
+                  class="media-object d-flex align-self-start mr-3"
+                  src=" ">
+                <div class="media-body">
+                  <strong>   : </strong>
+                   
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="media list-group-item p-4">
+          <img
+            class="media-object d-flex align-self-start mr-3"
+            src=" ">
+          <div class="media-body">
+            <div class="media-body-text">
+              <div class="media-heading">
+                <small class="float-right text-muted"> </small>
+                <h6> </h6>
+              </div>
+              <p>
+                
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="media list-group-item p-4">
+          <img
+            class="media-object d-flex align-self-start mr-3"
+            src="">
+          <div class="media-body">
+            <div class="media-heading">
+              <small class="float-right text-muted"> </small>
+              <h6>.</h6>
+            </div>
+
+            <p> .
+            </p>
+
+            <div class="media-body-inline-grid" data-grid="images">
+              <img style="display: none" data-width="640" data-height="640" data-action="zoom" src="assets/img/instagram_3.jpg">
+            </div>
+
+            <ul class="media-list">
+              <li class="media">
+                <img
+                  class="media-object d-flex align-self-start mr-3"
+                  src="">
+                <div class="media-body">
+                  <strong>   </strong>
+                 
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <div class="alert alert-warning alert-dismissible hidden-md-down" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <a class="alert-link" href="profile/index.html"> About Me </a>
+      </div>
+
+      <div class="card mb-4 hidden-md-down">
+        <div class="card-block">
+          <h6 class="mb-3"> </h6>
+          <div data-grid="images" data-target-height="150">
+            <img class="media-object" data-width="640" data-height="640" data-action="zoom" src="assets/img/instagram_2.jpg">
+          </div>
+          <p>  </p>
+          <button class="btn btn-outline-primary btn-sm">.</button>
+        </div>
+      </div>
+
+      <div class="card mb-4 hidden-md-down">
+        <div class="card-block">
+        <h6 class="mb-3">  <small>· <a href="#"> l</a></small></h6>
+        <ul class="media-list media-list-stream">
+          <li class="media mb-2">
+            <img
+              class="media-object d-flex align-self-start mr-3"
+              src=" ">
+            <div class="media-body">
+              <strong>   </strong> @.
+              <div class="media-body-actions">
+                <button class="btn btn-outline-primary btn-sm">
+                  <span class="icon icon-add-user"></span> .</button>
+              </div>
+            </div>
+          </li>
+           <li class="media">
+            <a class="media-left" href="#">
+              <img
+                class="media-object d-flex align-self-start mr-3"
+                src=" ">
+            </a>
+            <div class="media-body">
+              <strong>TMM  </strong> @mdo
+              <div class="media-body-actions">
+                <button class="btn btn-outline-primary btn-sm">
+                  <span class="icon icon-add-user"></span> Follow</button> 
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+        <div class="card-footer">
+   
+        </div>
+      </div>
+
+      <div class="card card-link-list">
+        <div class="card-block">
+          © 2017 T M M 
+          <a href="#"></a>
+          <a href="#">Help</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+          <a href="#">Ads </a>
+          <a href="#">Info</a>
+          <a href="#">Brand</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){
+        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+          while(BS.loader.length){(BS.loader.pop())()}
+        }
+      })
+    </script> 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/tether/dist/js/tether.js"></script>
 <script src="dist/js/tmm.min.js"></script>

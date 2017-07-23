@@ -1,5 +1,7 @@
 const gulp = require('gulp'),
       uglify = require('gulp-uglify'),
+      browserSync = require('browser-sync'),
+      reload = browserSync.reload
       compass = require('gulp-compass'),
       plumber = require('gulp-plumber'),
       autoprefixer = require('gulp-autoprefixer'),
@@ -45,20 +47,38 @@ gulp.task('compass', function() {
             require: ['susy']
         }))
         .pipe(autoprefixer('last 2 versions'))
-        .pipe(gulp.dest('dist/scss'));
+        .pipe(gulp.dest('dist/scss'))
+            .pipe(reload({stream:true}));
 });
 // gulp.task('copyCSS', function(){
   //  gulp.src('css/*.css')
     //    .pipe(gulp.dest('dist/css'));
 // }); 
 
+// HTMLl ////////////////////////////////////
+// 
+gulp.task('html', function() {
+        gulp.src('*.html');
+});
+// BROWSERSYNC ////////////////////////////////////
+// 
+gulp.task('browser-sync', function() {
+        browserSync({
+            server:{
+            baseDir: "./"
+        }
+    });
+}); 
 // WATCH ////////////////////////////////////
 // 
 gulp.task('watch', function(){
     gulp.watch('js/*.js', ['copyJS']);
     gulp.watch('scss/**/*.scss', ['compass']);
+    gulp.watch('*.html', ['html']);
 });
 
 // DEFAULT ////////////////////////////////////
 // all files  ['copyCSS', 'copyJS', 'copyHTML']
-gulp.task('default', ['copyJS', 'compass', 'copyHTML']); 
+gulp.task('default', 
+    ['copyJS', 'compass', 'copyHTML', 'html', 'watch']
+); 
