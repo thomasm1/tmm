@@ -1,5 +1,6 @@
 const gulp = require('gulp'),
       uglify = require('gulp-uglify'),
+      compass = require('gulp-compass'),
       rename = require('gulp-rename');
  
 /* 
@@ -28,15 +29,31 @@ gulp.task('copyJS', function(){
         .pipe(gulp.dest('dist/js'));
         console.log('JS worked!');
 });
-    // css files
-gulp.task('copyCSS', function(){
-    gulp.src('src/css/*.css')
-        .pipe(gulp.dest('dist/css'));
-}); 
 
+// COMPASS / SASS ////////////////////////////////////
+//  
+gulp.task('compass', function() {
+    gulp.src('sass/*.scss')
+        .pipe(compass({
+            config_file: './config.rb',
+            css: 'css',
+            sass: 'sass',
+            require: ['susy']
+        }))
+        .pipe(gulp.dest('dist/scss'));
+});
+// gulp.task('copyCSS', function(){
+  //  gulp.src('css/*.css')
+    //    .pipe(gulp.dest('dist/css'));
+// }); 
+
+// WATCH ////////////////////////////////////
+// 
+gulp.task('watch', function(){
+    gulp.watch('js/*.js', ['copyJS']);
+    gulp.watch('scss/**/*.scss', ['compass']);
+});
 
 // DEFAULT ////////////////////////////////////
 // all files  ['copyCSS', 'copyJS', 'copyHTML']
-gulp.task('default', function() {
-    return console.log('gulp is running default');
-}); 
+gulp.task('default', ['copyJS', 'compass', 'copyHTML']); 
