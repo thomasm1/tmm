@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "tmm",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "keywords": [
     "css",
@@ -26,10 +26,22 @@
     "CONTRIBUTING.md",
     "docs",
     "js/tests",
-    "test-infra"
+    "test-infra",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "jquery": ">=1.9.1",
     "tether": "^1.4.0"
+  },
+  "authors": [
+    "Thomas M Maestas <thomas76milton@gmail.com>"
+  ],
+  "private": true,
+  "devDependencies": {
+    "jquery": "^3.2.1"
   }
 }

@@ -3,6 +3,7 @@ log.txt
 *.csv
 *.docx
 *.pdf
+
 /docs/*
 /data/*
 /bootstrap*
@@ -30,6 +31,7 @@ vendor/bundle
 *.swp
 *.vi
 *.zip
+*.tar
 *~
 
 # OS or Editor folders
@@ -62,3 +64,8 @@ docs/.jekyll-metadata
 # Folders to ignore
 bower_components
 node_modules
+bootstrap-4.0.0-alpha.6
+*.css.map
+build/
+dist/
+
