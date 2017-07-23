@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "name": "tmm-gulp-bootstrap",
+  "description": "front-end framework.",
   "version": "4.0.0-alpha.6",
   "keywords": [
     "css",
@@ -38,7 +38,7 @@
   "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "git+https://github.com/twbs/bootstrap.git"
   },
   "bugs": {
     "url": "https://github.com/twbs/bootstrap/issues"
@@ -109,5 +109,8 @@
     "dependencies": {
       "jquery": "3"
     }
+  },
+  "directories": {
+    "doc": "docs"
   }
 }

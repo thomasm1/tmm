@@ -1,3 +1,72 @@
-<html>
-    First SRC file tmm
-</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="data analysis and visualization, sociology and criminology statistical tests">
+ <meta name="keywords" content="data analysis and visualization, sociology and criminology statistical tests">
+ <meta name="author" content="Thomas M Maestas"> 
+ 
+<title>&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title> 
+<script type="text/javascript"> 
+
+function draw(geo_data) {
+ "use strict";
+ var margin = 5,
+ width = 600 - margin,
+ height = 400 - margin; 
+ d3.select("#div5")
+ .attr('text-align', 'center')
+ .attr('margin', '0px')
+ ;
+  d3.select("body").transition()
+ .duration(2000)
+ .delay(100)
+ .style("background-color", "#00d5f6");
+
+ var svg = d3.select("#div5")
+ .append("svg")
+ .attr("width", width + margin)
+ .attr("height", height + margin) 
+ .append('g')
+ .attr('class', 'map'); 
+
+ var projection = d3.geo.mercator()
+ .scale(110)
+ .translate([width / 2, height / 1.5]); 
+
+ var path = d3.geo.path().projection(projection); 
+ var map = svg.selectAll('path')
+ .data(geo_data.features)
+ .enter()
+.append('path')
+ .attr('d', path)
+ .style('fill', '#00b0ec')
+ .style('stroke', 'white')
+ .style('stroke-width', 0.5); 
+ };
+ /*
+GeoJSON file
+ */
+d3.json("data/world_countries.json", draw);
+</script>
+
+<script type="text/javascript"> 
+var inputString = ""; 
+function updateString(value) { 
+ inputString += value; 
+ document.forms[1].input.value = inputString; 
+} 
+</script> 
+  
+</head>
+<body>
+	<h2>TMM</h2>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/tether/dist/js/tether.js"></script>    
+</body>
+</html> 
+
+ 
