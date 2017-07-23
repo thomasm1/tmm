@@ -1,6 +1,8 @@
 const gulp = require('gulp'),
       uglify = require('gulp-uglify'),
       compass = require('gulp-compass'),
+      plumber = require('gulp-plumber'),
+      autoprefixer = require('gulp-autoprefixer'),
       rename = require('gulp-rename');
  
 /* 
@@ -24,6 +26,7 @@ gulp.task('copyHTML', function(){
 // js files
 gulp.task('copyJS', function(){
     gulp.src('js/*.js')
+        .pipe(plumber())
         .pipe(rename({suffix:'.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
@@ -34,12 +37,14 @@ gulp.task('copyJS', function(){
 //  
 gulp.task('compass', function() {
     gulp.src('sass/*.scss')
+        .pipe(plumber())
         .pipe(compass({
             config_file: './config.rb',
             css: 'css',
             sass: 'sass',
             require: ['susy']
         }))
+        .pipe(autoprefixer('last 2 versions'))
         .pipe(gulp.dest('dist/scss'));
 });
 // gulp.task('copyCSS', function(){
