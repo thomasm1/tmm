@@ -189,6 +189,7 @@ $(function () {
 
 
 
+
 // map 
 function d3 () {
       function draw(geo_data) {
@@ -373,12 +374,7 @@ function d3 () {
       }, plot_points);
     };
     }
-/*
-var samantha = document.getElementById("samantha");
-samantha.addEventListener("click", function() {
-  var
-}
-*/
+
 
  
-
+ 

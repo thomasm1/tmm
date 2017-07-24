@@ -9,7 +9,7 @@
  <meta name="keywords" content="data analysis and visualization, sociology and criminology statistical tests">
  <meta name="author" content="Thomas M Maestas"> 
  
-<title>&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title> 
+<title>&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title>  
 <script type="text/javascript"> 
 
 function draw(geo_data) {
@@ -19,14 +19,14 @@ function draw(geo_data) {
  height = 400 - margin; 
  d3.select("#div5")
  .attr('text-align', 'center')
- .attr('margin', '0px')
- ;
+ .attr('margin', '0px');
+
   d3.select("body").transition()
  .duration(2000)
  .delay(100)
- .style("background-color", "silver");
+ .style("background-color", "white");
 
- var svg = d3.select("#tmm")
+ var svg = d3.select("#div5")
  .append("svg")
  .attr("width", width + margin)
  .attr("height", height + margin) 
@@ -60,19 +60,16 @@ function updateString(value) {
  document.forms[1].input.value = inputString; 
 } 
 </script>  
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 <link href="dist/scss/bootstrap.css"  rel="stylesheet"> 
-  <link href="css/toolkit.css" rel="stylesheet">
-    <link href="css/application.css" rel="stylesheet">
+ <link href="css/toolkit.css" rel="stylesheet">
+ <link href="css/application.css" rel="stylesheet">
 
 </head>
-<body class="with-top-navbar">
-<h2 id="title">tmm</h2>
-
+<body class="with-top-navbar"> 
+<div   id="divContainer">
+<h2 id="title"></h2>
 <div class="growl" id="app-growl"></div>
-
-                <nav>first old nav</nav>
-<nav id="tmm">second old nav</nav>
-<div class="tmm">third old nav</div> 
 <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary app-navbar">
   <button
     class="navbar-toggler navbar-toggler-right hidden-md-up"
@@ -89,55 +86,204 @@ function updateString(value) {
     <img src="src/img/TMMblueTrans.png" alt="" width="100" class="tmm"/>
   </a>
 
-  <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="profile/index.html">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="modal" href="#usarModal">Messages</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/thomasm1/ReproductionOfCapitalRevisited.git">Reproduction of Capital Data</a>
-      </li>
+  <div class="collapse navbar-collapse multi-drop-menu main" id="navbarResponsive">
+   <ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+ <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+ </li>
+ <li class="nav-item"><a class="nav-link" >Profile</a>
+<ul>
+<li><a href="profile/tmaestas_resume.html" target="_blank">CV-english</a></li>
+<li><a href="docs/docu/MaestasThomas_CV2017_fr.pdf" target="_blank">CV-français</a></li>
+<li><a href="http://hdl.handle.net/1928/31677" target="_blank">Education Thesis</a></li>
+<li><a href="docs/docu/DataPresentADD_health_networks.pdf" target="_blank">Education Data Analysis R-LaTeX</a></li>
+<li><a href="docs/docu/ADAHighSchoolNetworks.html" target="_blank">Education Data Analysis R-3.3</a></li>
+<li><a href="docs/poli/edregression.htm" target="_blank">Education Data Analysis SPSS-24</a></li>
+<li><a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime" target="_blank">Environment Data Analysis Tableau</a></li>
+</ul>
+ </li> 
 
-      <li class="nav-item hidden-md-up">
-        <a class="nav-link" href="notifications/index.html">Notifications</a>
-      </li>
-      <li class="nav-item hidden-md-up">
-        <a class="nav-link" data-action="growl">.</a>
-      </li>
-      <li class="nav-item hidden-md-up">
-        <a class="nav-link" href="login/index.html"></a>
-      </li>
+<li class="nav-item">
+<a class="nav-link"  >Conferences</a>
+<ul>
+<li><a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;" ><span> 
+"Great Expectations Deferred: Contextualizing Community College Transfer Intentions"<br /> </span>2016 ASA-American Sociological Conference<br />@Seattle, WA</a>
+</li>
+<li>
+<a href="http://hscmediasite.unm.edu/unm/Catalog/Full/6a7e058c7810440197da72484269d86c21/?state=JPIHdhLtVxTxyQQ2QHuG"
+ target="_blank" style="width:350px;"><span> "Social Determinants of Healthy Aging"<br /> 
+ </span>Dec 2015 UNM Health Sciences Institute for Ethics Colloquium<br />@Albuquerque, NM</a>
+ </li>
+ <li><a href="http://tinyurl.com/pcq6mjx"
+ target="_blank" style="width:350px;"><span> "The Effects of Peer Association on Adolescents' Graduation Outcomes: An HLM Approach" <br /> </span>2015 ASA Conference<br />@Chicago, Illinois</a>
+ </li>
+ <li><a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf" 
+ target="_blank" style="width:350px;" ><span> 
+ "Great Expectations: A Study on the Determinants of College Graduation Expectations"<br /> 
+ 2014 NIH-UNC Adolescent Health Data Users Conference, Session 6<br /> @Bethesda, Maryland
+ </span></a>
+ </li>
+ </ul></li>
+
+
+ <li class="nav-item"><a class="nav-link" >API</a>
+<ul>
+<li  style="z-index:1;"><a href="docs/php/weatherAPI.php" >Weather-Map API</a></li>
+<li><a href="docs/d3/planet.html">Planets</a></li>
+	<li  ><a href="docs/d3/mobilesuits.html">Mobile Law Suits</a></li>
+	<li style="z-index:2"><a href="docs/d3/color.html">Colors</a></li>
+	<li style="z-index:2"><a href="docs/d3/flow.html">Flow</a></li>
+	<li style="z-index:2"><a href="docs/d3/dendrogram.html">Dendrogram</a></li>
+	<li style="z-index:2"><a href="docs/d3/alphabet.html">Alphabet Graph</a></li>    
+    <li style="z-index:2"><a href="docs/d3/globe_update.html">World Cup Map</a></li> 
+ </ul>
+ </li>     
+  
+<li class="nav-item"><a  class="nav-link"><span class="caret">Coding &nbsp;&nbsp;</span> <br /></a>
+
+ 
+<ul><li style="z-index:100;"><a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Web &nbsp;&nbsp;<span class "caret"></a>
+<ul>
+<li style="z-index:100;"><a href="http://webreference.com/" target="_blank">Web Reference</a></li>
+<li><a href="https://developer.mozilla.org" target="_blank">Mozilla Dev</a></li>
+<li><a href="http://support.google.com/webmasters/?hl=en" target="_blank">Google Dev</a></li>
+<li><a href="http://developer.yahoo.com/" target="_blank">Yahoo! Dev</a></li>
+<li><a href="http://www.w3schools.com" target="_blank">W3 schools</a></li> 
+<li><a href="http://www.w3.org/" target="_blank">World Wide Web Consortium</a></li> 
+<li><a href="https://www.icann.org" target="_blank">ICANN</a></li>
+</ul></li>
+
+<li style="z-index:98.2;"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> D3 tools &nbsp;&nbsp;<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li style="z-index:98" ><a href="http://d3js.org" target="_blank">D3js</a></li> 
+<li style="z-index:98.5" ><a href="https://github.com/d3/d3-3.x-api-reference/blob/master/API-Reference.md">d3.v3</a></li>
+<li style="z-index:98.5" ><a href="https://chartio.com/" target="_blank">chartio</a></li>
+<li style="z-index:98.5" ><a href="http://code.shutterstock.com/rickshaw/" target="_blank">rickshaw</a></li>
+<li style="z-index:98.5" ><a href="http://rawgraphs.io/" target="_blank">rawgraphs.io </a></li>
+<li style="z-index:98.5" ><a href="http://dimplejs.org" target="_blank">dimplejs</a></li>
+<li style="z-index:98.5" ><a href="http://nvd3.org/" target="_blank">nvd3</a></li>
+<li style="z-index:98.5" ><a href="https://developer.mozilla.org/en-US/docs/Web/SVG" target="_blank">SVG</a></li>
+<li style="z-index:98.5" ><a href="https://www.khronos.org/webgl/" target="_blank">WebGL</a></li>
+<li style="z-index:98.5" ><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" target="_blank">Canvas</a></li>
+<li style="z-index:98.5" ><a href="http://alignedleft.com/tutorials/d3/binding-data" target="_blank">binding-data</a></li>
+<li style="z-index:98.5" ><a href="http://datajournalismhandbook.org/1.0/en/getting_data_3.html" target="_blank">getting_data</a></li>
+<li style="z-index:98.5" ><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" target="_blank">Canvas</a></li>
+<li style="z-index:98.5" ><a href="https://github.com/d3/d3/blob/master/CHANGES.md" target="_blank">d3.v4 changes</a></li>
+<li style="z-index:98" ><a href="https://github.com/d3/d3/blob/master/API.md" target="_blank">D3js APIs</a></li>
+</ul>
+</li> 
+
+<li style="z-index:98;"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Javascript &nbsp;&nbsp;<span class="caret"></span></a>
+<ul class="dropdown-menu"> 
+<li style="z-index:98" ><a href="http://jqueryui.com" target="_blank">jQueryUI</a></li>
+<li style="z-index:98" ><a href=" http://jquery.com/" target="_blank">jQuery</a></li>
+<li style="z-index:98" ><a href="https://jsbin.com" target="_blank">JS Bin</a></li>
+<li style="z-index:98" ><a href="https://developer.mozilla.org/en-US/docs/Web/API" target="_blank">JavaScript APIs</a></li> 
+</ul></li>  
+
+<li style="z-index:10 ;"><a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Datasets &nbsp;&nbsp;</a> <span class="caret"></span>
+<ul>
+<li style="z-index:10 ;"><a href="http://www.icpsr.umich.edu/icpsrweb/ICPSR/index.jsp" target="_blank">ICPSR Datasets</a></li>
+<li style="z-index:10 ;"><a href="http://data.imf.org/?sk=7CB6619C-CF87-48DC-9443-2973E161ABEB" target="_blank">Datasets IMF</a></li>
+</ul></li>
+ 
+
+<li style="z-index:9;"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Validators &nbsp;&nbsp;</a>
+<ul >
+<li style="z-index:9;"><a href="https://stats.idre.ucla.edu/other/dae/" target="_blank">Validators </a><span class="caret"></span></li>
+<li><a href="http://validator.w3.org" target="_blank">HTML validator</a></li>
+<li><a href="http://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a></li>
+<li><a href="http://jsonlint.com/" target="_blank">JSON Validator</a></li>
+</ul>
+</li>
+
+<li style="z-index:1;"><a href="http://html-color-codes.info/" target="_blank">Color Codes</a></li>
+<li style="z-index:1;"><a href="https://inkscape.org/en/" target="_blank">Inkscape</a></li>
+<li style="z-index:1;"> <a href="https://v4-alpha.getbootstrap.com" target="_blank">Bootstrap</a></li>
+<li style="z-index:1;"><a href="http://www.dynamicdrive.com/" target="_blank">Dynamic Drive</a></li>
+<li style="z-index:1;"><a href="http://php.net" target="_blank">PHP.net</a></li>
+<li><a href="http://www.useit.com/" target="_blank">Jakob Nielson</a></li>
+<li><a href="http://www.alistapart.com/" target="_blank">A List Apart</a></li>
+<li><a href="http://codepen.io/" target="_blank">codepen.io</a></li>
+<li><a href="http://www.sitepoint.com/" target="_blank">sitepoint</a></li> 
+<li  ><a href="http://www.kaggle.com" target="_blank">Kaggle</a></li>
+<li><a href="http://plnkr.co/" target="_blank">Plunker</a></li>
+<li><a href="https://github.com" target="_blank">GitHub</a></li>
+<li><a href="https://gist.github.com/" target="_blank">Gist<small>GitHub</small></a></li>
+<li><a href="http://stackoverflow.com" class="last" target="_blank">Stack Overflow</a></li>
+<li><a href="https://www.torproject.org/" target="_blank">Tor</a></li>
+<li><a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a></li>
 
     </ul>
+    </li>
+<li class="nav-item"><a  class="nav-link"><span class="caret">Tools</span><br /> </a>
+<ul>
 
-    <form class="form-inline float-right hidden-sm-down">
-      <input class="form-control" type="text" data-action="grow" placeholder="Search">
-    </form>
+<li style="z-index:101;"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stats &nbsp;&nbsp;</a>  <span class="caret"></span>
+<ul >
+<li style="z-index:101;"><a href="https://stats.idre.ucla.edu/other/dae/" target="_blank">Stats</a></li>
+<li style="z-index:101;"><a href="http://openrefine.org/" target="_blank">OpenRefine</a></li>
+<li style="z-index:102;"><a href="http://statacumen.com" target="_blank">Stat Acumen</a></li>
+<li style="z-index:102;"><a href="http://www.mapageweb.umontreal.ca/durandc/" target="_blank">Montreal Stats</a></li>
+</ul></li> 
 
-    <ul id="#js-popoverContent" class="nav navbar-nav float-right mr-0 hidden-sm-down">
-      <li class="nav-item">
-        <a class="app-notifications nav-link" href="notifications/index.html">
-          <span class="icon icon-bell"></span>
-        </a>
-      </li>
-      <li class="nav-item ml-2">
-        <button class="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
-          <img class="rounded-circle" src="">
-        </button>
-      </li>
-    </ul>
+
+<li style="z-index:12;"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SQL &nbsp;&nbsp; </a> <span class="caret"></span>
+<ul>
+ <li style="z-index:12;"><a  target="_blank">MySQL &nbsp;&nbsp;</a></li>   
+<li style="z-index:12;"><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+<li style="z-index:121;"><a href="http://www.oracle.com/technetwork/developer-tools/apex/overview/index-155186.html" target="_blank">Oracle Express</a></li>
+<li style="z-index:121;"><a href="http://iacademy.oracle.com" target="_blank">Application Express</a></li>
+</ul></li>  
+
+<li style="z-index:1;"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> R-Project &nbsp;&nbsp; </a>  <span class="caret"></span>
+<ul>
+<li style="z-index:1;"><a href="https://www.r-project.org/" target="_blank">R-Project </a> 
+<li><a href="https://www.rstudio.com/" target="_blank">RStudio</a></li>
+<li><a href="https://shiny.rstudio.com/" target="_blank">Shiny</a></li>
+<li><a href="http://amsantac.co/blog/en/2015/10/31/qgis-r.html" target="_blank">Open GIS</a></li>
+<li><a href="http://www.tableau.com/products/cloud-bi" target="_blank">Tableau </a></li>
+</ul></li>
+</ul>
+</li> 
+</ul> 
+</div>
+ <form class="form-inline float-right hidden-sm-down"><!--
+ <input class="form-control" type="text" id="search" data-action="grow" placeholder="Search">-->
+ </form>
+
+ <div  class="slideouticons horizontal slideout">
+ <input type="checkbox" id="togglebox" />
+ <label for="togglebox" class="mainlabel fa fa-share-alt"></label>
+
+ <div class="iconswrapper">
+ <ul>
+ <li><a href="https://twitter.com/ThomasMaestas" target="_blank" class="fa fa-twitter" title="Twitter"></a></li>
+ <li><a href="https://facebook.com/thomas.maestas.16" target="_blank" class="fa fa-facebook" title="Facebook"></a></li>
+ <li><a href="https://plus.google.com/+thomasmaestas2017" target="_blank" class="fa fa-google-plus" title="Google Plus"></a></li>
+ <li><a href="https://www.instagram.com/thomasmaestas/" target="_blank" class="fa fa-instagram"></a></li>
+ </ul>
+ </div>
+ </div>
+
+ 
+
+ <li class="nav-item ml-2">
+
+ <button class="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
+
+ <img class="rounded-circle profile"  src="src/img/profile.jpg"/>
+
+ </button>
+
+ </li>
+ 
 
     <ul class="nav navbar-nav hidden-xs-up" id="js-popoverContent">
       <li class="nav-item"><a class="nav-link" href="#" data-action="growl">Growl</a></li>
       <li class="nav-item"><a class="nav-link" href="login/index.html">Logout</a></li>
     </ul>
-  </div>
+ 
 </nav>
 <!--
 <div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="msgModal" aria-hidden="true">
@@ -393,7 +539,7 @@ function updateString(value) {
             </li>
             <li class="list-group-item">
               <div class="media w-100">
-                <img class="media-object d-flex align-self-start mr-3" src=" ">
+                <img class="media-object d-flex align-self-start mr-3"  >
                 <div class="media-body">
                   <button class="btn btn-secondary btn-sm float-right">
                     <span class="glyphicon glyphicon-user"></span> 
@@ -405,7 +551,7 @@ function updateString(value) {
             </li>
             <li class="list-group-item">
               <div class="media w-100">
-                <img class="media-object d-flex align-self-start mr-3" src=" ">
+                <img class="media-object d-flex align-self-start mr-3"  >
                 <div class="media-body">
                   <button class="btn btn-secondary btn-sm float-right">
                     <span class="glyphicon glyphicon-user"></span> 
@@ -427,12 +573,12 @@ function updateString(value) {
   <div class="row">
     <div class="col-lg-3">
       <div class="card card-profile mb-4">
-        <div class="card-header" style="background-image: url(assets/img/Reykjavikbanner.jpg);"></div>
+        <div class="card-header" style="background-image: url(src/img/MaestasReykjavikBanner20.png);"></div>
         <div class="card-block text-center">
           <a href="profile/index.html">
             <img
               class="card-profile-img"
-              src="">
+              src="src/img/sunbeam.jpg">
           </a>
 
           <h6 class="card-title">
@@ -466,15 +612,31 @@ function updateString(value) {
       </div>
 
       <div class="card visible-md-block visible-lg-block mb-4">
-        <div class="card-block">
-          <h6 class="mb-3">About Me <small>· <a ></a></small></h6>
-          <ul class="list-unstyled list-spaced">
-            <li><span class="text-muted icon icon-calendar mr-3"></span>Went to <a href="#">University of New Mexico</a>
-            <li><span class="text-muted icon icon-users mr-3"></span>Social Media<a href="#">Quora, Historium, Instagram, Facebook, Meet-Up Hiking Group, and Alliance Francaise</a>
-            <li><span class="text-muted icon icon-github mr-3"></span>Provides Short- and Long-Term Contracts <a href="http://www.tmaestas.net"> T M M </a>
-            <li><span class="text-muted icon icon-home mr-3"></span>Lives in <a href="#">Albuquerque and Santa Fe, New Mexico and Montreal, Quebec</a>
-            <li><span class="text-muted icon icon-location-pin mr-3"></span>From <a href="#">Paris, France, New York, Texas, and Albuquerque, NM</a>
-          </ul>
+        <div class="card-block" id="about">
+                 <h6 class="mb-3">About Me</h6>
+
+<ul  class="list-unstyled list-spaced left">
+<li><span class="text-muted icon  mr-3"></span>Masters Sociology and Bachelors French History <a href="http://www.unm.edu" target="_blank"><span>University of New Mexico, Albuquerque</span></a>
+<hr>
+<li><span class="text-muted icon   mr-3"></span>Began PhD Sociology <a href="http://www.umontreal.ca"><span>l'Universite de Montreal, Quebec</span></a>
+<hr>
+<li><span class="text-muted icon   mr-3"></span> Provides Small Data Survey Analysis, with Big Data and Web solutions since 2016 </span>
+<a href="http://www.tmaestas.net"> <span> T M Solutions</span></a>
+<hr>
+<li><span class="text-muted icon   mr-3"></span> Social Media 
+<a><span>Quora, Historium, Instagram, Facebook, Meet-Up Hiking Group, and Alliance Francaise</span></a>
+<li><span class="text-muted icon   mr-3"></span><span>Lives in 
+<a href="http://cabq.gov" target="_blank">Albuquerque</a> and <a href="https://santafe.org/" target="_blank">Santa Fe, New Mexico</a> and <a href="http://ville.montreal.qc.ca" target="_blank">Montreal, Quebec</a></span>
+<li><span class="text-muted icon   mr-3"></span><span>Lived in 
+<a href="https://www.parisinfo.com/" target="_blank">Paris, France</a> and 
+<a href="http://www.ny.gov/" target="_blank">New York</a> and <a href="https://www.visittheusa.com/state/texas" target="_blank">Texas.
+</a></span>   <span id="samantha">Read More</span><span id="text">Hello, I'm Tom, and I'm an enthusiast of life! I love to travel, geographically as well as intellectually, 
+    however I stay grounded as I'm a Perfectionist with data analysis, a Creative with data visualization, and I stretch both sides of the brain to make great projects come to life! 
+     <br />I love the web, and most of my output is hypertext but I have an academic side too. Visit me @ <a href="http://tmaestas.net">tmaestas.net</a> </span>
+
+</li>
+    
+ </ul>
         </div>
       </div>
 
@@ -483,27 +645,27 @@ function updateString(value) {
           <h6 class="mb-3">Photos <small>· <a href="#">Edit</a></small></h6>
           <div data-grid="images" data-target-height="150">
             <div>
-              <img data-width="640" data-height="640" data-action="zoom" src="">
+              <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
             </div>
 
             <div>
-              <img data-width="640" data-height="640" data-action="zoom" src="">
+              <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
             </div>
 
             <div>
-              <img data-width="640" data-height="640" data-action="zoom" src="">
+              <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
             </div>
 
             <div>
-              <img data-width="640" data-height="640" data-action="zoom" src="">
+              <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
             </div>
 
             <div>
-              <img data-width="640" data-height="640" data-action="zoom" src="">
+              <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
             </div>
 
             <div>
-              <img data-width="640" data-height="640" data-action="zoom" src="">
+              <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
             </div>
           </div>
         </div>
@@ -514,46 +676,40 @@ function updateString(value) {
 
       <ul class="list-group media-list media-list-stream mb-4">
 
-        <li class="media list-group-item p-4">
+        <li class="media list-group-item p-4">  
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Message">
-            <div class="input-group-btn">
+          <!-- 
+             <input type="text" class="form-control" placeholder="Message">
+          <div class="input-group-btn">
               <button type="button" class="btn btn-secondary">
                 <span class="icon icon-camera"></span>
               </button>
-            </div>
+            </div>--> 
           </div>
         </li>
 
         <li class="media list-group-item p-4">
           <img
-            class="media-object d-flex align-self-start mr-3"
-            src="">
+            class="media-object d-flex align-self-start mr-3">
           <div class="media-body">
             <div class="media-heading">
-              <small class="float-right text-muted">.</small>
-              <h6>.</h6>
-            </div>
-
-            <p>
-             .
-            </p>
-
+              <small class="float-right text-muted"> </small> 
+            </div> 
             <div class="media-body-inline-grid" data-grid="images">
               <div style="display: none">
-                <img data-action="zoom" data-width="1050" data-height="700" src="assets/img/unsplash_1.jpg">
+                <img data-action="zoom" data-width="1050" data-height="700" src="src/img/IMG_4228.jpg">
               </div>
 
               <div style="display: none">
-                <img data-action="zoom" data-width="640" data-height="640" src="assets/img/instagram_1.jpg">
+                <img data-action="zoom" data-width="640" data-height="640" src="src/img/IMG_4228.jpg">
               </div>
 
               <div style="display: none">
-                <img data-action="zoom" data-width="640" data-height="640" src="assets/img/instagram_13.jpg">
+                <img data-action="zoom" data-width="640" data-height="640" src="src/img/IMG_4228.jpg">
               </div>
 
               <div style="display: none">
-                <img data-action="zoom" data-width="1048" data-height="700" src="assets/img/unsplash_2.jpg">
+                <img data-action="zoom" data-width="1048" data-height="700" src="src/img/IMG_4228.jpg">
               </div>
             </div>
 
@@ -561,7 +717,7 @@ function updateString(value) {
               <li class="media mb-3">
                 <img
                   class="media-object d-flex align-self-start mr-3"
-                  src="">
+                   >
                 <div class="media-body">
                   <strong>   : </strong>
                   
@@ -569,8 +725,7 @@ function updateString(value) {
               </li>
               <li class="media">
                 <img
-                  class="media-object d-flex align-self-start mr-3"
-                  src=" ">
+                  class="media-object d-flex align-self-start mr-3">
                 <div class="media-body">
                   <strong>   : </strong>
                    
@@ -582,13 +737,10 @@ function updateString(value) {
 
         <li class="media list-group-item p-4">
           <img
-            class="media-object d-flex align-self-start mr-3"
-            src=" ">
+            class="media-object d-flex align-self-start mr-3">
           <div class="media-body">
             <div class="media-body-text">
-              <div class="media-heading">
-                <small class="float-right text-muted"> </small>
-                <h6> </h6>
+              <div class="media-heading" id="div5">
               </div>
               <p>
                 
@@ -599,29 +751,21 @@ function updateString(value) {
 
         <li class="media list-group-item p-4">
           <img
-            class="media-object d-flex align-self-start mr-3"
-            src="">
+            class="media-object d-flex align-self-start mr-3">
           <div class="media-body">
             <div class="media-heading">
-              <small class="float-right text-muted"> </small>
-              <h6>.</h6>
+              <small class="float-right text-muted"> </small> 
             </div>
-
-            <p> .
-            </p>
-
+ 
             <div class="media-body-inline-grid" data-grid="images">
-              <img style="display: none" data-width="640" data-height="640" data-action="zoom" src="assets/img/instagram_3.jpg">
+              <img style="display: none" data-width="640" data-height="640" data-action="zoom" src="src/img/IMG_4228.jpg">
             </div>
 
             <ul class="media-list">
               <li class="media">
-                <img
-                  class="media-object d-flex align-self-start mr-3"
-                  src="">
+                <img   class="media-object d-flex align-self-start mr-3">
                 <div class="media-body">
-                  <strong>   </strong>
-                 
+                   
                 </div>
               </li>
             </ul>
@@ -648,76 +792,58 @@ function updateString(value) {
 
       <div class="card mb-4 hidden-md-down">
         <div class="card-block">
-        <h6 class="mb-3">  <small>· <a href="#"> l</a></small></h6>
-        <ul class="media-list media-list-stream">
-          <li class="media mb-2">
-            <img
-              class="media-object d-flex align-self-start mr-3"
-              src=" ">
-            <div class="media-body">
-              <strong>   </strong> @.
-              <div class="media-body-actions">
-                <button class="btn btn-outline-primary btn-sm">
-                  <span class="icon icon-add-user"></span> .</button>
-              </div>
-            </div>
-          </li>
-           <li class="media">
-            <a class="media-left" href="#">
-              <img
-                class="media-object d-flex align-self-start mr-3"
-                src=" ">
-            </a>
-            <div class="media-body">
-              <strong>TMM  </strong> @mdo
-              <div class="media-body-actions">
-                <button class="btn btn-outline-primary btn-sm">
-                  <span class="icon icon-add-user"></span> Follow</button> 
-              </div>
-            </div>
-          </li>
-        </ul>
+
         </div>
         <div class="card-footer">
    
         </div>
       </div>
 
-      <div class="card card-link-list">
-        <div class="card-block">
-          © 2017 T M M 
-          <a href="#"></a>
-          <a href="#">Help</a>
-          <a href="#">Terms</a>
-          <a href="#">Privacy</a>
-          <a href="#">Cookies</a>
-          <a href="#">Ads </a>
-          <a href="#">Info</a>
-          <a href="#">Brand</a>
-          <a href="#">Blog</a>
-        </div>
+      <div class="card card-link-list" id="footer" >
+
+ <div class="card-block" id="footer"><p>
+
+ &copy; 2017 &nbsp; T &nbsp; M &nbsp; M &nbsp;&nbsp;|
+
+ &nbsp;&nbsp;All Rights Reserved. &nbsp;&nbsp;|&nbsp;&nbsp;
+ <a href="php/email.php">Contact Me</a></p> 
       </div>
     </div>
   </div>
 </div>
 
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/chart.js"></script>
-    <script src="js/toolkit.js"></script>
-    <script src="js/application.js"></script>
-    <script>
-      // execute/clear BS loaders for docs
-      $(function(){
-        if (window.BS&&window.BS.loader&&window.BS.loader.length) {
-          while(BS.loader.length){(BS.loader.pop())()}
-        }
-      })
-    </script> 
+ 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/tether/dist/js/tether.js"></script>
+<script src="dist/js/toolkit.min.js"></script> 
+<script src="dist/js/application.min.js"></script>
 <script src="dist/js/tmm.min.js"></script>
+
+
+<script type="text/javascript">
+$("#samantha").mouseenter( function() {
+$("#text").css({display:'none'});
+}).mouseleave( function() {
+$("#text").css({display:'none'});
+}); 
+</script>
+<script type="text/javascript">
+var textShowing = false;
+	$("#samantha").click(function() {
+	if (textShowing) {
+		$("#text").fadeOut(function() {
+    $("#text").css({display:'none'});
+textShowing = false; 
+});
+		} else {
+		$("#text").fadeIn(function() {
+$("#text").css({display:'block'});
+textShowing = true;
+});
+		};
+});
+</script> 
+</div> <!-- end divContainer-->
 </body>
 </html> 
 
