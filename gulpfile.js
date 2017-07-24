@@ -16,7 +16,7 @@ gulp.watch - watch files and folders
 */
 // message log
 gulp.task('message', function(){
-    return console.log('Gulp is running..tmm..');
+    return console.log('great job!');
 });
 // html files
 gulp.task('copyHTML', function(){
@@ -80,5 +80,5 @@ gulp.task('watch', function(){
 // DEFAULT ////////////////////////////////////
 // all files  ['copyCSS', 'copyJS', 'copyHTML']
 gulp.task('default', 
-    ['copyJS', 'compass', 'copyHTML', 'html', 'watch']
+    ['copyJS', 'compass', 'copyHTML', 'html', 'message']
 ); 

@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html> 
 <html lang="en">
 <head>
  <meta charset="utf-8">
@@ -9,9 +8,16 @@
  <meta name="keywords" content="data analysis and visualization, sociology and criminology statistical tests">
  <meta name="author" content="Thomas M Maestas"> 
  
-<title>&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title>  
-<script type="text/javascript"> 
+<title class="title" id="title">&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title>  
 
+ 
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/tether/dist/js/tether.js"></script>
+<script src="dist/js/toolkit.min.js"></script> 
+<script src="dist/js/application.min.js"></script>
+<script src="dist/js/tmm.min.js"></script>
+
+<script type="text/javascript"> 
 function draw(geo_data) {
  "use strict";
  var margin = 5,
@@ -68,7 +74,7 @@ function updateString(value) {
 </head>
 <body class="with-top-navbar"> 
 <div   id="divContainer">
-<h2 id="title"></h2>
+<h2 id="title2"></h2>
 <div class="growl" id="app-growl"></div>
 <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary app-navbar">
   <button
@@ -86,8 +92,8 @@ function updateString(value) {
     <img src="src/img/TMMblueTrans.png" alt="" width="100" class="tmm"/>
   </a>
 
-  <div class="collapse navbar-collapse multi-drop-menu main" id="navbarResponsive">
-   <ul class="navbar-nav mr-auto">
+ <div class="collapse navbar-collapse multi_drop_menu main" id="navbarResponsive">
+ <ul class="navbar-nav mr-auto">
  <li class="nav-item active">
  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
  </li>
@@ -100,7 +106,8 @@ function updateString(value) {
 <li><a href="docs/docu/ADAHighSchoolNetworks.html" target="_blank">Education Data Analysis R-3.3</a></li>
 <li><a href="docs/poli/edregression.htm" target="_blank">Education Data Analysis SPSS-24</a></li>
 <li><a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime" target="_blank">Environment Data Analysis Tableau</a></li>
-</ul>
+<li><a href="d3/arc.html" > Data Visualization D3.js</a></li>
+ </ul>
  </li> 
 
 <li class="nav-item">
@@ -247,7 +254,7 @@ function updateString(value) {
 </ul>
 </li> 
 </ul> 
-</div>
+</div> 
  <form class="form-inline float-right hidden-sm-down"><!--
  <input class="form-control" type="text" id="search" data-action="grow" placeholder="Search">-->
  </form>
@@ -486,7 +493,7 @@ function updateString(value) {
               </li>
 
               <li class="media mb-4">
-<!--  <img class="rounded-circle media-object d-flex align-self-start mr-3" src=" ">
+ <img class="rounded-circle media-object d-flex align-self-start mr-3" src=" ">
            <div class="media-body">
                   <div class="media-body-text">
                   
@@ -531,9 +538,8 @@ function updateString(value) {
                     
                   <button class="btn btn-secondary btn-sm float-right">
                     <span class="glyphicon glyphicon-user"></span> 
-                  </button>
-                  <strong> </strong>
-                  <p>@-  </p>
+                  </button> 
+                   
                 </div>
               </div>
             </li>
@@ -573,12 +579,12 @@ function updateString(value) {
   <div class="row">
     <div class="col-lg-3">
       <div class="card card-profile mb-4">
-        <div class="card-header" style="background-image: url(src/img/MaestasReykjavikBanner20.png);"></div>
+        <div class="card-header" style="background-image: url('/src/img/MaestasReykjavikBanner20.png');"></div>
         <div class="card-block text-center">
           <a href="profile/index.html">
             <img
               class="card-profile-img"
-              src="src/img/sunbeam.jpg">
+              src="src/img/laTriomphe.jpg">
           </a>
 
           <h6 class="card-title">
@@ -754,7 +760,7 @@ function updateString(value) {
             class="media-object d-flex align-self-start mr-3">
           <div class="media-body">
             <div class="media-heading">
-              <small class="float-right text-muted"> </small> 
+              <small class="float-right text-muted"></small> 
             </div>
  
             <div class="media-body-inline-grid" data-grid="images">
@@ -775,7 +781,7 @@ function updateString(value) {
     </div>
     <div class="col-lg-3">
       <div class="alert alert-warning alert-dismissible hidden-md-down" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">  </button>
         <a class="alert-link" href="profile/index.html"> About Me </a>
       </div>
 
@@ -794,12 +800,14 @@ function updateString(value) {
         <div class="card-block">
 
         </div>
-        <div class="card-footer">
-   
-        </div>
+        
       </div>
 
-      <div class="card card-link-list" id="footer" >
+      
+  </div>
+    
+</div>
+<div class="card card-link-list" >
 
  <div class="card-block" id="footer"><p>
 
@@ -807,19 +815,8 @@ function updateString(value) {
 
  &nbsp;&nbsp;All Rights Reserved. &nbsp;&nbsp;|&nbsp;&nbsp;
  <a href="php/email.php">Contact Me</a></p> 
-      </div>
-    </div>
-  </div>
-</div>
-
- 
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/tether/dist/js/tether.js"></script>
-<script src="dist/js/toolkit.min.js"></script> 
-<script src="dist/js/application.min.js"></script>
-<script src="dist/js/tmm.min.js"></script>
-
-
+         </div> <!-- end card card-link-list -->
+    </div> <!-- end card card-link-list -->
 <script type="text/javascript">
 $("#samantha").mouseenter( function() {
 $("#text").css({display:'none'});
