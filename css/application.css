@@ -11,7 +11,7 @@
 
 body {
    
- background-color:#00d9f9;
+ background-color:silver;
   max-width:950px;
   margin-left:auto;
   margin-right:auto; 
@@ -66,7 +66,7 @@ img.media-object {
     background-color:#00b0ec !important;
 }
 #navbarResponsive {
-  background-color:#498de2 !important;
+  background-color:#00b0ec !important;
 }
 .profile img {
   min-height: 90px;
@@ -76,7 +76,7 @@ img.media-object {
 .card-profile-img {
   width:80%;
   height:80%;
-    margin:0px;
+    margin-left:-10px;
 }
 img {
 vertical-align: middle; 
@@ -273,7 +273,7 @@ div.card-block#footer  {
  min-width:100%;
  background-color:#3097D1 !important;
  text-align:center; 
- margin-top:10px;
+ 
  border-radius:0px; 
  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);	 
 } 
@@ -290,8 +290,7 @@ div.card-block#footer a {
     color:#00d5f6;
     background-color:blue;
 } 
-div.card.card-link-list {
- background-color:transparent;
+div.card.card-link-list { 
  border:solid 0px transparent;
 }
 #div5 {
@@ -360,12 +359,15 @@ div.card-header {
  }
  
 div.col-lg-6  {
-
-	background-color: #00b0ec;
-	background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
-      
+ 
+	background-color: ##00d9f9;
   }
 
+div.col-lg-3  {
+
+	background:transparent; 
+      
+  }
       
 
 /* blocks 2, 3 */
@@ -388,8 +390,7 @@ div.col-lg-6  {
      padding:5px;
   } 
 div.card-header {
- min-height:480px;
-
+ min-height:480px; 
    background-color: #00b0ec; 
 }
 
@@ -410,11 +411,14 @@ div.card-block img {
  
 
 div.card-block.text-center a {
-  background-color:transparent;  
+	background-color: #00b0ec;
+	background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
 }
 
 div.card-block.text-center {
-	background-color:transparent;
+
+	background-color: #00b0ec;
+	background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
   box-shadow: 0px 10px 50px transparent;	
   font-weight:800;
 }
@@ -427,21 +431,20 @@ div.card-block.text-center {
 	background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
 	padding-top: 0px;
   min-height:180px;
-  border-radius:0px; 
+  border-radius:0px;
    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);	 
   }
 li.div1m.media.list-group-item.p-4 { 
-	background-color:#00b0ec;
-	background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
+  	background-color: #00b0ec;
+	background-image: url('../src/img/MaestasReykjavikBanner20.png');  
 	padding-top: 0px;
   min-height:180px;
-  border-radius:0px; 
+  border-radius:0px;
+  border:0px solid red;
    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);	 
   }
  
 /* navbar */
-
-
 
 .app-navbar {
   font-weight: 400;
@@ -464,7 +467,8 @@ li.div1m.media.list-group-item.p-4 {
 }
 .app-navbar .form-control {
 
-  border-color: #1C73A5;
+ 
+	background-color:#00b0ec;
 
 }
 

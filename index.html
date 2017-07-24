@@ -8,7 +8,7 @@
  <meta name="keywords" content="data analysis and visualization, sociology and criminology statistical tests">
  <meta name="author" content="Thomas M Maestas"> 
  
-<title class="title" id="title">&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title>  
+<title>&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title>  
 
  
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -17,22 +17,27 @@
 <script src="dist/js/application.min.js"></script>
 <script src="dist/js/tmm.min.js"></script>
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+  
+         
+   
 <script type="text/javascript"> 
+
 function draw(geo_data) {
  "use strict";
  var margin = 5,
  width = 600 - margin,
  height = 400 - margin; 
- d3.select("#div5")
+ d3.select(".map")
  .attr('text-align', 'center')
- .attr('margin', '0px');
-
+ .attr('margin', '0px')
+ ;
   d3.select("body").transition()
  .duration(2000)
  .delay(100)
- .style("background-color", "white");
+ .style("background-color", "#00d9f9");
 
- var svg = d3.select("#div5")
+ var svg = d3.select(".map")
  .append("svg")
  .attr("width", width + margin)
  .attr("height", height + margin) 
@@ -40,8 +45,8 @@ function draw(geo_data) {
  .attr('class', 'map'); 
 
  var projection = d3.geo.mercator()
- .scale(110)
- .translate([width / 2, height / 1.5]); 
+ .scale(100)
+ .translate([width / 2, height / 1.2]); 
 
  var path = d3.geo.path().projection(projection); 
  var map = svg.selectAll('path')
@@ -49,15 +54,12 @@ function draw(geo_data) {
  .enter()
 .append('path')
  .attr('d', path)
- .style('fill', '#00b0ec')
+ .style('fill', 'transparent')
  .style('stroke', 'white')
  .style('stroke-width', 0.5); 
  };
- /*
-GeoJSON file
- */
-d3.json("data/world_countries.json", draw);
-</script>
+ </script>
+
 
 <script type="text/javascript"> 
 var inputString = ""; 
@@ -97,7 +99,7 @@ function updateString(value) {
  <li class="nav-item active">
  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
  </li>
- <li class="nav-item"><a class="nav-link" >Profile</a>
+ <li class="nav-item active"><a class="nav-link" >Profile</a>
 <ul>
 <li><a href="profile/tmaestas_resume.html" target="_blank">CV-english</a></li>
 <li><a href="docs/docu/MaestasThomas_CV2017_fr.pdf" target="_blank">CV-français</a></li>
@@ -110,7 +112,7 @@ function updateString(value) {
  </ul>
  </li> 
 
-<li class="nav-item">
+<li class="nav-item active">
 <a class="nav-link"  >Conferences</a>
 <ul>
 <li><a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;" ><span> 
@@ -133,7 +135,7 @@ function updateString(value) {
  </ul></li>
 
 
- <li class="nav-item"><a class="nav-link" >API</a>
+ <li class="nav-item active"><a class="nav-link" >API</a>
 <ul>
 <li  style="z-index:1;"><a href="docs/php/weatherAPI.php" >Weather-Map API</a></li>
 <li><a href="docs/d3/planet.html">Planets</a></li>
@@ -146,7 +148,7 @@ function updateString(value) {
  </ul>
  </li>     
   
-<li class="nav-item"><a  class="nav-link"><span class="caret">Coding &nbsp;&nbsp;</span> <br /></a>
+<li class="nav-item active"><a  class="nav-link"><span class="caret">Coding &nbsp;&nbsp;</span> <br /></a>
 
  
 <ul><li style="z-index:100;"><a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Web &nbsp;&nbsp;<span class "caret"></a>
@@ -223,7 +225,7 @@ function updateString(value) {
 
     </ul>
     </li>
-<li class="nav-item"><a  class="nav-link"><span class="caret">Tools</span><br /> </a>
+<li class="nav-item active"><a  class="nav-link"><span class="caret">Tools</span><br /> </a>
 <ul>
 
 <li style="z-index:101;"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stats &nbsp;&nbsp;</a>  <span class="caret"></span>
@@ -287,8 +289,8 @@ function updateString(value) {
  
 
     <ul class="nav navbar-nav hidden-xs-up" id="js-popoverContent">
-      <li class="nav-item"><a class="nav-link" href="#" data-action="growl">Growl</a></li>
-      <li class="nav-item"><a class="nav-link" href="login/index.html">Logout</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-action="growl"> </a></li>
+      <li class="nav-item title" id="title"><a class="nav-link" href="login/index.html"> </a></li>
     </ul>
  
 </nav>
@@ -578,8 +580,10 @@ function updateString(value) {
 <div class="container pt-4">
   <div class="row">
     <div class="col-lg-3">
-      <div class="card card-profile mb-4 div5">
-        <div class="card-header"></div>
+      <div class="card card-profile mb-4">
+        <div class="map card-header"></div>
+<script type="text/javascript">
+d3.json("data/world_countries.json", draw);</script>
         <div class="card-block text-center">
           <a href="profile/index.html">
             <img
@@ -670,9 +674,42 @@ function updateString(value) {
               <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
             </div>
 
-            <div>
-              <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
-            </div>
+            
+             
+
+ <div  id="cal"> 
+<form> 
+ <p> 
+ <input type="button" name="seven" class="bu" value="7" onclick="updateString('7')" />&nbsp;&nbsp; 
+ <input type="button" name="eight" class="bu" value="8" onclick="updateString('8')" />&nbsp;&nbsp; 
+ <input type="button" name="nine" class="bu" value="9" onclick="updateString('9')" />&nbsp;&nbsp; 
+ <input type="button" name="div" class="bu" value="/" onclick="updateString('/')" /><br /> 
+ <input type="button" name="four" class="bu" value="4" onclick="updateString('4')" />&nbsp;&nbsp; 
+ <input type="button" name="five" class="bu" value="5" onclick="updateString('5')" />&nbsp;&nbsp; 
+ <input type="button" name="six" class="bu" value="6" onclick="updateString('6')" />&nbsp;&nbsp; 
+ <input type="button" name="mult" class="bu" value="*" onclick="updateString('*')" /><br /> 
+ <input type="button" name="one" class="bu" value="1" onclick="updateString('1')" />&nbsp;&nbsp; 
+ <input type="button" name="two" class="bu" value="2" onclick="updateString('2')" />&nbsp;&nbsp; 
+ <input type="button" name="three" class="bu" value="3" onclick="updateString('3')" />&nbsp;&nbsp; 
+ <input type="button" name="plus" class="bu" value="+" onclick="updateString('+')" /><br /> 
+ <input type="button" name="openparenth" class="bu" value="(" onclick="updateString('(')" />&nbsp;&nbsp; 
+ <input type="button" name="closeparenth" class="bu" value=")" onclick="updateString(')')" />&nbsp;&nbsp; 
+ <input type="button" name="power" class="bu" value=";-)" onclick="updateString(';-)')" />&nbsp;&nbsp; 
+ <input type="button" name="modulus" class="bu" value=":-)" onclick="updateString(':-\)')" /><br /> 
+ <input type="button" name="zero" class="bu" value="0" onclick="updateString('0')" />&nbsp;&nbsp; 
+ <input type="button" name="dot" class="bu" value="." onclick="updateString('.')" />&nbsp;&nbsp; 
+ <input type="button" name="clear" class="bu" value="C" onclick="document.forms[1].input.value='';inputString=''" />&nbsp;&nbsp; 
+ <input type="button" name="minus" class="bu" value="-" onclick="updateString('-')" /><br />
+ <input style="color:white;background-color:blue" type="button" name="calc" class="bu" value ="=" onclick="document.forms[1].input.value = eval(inputString); inputString=''" />&nbsp;&nbsp; 
+ <input type="button" name="mem" class="bu prim" value="M +" onclick="document.forms[1].storedValue.value = parseInt(document.forms[1].storedValue.value) + parseInt(document.forms[1].input.value)" />&nbsp;&nbsp; 
+ <input type="button" name="recall" class="bu prim" value="MRC" onclick="updateString(document.forms[1].storedValue.value)" />&nbsp;&nbsp; 
+ <input type="button" name="memClear" class="bu prim" value="MC" onclick="document.forms[1].storedValue.value=0" /> 
+ <input type="hidden" name="storedValue" value="0" /><br /><br /> 
+ <input id="window" type="text" name="input"/> 
+ </p> 
+ </form><!-- FORM END --> 
+ </div>  
+             
           </div>
         </div>
       </div>
@@ -702,7 +739,7 @@ function updateString(value) {
               <small class="float-right text-muted"> </small> 
             </div> 
             <div class="media-body-inline-grid" data-grid="images">
-              <div style="display: none">
+              <div style="display:none">
                 <img data-action="zoom" data-width="1050" data-height="700" src="src/img/IMG_4228.jpg">
               </div>
 
@@ -722,11 +759,8 @@ function updateString(value) {
             <ul class="media-list mb-2">
               <li class="media mb-3">
                 <img
-                  class="media-object d-flex align-self-start mr-3"
-                   >
-                <div class="media-body">
-                  <strong>   : </strong>
-                  
+                  class="media-object d-flex align-self-start mr-3"     >
+                <div class="media-body one">
                 </div>
               </li>
               <li class="media">
@@ -746,7 +780,7 @@ function updateString(value) {
             class="media-object d-flex align-self-start mr-3">
           <div class="media-body">
             <div class="media-body-text">
-              <div class="media-heading" id="div5">
+              <div class="media-heading two" id="div5">
               </div>
               <p>
                 
@@ -755,11 +789,11 @@ function updateString(value) {
           </div>
         </li>
 
-        <li class="media list-group-item p-4">
+        <li class="div1m media list-group-item p-4">
           <img
             class="media-object d-flex align-self-start mr-3">
           <div class="media-body">
-            <div class="media-heading">
+            <div class="media-heading three">
               <small class="float-right text-muted"></small> 
             </div>
  
