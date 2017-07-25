@@ -355,13 +355,8 @@ div.card-header {
   border:0px solid red;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
   font-size:1.2em;
-
-   	
-
-  }
-
-   
-
+ 
+  } 
  .list-group-item {
     background-color:#00b0ec;
  }
@@ -384,7 +379,14 @@ div.col-lg-3  {
 
 	margin-top:0px;
 	background-color: #00b0ec;
-	background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
+  background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
+ /*
+  display: block;
+  max-width:300px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+ */
 	padding-top:30px;
   min-height:230px;
   border-radius:0px;
@@ -438,7 +440,7 @@ div.card-block.text-center {
 	background-color: #00b0ec;
 	background-image: url('../src/img/MaestasReykjavikBanner20.png'); 
 	padding-top: 0px;
-  min-height:180px;
+
   border-radius:0px;
    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);	 
   }
@@ -446,7 +448,7 @@ li.div1m.media.list-group-item.p-4 {
   	background-color: #00b0ec;
 	background-image: url('../src/img/MaestasReykjavikBanner20.png');  
 	padding-top: 0px;
-  min-height:180px;
+
   border-radius:0px;
   border:0px solid red;
    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);	 
