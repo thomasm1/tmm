@@ -1,0 +1,57 @@
+
+
+
+
+// COMPASS SPRITES
+// Compass simple API to build sprites
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.logo {
+  $image: "path/to/my/logo.png";
+  width: image-width($image);
+  height: image-height($image);
+  background: inline-image($image) no-repeat;
+}
+
+// BOURBON - SASS LIBRARY 
+ol {
+    > li {
+      background-color: #F4F5F7;
+      @include background-image( linear-gradient(to left, #FFF, #F4F5F7) );
+      float: left;
+      font-family: $lucida-grande;
+      position: relative;
+      @include transition( all 0.8s );
+
+      &::after {
+        content: " ";
+        height: 23px;
+        @include position( absolute, 10px -13px 0 0 );
+        @include transform( rotate(45deg) skew(20deg, 30deg) );
+        width: 23px;
+      }
+    }
+  }
+// PREFIX
+// Bourbon mixin with Sass
+
+section {
+  @include linear-gradient(to top, red, orange);
+}
+/* Compiled CSS  */
+section {
+  background-color: red;
+  background-image: -webkit-linear-gradient(bottom, red, orange);
+  background-image:         linear-gradient(to top, red, orange);
+}
+// Bourbon mixin with Sass
+h1 {
+  font-family: $helvetica;
+  font-size: golden-ratio(14px,  1);
+}
+/* Compiled CSS  */
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 23px;
+}
