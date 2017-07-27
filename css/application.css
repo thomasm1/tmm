@@ -35,7 +35,6 @@ div.col-lg-3 {
   border-color: #232fa9;
 }
 
-
 /* general overrides */
 .list-group-item.glyphicon {
   line-height: 1.1;
@@ -141,13 +140,7 @@ width:100%;
   .app-search {
     margin-top: -1px;
   }
-}
-@media (max-width:768) {
-  .map {
-    max-width:50%;
-    border:solid .5px white;
-  }
-}
+} 
 .media-object.d-flex.aligh-self-start.mr-3  {  
   background-image: url('../src/img/TMMblueTrans.png'); 
   max-width:30px;
@@ -941,10 +934,7 @@ background-color:#004ea5;
 
 }
 
-
-.map {
-  max-width:100%;
-}
+ 
 .blog { 
     float:left;  
 min-height:500px;

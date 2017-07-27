@@ -10,14 +10,13 @@
  
 <title>&nbsp;&nbsp;T&nbsp;&nbsp; M&nbsp;&nbsp; M</title>  
 
- 
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/tether/dist/js/tether.js"></script>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/tether/dist/js/tether.min.js"></script>
 <script src="dist/js/toolkit.min.js"></script> 
 <script src="dist/js/application.min.js"></script>
-<script src="dist/js/tmm.min.js"></script>
-
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="dist/js/tmm.min.js"></script> 
+<script src="http://d3js.org/d3.v3.min.js"></script> 
   
          
    
@@ -26,12 +25,13 @@
 function draw(geo_data) {
  "use strict";
  var margin = 5,
- width = 600 - margin,
- height = 400 - margin; 
+ width = 500 - margin,
+ height = 300 - margin; 
  d3.select(".map")
  .attr('text-align', 'center')
- .attr('margin', '0px')
- ;
+ .attr('max-width', '100%')
+ .attr('max-height', '100%')
+ .attr('margin', '0px');
   d3.select("body").transition()
  .duration(2000)
  .delay(100)
@@ -43,7 +43,6 @@ function draw(geo_data) {
  .attr("height", height + margin) 
  .append('g')
  .attr('class', 'map'); 
-
  var projection = d3.geo.mercator()
  .scale(100)
  .translate([width / 2, height / 1.2]); 
@@ -58,7 +57,7 @@ function draw(geo_data) {
  .style('stroke', 'white')
  .style('stroke-width', 0.5); 
  };
- </script>
+ </script><nb></nb>
 
 
 <script type="text/javascript"> 
@@ -67,9 +66,11 @@ function updateString(value) {
  inputString += value; 
  document.forms[1].input.value = inputString; 
 } 
-</script>  
+</script> 
+
+ 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-<link href="dist/scss/bootstrap.css"  rel="stylesheet"> 
+ <link href="css/bootstrap.css"  rel="stylesheet"> 
  <link href="css/toolkit.css" rel="stylesheet">
  <link href="css/application.css" rel="stylesheet">
 
