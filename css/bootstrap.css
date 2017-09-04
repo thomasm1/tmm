@@ -3,6 +3,8 @@
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+ **TMM Editing 2:29pm 7/25/17**located sass/*.scss
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -3855,7 +3857,7 @@ tbody.collapse.show {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
