@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<link href="https://fonts.googleapis.com/css?family=Arimo|Merriweather|Poppins" rel="stylesheet">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+ 
+  
+ </head>
+
+ 
+
+<body>
+
+<script>
+
+
+function importData ()
+{
+	d3.json("json.json", function (data) {
+
+
+})
+}
+ 
+</script>
+
+
+<!--
+<script>
+
+function importData ()
+{
+
+	var canvas = d3.select(".dataContainer").append("svg")
+		.attr("width", 1000)
+		.attr("height",700);
+ 
+	canvas.selectAll("rect")
+		.data(data)
+		.enter()
+		.append("rect")
+		.attr("width", function (d)
+	{
+		return d.rank * 60;
+	})
+		.attr("height", 50)
+		.attr("y", function (d,i)
+	{
+		return i * 80
+	})
+		.attr("fill", "red");
+	
+	canvas.selectAll("text")
+		.data(data)
+		.enter()
+		.append("text")
+		.attr("fill", "#ffffff")
+		.attr("y", function (d, i)
+	{
+		return i * 80 * 25;
+	})
+	.attr("x", 5)
+	.text(function (d)
+	{
+		return d.name + " rank: " + d.rank;
+})
+})
+}
+ 
+ </script>
+
+-->
+<h4 style="float:right;color:blue;margin-right:300px;margin-top:20px;border:solid 1px blue;padding:5px;"><a style="text-decoration:none;" href="../index.html">
+
+back to TMM</a></h4>
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+</body>
+
+</html>
