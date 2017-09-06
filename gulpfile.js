@@ -8,15 +8,12 @@ const gulp = require('gulp'),
       rename = require('gulp-rename');
  
 /* 
-
--top-level function-   !css/style.css
+-top-level function-      !css/style.css
 gulp.task -define tasks       css/*.css
 gulp.src - point to files to use  *.+(js|css)
 gulp.dist - points to folder to output 
 gulp.watch - watch files and folders
 */
-
-
 // message log
 gulp.task('message', function(){
     return console.log('great job!');
