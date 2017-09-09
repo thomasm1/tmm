@@ -1,0 +1,83 @@
+
+<!DOCTYPE html><meta charset="utf-8">
+<html>
+<head>
+ 
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<!--calling data.csv for x, y, z
+
+recycling a render() from rectangles: 
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+function render(data, color){
+// Bind data
+var rects = svg.selectAll("rect").data(data);
+// Enter create
+rects.enter().append("rect")
+    .attr("y", 50)
+    .attr("width", 20)
+    .attr("height", 20)
+// Update 
+rects
+    .attr("x", scale)
+    .attr("fill", color);
+
+Javascript is single-threaded, so only after the d3 Bind, Enter, Update, Exit
+}
+-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+<script>
+    // 13 Update circle
+var svg = d3.select("body").append("svg")
+    .attr("width", 250)
+    .attr("height", 250);
+  function render(data){
+// Bind data
+var circles = svg.selectAll("circle").data(data);
+// Enter create
+circles.enter().append("circle")
+    .attr("r", 10) 
+// Update 
+circles
+    .attr("cx", function (d){ return d.x; })
+    .attr("cy", function (d){ return d.y; }); 
+// Exit 
+circles.exit().remove();
+}
+
+function type(d) {
+    d.x = +d.x;
+    d.y = +d.y;
+    return d;
+    }
+//   var myArray2 = [
+ //      { x: 10, y:100},
+  //     { x: 120, y:120},
+ //      { x: 180, y:180},
+   //    { x: 150, y:41},
+//];
+
+  d3.csv("data.csv", type, render);
+    
+    // function (myArray2) { render(myArray2); });
+</script>
+ function render(data){
+// Bind data
+var circles = svg.selectAll("circle").data(data);
+// Enter create
+circles.enter().append("circle")
+    .attr("y", 50)
+    .attr("width", 20)
+    .attr("height", 20)
+// Update 
+circles
+    .attr("x", scale)
+    .attr("fill", color);        
+}
+
+</head>
+<body>
+</body>
+</html>

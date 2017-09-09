@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml1-strict.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml" >
+  <head> <title> SlideShow </title>
+  <link rel="stylesheet" href="../css/stylesheet.css" type="text/css" />
+  <script type="text/javascript">
+<!-- Begin
+var n = 0;
+
+timedelay = 3;  // 3 secs between pics
+timedelay *= 1000;
+
+var imgs = new Array();
+imgs[0] = new Image();
+imgs[1] = new Image();
+imgs[2] = new Image();
+imgs[3] = new Image();
+imgs[4] = new Image();
+imgs[5] = new Image();
+imgs[6] = new Image();
+
+
+imgs[0].src = "../images/ig_SouthAmerica109.jpg";
+imgs[1].src = "../images/ig_SouthAmerica110.jpg";
+imgs[2].src = "../images/ig_SouthAmerica111.jpg";
+imgs[3].src = "../images/ig_SouthAmerica117.jpg";
+imgs[4].src = "../images/ig_SouthAmerica131.jpg";
+imgs[5].src = "../images/ig_SouthAmerica125.jpg";
+imgs[6].src = "../images/ig_SouthAmerica157.jpg";
+
+function rotate() {
+	document.getElementById('slideshow').src = imgs[n].src;
+	(n == (imgs.length - 1)) ? n = 0 : n++;
+	window.setTimeout("rotate()", timedelay);
+}
+window.onload = rotate;
+//  End -->
+</script>
+</head>
+<body id="hyp">
+ <div>
+  <a class="home" href="http://kryptos.cnm.edu/~tmaestas29"> Kryptos home</a>
+  </div>
+	<div>
+    <img src="../images/ig_SouthAmerica109.jpg" id="slideshow" alt="slideshow of images" />
+	</div>
+</body>
+</html>

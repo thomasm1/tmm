@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../js/analytics.js','ga'); 
+  ga('create', 'UA-71584977-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<link href="http://www.w3.org/TR/css3-transitions/" >
+
+<title>planets</title>
+ </head>
+<body>
+
+<h4 style="float:right;color:blue;margin-right:300px;margin-top:20px;border:solid 1px blue;padding:5px;"><a style="text-decoration:none;" href="../index.html">
+back to TMM</a></h4>
+<br />
+
+
+<style>
+
+
+
+body {
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 960px;
+  height: 500px;
+  position: relative;
+
+}
+
+form {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+
+path {
+  fill-rule: evenodd;
+  stroke: #333;
+  stroke-width: 2px;
+}
+
+
+.sun path {
+  fill: #6baed6;
+
+}
+
+
+.planet path {
+  fill: #9ecae1;
+
+}
+
+.annulus path {
+
+  fill: #c6dbef;
+}
+
+.chart rect {
+  fill: blue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+</style>
+
+<form>
+  <input type="radio" name="reference" id="ref-annulus">
+  <label for="ref-annulus">Annulus</label><br>
+  <input type="radio" name="reference" id="ref-planet" checked>
+  <label for="ref-planet">Planets</label><br>
+  <input type="radio" name="reference" id="ref-sun">
+  <label for="ref-sun">Sun</label>
+</form>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script>
+var width = 960,
+    height = 500,
+    radius = 80,
+    x = Math.sin(2 * Math.PI / 3),
+    y = Math.cos(2 * Math.PI / 3);
+var offset = 0,
+    speed = 4,
+    start = Date.now();
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(.55)")
+  .append("g");
+
+
+
+var frame = svg.append("g")
+    .datum({radius: Infinity});
+frame.append("g")
+    .attr("class", "annulus")
+    .datum({teeth: 80, radius: -radius * 5, annulus: true})
+  .append("path")
+    .attr("d", gear);
+
+
+
+frame.append("g")
+    .attr("class", "sun")
+    .datum({teeth: 16, radius: radius})
+  .append("path")
+    .attr("d", gear);
+
+
+
+frame.append("g")
+    .attr("class", "planet")
+    .attr("transform", "translate(0,-" + radius * 3 + ")")
+    .datum({teeth: 32, radius: -radius * 2})
+  .append("path")
+    .attr("d", gear);
+frame.append("g")
+    .attr("class", "planet")
+
+    .attr("transform", "translate(" + -radius * 3 * x + "," + -radius * 3 * y + ")")
+
+    .datum({teeth: 32, radius: -radius * 2})
+
+  .append("path")
+
+    .attr("d", gear);
+
+
+
+frame.append("g")
+    .attr("class", "planet")
+    .attr("transform", "translate(" + radius * 3 * x + "," + -radius * 3 * y + ")")
+    .datum({teeth: 32, radius: -radius * 2})
+  .append("path")
+    .attr("d", gear);
+d3.selectAll("input[name=reference]")
+  .data([radius * 5, Infinity, -radius])
+    .on("change", function(radius1) {
+      var radius0 = frame.datum().radius, angle = (Date.now() - start) * speed;
+      frame.datum({radius: radius1});
+      svg.attr("transform", "rotate(" + (offset += angle / radius0 - angle / radius1) + ")");
+    });
+
+
+
+d3.selectAll("input[name=speed]")
+    .on("change", function() { speed = +this.value; });
+function gear(d) {
+  var n = d.teeth,
+      r2 = Math.abs(d.radius),
+      r0 = r2 - 8,
+      r1 = r2 + 8,
+      r3 = d.annulus ? (r3 = r0, r0 = r1, r1 = r3, r2 + 20) : 20,
+      da = Math.PI / n,
+      a0 = -Math.PI / 2 + (d.annulus ? Math.PI / n : 0),
+      i = -1,
+      path = ["M", r0 * Math.cos(a0), ",", r0 * Math.sin(a0)];
+  while (++i < n) path.push(
+      "A", r0, ",", r0, " 0 0,1 ", r0 * Math.cos(a0 += da), ",", r0 * Math.sin(a0),
+      "L", r2 * Math.cos(a0), ",", r2 * Math.sin(a0),
+      "L", r1 * Math.cos(a0 += da / 3), ",", r1 * Math.sin(a0),
+      "A", r1, ",", r1, " 0 0,1 ", r1 * Math.cos(a0 += da / 3), ",", r1 * Math.sin(a0),
+      "L", r2 * Math.cos(a0 += da / 3), ",", r2 * Math.sin(a0),
+      "L", r0 * Math.cos(a0), ",", r0 * Math.sin(a0));
+  path.push("M0,", -r3, "A", r3, ",", r3, " 0 0,0 0,", r3, "A", r3, ",", r3, " 0 0,0 0,", -r3, "Z");
+  return path.join("");
+}
+
+
+d3.timer(function() {
+  var angle = (Date.now() - start) * speed,
+      transform = function(d) { return "rotate(" + angle / d.radius + ")"; };
+  frame.selectAll("path").attr("transform", transform);
+  frame.attr("transform", transform); // frame of reference
+});
+</script>
+<!--
+<div style="position:absolute;top:500px;">
+   <h3>Frequency of Alphabet Letters in English Language</h3>
+ 
+<style>
+
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis--x path {
+  display: none;
+}
+</style> 
+    
+<svg width="960" height="500"></svg> 
+<script>
+var svg = d3.select("svg"),
+    margin = {top: 10, right: 20, bottom: 30, left: 40},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom;
+
+var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+    y = d3.scaleLinear().rangeRound([height, 0]);
+var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.tsv("alphabet.tsv", function(d) {
+  d.frequency = +d.frequency;
+  return d;
+}, function(error, data) {
+  if (error) throw error;
+
+  x.domain(data.map(function(d) { return d.letter; }));
+  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+
+  g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+  g.append("g")
+      .attr("class", "axis axis--y")
+      .call(d3.axisLeft(y).ticks(10, "%"))
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("text-anchor", "end")
+      .text("Frequency");
+
+  g.selectAll(".bar")
+    .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.letter); })
+      .attr("y", function(d) { return y(d.frequency); })
+      .attr("width", x.bandwidth())
+      .attr("height", function(d) { return height - y(d.frequency); });
+});
+ 
+</script> 
+    </div>  
+-->
+<!--
+<h4>.0 v3, external tsv</h4>
+    <svg class="chart"></svg>
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+
+var width = 420,
+    barHeight = 20;
+var x = d3.scale.linear()
+    .range([0, width]);
+var chart = d3.select(".chart")
+    .attr("width", width);
+
+d3.tsv("data1.tsv", type, function(error, data) {
+  x.domain([0, d3.max(data, function(d) { return d.value; })]);
+  chart.attr("height", barHeight * data.length);
+
+  var bar = chart.selectAll("g")
+      .data(data)
+    .enter().append("g")
+      .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
+  bar.append("rect")
+      .attr("width", function(d) { return x(d.value); })
+      .attr("height", barHeight - 1);
+  bar.append("text")
+      .attr("x", function(d) { return x(d.value) - 3; })
+      .attr("y", barHeight / 2)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.value; });
+});
+function type(d) {
+  d.value = +d.value; // coerce stringto number
+  return d;
+}
+
+  
+d3.tsv("data1.tsv", function (data) {
+	var canvas = d3.select("body").append("svg")
+	.attr("width", 500)
+	.attr("height", 300)
+	
+	canvas.selectAll("rect")
+	.data(data)
+	.enter()
+		.append("rect")
+		.attr("width", function (d) { return d.value * 20; })
+		.attr("height", 38)
+		.attr("y", function (d, i) { return i * 40; })
+		.attr("fill", "blue")
+	
+	canvas.selectAll("text")
+	.data(data)
+	.enter()
+		.append("text")
+		.attr("fill", "orange")
+		.attr("y", function (d, i) { return i * 40 + 24; })
+		.text(function (d) { return d.value; })
+
+	})
+ </script>
+    
+ 
+<h4>.2 v4-internal</h4>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+	var dataArray = [30, 40, 50];
+	var width = 700;
+	var height = 200;
+ 	var widthScale = d3.scaleLinear()
+		.domain([0, 60])
+		.range([10, width]);
+	
+	var color = d3.scaleLinear()
+	.domain([0, 60])
+	.range(["red", "blue"]);
+
+	var canvas = d3.select("body")
+	.append("svg")
+	.attr("width", width)
+	.attr("height", height);
+ 
+	var bars = canvas.selectAll("rect")
+		.data(dataArray)
+		.enter()
+			.append("rect")
+			.attr("width", function(d) { return widthScale(d); })
+			.attr("height", 30)
+			.attr("fill", function(d) { return color(d); })
+			.attr("y", function(d, i) { return i * 50
+						});
+    
+</script>
+ 
+-->
+<script>
+
+d3.select("body").transition()
+    .duration(3000)
+	.delay(400)
+    .style("background-color", "silver");
+
+var circle = canvas.append("circle")
+		.attr("fill", "black")
+		.attr("cx", 50)
+		.attr("cy", 50)
+		.attr("r", 25);
+
+		var circle1 = canvas.append("circle")
+		.attr("fill", "white")
+		.attr("cx", 100)
+		.attr("cy", 50)
+		.attr("r", 25);
+
+
+circle.transition()
+			.duration(1800)
+			.delay(500)
+			.attr("cx", 350)
+			.attr("fill", "white")
+			 
+
+circle1transition()
+			.duration(1500)
+			.attr("cx", 150)
+			.attr("fill", "white")
+			 
+
+</script>
+</body>
+</html>

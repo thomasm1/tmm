@@ -1,0 +1,59 @@
+body {background-image: url(background.gif); 
+		background-color: #ffffcc; 
+		color: #330000; 
+		font-family: verdana, arial, sans-serif;}
+h2 { text-transform: uppercase;
+		background-color: #ffffcc; 
+		color: #663300;
+		font-size: 1.2em; 
+		border-bottom: 1px solid #000000;
+		margin-right: 20px;}
+img { border: none; }
+table { text-align: center;}
+td, th {padding: 10px;}
+#container { margin-left: auto;
+		margin-right: auto;
+		background-color: #FFFFCC;
+		color: #000000;
+		border: 2px double #000000;
+		min-width: 700px; 
+		width: 80%;}
+#logo { background-color: #ccaa66;
+		color: #000000;
+		text-align: center;
+		margin: 0;
+		border-bottom: 2px double #000000;}
+#nav  { float: left;
+		width: 100px;
+		padding-top: 10px;
+		text-align: center;}
+#nav a { text-decoration: none;
+		margin: 15px;
+		text-align: center;
+		display: block;}
+#nav a:link { color: #191970;} 
+#nav a:visited { color: #003300;}
+#nav a:focus { color: #000000;}
+#nav a:hover { color: red;}
+#nav a:active { color: green;}
+#nav li { list-style-type: none;}
+#content { margin-left: 150px;  
+		background-color: #f1e8b0;
+		color: #000000;
+		padding: 10px 20px 10px 20px;
+		overflow: auto;}
+#footer { border-top: 2px double #000000;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: #ccaa66;
+		color: #000000; 
+		font-size: .60em; 
+		font-style: italic; 
+		text-align: center;}  
+.floatright {padding-left: 20px; float: right;}
+.details { padding-left: 20%; padding-right: 20%; }
+.altrow {background-color: #ccaa66;}
+.labelCol {float: left; width: 100px; text-align: right; padding-right: 10px;}
+.myRow {padding-bottom: 20px;}
+.mySubmit {margin: 10px;}
+.clearright {clear: right;}

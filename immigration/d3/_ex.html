@@ -1,0 +1,221 @@
+
+<!DOCTYPE html><meta charset="utf-8">
+<html>
+<head>
+ 
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<!--calling data.csv for x, y, z
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+-->
+
+
+ 
+<script>
+//  1  parseFloat
+	var myNumber = 5;
+	var myString = "5";
+	var myParsedNumber = parseFloat(myString);
+   	console.log(myNumber + myParsedNumber);
+</script>
+
+<script> 
+ // 2 function
+function squaree(x) {
+return x * x;
+}
+      console.log(squaree(5));
+</script>
+ 
+<script>  
+    var myArray = [       { x: 10, y:100},
+       { x: 120, y:120},
+       { x: 180, y:180},
+       { x: 150, y:41},
+];
+
+myArray.forEach(function (d) { 
+	console.log(d.x + ", " + d.y);
+});
+</script>
+ 
+<script>
+// 4  csv import
+d3.csv("data.csv", function (myArray) {
+myArray.forEach(function (d) {
+ console.log(d.x + ", " + d.y + ", " + d.z); 
+	});
+	});
+</script>
+    
+
+<script>
+// 5  csv import , parse , then add
+d3.csv("data.csv", type, function (myArray) {
+myArray.forEach(function (d) {
+ console.log(d.x  + d.y + d.z); 
+	});
+	});
+function type(d) {
+        d.x = parseFloat(d.x);
+        d.y = +d.y;
+        d.z = +d.z;
+        return d;
+}
+</script>
+    
+<script>
+// 6 scale.linear and scale.ordinal
+var scalelinear = d3.scale.linear();
+        scalelinear.domain([0,1]);  // data space
+        scalelinear.range([0,100]); // Pixel space
+ console.log(scalelinear(0)); // printz 0
+ console.log(scalelinear(0.5)); // printz 50
+console.log(scalelinear(1)); // printz 100
+ 	//	console.log(scale.range()); // getter function, it returns the array
+
+  
+var scaleordinal = d3.scale.ordinal()
+        .domain(["A", "B", "C"])
+        .range(["apple", "banana", "coconut"]);    
+ console.log(scaleordinal("A")); // printz  apple
+ 	console.log(scaleordinal("B")); // printz  banana
+ 	console.log(scaleordinal("C")); // printz  coconut
+var scaleordinal2 = d3.scale.ordinal()
+        .domain(["A", "B", "C"])
+        .rangePoints([70,100]);    
+ console.log(scaleordinal2("A")); // printz  apple
+ console.log(scaleordinal2("B")); // printz  banana
+ console.log(scaleordinal2("C")); // printz  coconut
+</script>
+ 
+<svg width="250" height="250"> 
+    // 7 svg
+<rect x="50" y="50" width="20" height="20"></rect>  // rect #1
+  
+<script>
+    // 8 svg rect #2
+var svg = d3.select("body").append("svg");  
+    svg.attr("width", 250);
+    svg.attr("height", 250);
+    
+var rect = svg.append("rect");
+    rect.attr("x", 50);
+    rect.attr("y", 50);
+    rect.attr("width", 20);
+    rect.attr("height", 20);  
+</script>
+
+<script>
+        // 9 Binding data to svg rect #2
+var data = [1, 2, 3, 4, 5];
+
+var scale = d3.scale.linear()
+.domain([1, 5]) //data
+.range([0, 200]); // pixels
+
+var svg = d3.select("body").append("svg")
+.attr("width", 250)
+.attr("height", 250);
+
+svg.selectAll("rect")
+    .data(data)
+    .enter().append("rect")
+    .attr("x", function (d){ return scale(d); })
+    .attr("y", 50)
+    .attr("width", 20)
+    .attr("height", 20);
+</script>
+    
+<script>
+    // 10 Coloring data
+var scale = d3.scale.linear()
+.domain([1, 5]) //data
+.range([0, 200]); // pixels
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 250)
+    .attr("height", 250);
+
+    function render(data, color){
+var rects = svg.selectAll("rect").data(data);
+rects.enter().append("rect")
+    .attr("x", scale)
+    .attr("y", 50)
+    .attr("width", 20)
+    .attr("height", 20)
+    .attr("fill", color);        
+}
+    render([1,2,3], "red");
+    render([1,2,3,4,5], "blue");
+</script>
+    
+<script>
+    // 11 Update continuous
+var scale = d3.scale.linear()
+.domain([1, 5]) //data
+.range([0, 200]); // pixels
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 250)
+    .attr("height", 250);
+
+  function render(data, color){
+// Bind data
+var rects = svg.selectAll("rect").data(data);
+// Enter create
+rects.enter().append("rect")
+    .attr("y", 50)
+    .attr("width", 20)
+    .attr("height", 20)
+// Update 
+rects
+    .attr("x", scale)
+    .attr("fill", color);        
+}
+   render([1,2,3], "red");
+   render([1,2,3,4,5], "blue");
+  render([1,2], "green");
+</script>
+<script>
+    // 12 Update & Exit
+var scale = d3.scale.linear()
+.domain([1, 5]) //data
+.range([0, 200]); // pixels
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 250)
+    .attr("height", 250);
+
+  function render(data, color){
+// Bind data
+var rects = svg.selectAll("rect").data(data);
+// Enter create
+rects.enter().append("rect")
+    .attr("y", 50)
+    .attr("width", 20)
+    .attr("height", 20)
+// Update 
+rects
+    .attr("x", scale)
+    .attr("fill", color);        
+// Exit 
+rects.exit().remove();
+}
+    setTimeout( function () {    render([1,2,3], "red");  }, 500);
+    setTimeout( function () {    render([1,4,5], "silver");  }, 6000);
+    setTimeout( function () {    render([1,2,3], "red");  }, 700);
+    setTimeout( function () {    render([1,2,3,4,5], "blue");  }, 1000);
+    setTimeout( function () {    render([1,2,4,5], "purple");  }, 1500);
+    setTimeout( function () {    render([1,2,3], "silver");  }, 2000);
+    setTimeout( function () {    render([1,2,3], "red");  }, 2500);
+    setTimeout( function () {    render([1,2,3,4,5], "blue");  }, 3000);
+</script>
+ 
+
+ 
+</head>
+<body>
+</body>
+</html>
