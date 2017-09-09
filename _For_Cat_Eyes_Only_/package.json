@@ -1,0 +1,11 @@
+{
+  "name": "forcateyesonly",
+  "version": "1.0.0",
+  "description": "for cat eyes only fiction cats fashion technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thomas milton maestas",
+  "license": "ISC"
+}
