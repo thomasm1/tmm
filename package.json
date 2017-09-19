@@ -36,6 +36,7 @@
     "gulp-uglify": "^1.5.4",
     "gulp-wrapper": "^1.0.0",
     "jshint": "^2.9.5",
+<<<<<<< HEAD
     "tether": "^1.4.0"
   },
   "directories": {
@@ -75,4 +76,9 @@
     "url": "https://github.com/thomasm1/tmm/issues"
   },
   "homepage": "https://github.com/thomasm1/tmm#readme"
+=======
+    "sass-loader": "^6.0.6",
+    "tether": "^1.4.0"
+  }
+>>>>>>> 8eb7b260879cfd3a75e04014a9a85e7010bfcf88
 }
