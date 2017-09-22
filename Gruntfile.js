@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     // Task configuration.
     clean: {
       dist: 'dist',
-      docs: 'docs/dist'
+      docs: 'docs/app'
     },
 
     // JS build configuration
@@ -116,7 +116,7 @@ module.exports = function (grunt) {
           'js/src/tooltip.js',
           'js/src/popover.js'
         ],
-        dest: 'dist/js/<%= pkg.name %>.js'
+        dest: 'app/js/<%= pkg.name %>.js'
       }
     },
 
@@ -131,11 +131,11 @@ module.exports = function (grunt) {
     copy: {
       docs: {
         expand: true,
-        cwd: 'dist/',
+        cwd: 'app/',
         src: [
           '**/*'
         ],
-        dest: 'docs/dist/'
+        dest: 'docs/app/'
       }
     },
 
@@ -189,11 +189,11 @@ module.exports = function (grunt) {
       },
       sass: {
         files: 'scss/**/*.scss',
-        tasks: ['dist-css', 'docs']
+        tasks: ['app-css', 'docs']
       },
       docs: {
         files: 'docs/assets/scss/**/*.scss',
-        tasks: ['dist-css', 'docs']
+        tasks: ['app-css', 'docs']
       }
     },
 
@@ -264,7 +264,7 @@ module.exports = function (grunt) {
     compress: {
       main: {
         options: {
-          archive: 'bootstrap-<%= pkg.version %>-dist.zip',
+          archive: 'bootstrap-<%= pkg.version %>-app.zip',
           mode: 'zip',
           level: 9,
           pretty: true
@@ -272,9 +272,9 @@ module.exports = function (grunt) {
         files: [
           {
             expand: true,
-            cwd: 'dist/',
+            cwd: 'app/',
             src: ['**'],
-            dest: 'bootstrap-<%= pkg.version %>-dist'
+            dest: 'bootstrap-<%= pkg.version %>-app'
           }
         ]
       }
@@ -303,7 +303,7 @@ module.exports = function (grunt) {
   if (runSubset('core') &&
     // Skip core tests if this is a Savage build
     process.env.TRAVIS_REPO_SLUG !== 'twbs-savage/bootstrap') {
-    testSubtasks = testSubtasks.concat(['dist-css', 'dist-js', 'test-scss', 'qunit', 'docs'])
+    testSubtasks = testSubtasks.concat(['app-css', 'app-js', 'test-scss', 'qunit', 'docs'])
   }
   // Skip HTML validation if running a different subset of the test suite
   if (runSubset('validate-html') &&
@@ -326,20 +326,20 @@ module.exports = function (grunt) {
   grunt.registerTask('test', testSubtasks)
 
   // JS distribution task.
-  grunt.registerTask('dist-js', ['babel:dev', 'concat', 'babel:dist', 'stamp', 'exec:uglify'])
+  grunt.registerTask('app-js', ['babel:dev', 'concat', 'babel:app', 'stamp', 'exec:uglify'])
 
   grunt.registerTask('test-scss', ['exec:scss-lint'])
 
   // CSS distribution task.
   grunt.registerTask('sass-compile', ['exec:sass', 'exec:sass-docs'])
 
-  grunt.registerTask('dist-css', ['sass-compile', 'exec:postcss', 'exec:clean-css', 'exec:clean-css-docs'])
+  grunt.registerTask('app-css', ['sass-compile', 'exec:postcss', 'exec:clean-css', 'exec:clean-css-docs'])
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js'])
+  grunt.registerTask('dist', ['clean:app', 'app-css', 'app-js'])
 
   // Default task.
-  grunt.registerTask('default', ['clean:dist', 'test'])
+  grunt.registerTask('default', ['clean:app', 'test'])
 
   // Docs task.
   grunt.registerTask('docs-css', ['exec:clean-css-docs', 'exec:postcss-docs'])

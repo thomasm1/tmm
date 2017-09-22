@@ -13,7 +13,7 @@ Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.0');
   api.use('jquery', 'client');
   api.addFiles([
-    'dist/css/bootstrap.css',
-    'dist/js/bootstrap.js'
+    'app/css/bootstrap.css',
+    'app/js/bootstrap.js'
   ], 'client');
 });

@@ -17,7 +17,7 @@ var wrapper      = require('gulp-wrapper')
 var Paths = {
   HERE                 : './',
   DIST                 : 'dist',
-  DIST_TOOLKIT_JS      : 'dist/toolkit.js',
+  DIST_TOOLKIT_JS      : 'app/toolkit.js',
   SCSS_TOOLKIT_SOURCES : './scss/toolkit*',
   SCSS                 : './scss/**/**',
   JS                   : [

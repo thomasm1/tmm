@@ -37,7 +37,7 @@ slack:            https://bootstrap-slack.herokuapp.com
 
 download:
   source:         https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.6.zip
-  dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha.6/bootstrap-4.0.0-alpha.6-dist.zip
+  dist:           https://github.com/twbs/bootstrap/releases/download/v4.0.0-alpha.6/bootstrap-4.0.0-alpha.6-app.zip
 
 blog:             https://blog.getbootstrap.com
 expo:             https://expo.getbootstrap.com

@@ -9,7 +9,7 @@
 // -top-level function-      !css/style.css
 // gulp.task -define tasks       css/*.css
 gulp.src - point to files to use  *.+(js|css)
-gulp.dist - points to folder to output 
+gulp.dist - points to folder to output
 gulp.watch - watch files and folders
 */
 // message log
@@ -29,12 +29,12 @@ gulp.task('copyJS', function(){
         .pipe(plumber())
         .pipe(rename({suffix:'.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('app/js'));
         console.log('JS worked!');
 });
 
 // COMPASS / SASS ////////////////////////////////////
-//  
+//
 gulp.task('compass', function() {
     gulp.src('sass/*.scss')
         .pipe(plumber())
@@ -45,30 +45,30 @@ gulp.task('compass', function() {
             require: ['susy']
         }))
         .pipe(autoprefixer('last 2 versions'))
-        .pipe(gulp.dest('dist/scss'))
+        .pipe(gulp.dest('app/scss'))
             .pipe(reload({stream:true}));
 });
 // gulp.task('copyCSS', function(){
   //  gulp.src('css/*.css')
-    //    .pipe(gulp.dest('dist/css'));
-// }); 
+    //    .pipe(gulp.dest('app/css'));
+// });
 
 // HTMLl ////////////////////////////////////
-// 
+//
 gulp.task('html', function() {
         gulp.src('*.html');
 });
 // BROWSERSYNC ////////////////////////////////////
-// 
+//
 gulp.task('browser-sync', function() {
         browserSync({
             server:{
             baseDir: "./"
         }
     });
-}); 
+});
 // WATCH ////////////////////////////////////
-// 
+//
 gulp.task('watch', function(){
     gulp.watch('js/*.js', ['copyJS']);
     gulp.watch('scss/**/*.scss', ['compass']);
@@ -77,6 +77,6 @@ gulp.task('watch', function(){
 
 // DEFAULT ////////////////////////////////////
 // all files  ['copyCSS', 'copyJS', 'copyHTML']
-gulp.task('default', 
+gulp.task('default',
     ['copyJS', 'compass', 'copyHTML', 'html', 'message']
-); 
+);
