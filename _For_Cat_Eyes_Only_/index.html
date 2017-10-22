@@ -1,19 +1,15 @@
-
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>_For_Cat_Eyes_Only_</title>
-
-
+    <title>_For_Cat_Eyes_Only_</title> 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> 
+<script src="js/bubble_this.js"></script>  
+<script src="js/bubble.js"></script> 
+<script src="https://d3js.org/d3.v4.min.js"></script> 
 <link href="https://fonts.googleapis.com/css?family=Arimo|Merriweather|Poppins" rel="stylesheet">
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
@@ -34,422 +30,65 @@
         ga('send', 'pageview');
     </script>
     <!-- calcule script-->
-    <script type="text/javascript">
-        /* <![CDATA[ */
-        var inputString = "";
-
+    <script type="text/javascript"> 
+        var inputString = ""; 
         function updateString(value) {
             inputString += value;
-            document.forms[0].input.value = inputString;
-
-        }
-
-        function newCSStm() {
-
-        }
-        /* ]]> */
-    </script>
-
-    <style type="text/css">
-        body {
-            text-align: justify;
-            padding-left: 25%;
-            padding-right: 25%;
-            padding-top: 15px;
-            margin-bottom: 25px;
-            background-color: #ff8707;
-            background-image: url("../assets/img/TMcaliforniaCruisingJungleSunday.jpg");
-            opacity: .8;
-            font-size: 1.2em;
-            color: blue;
-        }
-
-        h6,
-        h5,
-        h4,
-        h3,
-        h2,
-        h1 {
-            color: blue;
-            opacity: .7;
-        }
-        .excerpts {
-            line-height:1.5em;
-            color:black;
-            opacity:.9;
-        }
-        #head p strong {
-            font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana, sans-serif;
-        }
-
-        #head p strong {
-            font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
-        }
-
-        #head p strong {
-            font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black, sans-serif;
-        }
-
-        #head p strong {
-            font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
-        }
-
-        #tmm_bck {
-            float: left;
-            padding: 10px;
-            margin: 10px;
-            color: blue;
-            text-decoration: none;
-            background-color: #ff8707;
-            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
-        }
-
-        #tmm_bck:hover {
-            font-weight: 600;
-            background-color: solid 1px orange;
-            transition: margin 0.3s;
-            /* Dynamic Drive Socia Media */
-
-div.slideouticons{ /* main container for slide out icons */
-    position: relative; /* change position to fixed or absolute if desired */
-	-webkit-perspective: 1000px;
-	perspective: 1000px;
-	z-index: 1000;
-
-}
-
-div.slideouticons input{
-	display: none;
-}
-
-div.slideouticons label.mainlabel{ /* menu anchor icon style */
-	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	cursor: pointer;
-	font-size: 24px; /* font size, pertains to icon fonts specifically */
-	width: 50px; /* width of anchor icon */
-	height: 50px; /* height of anchor icon */
-	text-align: center;
-	color: white;
-	background: #80C5EC;
-	border-radius: 50%;
-	outline: none;
-	z-index: 100000;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-
-div.slideouticons div.iconswrapper{ /* DIV that flips over to reveal the hidden icons */
-	position: absolute;
-	margin: 0;
-	top: 60px; /* vertical offset of icons wrapper from the top of main container */
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transition-delay: 0.5s;
-	transition-delay: 0.5s;
-}
-
-
-div.slideouticons div.iconswrapper ul{
-	position: relative;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	z-index: -1;
-}
-
-div.slideouticons div.iconswrapper ul li{
-	margin-bottom: 10px;
-	position: relative;
-	opacity: 0;
-	width: 50px; /* width of social icons */
-	height: 50px; /* height of social icons */
-	-webkit-transform: translateY(-100%) rotate(0);
-	transform: translateY(-100%) rotate(0);
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-
-div.slideouticons div.iconswrapper ul li a{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	color: white;
-	text-decoration: none;
-	text-align: center;
-	font-size: 24px; /* font size, pertains to icon fonts specifically */
-	width: 100%;
-	height: 100%;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	text-align: center;
-	background: #80C5EC; /* background color of icons */
-	text-decoration: none;
-	border-radius: 50%;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-
-div.slideouticons div.iconswrapper ul li a:hover{
-	background: #515151; /* background color of icons on hover */
-	color: white;
-}
-
-div.slideouticons input:checked ~ label.mainlabel{
-	background: navy; /* background color of toggler icon when activated */
-}
-
-div.slideouticons input:checked ~ div.iconswrapper{ /* flip icons wrapper to reveal icons when activated */
-	-webkit-transform: rotateY(0);
-	transform: rotateY(0);
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
-
-div.slideouticons input:checked ~ div.iconswrapper ul li{ /* rotate and shift icons into view when activated */
-	opacity: 1;
-	-webkit-transform: translateY(0) rotate(360deg);
-	transform: translateY(0) rotate(360deg);
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-div.slideouticons input:checked ~ div.iconswrapper ul li:nth-of-type(1){
-	-webkit-transition-delay: 0;
-	transition-delay: 0;
-	z-index: 4;
-}
-
-div.slideouticons input:checked ~ div.iconswrapper ul li:nth-of-type(2){
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s; /* increment delay by 0.3s for each icon */
-	z-index: 3; /* decrement z-index by 1 for each icon */
-}
-
-div.slideouticons input:checked ~ div.iconswrapper ul li:nth-of-type(3){
-	-webkit-transition-delay: .6s;
-	transition-delay: .6s;
-	z-index: 2;
-}
-
-div.slideouticons input:checked ~ div.iconswrapper ul li:nth-of-type(4){
-	-webkit-transition-delay: .9s;
-	transition-delay: .9s;
-	z-index: 1;
-}
-
-
-/* ########## Horizontal Version CSS ########## */
-
-div.slideouticons.horizontal div.iconswrapper{
-	top: 0;
-	left: 60px; /* horizontal offset of icons wrapper from the left of main container */
-}
-
-
-div.slideouticons.horizontal div.iconswrapper ul li{
-	display: inline;
-	float: left;
-	margin-bottom: 0;
-	margin-right: 10px;
-	-webkit-transform: translateX(-100%) rotate(0);
-	transform: translateX(-100%) rotate(0);
-}
-
-
-div.slideouticons.horizontal input:checked ~ div.iconswrapper ul li{
-	-webkit-transform: translateX(0) rotate(360deg);
-	transform: translateX(0) rotate(360deg);
-}
-        }
-    </style>
-    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-    <script>
-        var __adobewebfontsappname__ = "dreamweaver"
-    </script>
-    <script src="http://use.edgefonts.net/annie-use-your-telescope:n4:default;architects-daughter:n4:default;cabin-sketch:n4:default;glass-antiqua:n4:default.js" type="text/javascript"></script>
-</head>
-
-<body style="">
-<!--
- <div style="position:relative;left:0px;z-index:4;" class="slideouticons horizontal">
-    <input type="checkbox" id="togglebox" />
-	<label for="togglebox" class="mainlabel fa fa-share-alt"></label>
-	<div class="iconswrapper">
-	<ul>
-	<li><a href="https://twitter.com/ThomasMaestas" target="_blank" class="fa fa-twitter" title="Twitter"></a></li>
-	<li><a href="https://facebook.com/thomas.maestas.16"  target="_blank" class="fa fa-facebook" title="Facebook"></a></li>
-	<li><a href="https://plus.google.com/+thomasmaestas2017"  target="_blank" class="fa fa-google-plus" title="Google Plus"></a></li>
-	<li><a href="https://www.instagram.com/thomasmaestas/" target="_blank" class="fa fa-instagram"></a></li>
-	</ul>
-	</div>
-</div>
--->
+            document.forms[0].input.value = inputString; 
+        } 
+    </script>    </head>
+ 
+<body> 
     <div style="margin:50px;float:right;">
         <h4 id="tmm_bck"><a style="text-decoration:none;" href="../index.html">back to TMM</a></h4>
     </div>
 
-    <header class="silver" id="head" style="color:blue;font-family:monospace;">
-
-
-
-        <div>
-            <script src="https://d3js.org/d3.v4.min.js"></script>
-            <script>
-                var n = 100, // number of layers
-                    m = 100, // number of samples per layer
-                    k = 10; // number of bumps per layer
-                var stack = d3.stack().keys(d3.range(n)).offset(d3.stackOffsetWiggle),
-                    layers0 = stack(d3.transpose(d3.range(n).map(function() {
-                        return bumps(m, k);
-                    }))),
-                    layers1 = stack(d3.transpose(d3.range(n).map(function() {
-                        return bumps(m, k);
-                    }))),
-                    layers = layers0.concat(layers1);
-
-                var svg = d3.select("svg"),
-                    width = +svg.attr("width"),
-                    height = +svg.attr("height");
-                var x = d3.scaleLinear()
-                    .domain([0, m - 1])
-                    .range([0, width]);
-                var y = d3.scaleLinear()
-                    .domain([d3.min(layers, stackMin), d3.max(layers, stackMax)])
-                    .range([height, 0]);
-                var z = d3.interpolateCool;
-
-                var area = d3.area()
-                    .x(function(d, i) {
-                        return x(i);
-                    })
-                    .y0(function(d) {
-                        return y(d[0]);
-                    })
-                    .y1(function(d) {
-                        return y(d[1]);
-                    });
-                svg.selectAll("path")
-                    .data(layers0)
-                    .enter().append("path")
-                    .attr("d", area)
-                    .attr("fill", function() {
-                        return z(Math.random());
-                    });
-
-                function stackMax(layer) {
-                    return d3.max(layer, function(d) {
-                        return d[1];
-                    });
-                }
-
-                function stackMin(layer) {
-                    return d3.min(layer, function(d) {
-                        return d[0];
-                    });
-                }
-
-                function transition() {
-                    var t;
-                    d3.selectAll("path")
-                        .data((t = layers1, layers1 = layers0, layers0 = t))
-                        .transition()
-                        .duration(4500)
-                        .attr("d", area);
-                }
-
-
-
-                // Inspired by Lee Byron’s test data generator.
-
-                function bumps(n, m) {
-                    var a = [],
-                        i;
-                    for (i = 0; i < n; ++i) a[i] = 0;
-                    for (i = 0; i < m; ++i) bump(a, n);
-                    return a;
-                }
-
-
-
-                function bump(a, n) {
-                    var x = 1 / (0.1 + Math.random()),
-                        y = 2 * Math.random() - 0.5,
-                        z = 10 / (0.1 + Math.random());
-                    for (var i = 0; i < n; i++) {
-                        var w = (i / n - y) * z;
-                        a[i] += x * Math.exp(-w * w);
-
-                    }
-
-                }
-            </script>
-
-
-        </div>
+    <header class="silver" id="head" style="color:blue;font-family:'courier new', courier, monospace;"> 
         <div style="float:left;background-color:#ff8707;padding:20px;">
             <h2>Fictional<br /> <span style="color:black;">Accounts</span></h2>
         </div>
-
-        <div class="links" style=" float:left; ">
-        <div style="margin-left:auto;margin-right:auto;line-height:1.5em;font-size:1.3rem;">
-           <p class="excerpts">Excerpts from:  </p><span style="color:orange;"><h2>Early Months of Win's Campaign</h2></span>
+         
+        <div class="links" >
+        <div style="float:left;margin-left:auto;margin-right:auto;line-height:1.5em;font-size:1.3rem;">
+           <p class="excerpts">Excerpts from:  </p><span style="color:orange;"><h2>&nbsp;Early Months of Win's Campaign</h2></span>
         <span class="excerpts" style="float:right;margin-right:30px;">by t. milton maestas</span></div>
-            <p style="margin:20px;padding:35px;text-align:justify;font-size:13;float:right;
- width:600px;
-color:black;background-color:#ff8707; opacity:.75;
-font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision for Peace and Mutual Prosperity</strong><br />
-                <br /><br /> How does one measure a Cat's inspiration to go outside and excercise? And, how does one evaluate the brawn of Tigers and Lions' depth or fragility of modeling effort? Here at TMM Cat Fashion and Technology Evaluators, our
+        </header>
+        
+        <p class="p"  ><strong>
+             TMM 
+             <br />Sharing: Cat/Human Vision for Peace and Mutual Prosperity </strong><br />
+                 <br /> How does one measure a Cat's inspiration to go outside and excercise? And, how does one evaluate the brawn of Tigers and Lions' depth or fragility of modeling effort? Here at TMM Cat Fashion and Technology Evaluators, our
                 professional research efforts center on the methodology of Cat-Human Metrics and Sharing of Technology toward the Greater Cat-Cause: As always, the Halifax SPCA shall co-facilitate the 10% Pre- or Post-Tax Automatic Donation to Continental
                 SPCAs and Cat-Parks (Including Sphere-Racing and Tower-Climbing-Races for which 2014 marked the first race up the Dubai Towers, whose entire height served 9 cat racers, outfitted with velco-claws and the ten-lane Wall-Strip). We at TMM
                 also recognize there are no places of work or business, except in certain regions, and so each of our franchised locations cater to culturally-competent cat needs, likes, and most of all, delicacies of the wider Cat Kingdoms that are demanded
                 of our services. Each day we aim to prove TMM's eternal passion for serving the Cats and Cat-Households in the vastness of the NorthWestern Continent. </p>
 
-            <div class="blog" id="blogcat" style="background-color:#ff8707;text-align:justify;padding:10px;padding-left:5%;padding-right:5%;float:left;color:blue;">
+            <div class="blog" id="blogcat">
 
 
-                <p><br />
+               
                     <h2>Fiction Wlog by T. Milton Maestas</h2>
                     <h2>Content Below For Cat Eyes Only</h2><br />
                     <hr>
 
-                    <p>The tales I recount below are of the truest and most accurate nature, and they accord with the best and most comprehensive translation that I can provide. In my dialogues, I do maintain strict confidentiality on rare occasions, yet
+                    <p class = "p">The tales I recount below are of the truest and most accurate nature, and they accord with the best and most comprehensive translation that I can provide. In my dialogues, I do maintain strict confidentiality on rare occasions, yet
                         I have largely won the trust of the various cats that I encountered in my travels. Historical principle over fake-news prejudice applies in all my interviews and observations, and therefore there is to be no difference in perceived
                         credulity between the street cats and the domesticats. Truth wears blindfolds when listening. Therefore, the reader may believe with confidence in these historiographies from among the sundry cat kingdoms and regions. Also, certain
-                        documents and emails were freely provided and are revealed in the text, when relevant and permitted by the various sources. </p>
-                    <hr>
+                        documents and emails were freely provided and are revealed in the text, when relevant and permitted by the various sources. 
+                    </p><hr>
                     <h2><span style="color:black;" class="excerpts" >Excerpts from:</span><br /> <br /<i>Early Months of Win's Campaign</i>
                     </h2>
-
-
-
+                 
+               
+             
                     <hr>
                     <br />
                     <hr><br /><br />
                     <h2>Prologue</h2>
                     <br />
                  <br /><br />
-
-                 January 29   <br /><br />Toronto, Ontario<br /> <br /> I at first turned down two initial offers to participate as a translator on account of the commitment and the danger. Set in a cushy weekly piece that kept my free time at bay, I hardly had thoughts of
+                 <p class = "p">
+                 January 29   <br /><br/>Toronto, Ontario<br /> <br /> I at first turned down two initial offers to participate as a translator on account of the commitment and the danger. Set in a cushy weekly piece that kept my free time at bay, I hardly had thoughts of
                     flying to Toronto for 4 nights. But my calling as a Citizen of the World called me North. Let us say that I felt compelled because I learned the many dialects of Feline from an encounter in my youth. As a boy of perhaps a few years,
                     our Parisian family house-sat at the English neighbors, friends of Papan. Of course, they had a cat that aroused the surest of curiosities like my own. Needless to say, in a brief moment of time after pulling the cat's tail--just in
                     that very moment did we agree that he would spare but for one scar, a light, invisible "C" on my cheek. Only I knew and those I showed this light, yet lasting scar. The cat showed mercy to me in that moment and thus--in the briefest
@@ -484,6 +123,7 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <h2>Chapter I</h2>
                     <br />
                     <h2> On Young Cas</h2> <br />
+                    <p class="p"  >
                     <br />Contrary to most understanding, the Middle Region Canadian Cats (MRCC) hail from their territorial provenances in the West. <br />According to the revered geographer and cultural mystic, i.e., Casper the brother of Winslow (brother
                     by pedigree and caretakers, yet brothers hetero-litter--(As Winslow once coined it)--the same from brother Casper, Alliegiance intrinsic to the praiseworthy Feline Species, as custom would have it, derives from --1.(Very often at the
                     address of the human caretakers), and of course, "CW", or as some refer of the Higher Power of all Cats, The "Collective Whim". <br /><br />Casper, in the musings of his street days, first pawed the now fashionable custom of the cats:
@@ -507,9 +147,9 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <h3>More on Winslow's Accounting of Matters</h3>
                     <br /><br />
                     <br /><br /> February 23<br /><br /> Win bristles at the term lean ... <span class="excerpts">more[2.1]</span></a> <br />
-
-
-      <br />
+                   
+                  
+      <br /> 
                     <hr>
                     <br />
                     <hr><br />
@@ -517,6 +157,7 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <br />
                     <h2>Aux Chats Revue</h2> <br />
                     <br />
+                    <p class="p"  >
                     <br />March 09<br /><br />Seattle, Washington<br /><br /> Why Wait, Winslow? Right? Bat at your scratchlet and, Write! ...seered the Oracle of Halifax to W upon his arrival to the 9-week retreat. Near the time period that W's attorneys began
                     discovery proceedings, W decided upon the north for direction. Since the age of the passage of the Lacey Act, the Western seas' wildlife protection statutes have only emboldened the international traffickers, while all cats have suffered
                     needlessly at the hands of U.S. Fish and Wildlife Service--the Death Star of the seas for what concerns all continental cats. Certain fish of the most peculiar and extraordinary of tastes--suddenly and de jure outlawed--spawned a new
@@ -527,9 +168,9 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     This was so until the onset of "Operation Crush"--an effort led by, again, USFW drawing the ire of all Western cats, especially those most hurt by the operation. My concern is that no-one mentioned of any change or new action on fish
                     protectinos at the Tri-Partite Conference, involving cooperation of Northern Alliance Cat Kingdom, Middle-Region Canadian Cats, and the Southwestern Cat Syndicate. There are major problems that have my worst fears racing: If lawlessness
                     breaks out again between regions, the digital fashion trade, the electronics and technology sharing, legitimate trade--All at Risk! <br /><br />
-
-
-                    <h6>For Cat Eyes Only</h6><br />
+        
+                    </p>
+                    <h6>For Cat Eyes Only</h6><br /> 
                     <br />
                     <hr>
                     <br />
@@ -537,9 +178,10 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <h2>Chapter IV</h2>
                     <br />
                     <h2>Re: Re: Re: Re:Lost data</h2> <br />
-                    <br />
-                 March 3<br /><br />
-                   <br /> Re: Re: Re: Re:Lost data & Wrongful arrest of Winslow at Pike Place Fish Market Smuggling-Bust </p>
+                 
+                    <p class="p">
+                 March 3<br /><br /> 
+                   <br /> Re: Re: Re: Re:Lost data &amp; Wrongful arrest of Winslow at Pike Place Fish Market Smuggling-Bust </p>
                 They say the algorithm serves for the rocket-head, and the data provide the rocket fuel. Therefore, my valued cat investors, whiskered friends, and feline colleagues that have gathered here tonight: I tell you this evening that no worthwhile failed attempts
                 should be without the same grande spectactale as the successful liftoffs -- thus we can look with equanimity whether our rocket fuel is spilled in a static explosion of might and awe for the wider feline world to behold, even atop the
                 launchpad. Or, and more preferably as intended--along a burning trail that traces to the skies above! <br /><br /> The facts are that some data were "spilled" over the weekend, and indeed the fireball was bright. Furthermore,
@@ -555,9 +197,9 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                 by the morning. However, questions will linger as to the reason for his whereabouts at Pike Place, and how arrested? I too, share your concern and yet technical plans must nonetheless go forward on the WM-Nine-SRB-Coordinator! <br />
                  <span class="excerpts">more[4.1]</span>
                 Cat Eyes Only<br />
-
-              <br />
-
+                    </p>
+          
+                 
                 <br /><br />
                     <hr>
                     <br />
@@ -566,7 +208,8 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <br />
                     <h2>The Return of Win</h2> <br />
                     <br />
-
+                    
+        <p class="p"  >
                     <br />March [exact date unknown]<br />
                     <br /> It makes now, let's see, seven months since we had last heard from engineering. The surprise did not disappoint anyone -- as it happens, the lofty idea of assigning five separate algorithms, with each of the five parts of the
                     data analysis, implies that each can also be equally distributed via the memory consumption. Both of the good news: Two thumbs up. So, what we do is to program five separate tasks for every large "dump" of unstructured public or non-public
@@ -574,7 +217,7 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <br /><br /> Thus, for every four-processor pc out in the world: Taking the caspering cat to task, let's ask: Does it make more sense to assign four-hundred pounds to the one cat, and fifty pounds-each to the rest of the five standing
                     around? Or, does it better yet make more sense to specifically request that each of four, eight, or sixteen processors, that they distribute tasks likewise? If so, then: Off your seat, bat your paws, and     <span class="excerpts">... more[5.1]</span><br />
                     <br /><br />
-
+                  
                     <h6>For Cat Eyes Only</h6> <br />
 <br />
                     <hr>
@@ -584,10 +227,11 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <br />
                     <h2>fIGHTS, FIGHTS, and more FIGHTS!</h2><h3>... five months later</h3> <br />
                     <br />
-                    <br />March 09<br />
+                    <p class="p"  >
+                    <br />March 09<br /> 
 
-
-
+                
+                
                     <br /> <br /> fIGHTS, FIGHTS, and more FIGHTS! It seems every single decision must be reconsidered, and nuanced, and then rejected all in a day's work with Winslow. Reading his msg this morning, wow: I haven't spoken
                     to him in 5 months and not written with him in maybe three days and in that span of time has transpired: a) New debates of the spelling of MeeooW Inc. or Meeoow Inc. because Winslow can't stand for his name to be lower case. He is
                     incensed over the matter still. Winslow has no idea in the world how the English language works, but amazingly this cat has a way with irony and sarcasm and double entendres, so go figure. More perplexing is Winslow's absolute disbelief
@@ -605,101 +249,58 @@ font-family:monospace;float:left;"><strong>TMM<br />Sharing: Cat/Human Vision fo
                     <br />
                     <br />
                     <hr><br />
-                    <hr> <br /><br />
-                    <div style="text-align:justify;"><br />
-                    <h2>Chapter VII</h2>
-                        <h2>Katten-KiT Tech Fashion</h2><br /><br />
-                        <br />
-                       <br /><br /> TMM  Conventional Feline Accessories &amp; TMM Kitten-Cat-Bling-Bling:
-                        <ol style="color:purple">
-                            <li>Bling-Bling Claw-Covers</li>
-                            <li>Walkie-Talkie Ear-Pieces</li>
-                            <ul>
-                                <li>Suitable Bluetooth Distance (100 meters) for Announcing Dinner-Calls</li>
-                                <li>Permits between-cat communication; Cat-owners allowed some control, with "off-switch" and full control for Cats</li>
-                                <li>Cat User-Interface: Standard Cat-User-Interface:<br />yarn &amp; yarn-pad<br />Standard TMM Magnet-Collar (MC-1)</li>
-                            </ul>
-                            <li>'Gold-Rope' Leashes</li>
-                            <li>Ear Muffs</li>
-                            <li>Paw Mittens</li>
-                            <li>Collars</li>
-                            <li>Around-the-Yard Moccasin Paw-Protectors</li>
-                            <li>Tags</li>
-                        </ol>Kitten and Cat Accessories and/or <br />Kitten-Cat-Bling-Bling Designs: Designs for the Furriest and Most Exhuberant Cats and Kittens: <br />
-                        <ol style="color:purple;">
-                            <li>Designs for Outdoor & Social Gatherings</li><br />
+                    <hr> <br /><br /> 
+    <h2>Chapter VII</h2>  
+    <button id="tmm-button"> Add an Idea!!</button>  
+    <ul class="catlist" id="tmm-list">
+   <h4 id="tmm-headline">Katten-KiT Tech Fashion<br />TMM Cat-Kin Accessories &amp; TMM Kitten-Cat-Bling-Bling:</h4><br />      
+       
+<hr>                       
+             <br /> <li>Suitable Bluetooth Distance (100 meters) for Announcing Dinner-Calls</li>
+                     
+         
+    </ul >
+      <hr>
+      <ul class="catlist" >
+            <li>Bling-Bling Claw-Covers</li>
+                                <li>Walkie-Talkie Ear-Pieces  </li>
+            <li>'Gold-Rope' Leashes</li>
+            <li>Ear Muffs</li>
+            <li>Paw Mittens</li>
+            <li>Collars</li>
+            <li>Around-the-Yard Moccasin Paw-Protectors</li>
+            <li>Tags</li>
+            <h4 id="tmm-headline">Katten-K  <br />  Kitten-Cat-Bling-Bling Designs: Designs for the Furriest and Most Exhuberant Cats and Kittens:</h4>
 
-                            <li>Designs for Open Space/Exploring/Hiking and/or Cases of Uneven Terrain</li><br />
 
-                            <li>All Cat accesories >$40 enabled with optional switch-security feature alerting owner (up to 100 meters) if foreign cell-phone (or antenna signature) detected within (0-5 meters variable user-controlled)</li>
-                        </ol> <br /><br />
+            <li>Designs for Outdoor &amp; Social Gatherings</li><br />   <li>Permits between-cat communication; Cat-owners allowed some control, with "off-switch" and full control for Cats</li>
+            <br /><hr>                          <br /> <li>Cat User-Interface: Standard Cat-User-Interface:<br />yarn &amp; yarn-pad<br />Standard TMM Magnet-Collar (MC-1)</li>
+      
+            <li>Designs for Open Space/Exploring/Hiking and/or Cases of Uneven Terrain</li><br />
 
-                        <br /><strong>Et Cetera and Non-Conventional:</strong><br /> TMM Feline Leash Types and Collars:<br />Reinforced Designs for Untrained, Fat-Cat Pseudo-Capitalists Meddling in Education</i><br />
-                        <ol style="color:purple;">
-                            <li>
-                                The "leRoux"--Digital Leash App:<br /> Manufacturer:TMM (Prounounced, "TMSquared")<br /> Application Programming Interface:<br /> Android-Apple-Linux-Win
-                                <br /> Compatible.
-                                <br /> Marketing Tag-Line: Warning System for Self and Work-Colleagues of Physical and/or Digital Approach from Overbearing, Mean-Spirited Bosses
-                                <br />Requirements: GPS-enabled LRX software<br /> Collar-Chip:unknown
-                                <br /> TMM Special Feature Algorithm: Utilization of Social-Networking-Published Algorithm for alerting Workmates by proximity &amp; Colleague's respective Departmental Bosses, tracking more than one boss simultaneously.<br
-                                />Press Release for Beta version listed up to 4 bosses total, unlimited colleagues.<br />
-                                <br />[Reviewers' opinion-Upside/Downside: App's Social-Network feature malfunctions outside of Tayloristic, Hierarchical, Siloed Work Environments.]<br />Privacy Feature:<br />Two-way Encryption<br /><br />
-                                <strong>Colors Available:</strong> <br />Primary Colors Prohibited.<br /> Secondary Colors: Green/Purple<br /> Default Color:Black/White<br /><br /><br /> Purpose:
-                                <br /> Location Warning System & Protection from mean-spirited bosses"<br />
-                                <br /><br />_ &nbsp;&nbsp;&nbsp;&nbsp; Beta Release Date:  <span class="excerpts">more[7.1] ...</span>
-</li>
-                        </ol>
-                        </strong>
-                        <br /><br />
-                    </div>
-            </div>
-            <br /><br />
-                <a> </a>
-            </nav>
-
+            <li>All Cat accesories >$40 enabled with optional switch-security feature alerting owner (up to 100 meters) if foreign cell-phone (or antenna signature) detected within (0-5 meters variable user-controlled)</li>
+        </ul>  
+      
+    
+<script type="text/javascript" src="../dist/js/function.js"></script> 
+    </div> <!--end blog--> 
             </p>
 
  <br />
-
+               
 
 
 
             </span><br /><br />
         </div>
 
-        <div class="">
-            <div id="rightmenu">
+        <div class=""> 
 
-                <nav class="menu2 yellow" id="first2"><a>For 'Pause'</a></nav>
-
-                <nav class="menu2 yellow"><a>All the Cause to cover the Claws</a></nav>
-
-                <nav class="menu2 yellow" style="height:35px;"><a>Expectant Octuplet Mothers to Be.</a> </nav>
-
-                <nav class="menu2 yellow"><a> The Oracle from Halifax <br />Exclusive and Express-Shipped Compliments of the Oracle Herself</a></nav>
-
-                <nav class="menu2 yellow"><a>Useful Tag Covers-Reflectors-and all Magnets</a></nav>
-
-                <nav class="menu2 yellow"><a>Electronique Chat-Chat-Bling-Bling</a></nav>
-
-
-                <nav class="menu2 yellow" id="last" style="color:white;height:120px;">
-                    <span style="color:white;"><strong>Cat-currency Exchange Rates:</strong><br />Febrary 12<br />
-<li>Bitcoins</li>
-<li>NICK-NACK (Recognized by only SCS, NACK, and (human) Euros</li>
-<li>FancyFeast-Bars (ten-pound, canned packages</li>
-<li>Blue-Chips</li>
-<li>New Yarn</li>
-</span></nav>
- <br />
->>>>>>> ec3912c659aeed96979dd8b2b6490a2c843a0778
                                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <div style="background-color:#ff8707;;padding:0px;padding-left:60px;margin-top:90px;
-border-style:solid;border-size:1px;text-align:justify;
-border-color:white;width:300px;" id="form">
-                    <!-- FORM BEGIN -->
-                    <form style="width:240px;" id="innerform" action="">
-
+                <div style="background-color:#ff8707;padding-left:30px;margin-top:30px;
+border-style:solid;border:1px;text-align:justify;
+border-color:white;width:300px;" id="form"> 
+                    <form style="width:240px;" id="innerform" action=""> 
                         <h5> Based on the Continental Catemathematica Exchange(CCE), Both Paypal and Bitcoins are Accepted, beginning March 1st, 2016. [Recall that one emoticon :-) carries NULL value unless using logarithms, which is human-math not yet recognized
                             in most mathematica schema of either the street-cats or domestic. This shopping-cart DIY Calculator disables logarithms and exponents (ironic for TMSquare]. </h5>
                         <input type="button" name="seven" id="bu" value="7" onclick="updateString('7')" />
@@ -731,47 +332,14 @@ border-color:white;width:300px;" id="form">
 
                     </form>
                 </div>
-
-                <div id="center" style="text-align:justify;">
-                    <script type="text/javascript">
-                        with(navigator) {
-                                document.write("<p style=\"color:green;background-color:beige;\">For Cat Eyes Only <
-                                    br / > < small > Note on Font: < br / > Cat - friendly Centering < strong color = \"brown\"> < /
-                                    strong > < /p > ");
-                                    document.write("Operating platform: " + platform + "<br />");
-                                }
-                    </script>
-                </div>
-                <div id="center">
-                    <script type="text/javascript">
-                        with(navigator) {
-
-
-
-
-                        }
-                    </script>
-
-                </div>
-
-            </div>
-            <!--
-<div style="overflow:scroll;float:left;margin-bottom:10px;">&nbsp;
-<nav class="menu yellow" id="first" >
-<a  > </a></nav>
-<nav class="menu yellow"  ><a > </a></nav>
-<nav class="menu yellow"  ><a  > </a></nav>
-<nav class="menu yellow" ><a  > </a></nav>
-<nav class="menu yellow" ><a  > </a></nav>
-
-<nav class="menu yellow" ><a   target="_blank"></a></nav>
-<nav class="menu yellow"  id="last"></nav></div>
--->
+ 
+            </div> 
             <div class="pieds" style="color:white;"><br />
                 <p>This document was last viewed on:
-                    <script type="text/javascript">
+                    <script type="text/javascript"> 
                         document.write(document.lastModified);
                     </script>
+                  
                     <!-- #BeginDate format:En2  27-Apr-2019 <br />-->
                     &copy; 2017 | Licensed under ThomasMiltonM.net | All Rights Reserved. | |
                     <a style="color:yellow;text-decoration:none;" href="mailto:thomas76milton@gmail.com">thomas76milton@gmail.com</a> | Meow well by the Four Claws of Winslow's Signature |||| . For Cat Eyes Only: On Winslow and Casper<br/>
@@ -779,8 +347,4 @@ border-color:white;width:300px;" id="form">
 
             </div>
             <!--endcontainer-->
-</body>
-
-
-</html>
-
+</body></html>
