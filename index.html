@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,64 +27,61 @@
         ga('send', 'pageview');
     </script>
 
-  <script src="http://d3js.org/topojson.v1.min.js"></script>
-  <script src=",bower_components/d3/d3.js"></script>
-  <script src="gulp/tether-1.3.3/src/js/tether.js"></script>
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/tether/dist/js/tether.js"></script>
-    <script type="text/javascript">
-  /*      function draw(geo_data) {
-            "use strict";
-            var margin = 5,
-                width = 600 - margin,
-                height = 400 - margin;
-            d3.select(".map")
-                .attr('text-align', 'center')
-                .attr('margin', '0px');
-            d3.select("body").transition()
-                .duration(4000)
-                .delay(500)
-                .style("background-color", "#00d9f9");
+ <!-- calcule script--> 
+    <script type="text/javascript">  
+        var inputString = ""; 
+        function updateString(value) { 
+            inputString += value; 
+            document.forms[1].input.value = inputString; 
+        }
+  
+    </script>
 
-            var svg = d3.select(".map")
-                .append("svg")
-                .attr("width", width + margin)
-                .attr("height", height + margin)
-                .append('g')
-                .attr('class', 'map');
 
-            var projection = d3.geo.mercator()
-                .scale(100)
-                .translate([width / 2, height / 1.5]);
 
-            var path = d3.geo.path().projection(projection);
-            var map = svg.selectAll('path')
-                .data(geo_data.features)
-                .enter()
-                .append('path')
-                .attr('d', path)
-                .style('fill', 'rgb(0, 176, 236)')
-                .style('stroke', 'white')
-                .style('stroke-width', 0.5);
-        };
-
-        d3.json("data/world_countries.json", draw);
-        */
-    </script>  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-  <!-- <script src="../../bower_components/foundation/js/foundation.js"></script>
-   <script src="../../bower_components/modernizr/modernizr.js"></script>
+  <!-- <script src="bower_components/foundation/js/foundation.js"></script>
+       <script src="bower_components/modernizr/modernizr.js"></script>
   -->
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script src="bower_components/d3/d3.min.js"></script>
-  <script src="gulp/tether-1.3.3/src/js/tether.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/tether/dist/js/tether.js"></script>
   <script src="app/js/toolkit.min.js"></script>
   <script src="app/js/application.min.js"></script>
 
+<style type="text/css">
+  
+
+div.card.visible-md-block.visible-lg-block.mb-4 {
+padding:0px;margin:0px;
+}
+div.row div.col-lg-3 div.card.visible-md-block.visible-lg-block {
+padding:0px;margin:0px;
+}
+html body.with-top-navbar div.container.pt-4 div.row div.col-lg-3 
+div.card.visible-md-block.visible-lg-block div.card-block  {
+padding:0px;margin:0px;
+}
+html body.with-top-navbar div.container.pt-4 
+div.col-lg-6 ul#center-col.list-group.media-list.media-list-stream.mb-4 
+li.map2.media.list-group-item.p-4 {
+padding:0px;margin:0px;
+}
+html body.with-top-navbar div.container.pt-4 div.col-lg-6 
+ul#center-col.list-group.media-list.media-list-stream.mb-4 
+li.map2.media.list-group-item.p-4{
+padding:0px;margin:0px;
+} 
+html body.with-top-navbar div.container.pt-4 div.col-lg-6 ul#center-col.list-group.media-list.media-list-stream.mb-4 li#map2.map2.media.list-group-item.p-4.map
+{display:none;}
+
+#window {
+color:steelblue;
+}
+</style>
   <style type="text/css">
     body {
-opacity:.8;
+opacity:.85;
       background-image:url("src/img/bluechipTile.jpg");
     }
     .map {
@@ -96,6 +94,7 @@ opacity:.8;
       stroke:white;
       stroke-width:.5;
       z-index:4;
+      background-repeat:no-repeat;
         }
     .map.card-header {
       margin:0px;
@@ -129,11 +128,15 @@ opacity:.8;
       z-index:1;
     }
     .selected {
-      fill:yellow;
-      border:solid, yellow, 1px;
+      fill:green;
+      border:1px, solid, green ;
+      stroke:green;
     }
   </style>
-  <script type="text/javascript">
+
+
+
+    <script type="text/javascript">
     function draw(geo_data) {
       "use strict";
 
@@ -155,76 +158,63 @@ opacity:.8;
       var path = d3.geo.path().projection(projection);
 
       var map = svg.selectAll('path')
-        .data(geo_data.features)
-        .enter()
+        .data(geo_data.features);
+        
+        map.enter()
         .append('path')
         .attr('d', path)
         .style('fill', 'rgb(9,157,217)')
-        .style('stroke-width', 0.3);
+        .style('stroke-width', 0.3)
+        map.exit();
     };
 
   </script>
-
-
-<script type="text/javascript">
-  var inputString = "";
-
-  function updateString(value) {
-    inputString += value;
-    document.forms[1].input.value = inputString;
-  }
-</script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 <link href="app/css/bootstrap.css" rel="stylesheet">
 <link href="app/css/toolkit.css" rel="stylesheet">
 <link href="app/css/application.css" rel="stylesheet">
 
+
 </head>
 <body class="with-top-navbar">
 
-    /* Add the Countries */
+
     <script type="text/javascript">
-    svg.selectAll(".country")
-      .data(geo_data.features)
-      .enter().append("path")
-      .attr("class", "country")
-      .attr("d", path)
-      .on('mouseover', function(d) {
-        d3.select(this).classed("selected", true)
-      })
-      .on('mouseout', function(d) {
-        d3.select(this).classed("selected", false)
-      });
- /* Add the Cities
-
-    svg.selectAll(".city-circle")
-      .data(capitals)
-      .enter().append("circle")
-      .attr("r", 2)
-      .attr("cx", function(d) {
-        var coords = projection([d.long, d.lat])
-
-        return 10;
-      })
-      .attr("cy", function(d) {
-        return 10;
-      })
-
-      }
+      /* Add the Countries
+   svg.selectAll(".country")
+     .data(geo_data.features.type)
+     .enter().append("path")
+     .attr("class", "country")
+     .attr("d", path)
+     .on('mouseover', function(d.type) {
+       d3.select(this).classed("selected", true)
+     })
+     .on('mouseout', function(d) {
+       d3.select(this).classed("selected", false)
+     });
 */
+    /* Add the Cities
+       svg.selectAll(".city-circle")
+         .data(capitals)
+         .enter().append("circle")
+         .attr("r", 2)
+         .attr("cx", function(d) {
+           var coords = projection([d.long, d.lat])
+
+           return 10;
+         })
+         .attr("cy", function(d) {
+           return 10;
+         })
+
+         }
+   */
 
   </script>
   <script type="text/javascript">
     d3.json("data/world_countries.json", draw);
   </script>
-  <script type="text/javascript">
-        var inputString = "";
-
-        function updateString(value) {
-            inputString += value;
-            document.forms[1].input.value = inputString;
-        }
-    </script>
+ 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="app/sass/bootstrap.css" rel="stylesheet">
     <link href="css/toolkit.css" rel="stylesheet">
@@ -325,8 +315,7 @@ path {
                             <li><a href="docs/poli/edregression.htm">Education Data Analysis SPSS-25</a></li>
                             <li><a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime" target="_blank">Environment Data Analysis Tableau</a></li>
                             <li><a href="docs/d3/globe_update.html">Example of Data Visualization D3.js</a></li>
-                            <li><a href="tmTypescript" class="typescript_architecture">Javascript supersetting Example
-							Typescript </a></li>
+                            <li><a href="tmTypescript" class="typescript_architecture">Javascript supersetting Example							Typescript </a></li>
                             <li><a href="docs/coffeescript/coffeescript.html" target="_blank">CoffeeScript supersetting</a></li>
 
                          <li><a href="juilletApp/views" class="nodejs_express_angular4_nodejs">Example of MongoDB database using Express Stack: "TMjuillet"</a></li>
@@ -344,8 +333,7 @@ path {
 
 
                         <ul>
-                          <li style="z-index:100;"><a class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false"
-                                                      href="_For_Cat_Eyes_Only_/index.html">Excerpts From: <br />For Cat Eyes Only: <i>Early Months of Win's Campaign</i></a></li>
+                          <li  ><a   href="_For_Cat_Eyes_Only_">Excerpts From: <br />For Cat Eyes Only: <i>Early Months of Win's Campaign</i></a></li>
 
                         </ul>
                     </li>
@@ -498,6 +486,13 @@ path {
                                             <li><a href="https://pypi.python.org/pypi" target="_blank">Python Package Index</a></li>
                                             <li><a href="https://docs.python.org/2/library/index.html" target="_blank">Python Standard Library</a></li>
                                             <li><a href="https://pandas.pydata.org/pandas-docs/stable/" target="_blank">Pandas Data Analysis Toolkit</a></li>
+                                            <li><a href="https://seaborn.pydata.org/" target="_blank">Seaborn</a></li>
+                                        <li><a href="http://bokeh.pydata.org/en/latest/" target="_blank">Bokeh</a></li>
+                                        <li><a href="https://pypi.python.org/pypi/bqplot" target="_blank">BQplot</a></li>
+                                        <li><a href="https://pypi.python.org/pypi/ggpy/0.1.2" target="_blank">ggplot</a></li>
+                                        <li><a href="https://pypi.python.org/pypi/ggpy/0.1.2" target="_blank">ggpy</a></li>
+                                        <li><a href="https://altair-viz.github.io/" target="_blank">Altair<br />Declarative<br />
+                                        Visualization</a></li>
 
                                     </ul>
                                     </li>
@@ -787,11 +782,9 @@ path {
                         <h4 class="modal-title"></h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 
-<nav id="tmm">Bourdieu</nav>
+<nav id="tmm"> </nav>
 <nav id="breaking"></nav>
-<div class="tmm">Althusser</div><span id="mission">
-
-  core projects: TMangular4; TMjuillet:  Under Construction.
+<div class="tmm"> </div><span id="mission">  TMjuillet:  Under Construction.
   </span> </button>
                     </div>
 
@@ -899,20 +892,20 @@ path {
 
                         <ul class="card-menu">
                             <li class="card-menu-item">
-                                <a href="#userModal" class="text-inherit" data-toggle="modal">
+                                <a href="#" class="text-inherit" data-toggle="modal">
 
                                     <h6 class="my-0"> Data Analysis &nbsp; </h6>
                                 </a>
                             </li>
 
                             <li class="card-menu-item">
-                                <a href="#userModal" class="text-inherit" data-toggle="modal">
+                                <a href="#" class="text-inherit" data-toggle="modal">
 
                                     <h6 class="my-0">&nbsp; Web Development &nbsp; </h6>
                                 </a>
                             </li>
                             <li class="card-menu-item">
-                                <a href="#userModal" class="text-inherit" data-toggle="modal">
+                                <a href="#" class="text-inherit" data-toggle="modal">
 
                                     <h6 class="my-0">&nbsp; Sociology </h6>
                                 </a>
@@ -923,7 +916,7 @@ path {
 
                 <div class="card visible-md-block visible-lg-block mb-4">
                     <div class="card-block" id="about">
-                        <h6 class="mb-3">About Me</h6>
+                        <h5 class="mb-3"><br />About Me</h5>
 
                         <ul class="list-unstyled list-spaced left">
                             <li><span class="text-muted icon  mr-3"></span>Masters Sociology and Bachelors French History <a href="http://www.unm.edu" target="_blank"><span>University of New Mexico, Albuquerque</span></a>
@@ -952,7 +945,7 @@ path {
 
                 <div class="card visible-md-block visible-lg-block">
                     <div class="card-block">
-                        <h6 class="mb-3">Photos</h6>
+                        
                         <div data-grid="images" data-target-height="150">
                             <div>
                              </div>
@@ -975,35 +968,78 @@ path {
                                                                           <div>
                                                                               <img data-width="640" data-height="640" data-action="zoom" src="src/img/sunbeam.jpg">
                                                                           </div>
-                                              -->
+                                            -->
+   
+              <div style="background-color:lightsteelblue;
+      color:rgb(9,157,217);
+      
+      text-shadow: 10px 10px 5px #888888;
+
+border-style:solid;border-size:.5px;padding:5px;
+border-color:steelblue;color:steelblue;width:300px;" id="form">
+
+                    <!-- FORM BEGIN -->
+
+                    <form style="width:240px;" id="innerform" action="">
+ 
+                        <input type="button" name="seven" id="bu" value="7" onclick="updateString('7')" />
+
+                        <input type="button" name="eight" id="bu" value="8" onclick="updateString('8')" />
+
+                        <input type="button" name="nine" id="bu" value="9" onclick="updateString('9')" />
+
+                        <input type="button" name="div" id="bu" value="/" onclick="updateString('/')" /><br /><br />
+
+                        <input type="button" name="four" id="bu" value="4" onclick="updateString('4')" />
+
+                        <input type="button" name="five" id="bu" value="5" onclick="updateString('5')" />
+
+                        <input type="button" name="six" id="bu" value="6" onclick="updateString('6')" />
+
+                        <input type="button" name="mult" id="bu" value="*" onclick="updateString('*')" /><br /><br />
+
+                        <input type="button" name="one" id="bu" value="1" onclick="updateString('1')" />
+
+                        <input type="button" name="two" id="bu" value="2" onclick="updateString('2')" />
+
+                        <input type="button" name="three" id="bu" value="3" onclick="updateString('3')" />
+
+                        <input type="button" name="plus" id="bu" value="+" onclick="updateString('+')" /><br /><br />
+
+                        <input type="button" name="openparenth" id="bu" value="(" onclick="updateString('(')" />
+
+                        <input type="button" name="closeparenth" id="bu" value=")" onclick="updateString(')')" />
+
+                        <input type="button" name="power" id="bu" value="^" onclick="updateString('^')" />
+
+                        <input type="button" name="modulus" id="bu" value=":-)" onclick="updateString(':-\)')" /><br /><br />
+
+                        <input type="button" name="zero" id="bu" value="0" onclick="updateString('0')" />
+
+                        <input type="button" name="dot" id="bu" value="." onclick="updateString('.')" />
+
+                        <input type="button" name="clear" id="bu" value="C" onclick="document.forms[1].input.value='';inputString=''" />
+
+                        <input type="button" name="minus" id="bu" value="-" onclick="updateString('-')" /><br /><br />
+
+                        <input type="button" name="calc" id="bu" value="=" onclick="document.forms[1].input.value = eval(inputString); inputString=''" />
+
+                        <input type="button" name="mem" id="bu" value="M +" onclick="document.forms[1].storedValue.value = parseInt(document.forms[1].storedValue.value) + parseInt(document.forms[0].input.value)" />
+
+                        <input type="button" name="recall" id="bu" value="MRC" onclick="updateString(document.forms[1].storedValue.value)" />
+
+                        <input type="button" name="memClear" id="bu" value="MC" onclick="document.forms[1].storedValue.value=0" />
+
+                        <input type="hidden" name="storedValue" value="0" />
+
+                        <input style="color:blue;" id="window" type="text" name="input" />
 
 
 
-                                        <input type="button" name="four" class="bu" value="4" onclick="updateString('4')" />&nbsp;&nbsp;
-                                        <input type="button" name="five" class="bu" value="5" onclick="updateString('5')" />&nbsp;&nbsp;
-                                        <input type="button" name="six" class="bu" value="6" onclick="updateString('6')" />&nbsp;&nbsp;
-                                        <input type="button" name="mult" class="bu" value="*" onclick="updateString('*')" /><br />
-                                        <input type="button" name="one" class="bu" value="1" onclick="updateString('1')" />&nbsp;&nbsp;
-                                        <input type="button" name="two" class="bu" value="2" onclick="updateString('2')" />&nbsp;&nbsp;
-                                        <input type="button" name="three" class="bu" value="3" onclick="updateString('3')" />&nbsp;&nbsp;
-                                        <input type="button" name="plus" class="bu" value="+" onclick="updateString('+')" /><br />
-                                        <input type="button" name="openparenth" class="bu" value="(" onclick="updateString('(')" />&nbsp;&nbsp;
-                                        <input type="button" name="closeparenth" class="bu" value=")" onclick="updateString(')')" />&nbsp;&nbsp;
-                                        <input type="button" name="power" class="bu" value=";-)" onclick="updateString(';-)')" />&nbsp;&nbsp;
-                                        <input type="button" name="modulus" class="bu" value=":-)" onclick="updateString(':-\)')" /><br />
-                                        <input type="button" name="zero" class="bu" value="0" onclick="updateString('0')" />&nbsp;&nbsp;
-                                        <input type="button" name="dot" class="bu" value="." onclick="updateString('.')" />&nbsp;&nbsp;
-                                        <input type="button" name="clear" class="bu" value="C" onclick="document.forms[1].input.value='';inputString=''" />&nbsp;&nbsp;
-                                        <input type="button" name="minus" class="bu" value="-" onclick="updateString('-')" /><br />
-                                        <input style="color:white;background-color:blue" type="button" name="calc" class="bu" value="=" onclick="document.forms[1].input.value = eval(inputString); inputString=''" />&nbsp;&nbsp;
-                                        <input type="button" name="mem" class="bu prim" value="M +" onclick="document.forms[1].storedValue.value = parseInt(document.forms[1].storedValue.value) + parseInt(document.forms[1].input.value)" />&nbsp;&nbsp;
-                                        <input type="button" name="recall" class="bu prim" value="MRC" onclick="updateString(document.forms[1].storedValue.value)" />&nbsp;&nbsp;
-                                        <input type="button" name="memClear" class="bu prim" value="MC" onclick="document.forms[1].storedValue.value=0" />
-                                        <input type="hidden" name="storedValue" value="0" /><br /><br />
-                                        <input id="window" type="text" name="input" />
-                                    </p>
-                                </form>
-                                <!-- FORM END -->
+                    </form>
+
+                </div>   
+
                             </div>
 
                         </div>
@@ -1027,45 +1063,33 @@ path {
                             <div class="media-heading">
                                 <small class="float-right text-muted"> </small>
                             </div>
-                            <div class="media-body-inline-grid" data-grid="images">
+                            <div  style="display:hidden;" class="media-body-inline-grid" data-grid="images">
                                 <div class="gears"> </div>
 
-                                <div style="display: none">
-                                    <img data-action="zoom" data-width="640" data-height="640" src="app/img/TMMmoonscape.jpg">
-                                </div>
-
-                                <div style="display: none">
-                                  <div class="map"><h1>Juillet Model-View-Controller</h1></div>
+                                 
+                                <div  style="display:none;" >
+                                  <div  style="display:none;" class="map country"><h1>Juillet Model-View-Controller</h1></div>
                                   <script type="text/javascript">
                                     d3.json("data/world_countries.json", draw);
                                   </script>
 
                                 </div>
 
-                                <div style="display: none">
+                                <div  >
                                     <img data-action="zoom" data-width="1048" data-height="700" src="app/img/TMMmoonscape.jpg">
                                 </div>
                             </div>
 
-                            <ul class="media-list mb-2">
-                                <li class="media mb-3">
-                                    <img class="media-object d-flex align-self-start mr-3">
-                                    <div class="media-body one">
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <img class="media-object d-flex align-self-start mr-3">
-                                    <div class="media-body">
-                                        <strong>   : </strong>
-
-                                    </div>
-                                </li>
-                            </ul>
+                        
                         </div>
                     </li>
 
-                    <li class="map2 media list-group-item p-4">
+                    <li class="map2 media list-group-item p-4">  
+                        <script type="text/javascript">
+                        d3.json("data/world_countries.json", draw);
+                      </script>
                         <img class="media-object d-flex align-self-start mr-3">
+                       
                         <div class="media-body">
                             <div class="media-body-text">
 
@@ -1081,7 +1105,7 @@ path {
                         </div>
                     </li>
 
-                    <li class="map2 media list-group-item p-4">
+                    <li  style="display:none;" class="map2 media list-group-item p-4">
                         <img class="media-object d-flex align-self-start mr-3">
                         <div class="media-body">
                             <div class="media-heading three">
@@ -1094,7 +1118,7 @@ path {
 
                             <ul class="media-list">
                                 <li class="media">
-                                    <img class="media-object d-flex align-self-start mr-3">
+                                    <img  style="display:none;" class="media-object d-flex align-self-start mr-3">
                                     <div class="media-body">
 
                                     </div>
@@ -1105,12 +1129,12 @@ path {
                 </ul>
             </div>
             <div class="col-lg-3">
-                <div class="alert alert-warning alert-dismissible hidden-md-down" role="alert">
+                <div style="display:none;"  class="alert alert-warning alert-dismissible hidden-md-down" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">  </button>
-                    <a class="alert-link" href="profile/index.html"> About Me </a>
+                    <a class="alert-link" href="profile/index.html"><br /><br /><h3>About Me </h3></a>
                 </div>
 
-                <div class="card mb-4 hidden-md-down">
+                <div style="display:none;" class="card mb-4 hidden-md-down">
                     <div class="card-block">
                         <h6 class="mb-3"> </h6>
                         <div data-grid="images" data-target-height="150">
@@ -1120,8 +1144,8 @@ path {
                     </div>
                 </div>
 
-                <div class="card mb-4 hidden-md-down">
-                    <div class="card-block">
+                <div  style="display:none;" class="card mb-4 hidden-md-down">
+                    <div  style="display:none;" class="card-block">
 
                     </div>
 
@@ -1165,12 +1189,12 @@ path {
         </script>
     </div>
     <!-- end divContainer-->
-    <div class="card card-link-list">
+    <div>
 
-        <div class="card-block" id="footer">
-            <p>Powered by _T_M_M_ using: Gulp TaskRunner, Git Version Control, Bootstrap V4, D3js, and other OpenWare | Intellectual Property, Contents, Design, Structure by _T_M_M_ &nbsp;&nbsp; |
-                <a style="color:yellow;text-decoration:none;" href="mailto:thomas76milton@gmail.com">thomas76milton@gmail.com</a> |
-                <a href="php/email.php"> Contact Information </a>| All Rights Reserved &copy; 2017 </p>
+        <div  style="padding:30px;margin:0px;color:rgb(32, 8, 8);text-decoration:none;z-index:99;background-color:rgb(73, 21, 126)" class="card-block">
+            <p>Powered by _T_M_M_ using: Gulp TaskRunner, Git Version Control, Bootstrap V4, D3js, and other OpenWare <br />Intellectual Property, Contents, Design, Structure by _T_M_M_ &nbsp;&nbsp; |
+                <a style="color:lightyellow;z-index:99;text-decoration:none;" href="mailto:thomas76milton@gmail.com">thomas76milton@gmail.com</a> |
+                <a style="color:lightyellow;z-index:99;text-decoration:none;" href="php/email.php"> Contact </a>| All Rights Reserved &copy; 2017 </p>
         </div>
         <!-- end card card-link-list -->
     </div>
