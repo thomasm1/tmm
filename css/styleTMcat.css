@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 #head {
     font-size: 28px;
@@ -10,9 +11,9 @@
 	padding-bottom: 10px;
 	padding-left: 5px;
 	padding-top: 10px;
-	height: 550px;
+	height: 350px;
 	font-weight: 400;
-	font-family:  monospace;
+	font-family:  "courier new", courier, monospace;
 }
 
 #border3 {
@@ -20,34 +21,68 @@
  
 }
  
-body {
-    background-image: url('../assets/T30s.png');	
-}
+body { 
+		text-align: justify;
+		padding-left: 5%;
+		padding-right: 5%;  
+		background-color: #ff8707;
+		background-image: url("../assets/img/TMcaliforniaCruisingJungleSunday.jpg");
+		opacity: .9;
+		font-size: 1.0rem;
+		color: darkslateblue;
+	} 
+
 .blog {
     background-color:#ff8707;
     background-image:url('../assets/NACK40.png');
     color:black;
-    width:500px;
-    height:700px;
-    overflow:scroll;
- 
+    width:650px;
+    height:600px;
+    overflow:scroll; 
     padding:10px;
     margin-left:10px;
-    margin-top:120px;
-
- 
 }
-/*    border-top-style: inset;
-    border-left-style: inset;
-    border-right-style: inset;
-	border-bottom-style: inset;
-*/
-/* ~~ The footer ~~  background-color: #00FF00;  background-image: url(assets/GiftFooter.jpg);
-*/
+.p {
+	font-family:"courier new", courier, monospace;
+	color: darkslateblue;
+	font-size:1.0rem;
+	font-weight:bold;
+
+}
+#blogcat {
+background-color:#ff8707;
+text-align:justify;
+padding:10px;
+padding-left:5%;
+padding-right:5%;
+float:left;
+color:darkslateblue;
+}
+#tmm-button {
+	background-color:#ff8707;
+	font-family:sans-serif;
+
+	opacity:.9;
+font-size:1.1rem;
+	color:darkslateblue;
+	padding:5px;
+}
+.active {
+	background-color:yellow;
+}
+.catlist {
+	background-color:#ff8707;
+	font-family:"courier new", courier, monospace;
+	opacity:.9;
+	color:black;
+	padding:10px;
+	list-style-image: none;
+	list-style-type: none; 
+}  
 .pieds {
     position: relative;/* this gives IE6 hasLayout to properly clear */
     clear: both; /* this clear property forces the .container to understand where the columns end and contain them */ 
-	font-family: monospace;
+	font-family: "courier new", courier, monospace;
 	font-size: 11px;
 	color:silver; 
 	height: 200px;
@@ -80,7 +115,7 @@ body {
 	text-decoration: none;
 }
 #form { 
-	font-family: monospace;
+	font-family: "courier new", courier, monospace;
 	font-size: 14px;
 	width: 225px;	
 	float: left;
@@ -151,9 +186,18 @@ background-image: url('../assets/T30s.png');
 #head {
 	line-height: 0.7em;
 }
+.p {
+	margin:20px;padding:35px;text-align:justify;font-size:13;float:right;
+width:600px;
+   color:rgb(59, 50, 134);
+   background-color:#ff8707; 
+   opacity:.95;
+   font-family:"courier new", courier, monospace;
+   float:left;
+}
 .links {
 	background-image: url('../assets/img/T30.png'); 
-	font-family: monospace;
+	font-family: "courier new", courier, monospace;
 	font-size: 14px;
 	width: 665px;
 	float: right;
@@ -164,6 +208,8 @@ background-image: url('../assets/T30s.png');
 	border-color: silver;
 	font-style: normal;
 	color: white;
+
+	
 }
 .yellow {
 	background-image: url('../assets/tmm40.PNG')
@@ -190,7 +236,7 @@ background-image: url('../assets/T30s.png');
 	margin-right: auto;
 	list-style-type: none;
 	padding-left: 9px;
-	width: 225px;
+	width: 400px;
 	text-decoration: none;
 	height: 30px;
  
@@ -260,7 +306,7 @@ background-image: url('../assets/T30s.png');
 .menu2 a {
 	text-decoration: none;
 	color: white;
-	font-family: monospace;
+	font-family: "courier new", courier, monospace;
 	font-style: bold;
 	font-weight: 600;
 	font-size: 14px;
@@ -277,7 +323,7 @@ background-image: url('../assets/T30s.png');
 	width:300px;
 	float:right;
 	color:white;
-	font-family: monospace;
+	font-family: "courier new", courier, monospace;
 	font-size:small;
 }
 #containerP {
@@ -295,3 +341,45 @@ background-image: url('../assets/T30s.png');
 	border-style: outset;
 	border-color: #8E2A2C;
 }
+/* oct 21 2017 */
+ 
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+	color: darkslateblue;
+	opacity: .9;
+}
+.excerpts {
+	line-height:1.5em;
+	color:rgb(59, 50, 134);
+	opacity:.9;
+}
+#head p strong {
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana, sans-serif;
+}        
+#head p strong {
+	font-family: Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+}
+		#head p strong {
+	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial rgb(59, 50, 134), sans-serif;
+}
+		#head p strong {
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+} 
+#tmm_bck {
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	color: darkslateblue;
+	text-decoration: none;
+	background-color: #ff8707;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+} 
+#tmm_bck:hover {
+	font-weight: 600;
+	background-color: solid 1px orange;
+	transition: margin 0.3s;
+	/* Dynamic Drive Socia Media */}
