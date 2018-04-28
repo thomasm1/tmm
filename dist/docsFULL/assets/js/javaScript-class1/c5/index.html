@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project 5.5</title>
+<script>
+function setFormFocus() {
+	document.forms[0].fname.focus(); 
+}
+function confirmPassword() {
+	if (document.forms[0].password_confirm.value != document.forms[0].password.value) {
+	window.alert("you did not enter the same password!");
+	document.forms[0].password.focus();
+	}
+}
+function confirmReset() {
+	var resetForm = window.confirm("Are you usure you want to reset the form?");
+	if (resetForm == true)
+		return true;
+	return false;
+}
+function confirmSubmit() {
+var submitForm=window.confirm(
+"Are you sure you want to submit the form?");
+	if (submitForm == false)
+		return false;
+	if (document.forms[0].fname.value == "" || document.forms[0].fname.value == "enter first name") {
+		window.alert("You did not enter your first name.");
+		return false;
+	}
+	if (document.forms[0].lname.value == "" || document.forms[0].lname.value == "enter last name") {
+		window.alert("You did not enter your last name.");
+		return false;
+	}
+	if (document.forms[0].email.value == "" || document.forms[0].email.value == "enter e-mail") {
+		window.alert("You did not enter your e-mail.");
+		return false;
+	}
+	if (document.forms[0].password.value == "") {
+		window.alert("You did not enter password.");
+		return false;
+	}
+	if (document.forms[0].password_confirm.value == "") {
+		window.alert("You did not enter password confirmation.");
+		return false;
+	}
+	if (document.forms[0].security_choice.value == "") {
+		window.alert("You did not choose a security question.");
+		return false;
+	}
+	if (document.forms[0].security_answer.value == "" || document.forms[0].security_answer.value == "enter answer") {
+		window.alert("You did not enter your security answer.");
+		return false;
+	}	
+	
+	var mailSelected = false;
+	for (var i=0; i<2; ++i) {
+		   if (document.forms[0].mail[i].checked == true) {
+				 mailSelected = true;
+				 break;
+			}
+	}
+	if (mailSelected == false) {
+				window.alert("You must select a preference to receive or to not receive our mailing.");
+				return false;
+	}
+	var specialsSelected = false;
+	for (var i=0; i<3; ++i) {
+			if (document.forms[0].specials[i].checked == true) {
+				 specialsSelected = true;
+				 break;
+			}
+	}
+	if (specialsSelected == false) {
+		window.alert("You should at least choose one special offer.");
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body onload="setFormFocus();">
+<h1>Project 5.5</h1>
+
+<h3>Section One--Personal Info</h3>
+<form action="FormProcessor.html" method="get" 
+enctype="application/x-www-form-urlencoded"  onsubmit="return confirmSubmit();" onreset="return confirmReset();"> 
+First Name <input type="text" name="fname" 
+onkeydown="if (this.value == 'enter first name') this.value = '';" size="30" value="enter first name" 
+onclick="if (this.value == 'enter first name') this.value = '';"   /><br />
+Last Name <input type="text" name="lname" 
+onfocus="if (this.value == 'enter last name') this.value = '';"  value="enter last name" 
+ size="30"  /><br />
+E-mail <input type="text" name="email" 
+onfocus="if (this.value == 'enter e-mail') this.value = '';" size="30" value="enter e-mail" /><br />
+ 
+ 
+
+<h3>Section Two--Security Info</h3>
+ 
+Password 
+<input type="password" name="password" size="20"  /><br />
+Password Confirmation 
+<input type="password" name="password_confirm" size="20" onblur="confirmPassword();" /><br /><br />
+<p>Security Question List<br />
+<select name="security_choice"  >
+<option value="" >Choose your question</option>
+<option value="mom" >What is your mother's birth year?</option>
+<option value="mtbike" >What is your favorite mountain bike?</option>
+<option value="county" >In what county were you born?</option>
+</select><br /><br />
+Enter your Security Answer<br />
+<input type="text" name="security_answer" size="25" 
+onfocus="if (this.value == 'enter answer') this.value = '';" value="enter answer" /></p>
+ <br />
+
+<h3>Section Three--Preferences</h3>
+ <p>Mailings</p>
+<input type="radio" name="mail" value="mailyes" />I would like to receive mailings<br />
+<input type="radio" name="mail" value="mailno" />I would not like to receive mailings<br /><br />
+<p>Special Offers</p>
+<input type="checkbox" name="specials" value="restaurants">I want restaurant specials<br />
+<input type="checkbox" name="specials" value="arthouse">I want art house specials<br />
+<input type="checkbox" name="specials" value="film">I want film specials<br />
+<br />
+<input type="submit"  value="Submit" /> 
+<input type="reset" />
+</form>
+
+</body>
+</html>

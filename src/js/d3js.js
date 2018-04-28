@@ -12,7 +12,7 @@
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.queue()
-.defer(d3.json, "world_countries.topojson")
+.defer(d3.json, "../../data/world_countries.topojson")
 .await(ready) 
 
 

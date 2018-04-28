@@ -1,0 +1,1014 @@
+File Manifest for ICPSR 21600
+
+Harris, Kathleen Mullan, and J. Richard Udry. National Longitudinal Study
+of Adolescent Health (Add Health), 1994-2008. ICPSR21600-v12. Ann Arbor,
+MI: Inter-university Consortium for Political and Social Research
+[distributor], 2013-03-08. doi:10.3886/ICPSR21600.v12
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-related_literature.txt        -       -         -       2013-09-22  -
+
+    21600-manifest.txt                  -       -         -       2013-09-23  -
+
+
+DS0001 Wave I, Public Use Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0001-Codebook.pdf             -       -         -       2011-03-18  d81f3cf2dd3979b7542a63aee0dace4f
+
+    21600-0001-Data.dta                 -       6,504     2799    2011-03-18  e080e6b516af5bc80e6b9fd5719b79db
+
+    21600-0001-Data.sav                 -       6,504     2799    2011-03-18  0d103625af21137069eeeca2f0302ebb
+
+    21600-0001-Data.stc                 -       6,504     2799    2011-03-18  e657be62dfe1933975197d8e6026b1c6
+
+    21600-0001-Data.tsv                 -       6,504     2799    2011-03-18  1832eb62e6650eb1a14de6f96640a5f6
+
+    21600-0001-Data.txt                 5722    6,504     2799    2011-03-18  a8fde42b3e494f943446bef5990344e0
+
+    21600-0001-Questionnaire.pdf        -       -         -       2011-03-18  760f842d8125592b7cbc07aa4072ee0d
+
+    21600-0001-Setup.dct                -       -         -       2011-03-18  7f01202309ad394b7a94e5af711066ff
+
+    21600-0001-Setup.do                 -       -         -       2011-03-18  5ce9a089f86069ba822203829aac8997
+
+    21600-0001-Setup.sas                -       -         -       2011-03-18  063e62fa8ea6787fb28df6b0435f20b2
+
+    21600-0001-Setup.sps                -       -         -       2011-03-18  bd5421d8ea24ac28e7b1285eada679c9
+
+    21600-0001-Supplemental_syntax.do   -       -         -       2011-03-18  a983d51ea4ef4acc263ff5f87fef47b8
+
+    21600-0001-Supplemental_syntax.sas  -       -         -       2011-03-18  650a2636ec5c4789f6cd7828cd3b9cef
+
+
+DS0002 Wave I, Grand Sample Weights, Public Use Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0002-Codebook.pdf             -       -         -       2011-03-18  d82f3d4937806e94de13f25f6da72714
+
+    21600-0002-Data.dta                 -       6,504     3       2011-03-18  68e3d59ebbbd9163bc67cc325972db32
+
+    21600-0002-Data.sav                 -       6,504     3       2011-03-18  a28000134a7ae2eba1534aeb23d67b61
+
+    21600-0002-Data.stc                 -       6,504     3       2011-03-18  d650c1f3da1d58dd7ebe67e250d031d7
+
+    21600-0002-Data.tsv                 -       6,504     3       2011-03-18  55ac34086b32b4661097f9ea2b2f573f
+
+    21600-0002-Data.txt                 22      6,504     3       2011-03-18  122d77bf1f45b0a5dc203b75f87d1bda
+
+    21600-0002-Documentation-correct-design-effects.pdf -       -         -       2012-11-02  7257ae92277d0d05672842e9b7ed7bfc
+
+    21600-0002-Documentation.pdf        -       -         -       2011-03-18  edc5fd07bc332aa4a1e9870be3c97180
+
+    21600-0002-Setup.dct                -       -         -       2011-03-18  41bdc6a27c07b6d840edf24e5c6583b7
+
+    21600-0002-Setup.do                 -       -         -       2011-03-18  57eb4aeed1f886b3b2aaba14136afea1
+
+    21600-0002-Setup.sas                -       -         -       2011-03-18  a1b5b837b69fe354623615b7a0b6990e
+
+    21600-0002-Setup.sps                -       -         -       2011-03-18  3d6a5a6fc0a1183a5e986f6f402bb0a3
+
+    21600-0002-User_guide.pdf           -       -         -       2011-03-18  2c94872dc0325858d7375860d61339a7
+
+
+DS0003 Wave II, Public Use Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0003-Codebook.pdf             -       -         -       2011-03-18  4060bbaeb8968ac08f56bcb976e0771f
+
+    21600-0003-Data.dta                 -       4,834     2532    2011-03-18  3b177fb01fd4443fc342c69edd00ad06
+
+    21600-0003-Data.sav                 -       4,834     2532    2011-03-18  7f2ef972d8626dc9d75d9f0792f76a4a
+
+    21600-0003-Data.stc                 -       4,834     2532    2011-03-18  22e1ee9dcd844b78ffd141627f00c248
+
+    21600-0003-Data.tsv                 -       4,834     2532    2011-03-18  83cb99bebdea755ec951d30092f0c312
+
+    21600-0003-Data.txt                 3665    4,834     2532    2011-03-18  70be4c4265993f60fb55dffeae4cdc05
+
+    21600-0003-Questionnaire.pdf        -       -         -       2011-03-18  a70698996617557e611569d6483169df
+
+    21600-0003-Setup.dct                -       -         -       2011-03-18  ce4746f00a368f237d1c58cc1c3bc132
+
+    21600-0003-Setup.do                 -       -         -       2011-03-18  132a5fd60df8bf820d77148355748673
+
+    21600-0003-Setup.sas                -       -         -       2011-03-18  1e4433228076898af9533477b22528d0
+
+    21600-0003-Setup.sps                -       -         -       2011-03-18  f6e19efb2ee86aa1ba1525d98a138a6e
+
+    21600-0003-Supplemental_syntax.do   -       -         -       2011-03-18  66b3d76c0dd207e328a5298f7c19a6f5
+
+    21600-0003-Supplemental_syntax.sas  -       -         -       2011-03-18  0fe9e0458100572b399ec199f346dc0d
+
+
+DS0004 Wave III, Peabody Picture Vocabulary Test Score Data, Public Use
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0004-Codebook.pdf             -       -         -       2011-03-18  087bab4ffc279b64582be2993a08d914
+
+    21600-0004-Data.dta                 -       4,882     9       2011-03-18  6f1177347e3d99767a91fddf696c2ec6
+
+    21600-0004-Data.sav                 -       4,882     9       2011-03-18  9777612bf2e896184f68b41fc4d75d59
+
+    21600-0004-Data.stc                 -       4,882     9       2011-03-18  455cc116bb07d525c9fbe8abc8cd9147
+
+    21600-0004-Data.tsv                 -       4,882     9       2011-03-18  3548feeeb8cb6e7bbb5ec7c32ef5e3a6
+
+    21600-0004-Data.txt                 33      4,882     9       2011-03-18  4ccfa1042702f16a7c1602a9425be0a1
+
+    21600-0004-Questionnaire.pdf        -       -         -       2011-03-18  8bc6f0d51c7b3c7264c0d5fe0c189425
+
+    21600-0004-Setup.dct                -       -         -       2011-03-18  bb7675c26b523fdda397e413798bc331
+
+    21600-0004-Setup.do                 -       -         -       2011-03-18  8af94348f878cc0d3a074bb7ed1ed264
+
+    21600-0004-Setup.sas                -       -         -       2011-03-18  d459e1cfd4062defdd853316a27cc0c7
+
+    21600-0004-Setup.sps                -       -         -       2011-03-18  3c34d2172378e3234898cf5f25711f94
+
+    21600-0004-Supplemental_syntax.do   -       -         -       2011-03-18  8f4b306172faa4f21b7e8a3c9cb6e3a0
+
+    21600-0004-Supplemental_syntax.sas  -       -         -       2011-03-18  1541ebc191052be9f302d378930d1151
+
+
+DS0005 Wave III, Public In-Home Questionnaire, Section 17 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0005-Codebook.pdf             -       -         -       2011-03-18  3e42121b9fdec85e7f2aad85bfd5ca69
+
+    21600-0005-Data.dta                 -       13,998    20      2011-03-18  0cca979c5ab7f80db47540f2cde4e928
+
+    21600-0005-Data.sav                 -       13,998    20      2011-03-18  14b4a38b45b2aec9d95afd3736e6f715
+
+    21600-0005-Data.stc                 -       13,998    20      2011-03-18  db637fd68175a20a34772154bc3cbf95
+
+    21600-0005-Data.tsv                 -       13,998    20      2011-03-18  711218aa05246bfd0799b733ccc5c367
+
+    21600-0005-Data.txt                 36      13,998    20      2011-03-18  e9d528d8db3011ba733b5e77087c7317
+
+    21600-0005-Questionnaire.pdf        -       -         -       2011-03-18  66b2cafa784005afc87a1c65ec1f85f0
+
+    21600-0005-Setup.dct                -       -         -       2011-03-18  e2ecee650ef1beca1554cb29d5fdec8f
+
+    21600-0005-Setup.do                 -       -         -       2011-03-18  2c897b583ea5965dc42d8fc8a82f2b46
+
+    21600-0005-Setup.sas                -       -         -       2011-03-18  95e1d5e1907b65dd2a1b63fd23af1633
+
+    21600-0005-Setup.sps                -       -         -       2011-03-18  ee61ab040394172c2cfcb7ed0e399820
+
+    21600-0005-Supplemental_syntax.do   -       -         -       2011-03-18  2aa5a489397c95df5fb59e398d618a9f
+
+    21600-0005-Supplemental_syntax.sas  -       -         -       2011-03-18  726508bf3e4d9d4698a5b87854f09b2f
+
+
+DS0006 Wave III, Public In-Home Questionnaire, Section 18 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0006-Codebook.pdf             -       -         -       2011-03-18  c676fda94050b477b6ec5f25c1c90c0a
+
+    21600-0006-Data.dta                 -       2,348     8       2011-03-18  64cbe863c3581f970679aa064f666721
+
+    21600-0006-Data.sav                 -       2,348     8       2011-03-18  9a45a8e5a1f339552a5dfe29ffc27297
+
+    21600-0006-Data.stc                 -       2,348     8       2011-03-18  7d292e1067d922b8e81a8325bfcd83a8
+
+    21600-0006-Data.tsv                 -       2,348     8       2011-03-18  6552a800b5848e866ca8ba49330d5fa5
+
+    21600-0006-Data.txt                 24      2,348     8       2011-03-18  bac0d4ccbd6f808928f89946f95076f8
+
+    21600-0006-Questionnaire.pdf        -       -         -       2011-03-18  2863ac56aa7c344a10dd8f4331dc8cc0
+
+    21600-0006-Setup.dct                -       -         -       2011-03-18  3900e88ea36dae1841ae296a422d5b74
+
+    21600-0006-Setup.do                 -       -         -       2011-03-18  bc80e51460ff6321ba38ab64651deca2
+
+    21600-0006-Setup.sas                -       -         -       2011-03-18  c881d523b1646d81c5994d4b087d5df2
+
+    21600-0006-Setup.sps                -       -         -       2011-03-18  c121a6dacb67aa380712b81a0284f34e
+
+    21600-0006-Supplemental_syntax.do   -       -         -       2011-03-18  31311f345805ad4fdd3de13a3f559358
+
+    21600-0006-Supplemental_syntax.sas  -       -         -       2011-03-18  3471007265f5a522fc3442d66a9e5f67
+
+
+DS0007 Wave III, Public In-Home Questionnaire, Section 19 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0007-Codebook.pdf             -       -         -       2011-03-18  5eea0430d061f005fbc3677c3174c0e1
+
+    21600-0007-Data.dta                 -       12,680    210     2011-03-18  3389af4d54980831c860a98c094dcd0f
+
+    21600-0007-Data.sav                 -       12,680    210     2011-03-18  652768c21087c3e9e42ee783643f4150
+
+    21600-0007-Data.stc                 -       12,680    210     2011-03-18  3003eef7fefb94170a580a76c9487b2e
+
+    21600-0007-Data.tsv                 -       12,680    210     2011-03-18  9830741d84392bca910d758c8dabf043
+
+    21600-0007-Data.txt                 326     12,680    210     2011-03-18  5bc60c864c7de17b6dc7d976540491c0
+
+    21600-0007-Questionnaire.pdf        -       -         -       2011-03-18  a823ed65ac2f0a252e75cb4d0fc50d22
+
+    21600-0007-Setup.dct                -       -         -       2011-03-18  ccb5eccc2c934451b270e826a8222cc1
+
+    21600-0007-Setup.do                 -       -         -       2011-03-18  d9c8a064904d802452afaaa4a870a161
+
+    21600-0007-Setup.sas                -       -         -       2011-03-18  1fa4828700c5957583eb8454ecba18c9
+
+    21600-0007-Setup.sps                -       -         -       2011-03-18  b57871f4d8a74bf56b792d7408af9372
+
+    21600-0007-Supplemental_syntax.do   -       -         -       2011-03-18  f626913f902f52fda3b4a416cae669d4
+
+    21600-0007-Supplemental_syntax.sas  -       -         -       2011-03-18  cb4b57b2ada392c6ce41e4dd8d85b5ec
+
+
+DS0008 Wave III, Public In-Home Questionnaire, Section 22 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0008-Codebook.pdf             -       -         -       2011-03-18  092f0d99357df6ed5369bed58e2792d4
+
+    21600-0008-Data.dta                 -       2,163     40      2011-03-18  d015a5a4335ea0e3f1587b527e444c95
+
+    21600-0008-Data.sav                 -       2,163     40      2011-03-18  32344df685e26cffc6cb6480995a05d1
+
+    21600-0008-Data.stc                 -       2,163     40      2011-03-18  8aea854f3f98e8ae0ae337f5e37b8554
+
+    21600-0008-Data.tsv                 -       2,163     40      2011-03-18  96771b98881c16e84610ad1dac78f5b4
+
+    21600-0008-Data.txt                 61      2,163     40      2011-03-18  3e5e183997f7990095a74e5972e6bc1a
+
+    21600-0008-Questionnaire.pdf        -       -         -       2011-03-18  66d6b1d22ed8c28453cea2e87bd46fb5
+
+    21600-0008-Setup.dct                -       -         -       2011-03-18  b67446065a63cf9a2df9ef4812f003db
+
+    21600-0008-Setup.do                 -       -         -       2011-03-18  394592df59142928ade1d7dddcb0ce01
+
+    21600-0008-Setup.sas                -       -         -       2011-03-18  5f20d887c1dceb6d26c5c300cd65b23d
+
+    21600-0008-Setup.sps                -       -         -       2011-03-18  bf6026420dc405f30dfd90dc0f3a5278
+
+    21600-0008-Supplemental_syntax.do   -       -         -       2011-03-18  f1788861bfe539cf7e69a932c5bd24ef
+
+    21600-0008-Supplemental_syntax.sas  -       -         -       2011-03-18  5b0a58a502991f3e64b1b3158c46d632
+
+
+DS0009 Wave III, Public In-Home Questionnaire, Section 23 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0009-Codebook.pdf             -       -         -       2011-03-18  bfbf7005b8513ccbff7b0abd94005757
+
+    21600-0009-Data.dta                 -       180       40      2011-03-18  023c2743aaea074d6c6e6b36435d477a
+
+    21600-0009-Data.sav                 -       180       40      2011-03-18  fad7cf33864bb6ab3364a0af6ffc7d39
+
+    21600-0009-Data.stc                 -       180       40      2011-03-18  a12f6a8dea12f3ec31acfd808e6adea4
+
+    21600-0009-Data.tsv                 -       180       40      2011-03-18  ea689be625a8d6976ff7ac735c1e7d77
+
+    21600-0009-Data.txt                 60      180       40      2011-03-18  2b7a192b2e3fdf6d279cbf52a5b4ef3e
+
+    21600-0009-Questionnaire.pdf        -       -         -       2011-03-18  d4f9436e6fe0c9a2912dc1946b773574
+
+    21600-0009-Setup.dct                -       -         -       2011-03-18  cf122d2785f582bc1b2310f27a69e1cf
+
+    21600-0009-Setup.do                 -       -         -       2011-03-18  840e98078ae397fff8d98b80a8fd26ec
+
+    21600-0009-Setup.sas                -       -         -       2011-03-18  943992a6c05f6b8ebe2ed5f47ff3d15b
+
+    21600-0009-Setup.sps                -       -         -       2011-03-18  63aa2a34a469711e457a3e8550cbe810
+
+    21600-0009-Supplemental_syntax.do   -       -         -       2011-03-18  df7c77083137fc4dedbd1a78d7e48d34
+
+    21600-0009-Supplemental_syntax.sas  -       -         -       2011-03-18  1f9c7980ea809f0ec4877437b09becb2
+
+
+DS0010 Wave III, Public In-Home Questionnaire, Section 24 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0010-Codebook.pdf             -       -         -       2011-03-18  9544a19dfd2ed8c6991680d8a8369c41
+
+    21600-0010-Data.dta                 -       1,357     21      2011-03-18  427726772ee35a6b9280ef0e85738be3
+
+    21600-0010-Data.sav                 -       1,357     21      2011-03-18  3497c04053203ae18962bcdaf6bfde87
+
+    21600-0010-Data.stc                 -       1,357     21      2011-03-18  d5aab458ab5b1b1f765a209125ae2ccc
+
+    21600-0010-Data.tsv                 -       1,357     21      2011-03-18  b857469d35a31231369e4ef6a7767791
+
+    21600-0010-Data.txt                 41      1,357     21      2011-03-18  6a716aabcca0c5dffae2cf2078987ad0
+
+    21600-0010-Questionnaire.pdf        -       -         -       2011-03-18  711e1a7b033971203eb8198cc36aba6e
+
+    21600-0010-Setup.dct                -       -         -       2011-03-18  55b7765f3671bd968088db97da572889
+
+    21600-0010-Setup.do                 -       -         -       2011-03-18  0ca4f078c691d9537988aba4802e9a48
+
+    21600-0010-Setup.sas                -       -         -       2011-03-18  2b2f25127579ae606800356236da114b
+
+    21600-0010-Setup.sps                -       -         -       2011-03-18  77c1d134d08315a3b0253933ea01f8d6
+
+    21600-0010-Supplemental_syntax.do   -       -         -       2011-03-18  1722915db574c300183d42e03f3429c9
+
+    21600-0010-Supplemental_syntax.sas  -       -         -       2011-03-18  5f19dac47fb431ff7c9fb4fdd2bff207
+
+
+DS0011 Wave III, Public In-Home Questionnaire, Section 25 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0011-Codebook.pdf             -       -         -       2011-03-18  6e3c6e0620db22129c57bf8b6f46b1af
+
+    21600-0011-Data.dta                 -       1,323     75      2011-03-18  3c0bf81ddba6c444eca8baae01d61018
+
+    21600-0011-Data.sav                 -       1,323     75      2011-03-18  3d5465ec1a3beaf37927d1f1508b1674
+
+    21600-0011-Data.stc                 -       1,323     75      2011-03-18  43e002190353fb7015b3b79c0bbb5df1
+
+    21600-0011-Data.tsv                 -       1,323     75      2011-03-18  38d9c93781bf98de17d33f60508aa7d8
+
+    21600-0011-Data.txt                 105     1,323     75      2011-03-18  507b3694d54cfe265a5222a6d4e5dc34
+
+    21600-0011-Questionnaire.pdf        -       -         -       2011-03-18  ed640ee3a9aea846fb0bc20ddef18e73
+
+    21600-0011-Setup.dct                -       -         -       2011-03-18  c89333ec1a3cbdd112e07d01ecee961f
+
+    21600-0011-Setup.do                 -       -         -       2011-03-18  efd2cc382bd17adb91e6e30f8926f44e
+
+    21600-0011-Setup.sas                -       -         -       2011-03-18  1948708ca493ef38b08cd31d81c2cf9b
+
+    21600-0011-Setup.sps                -       -         -       2011-03-18  d26b83cfd7b41cf564e9d075797186e5
+
+    21600-0011-Supplemental_syntax.do   -       -         -       2011-03-18  8fa03ba26c7eedf8e287f0f4ffb5f79a
+
+    21600-0011-Supplemental_syntax.sas  -       -         -       2011-03-18  9f8e6930dcd9f04c802fa5749db7e43b
+
+
+DS0012 Wave III, Public In-Home Questionnaire
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0012-Codebook.pdf             -       -         -       2012-09-12  d8427d0325ff774210cdf81f0a57b54c
+
+    21600-0012-Data.dta                 -       4,882     1851    2011-03-18  c375542639da606b9ab7386ed0b89a99
+
+    21600-0012-Data.sav                 -       4,882     1851    2011-03-18  c7c2d25b00d14e2462e3e19c9ea92ff8
+
+    21600-0012-Data.stc                 -       4,882     1851    2011-03-18  68084db21ae6a2db05a1872ee824d7dc
+
+    21600-0012-Data.tsv                 -       4,882     1851    2011-03-18  f009dd5af17d9a4443985490703d9a7b
+
+    21600-0012-Data.txt                 3440    4,882     1851    2011-03-18  f24922bdd0d3efaec96da4e6d2ba846f
+
+    21600-0012-Documentation.pdf        -       -         -       2012-09-12  a7c22bcc39051197b01a2a934403bf95
+
+    21600-0012-Questionnaire.pdf        -       -         -       2011-03-18  885d8cc6968b8f96998ffbd78edece5c
+
+    21600-0012-Setup.dct                -       -         -       2011-03-18  24b2dc1f32b1a7bd64c19ae2e15f0fa9
+
+    21600-0012-Setup.do                 -       -         -       2011-03-18  b55f66d8c54ccc525cedc1f4fd2b6c78
+
+    21600-0012-Setup.sas                -       -         -       2011-03-18  cc9d4824171d073d75236bd6e0ecae99
+
+    21600-0012-Setup.sps                -       -         -       2011-03-18  e3622caaaaa0979dc01e0d5b0d0c6b84
+
+    21600-0012-Supplemental_syntax.do   -       -         -       2011-03-18  ff6de27be5669f96010c30ee275f3390
+
+    21600-0012-Supplemental_syntax.sas  -       -         -       2011-03-18  313f8e43868e2cd6e701ab105f3daddb
+
+
+DS0014 Wave III, Public Use Education Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0014-Codebook.pdf             -       -         -       2011-03-18  32d1c034659ff9bd77ed6eb829e48bc4
+
+    21600-0014-Data.dta                 -       3,947     81      2011-03-18  e8a1d620fb961018b3f8bc3214ad2693
+
+    21600-0014-Data.sav                 -       3,947     81      2011-03-18  d6d7cf8bc3c16d9efa7bf78da3ae07ba
+
+    21600-0014-Data.stc                 -       3,947     81      2011-03-18  76667e591d698840f4de3f071acfc437
+
+    21600-0014-Data.tsv                 -       3,947     81      2011-03-18  7afa501ac76b31c1da2fc67be751c867
+
+    21600-0014-Data.txt                 497     3,947     81      2011-03-18  09412827eff7e65bd2c93795c43a54eb
+
+    21600-0014-Questionnaire.pdf        -       -         -       2011-03-18  f1a2b184bab25b61b0ad0907ae87d0cd
+
+    21600-0014-Setup.dct                -       -         -       2011-03-18  11f5fca049aa23998dda72967abfb524
+
+    21600-0014-Setup.do                 -       -         -       2011-03-18  2de9ec3fce7e487af095b43392b8bf66
+
+    21600-0014-Setup.sas                -       -         -       2011-03-18  8aa642286c6024ec11aa977f9cf37f7e
+
+    21600-0014-Setup.sps                -       -         -       2011-03-18  0ba2d9d35b481c70a2c32cff2d2b38bf
+
+    21600-0014-Supplemental_syntax.do   -       -         -       2011-03-18  f03ebbcbb5ab4478d5b7f5788696badc
+
+    21600-0014-Supplemental_syntax.sas  -       -         -       2011-03-18  c29602206f59207f0fe3b2d927d3416a
+
+
+DS0015 Wave III, Public Use Graduation Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0015-Codebook.pdf             -       -         -       2011-03-18  d093e9c52e5a13e5d913ccc3fb30100a
+
+    21600-0015-Data.dta                 -       4,521     5       2011-03-18  3bfc9b91b2b2134c3b1cf245ecaba980
+
+    21600-0015-Data.sav                 -       4,521     5       2011-03-18  2fdb83dcec2f424c578d7de64ff58446
+
+    21600-0015-Data.stc                 -       4,521     5       2011-03-18  462fd526199549d676f986a275039d94
+
+    21600-0015-Data.tsv                 -       4,521     5       2011-03-18  30fe37c642c11dc27334f991796b08a3
+
+    21600-0015-Data.txt                 26      4,521     5       2011-03-18  ce811f8a82ca4733aa532cbab9954eb7
+
+    21600-0015-Questionnaire.pdf        -       -         -       2011-03-18  449bbd9f65b2c3ff15ae30c898198b24
+
+    21600-0015-Setup.dct                -       -         -       2011-03-18  11078b822d6046e74b0fe6f07927bcfd
+
+    21600-0015-Setup.do                 -       -         -       2011-03-18  79c100c8f523948ba93fa3eb4a172475
+
+    21600-0015-Setup.sas                -       -         -       2011-03-18  f01e29069737f82d59c98a248457f669
+
+    21600-0015-Setup.sps                -       -         -       2011-03-18  026e730840274fb87fb9df6f51637d48
+
+    21600-0015-Supplemental_syntax.do   -       -         -       2011-03-18  fcd4c91e5487aec811b407d3591bc027
+
+    21600-0015-Supplemental_syntax.sas  -       -         -       2011-03-18  91d33e52566486cded1b0c2697a04bc9
+
+
+DS0016 Wave III, Public Use Education Data Weights
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0016-Codebook.pdf             -       -         -       2011-03-18  950717bbbe56fcd9a3baf414fba42f1c
+
+    21600-0016-Data.dta                 -       3,964     4       2011-03-18  16b34efcb2b0e81290401641b95b4b3e
+
+    21600-0016-Data.sav                 -       3,964     4       2011-03-18  29a56a563bb8f461388778989634f013
+
+    21600-0016-Data.stc                 -       3,964     4       2011-03-18  e88763b498508a4d10c4455f53ef0aba
+
+    21600-0016-Data.tsv                 -       3,964     4       2011-03-18  c33adf9af94f98140bfc3abb4c84dff9
+
+    21600-0016-Data.txt                 30      3,964     4       2011-03-18  dd4fbdcd24fd8194c6cda5ef1822788c
+
+    21600-0016-Questionnaire.pdf        -       -         -       2011-03-18  cebc54594a7f2fb22343803a28aed275
+
+    21600-0016-Setup.dct                -       -         -       2011-03-18  be7e1b50a7f84c3ac10d6f0e3605d4ef
+
+    21600-0016-Setup.do                 -       -         -       2011-03-18  36c2cd9c542f5a61680626ac8acf7ee4
+
+    21600-0016-Setup.sas                -       -         -       2011-03-18  ac5a0744f33f59b49ae24c56c5b9abf5
+
+    21600-0016-Setup.sps                -       -         -       2011-03-18  9dd9888f76b4ef3069178700cab5e5be
+
+
+DS0017 Wave III, Add Health School Weights
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0017-Codebook.pdf             -       -         -       2011-03-18  2fb0ff77c8c0f83f6a706e6ff5aacc7d
+
+    21600-0017-Data.dta                 -       132       3       2011-03-18  b7a4d504d78bde9bada1bb528c2d5d70
+
+    21600-0017-Data.sav                 -       132       3       2011-03-18  98a9526b6a736b83692b1548bfcc630c
+
+    21600-0017-Data.stc                 -       132       3       2011-03-18  0816adfd4e50d9b16faa8f60b3e043f7
+
+    21600-0017-Data.tsv                 -       132       3       2011-03-18  6a8a666489094d574837cf95128c4338
+
+    21600-0017-Data.txt                 14      132       3       2011-03-18  5b918f8ea86e5a17833d1131a6b324b2
+
+    21600-0017-Questionnaire.pdf        -       -         -       2011-03-18  6abec83f515ba9f4f965956dd216f69b
+
+    21600-0017-Setup.dct                -       -         -       2011-03-18  9bd06dc1de473709bb01b89c17222ece
+
+    21600-0017-Setup.do                 -       -         -       2011-03-18  d4b32f4d976d9dd1f20c5d44482426e7
+
+    21600-0017-Setup.sas                -       -         -       2011-03-18  fb9ebb7fc36ee3ebce1d14097b268714
+
+    21600-0017-Setup.sps                -       -         -       2011-03-18  8d2959b162d56a34e1f6d8199d8555ac
+
+
+DS0018 Network Variables Data, Public Use
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0018-Codebook.pdf             -       -         -       2011-03-18  49f764a5fca5e0e5906bd3d3bc3b9731
+
+    21600-0018-Data.dta                 -       6,504     440     2011-03-18  791b4f097b0e31cae6e0148d9bcebfa5
+
+    21600-0018-Data.sav                 -       6,504     440     2011-03-18  d1aa2450efb78d6dd94c494d3aeab4dd
+
+    21600-0018-Data.stc                 -       6,504     440     2011-03-18  f01399e327b73c656554a5db6a8c61bc
+
+    21600-0018-Data.tsv                 -       6,504     440     2011-03-18  0ea72ec058444bb92a5d69d2efecc53e
+
+    21600-0018-Data.txt                 1611    6,504     440     2011-03-18  9ac92058a49f2080254756b76007b17a
+
+    21600-0018-Questionnaire.pdf        -       -         -       2011-03-18  53d18759782f8d6358575168051c9a00
+
+    21600-0018-Setup.dct                -       -         -       2011-03-18  b3af32870ea1a60878b46a99edd5502e
+
+    21600-0018-Setup.do                 -       -         -       2011-03-18  943046b67174cb32cfbc56826d729579
+
+    21600-0018-Setup.sas                -       -         -       2011-03-18  3a5b4d3d235629530dd6c0a49c701a0a
+
+    21600-0018-Setup.sps                -       -         -       2011-03-18  7d4ded7a588ec7a95307d17f396d5926
+
+
+DS0019 Wave I, Public Use Contextual Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0019-Codebook.pdf             -       -         -       2011-03-18  544b00ff6d518397fda1ef4e8e1c1006
+
+    21600-0019-Data.dta                 -       6,504     33      2011-03-18  a60ea2882e03a525efb66f1ba800a18c
+
+    21600-0019-Data.sav                 -       6,504     33      2011-03-18  906a352925b71e88a16d3a8e2b8761b1
+
+    21600-0019-Data.stc                 -       6,504     33      2011-03-18  9bb33e48bf4e33d9c9e78f7f927c0c15
+
+    21600-0019-Data.tsv                 -       6,504     33      2011-03-18  139b16e0a1f555bc40cb4bd1b03df069
+
+    21600-0019-Data.txt                 129     6,504     33      2011-03-18  bdf8d3c6bf800efa0ad61f08ff379fac
+
+    21600-0019-Questionnaire.pdf        -       -         -       2011-03-18  a87819083cc219384da1fe3f3799f186
+
+    21600-0019-Setup.dct                -       -         -       2011-03-18  edfedff5fcfa9b9cd762ac49cf3d52b4
+
+    21600-0019-Setup.do                 -       -         -       2011-03-18  13376ce2d0a2de6e88a2f075614630f6
+
+    21600-0019-Setup.sas                -       -         -       2011-03-18  311e36316c3a405814c83bfd68d3fa2c
+
+    21600-0019-Setup.sps                -       -         -       2011-03-18  cfefd1a96ea402428e22d3bb419d2711
+
+    21600-0019-Supplemental_syntax.do   -       -         -       2011-03-18  388485546d1c2ad3d417a5f242557441
+
+    21600-0019-Supplemental_syntax.sas  -       -         -       2011-03-18  892060a72d8d655261a878434282b4ba
+
+
+DS0020 Wave II, Public Use Contextual Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0020-Codebook.pdf             -       -         -       2011-03-18  7b7d75f8a030eacb59d4f5556b0b8932
+
+    21600-0020-Data.dta                 -       4,834     33      2011-03-18  2d3483600adce41fa8d2e7858fcf8b87
+
+    21600-0020-Data.sav                 -       4,834     33      2011-03-18  c8b964a0b2840d58a7c8620ec6d9aa21
+
+    21600-0020-Data.stc                 -       4,834     33      2011-03-18  7f284e1ab509ca5a2cda218b356fc5a8
+
+    21600-0020-Data.tsv                 -       4,834     33      2011-03-18  da1f9c3e2636c24199cbc8c735b56475
+
+    21600-0020-Data.txt                 129     4,834     33      2011-03-18  ea5e10e31559e8bbef6b027e313afab8
+
+    21600-0020-Questionnaire.pdf        -       -         -       2011-03-18  bcfe82f3e8801cd16d82378c7b91ea1e
+
+    21600-0020-Setup.dct                -       -         -       2011-03-18  1d3d98fd3347db812a3192116edcdab9
+
+    21600-0020-Setup.do                 -       -         -       2011-03-18  093c277ab1124b76b63f0ba8dafd372f
+
+    21600-0020-Setup.sas                -       -         -       2011-03-18  6f02c8d34c41b3516916e0af819d65dd
+
+    21600-0020-Setup.sps                -       -         -       2011-03-18  50240afd817e384a5a5322982681a55d
+
+    21600-0020-Supplemental_syntax.do   -       -         -       2011-03-18  65c728056f45f978133eb7a209488081
+
+    21600-0020-Supplemental_syntax.sas  -       -         -       2011-03-18  98300f36903608621afdd79d10b2438e
+
+
+DS0021 Wave II, Grand Sample Weights, Public Use Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0021-Codebook.pdf             -       -         -       2011-03-18  d5bdf7b9a4243e000e00b79af1c4247c
+
+    21600-0021-Data.dta                 -       4,834     3       2011-03-18  b82d1e096a9b12f14123721f54ffb03a
+
+    21600-0021-Data.sav                 -       4,834     3       2011-03-18  79952a049ccbe194bcb62d60d2eaebfd
+
+    21600-0021-Data.stc                 -       4,834     3       2011-03-18  bf2d7b3bbf6b84cc59731e2f2af37349
+
+    21600-0021-Data.tsv                 -       4,834     3       2011-03-18  d739d36bec6462999c18fce50d3e45c5
+
+    21600-0021-Data.txt                 22      4,834     3       2011-03-18  d5edc23f285d015d23318b077faa5c93
+
+    21600-0021-Documentation-correct-design-effects.pdf -       -         -       2012-11-02  a22bee4fecd43006f9ab96ccffd4c4cf
+
+    21600-0021-Documentation.pdf        -       -         -       2011-03-18  36efed9f1aff8263c064e50a274683ad
+
+    21600-0021-Setup.dct                -       -         -       2011-03-18  88da62ee372425be67e8206cfa58456a
+
+    21600-0021-Setup.do                 -       -         -       2011-03-18  fa85643fe0f26736d4e9103e01a8f475
+
+    21600-0021-Setup.sas                -       -         -       2011-03-18  26368d67422b86bac89b523d809e3100
+
+    21600-0021-Setup.sps                -       -         -       2011-03-18  a025485402927099e48a893d9d35a6f7
+
+    21600-0021-User_guide.pdf           -       -         -       2011-03-18  c2aa9222e40ec47212b11d4f3b680a76
+
+
+DS0022 Wave III, Grand Sample Weights, Public Use Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0022-Codebook.pdf             -       -         -       2011-03-18  3d144cfcdafc3e5eaa915f9dc2fa1abf
+
+    21600-0022-Data.dta                 -       4,882     4       2011-03-18  96255de8b6261779c05c3c16d5d5a4f4
+
+    21600-0022-Data.sav                 -       4,882     4       2011-03-18  737ce9b89e4df9767c51c2b78d9c4465
+
+    21600-0022-Data.stc                 -       4,882     4       2011-03-18  18fd71b6910fce399fcb1bd814cc46d8
+
+    21600-0022-Data.tsv                 -       4,882     4       2011-03-18  7d38b26657bad0f1ca65b444aa09df8a
+
+    21600-0022-Data.txt                 31      4,882     4       2011-03-18  d3672bf7ce6b01c015e89e2f50f3c7c3
+
+    21600-0022-Documentation-correct-design-effects.pdf -       -         -       2012-11-02  690391523770cdeb08287122d84d71ae
+
+    21600-0022-Documentation.pdf        -       -         -       2011-03-18  b6eb801d13a1fdc9b7af66bd3a653232
+
+    21600-0022-Setup.dct                -       -         -       2011-03-18  773a175d8a1661715bd48d9e945c0cef
+
+    21600-0022-Setup.do                 -       -         -       2011-03-18  2889a474970bc34bd8af8683693c9f83
+
+    21600-0022-Setup.sas                -       -         -       2011-03-18  76897d5bdb03daa8c0a5224b2da762fc
+
+    21600-0022-Setup.sps                -       -         -       2011-03-18  30a34ac3448a5cf92a3d14a8c7262c90
+
+
+DS0023 Wave IV, Public Use Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0023-Codebook.pdf             -       -         -       2012-05-08  f604a6363af9bb2e2b8735a7bbf10035
+
+    21600-0023-Data.dta                 -       5,114     922     2012-05-08  fc9ed3f8ec700779bb91df861e32b502
+
+    21600-0023-Data.sav                 -       5,114     922     2012-05-08  26be17b7a1932382f7245eebbd032800
+
+    21600-0023-Data.stc                 -       5,114     922     2012-05-08  621780ba1d8ad9e3f04c96ee8f579d21
+
+    21600-0023-Data.tsv                 -       5,114     922     2012-05-08  9d2afe5cc7868cdd78c986b619d0d424
+
+    21600-0023-Data.txt                 7122    5,114     922     2012-05-08  1c4c4cebe575dfd4cd931cfaedb9cd1c
+
+    21600-0023-Documentation.pdf        -       -         -       2012-05-08  91d99f30fea27552a9180ed8dbde94ad
+
+    21600-0023-Setup.dct                -       -         -       2012-05-08  e7df2e32132f198c4caaec4fd7e11668
+
+    21600-0023-Setup.do                 -       -         -       2012-05-08  2816606cafb9dd4262943a0020cd1a86
+
+    21600-0023-Setup.sas                -       -         -       2012-05-08  90fd5c25ad0e97bda32d88b73b63ba5e
+
+    21600-0023-Setup.sps                -       -         -       2012-05-08  267228bb4630c247800a88f211d592d4
+
+    21600-0023-Supplemental_syntax.do   -       -         -       2012-05-08  f0e331f43877ae45602a2fed901b183e
+
+    21600-0023-Supplemental_syntax.sas  -       -         -       2012-05-08  04f2eece3dbb66670b09393ca4e64cfd
+
+
+DS0024 Wave IV, Public In-Home Questionnaire, Section 16B Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0024-Codebook.pdf             -       -         -       2011-03-18  8975927082b19f1a0bad65f1c6712cab
+
+    21600-0024-Data.dta                 -       9,919     14      2011-03-18  5e39c4ae340f9abb82e96bff7f7bc01f
+
+    21600-0024-Data.sav                 -       9,919     14      2011-03-18  2243b6ee6743ea835f2924a37b334cd5
+
+    21600-0024-Data.stc                 -       9,919     14      2011-03-18  3e290875470280410c466ab9e28b4932
+
+    21600-0024-Data.tsv                 -       9,919     14      2011-03-18  900ade1906d9f5c96e9ec1727c89034b
+
+    21600-0024-Data.txt                 27      9,919     14      2011-03-18  2c3c2efc50b815fe91482c3c7528cee4
+
+    21600-0024-Documentation.pdf        -       -         -       2011-03-18  c8a9a90e691c970bc5fecc80c9c7594f
+
+    21600-0024-Setup.dct                -       -         -       2011-03-18  4df218ebf121eb889ed28610b93a1c37
+
+    21600-0024-Setup.do                 -       -         -       2011-03-18  70e10521cf2a7e19911a5746ed559e68
+
+    21600-0024-Setup.sas                -       -         -       2011-03-18  f50d3213406d5a68c6a67e85d340224f
+
+    21600-0024-Setup.sps                -       -         -       2011-03-18  69b14cd9258b9687dbc0b45f14e686d0
+
+    21600-0024-Supplemental_syntax.do   -       -         -       2011-03-18  fa9fb16850c8d5bba9ac25b61abaf9b8
+
+    21600-0024-Supplemental_syntax.sas  -       -         -       2011-03-18  b782af4159a5d55913b332175cde2100
+
+
+DS0025 Wave IV, Public In-Home Questionnaire, Section 16C Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0025-Codebook.pdf             -       -         -       2011-03-18  7b100c14f860d4736c3b6173b6348759
+
+    21600-0025-Data.dta                 -       11,849    8       2011-03-18  a24f6bb6ca90790a41291fab27e5d46d
+
+    21600-0025-Data.sav                 -       11,849    8       2011-03-18  107c23f022707a667e4d4775a5473f35
+
+    21600-0025-Data.stc                 -       11,849    8       2011-03-18  633b94ca518e09893b61ab8c63e536fe
+
+    21600-0025-Data.tsv                 -       11,849    8       2011-03-18  9c6b41d879faab7de497ae516e1838e0
+
+    21600-0025-Data.txt                 24      11,849    8       2011-03-18  dd64e7b33a83b722d1b1ee3e82095285
+
+    21600-0025-Documentation.pdf        -       -         -       2011-03-18  2d7d660ff597da5b87dd08ebc735215b
+
+    21600-0025-Setup.dct                -       -         -       2011-03-18  219adad80ecda369e00ac81fb30f5471
+
+    21600-0025-Setup.do                 -       -         -       2011-03-18  20c48e8a414ad43bb4d945130fcfa061
+
+    21600-0025-Setup.sas                -       -         -       2011-03-18  978eb3209798223ac329cac5b4bf52d3
+
+    21600-0025-Setup.sps                -       -         -       2011-03-18  4e01039b421b7121ade18823dcfee7dc
+
+    21600-0025-Supplemental_syntax.do   -       -         -       2011-03-18  5e6ddc9495522c24f71b764285912724
+
+    21600-0025-Supplemental_syntax.sas  -       -         -       2011-03-18  8aa7dbe5a91c744c81dad43d84ca8c85
+
+
+DS0026 Wave IV, Public In-Home Questionnaire, Section 18 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0026-Codebook.pdf             -       -         -       2011-03-18  7adc15669e9604edc976e64424e259ba
+
+    21600-0026-Data.dta                 -       7,081     17      2011-03-18  3317ad5a96e8a20d9bf82e5d5d56f9ff
+
+    21600-0026-Data.sav                 -       7,081     17      2011-03-18  cb68527ac871b8a3e454439d75940a06
+
+    21600-0026-Data.stc                 -       7,081     17      2011-03-18  5dbba8c0e160070150c35a12ce08c090
+
+    21600-0026-Data.tsv                 -       7,081     17      2011-03-18  005c556b99f59699612d21a17a017966
+
+    21600-0026-Data.txt                 37      7,081     17      2011-03-18  feb5218e0c34db7cd9bf8087fb78da1a
+
+    21600-0026-Documentation.pdf        -       -         -       2011-03-18  6d02b9ba419eb6cbcc8a77dce8ac440b
+
+    21600-0026-Setup.dct                -       -         -       2011-03-18  235a9ebffd1f39745344424ec9720291
+
+    21600-0026-Setup.do                 -       -         -       2011-03-18  af546c3b7258b491df7d421db2f68795
+
+    21600-0026-Setup.sas                -       -         -       2011-03-18  ec4474f5ef54a4843f3664af679b26f3
+
+    21600-0026-Setup.sps                -       -         -       2011-03-18  3020895cba0a1424553bd40997665a92
+
+    21600-0026-Supplemental_syntax.do   -       -         -       2011-03-18  a8bba9b76da4cb1912ab9d2173437f52
+
+    21600-0026-Supplemental_syntax.sas  -       -         -       2011-03-18  ec773a1df59d4789f58bb25e8694dd1b
+
+
+DS0027 Wave IV, Public In-Home Questionnaire, Section 19 Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0027-Codebook.pdf             -       -         -       2011-03-18  d65a24370348ab6ab73afa34f8ba7ad8
+
+    21600-0027-Data.dta                 -       4,828     17      2011-03-18  c58884958e8a0343eb6388e5199f97d1
+
+    21600-0027-Data.sav                 -       4,828     17      2011-03-18  10db724aabe3781eeef0e1dab9c26c08
+
+    21600-0027-Data.stc                 -       4,828     17      2011-03-18  3bfada4c7523855cb2e96dd0305afa24
+
+    21600-0027-Data.tsv                 -       4,828     17      2011-03-18  474a9bf904c009844e2d2f4cfed41256
+
+    21600-0027-Data.txt                 38      4,828     17      2011-03-18  36638826cca02432b39be4a9b3f8e69b
+
+    21600-0027-Documentation.pdf        -       -         -       2011-03-18  17e1da89baa7ffbd4f4455ce45c9c0b4
+
+    21600-0027-Setup.dct                -       -         -       2011-03-18  4bd967eb14fbada9c16dacb4b554e795
+
+    21600-0027-Setup.do                 -       -         -       2011-03-18  ba79a7701bfc928c35e7d40d16c3e7f7
+
+    21600-0027-Setup.sas                -       -         -       2011-03-18  d3d38585399dbe7c57128aad8f1fe3a4
+
+    21600-0027-Setup.sps                -       -         -       2011-03-18  63912da0bcce2da5650a2fc1207317f7
+
+    21600-0027-Supplemental_syntax.do   -       -         -       2011-03-18  fc0c9ea96bdc79e22f17845f5f7becb4
+
+    21600-0027-Supplemental_syntax.sas  -       -         -       2011-03-18  ee5fd65a275294880460594b36191180
+
+
+DS0028 Wave IV, Public In-Home Questionnaire, Section 20A Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0028-Codebook.pdf             -       -         -       2011-03-18  7ce6063ef6100db65aeb42998ae4b5e2
+
+    21600-0028-Data.dta                 -       4,756     46      2011-03-18  d5a48355a8597978a7b2db353e81d7d1
+
+    21600-0028-Data.sav                 -       4,756     46      2011-03-18  c38fb909a16582f41600922e4a390c09
+
+    21600-0028-Data.stc                 -       4,756     46      2011-03-18  b03756cecf6132e92227401f5387e3d5
+
+    21600-0028-Data.tsv                 -       4,756     46      2011-03-18  89f39353762110a38ffad44d2d355e06
+
+    21600-0028-Data.txt                 62      4,756     46      2011-03-18  1c5d7d3d535dc659d7dee0a0011c7364
+
+    21600-0028-Documentation.pdf        -       -         -       2011-03-18  91f5cb2ee2331335414cb800db347fec
+
+    21600-0028-Setup.dct                -       -         -       2011-03-18  c21b3c6d785e14873aedbfa2b03041e8
+
+    21600-0028-Setup.do                 -       -         -       2011-03-18  c015d9cd45e74a2f721e61614d587d44
+
+    21600-0028-Setup.sas                -       -         -       2011-03-18  506519b310cb79e9a66a1a780d1745ff
+
+    21600-0028-Setup.sps                -       -         -       2011-03-18  6546d0c2112846da3562af8e0e7d8770
+
+    21600-0028-Supplemental_syntax.do   -       -         -       2011-03-18  f0b16a89f975718d21476cac34d8e966
+
+    21600-0028-Supplemental_syntax.sas  -       -         -       2011-03-18  fcb6cdef0de220e7fd73359fd690ccca
+
+
+DS0029 Wave IV, Grand Sample Weights, Public Use Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0029-Codebook.pdf             -       -         -       2011-11-28  e71d1fb60dca4e2fa5e1dcf28a14ee64
+
+    21600-0029-Data.dta                 -       5,114     5       2011-11-28  0b9870eca65062b7cff345be2b644c5e
+
+    21600-0029-Data.sav                 -       5,114     5       2011-11-28  aa929dbb9140940a5d768e2b839d7483
+
+    21600-0029-Data.stc                 -       5,114     5       2011-11-28  905ba9ac0a17ab93dbd5ee0f3e5fe619
+
+    21600-0029-Data.tsv                 -       5,114     5       2011-11-28  f7c566d7f0ca2013933d49e0ac46445e
+
+    21600-0029-Data.txt                 56      5,114     5       2011-11-28  1e6063b2f519b26ee365895d83ea2a7a
+
+    21600-0029-Documentation-correct-design-effects.pdf -       -         -       2012-11-02  9680683dbd95c37732f1c17f11d361d8
+
+    21600-0029-Documentation.pdf        -       -         -       2011-12-14  d33f9a214f13d5b4405ce446cbcd78af
+
+    21600-0029-Setup.dct                -       -         -       2011-11-28  8f53b354a9758b19d3e1e44f3aa4d592
+
+    21600-0029-Setup.do                 -       -         -       2011-11-28  8e0ace8dab5f637abd1c1f5a14e2b3b1
+
+    21600-0029-Setup.sas                -       -         -       2011-11-28  05aff8c4c7f85479d5378ec950b1e0f5
+
+    21600-0029-Setup.sps                -       -         -       2011-11-28  0519b271b997420d1b8c6bb12e37b7f0
+
+
+DS0030 Wave IV, Public Use Biomarkers, Glucose Data
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0030-Codebook.pdf             -       -         -       2012-11-01  a077eefebbef369dbce03d4996a42fe3
+
+    21600-0030-Data.dta                 -       5,114     10      2012-11-01  df0e417efd36bbf0822959a171e8bb22
+
+    21600-0030-Data.sav                 -       5,114     10      2012-11-01  847a113629ea57ca6cbd875722f9dd77
+
+    21600-0030-Data.stc                 -       5,114     10      2012-11-01  7e272a1704b6a05bc12f7569387bd8ae
+
+    21600-0030-Data.tsv                 -       5,114     10      2012-11-01  fb8596ad8a30ef8fffdc895f96758252
+
+    21600-0030-Data.txt                 80      5,114     10      2012-11-01  8dba036f85869fe9af606a91c493b6c2
+
+    21600-0030-Documentation-methods.pdf -       -         -       2012-11-01  2a016789d934150c478bb15e4a4991fb
+
+    21600-0030-Documentation.pdf        -       -         -       2012-11-01  2850c0ca69286f4576986e5f5fd98e25
+
+    21600-0030-Setup.dct                -       -         -       2012-11-01  d7aee1f904366e0450c58a0f53b1917e
+
+    21600-0030-Setup.do                 -       -         -       2012-11-01  68db98c9c4359da0ea7da7ba5794b051
+
+    21600-0030-Setup.sas                -       -         -       2012-11-01  25f53942e0b0ae641ea41dc557c6aa2a
+
+    21600-0030-Setup.sps                -       -         -       2012-11-01  66bb3b9b2762861e81fdc5f82fc9f44a
+
+    21600-0030-Supplemental_syntax.do   -       -         -       2012-11-01  5aeda8c00a4a6ec8be056d5c49e3c82c
+
+    21600-0030-Supplemental_syntax.sas  -       -         -       2012-11-01  1c7548362d09bce7db9e0dcc7de6f39e
+
+
+DS0031 Wave IV, Public Use Biomarkers, Measures of EBV and hsCRP
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    21600-0031-Codebook.pdf             -       -         -       2013-03-08  9eda18b079ff6987c661e1fdf9412ece
+
+    21600-0031-Data.dta                 -       5,114     16      2013-03-08  91b5ea0ac3082413a7735d7fd3c8fd66
+
+    21600-0031-Data.rda                 -       5,114     16      2013-03-08  da5841c8f9a82f7a09dd9831ce26926d
+
+    21600-0031-Data.sav                 -       5,114     16      2013-03-08  361558c27d4424f9546e6939be719973
+
+    21600-0031-Data.stc                 -       5,114     16      2013-03-08  0106ef25b9231ef88f8fab9398bc0fa2
+
+    21600-0031-Data.tsv                 -       5,114     16      2013-03-08  6d1bab44a7ec824abaa88b5898627b47
+
+    21600-0031-Data.txt                 128     5,114     16      2013-03-08  f45ffd2a10916774d317fd5b8472f19e
+
+    21600-0031-Documentation.pdf        -       -         -       2013-03-08  75bc46ebe15797933abaab4e1eca2d18
+
+    21600-0031-Setup.dct                -       -         -       2013-03-08  169a1f58450aa048cb9122fd0be0be8d
+
+    21600-0031-Setup.do                 -       -         -       2013-03-08  066a7e437a9ae07abfdcfdb921839ee7
+
+    21600-0031-Setup.sas                -       -         -       2013-03-08  ee207d6a284f69793f62e8383750ed50
+
+    21600-0031-Setup.sps                -       -         -       2013-03-08  f2bb908620f895e52a777aea98df7078
+
+    21600-0031-Supplemental_syntax.do   -       -         -       2012-05-08  36fb0d8ac02e6bf68cc5506867d4ae0e
+
+    21600-0031-Supplemental_syntax.sas  -       -         -       2012-05-08  79253a58ccda365191c3b935eb3ab6a2
+
+    21600-0031-User_guide.pdf           -       -         -       2013-03-08  936d9008ce24f1093ee1a8b3d52ade07
+
+
+Version History
+
+2013-03-08 Part 31 was updated following a resupply of the data by the
+Principal Investigators. Specifically, additional variables added to the
+data file, and CRP and EBV values have been recalculated, resulting in
+minimal changes to the data. The associated documentation and codebook
+files were also updated. Finally, a user guide describing measures of
+inflammation and immune function for Part 31 was also added.  2012-11-02
+Documentation files that contain information on how to correct for design
+effects associated parts 2, 21, 22, and 29 were added.  2012-11-01 Part 30
+was updated, including the associated codebook and a documentation file
+supplied by the principal investigators that details how glucose
+homeostasis was measured. Further, documentation files containing
+information on how to correct for design effects in the public-use datasets
+have been added for parts 2, 21, 22, and 29. Finally, the documentation
+file titled "21600-0029-Report-MULTI.pdf" has been removed from parts 2 and
+22, since this documentation only applies to part 29.  2012-09-12 Two
+documentation files, namely the Wave III In-Home Questionnaire Codebook,
+along with the Wave III In-Home Questionnaire, Data Collection Instrument
+and User Guide (which is a single composite file), have been updated for
+part 12.  2012-05-08 CRP and EBV Test restul data has been added to the
+study as Part 31. New updated data has replaced the existing Part 23 data.
+The documentation for Part 23 has been updated.  2012-02-23 Glucose data
+was added.  2012-02-06 An error was discovered in a few variables for part
+23, so the data and documentation was updated.  2012-01-23 An additional
+documentation file about W4 weights was added to pt29  2011-12-14 An error
+was discovered in one variable for part 23, so the data and documentation
+was updated.  A page of additional documentation was also added to the
+existing doc file for part 29.  2011-11-28 Updated weight dataset and
+added/updated weight documentation.  2011-03-18 Part 13 was removed because
+it contains weights that have been superseded by Parts 21 and 22.  Wave 4
+data was added as Parts 23 through 29.  2010-05-04 Documentation files have
+been added/revised for Parts 2, 21, and 22.  2010-04-09 The Grand Sample
+Weight files were revised so that there is now a separate weight file for
+each wave.  2009-03-11 The title to Part 2 was changed. In addition, value
+labels were corrected to Parts 3, 7, 8, 9, and 10. The corrections
+addressed an issue caused by brackets in the values labels.  2009-02-23 An
+incorrect variable label in the Wave II public use data was corrected. New
+documentation and data files were generated with the corrected variable
+label.  2008-10-31 Three new public-use datasets have been added (datasets
+18, 19, and 20).  2008-08-19 Descriptive content has been added to the
+metadata record.

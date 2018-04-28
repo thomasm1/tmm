@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Table</title>
+</head>
+<body>
+<script type="text/javascript">
+function functionleapyear() {
+var  year = parseInt(document.form.year.value); 
+if (year % 4 != 0){
+	window.alert("not leapyear!")
+	}
+if (year % 400 == 0){
+	window.alert("leapyear!")
+	}
+else if (year % 100 == 0){
+	window.alert("not leap year!")
+	}
+window.alert("notundetectable")
+}
+</script>
+<form name="form" >
+calculate leap year:<input type="text" name="year" value="1"><br>
+<input type="button" value="Enter Year!" onclick = "functionleapyear();">
+</form>
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-71584977-1');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T85KNRD');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+
+
+  <meta name="description" content="Sociology Data Analysis, Web Development and Statistical Consulting | Statistical Consultant. Get statistics help: 
+Thomas offers services related to analyzing qualitative &amp; quantitative data and reporting results in academic journals and business briefs alike. 
+Recent projects include research design, app design, and proof-of-concept for Xpansiv Data Systems, 
+and data analysis and web-application implementation. Data analysis and special pricing offers competitive benefits for clients.  
+If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas will perform the analysis for you so you can focus on your
+ project and avoid the web and statistical package learning curve.">
+
+  <meta name="keywords" content="  data analysis and visualization, sociology statistical tests">
+
+  <meta name="author" content="Thomas Maestas">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TMM | Home</title>
+
+  <link rel="stylesheet" href="dist/css/app.css">
+
+  <script src="http://d3js.org/d3.v4.min.js"></script> 
+  <style>
+#accordion {
+  margin-top:300px;
+}
+  </style>
+</head>
+
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T85KNRD" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="  navbar navbar-default">
+
+    <img src="src/img/thomas-maestas.jpg" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. "
+      class="profile" />
+
+    <div class="container  ">
+
+      <div class=" navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+
+          <span class="sr-only"> </span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+        </button>
+
+        <a class="navbar-brand  " href="#"> </a>
+
+      </div>
+
+      <div id="navbar" class="collapse navbar-collapse  ">
+
+        <ul class="nav navbar-nav profile nav-space alpha140">
+
+          <li  >
+
+            <a href="index.html">HOME</a>
+
+          </li> 
+          <li>
+
+            <a href="services.html">SERVICES</a>
+
+          </li> 
+
+          <li  >
+
+            <a href="about.html">ABOUT</a>
+
+          </li> 
+          <li class="active">
+
+            <a href="maps.html">MAPS</a>
+
+          </li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+            <li>
+
+                <a title="github" href="https://github.com/thomasm1" target="_blank">
+          
+                  <i class="fa fa-github"></i>
+          
+                </a>
+          
+              </li> 
+          <li>
+
+            <a href="https://twitter.com/ThomasMaestas" target="_blank">
+
+              <i class="fa fa-twitter"></i>
+
+            </a>
+
+          </li>
+
+          <li>
+
+            <a href="https://www.facebook.com/thomas.m.maestas" target="_blank">
+
+              <i class="fa fa-facebook"></i>
+
+            </a>
+
+          </li>
+
+          <li>
+
+            <a href="http://linkedin.com/in/thomasmaestas" target="_blank">
+
+              <i class="fa fa-linkedin"></i>
+
+            </a>
+
+          </li> 
+        </ul>
+
+      </div>
+
+      <!--/.nav-collapse -->
+
+    </div>
+
+  </nav>
+
+
+  <div class="showcase   jenks">
+    <div class="container jumb  ">
+      <h2 class="  dailytech ">WELCOME&nbsp; &nbsp;TO&nbsp; &nbsp; TMM </h2>
+
+      <h4>Random Walk Classification Tree</h4>
+      <h6>Click tree to refresh</h6>
+      <canvas id="start" width="400px" height="200px"></canvas>
+      <script>
+        
+        var canvas = document.querySelector("#start"),
+            context = canvas.getContext("2d"),
+            width = canvas.width,
+            height = canvas.height,
+            color = d3.scaleSequential(d3.interpolateRainbow).domain([0, 1000]),
+            randomX = d3.randomNormal(0.3),
+            randomY = d3.randomNormal(0);
+        
+        render();
+        
+        canvas.onclick = render;
+        
+        function render() {
+          var x0 = width / 20,
+              y0 = height / 2,
+              mainWalk = randomWalk(x0, y0, 1000);
+        
+          context.clearRect(0, 0, width, height);
+          context.lineJoin = "round";
+          context.lineCap = "round";
+          context.lineWidth = 1.5;
+          context.strokeStyle = "black";
+          renderWalk(mainWalk);
+        
+          context.globalCompositeOperation = "multiply";
+          context.lineWidth = 1;
+          for (var i = 0; i < mainWalk.length; i += 2) {
+            var branchStart = mainWalk[i],
+                x0 = branchStart[0],
+                y0 = branchStart[1];
+            for (var j = 0; j < 1; ++j) {
+              context.strokeStyle = color(i + (Math.random() - 0.5) * 50);
+              var x1 = x0, y1 = y0;
+              for (var k = 0, m = 20; k < m; ++k) {
+                context.globalAlpha = (m - k - 1) / m;
+                var pieceWalk = randomWalk(x1, y1, 10),
+                    pieceEnd = pieceWalk[pieceWalk.length - 1];
+                renderWalk(pieceWalk);
+                x1 = pieceEnd[0];
+                y1 = pieceEnd[1];
+              }
+              context.globalAlpha = 1;
+            }
+          }
+        }
+        
+        function renderWalk(walk) {
+          var i, n = walk.length;
+          context.beginPath();
+          context.moveTo(walk[0][0], walk[0][1]);
+          for (i = 1; i < n; ++i) {
+            context.lineTo(walk[i][0], walk[i][1]);
+          }
+          context.stroke();
+        }
+        
+        function randomWalk(x0, y0, n) {
+          var points = new Array(n), i;
+          points[0] = [x0, y0];
+          for (i = 1; i < n; ++i) {
+            points[i] = [
+              x0 += randomX() * 2,
+              y0 += randomY() * 2
+            ];
+          }
+          return points;
+        }
+        
+        </script>
+
+ 
+      
+      <p class="lead">
+
+
+
+
+
+      </p>
+
+      <a href="#blog" class="  dailytech btn btn-primary">OUR DAILY TECH BLOG</a>
+      <br />
+      <br />
+      <a href="http://ourdailytechblog.com" class="com btn btn-primary">
+        <h4>&nbsp;www.ourdailytechblog.com&nbsp;</h4>
+      </a>
+
+     
+
+    </div>
+
+    
+    <nav id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar">
+      <div class=" nav flex-column rightnav sidebar-sticky">
+        <div class="  list-group">
+          <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action">WEBSITE DEMO #1</a>
+          <a href="bsc/index.html" class="list-group-item list-group-item-action">WEBSITE DEMO #2</a> 
+          <a href="codeplayer.html" class="list-group-item list-group-item-action">CSS-JS-HTML CODE PLAYER</a>
+          <a href="dice/index.html" class="list-group-item list-group-item-action">JS DICE GAME</a>   
+          <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action">INTERACTIVE MAP</a>
+          <a href="dice/index.html" class="list-group-item list-group-item-action">JS DICE GAME</a> 
+        </div>
+  </div>
+</nav>
+
+
+ 
+
+
+  <div class="section-b">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="panel panel-default">
+ 
+                <div class="panel-body  jenks   map-img">
+ 
+                      <script src="http://d3js.org/queue.v1.min.js"></script>
+                      <script src="http://d3js.org/topojson.v1.min.js"></script>
+                      <script src="https://d3js.org/d3-geo-projection.v1.min.js"></script>
+                      <script src="src/js/d3/d3-tip.js"></script>
+                      <script src='https://unpkg.com/simple-statistics@2.0.0/dist/simple-statistics.min.js'></script>
+                      <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js'></script>
+                      <script lang='babel' type='text/babel'>
+                      // configuration
+                      const colorVariable = 'population';
+                      const geoIDVariable = 'id';
+                      const format = d3.format(',');
+                      
+                      // Set tooltips
+                      const tip = d3.tip()
+                        .attr('class', 'd3-tip')
+                        .offset([-10, 0])
+                        .html(d => `<strong>Country: </strong><span class='details'>${d.properties.name}<br></span><strong>Population: </strong><span class='details'>${format(d[colorVariable])}</span>`);
+                      
+                      tip.direction(function(d) {
+                        if (d.properties.name === 'Antarctica') return 'n';
+                        // Americas
+                        if (d.properties.name === 'Greenland') return 's';
+                        if (d.properties.name === 'Canada') return 'e';
+                        if (d.properties.name === 'USA') return 'e';
+                        if (d.properties.name === 'Mexico') return 'e';
+                        // Europe
+                        if (d.properties.name === 'Iceland') return 's';
+                        if (d.properties.name === 'Norway') return 's';
+                        if (d.properties.name === 'Sweden') return 's';
+                        if (d.properties.name === 'Finland') return 's';
+                        if (d.properties.name === 'Russia') return 'w';
+                        // Asia
+                        if (d.properties.name === 'China') return 'w';
+                        if (d.properties.name === 'Japan') return 's';
+                        // Oceania
+                        if (d.properties.name === 'Indonesia') return 'w';
+                        if (d.properties.name === 'Papua New Guinea') return 'w';
+                        if (d.properties.name === 'Australia') return 'w';
+                        if (d.properties.name === 'New Zealand') return 'w';
+                        // otherwise if not specified
+                        return 'n';
+                      })
+                      
+                      tip.offset(function(d) { // [top, left]
+                        if (d.properties.name === 'Antarctica') return [0, 0];
+                        // Americas
+                        if (d.properties.name === 'Greenland') return [10, -10];
+                        if (d.properties.name === 'Canada') return [24, -28];
+                        if (d.properties.name === 'USA') return [-5, 8];
+                        if (d.properties.name === 'Mexico') return [12, 10];
+                        if (d.properties.name === 'Chile') return [0, -15];
+                        // Europe
+                        if (d.properties.name === 'Iceland') return [15, 0];
+                        if (d.properties.name === 'Norway') return [10, -28];
+                        if (d.properties.name === 'Sweden') return [10, -8];
+                        if (d.properties.name === 'Finland') return [10, 0];
+                        if (d.properties.name === 'France') return [-9, 66];
+                        if (d.properties.name === 'Italy') return [-8, -6];
+                        if (d.properties.name === 'Russia') return [5, 385];
+                        // Africa
+                        if (d.properties.name === 'Madagascar') return [-10, 10];
+                        // Asia
+                        if (d.properties.name === 'China') return [-16, -8];
+                        if (d.properties.name === 'Mongolia') return [-5, 0];
+                        if (d.properties.name === 'Pakistan') return [-10, 13];
+                        if (d.properties.name === 'India') return [-11, -18];
+                        if (d.properties.name === 'Nepal') return [-8, 1];
+                        if (d.properties.name === 'Myanmar') return [-12, 0];
+                        if (d.properties.name === 'Laos') return [-12, -8];
+                        if (d.properties.name === 'Vietnam') return [-12, -4];
+                        if (d.properties.name === 'Japan') return [5, 5];
+                        // Oceania
+                        if (d.properties.name === 'Indonesia') return [0, -5];
+                        if (d.properties.name === 'Papua New Guinea') return [-5, -10];
+                        if (d.properties.name === 'Australia') return [-15, 0];
+                        if (d.properties.name === 'New Zealand') return [-15, 0];
+                        // otherwise if not specified
+                        return [-10, 0];
+                      })
+                      
+                      d3.selectAll('.jenks') ;
+                      
+                      const parentWidth = d3.selectAll('.jenks').node().getBoundingClientRect().width;
+                      const margin = {top: 0, right: 0, bottom: 0, left: 0};
+                      const width = 720 - margin.left - margin.right;
+                      const height = 375 - margin.top - margin.bottom;
+                      
+                      const color = d3.scaleQuantile()
+                        .range([
+                          'rgb(247,251,255)',
+                          'rgb(222,235,247)', 
+                          'rgb(198,219,239)', 
+                          'rgb(158,202,225)',
+                          'rgb(107,174,214)',
+                          'rgb(66,146,198)',
+                          'rgb(33,113,181)',
+                          'rgb(8,81,156)',
+                          'rgb(8,48,107)',
+                          'rgb(3,19,43)'
+                        ]);
+                      
+                      
+                      const svg = d3.selectAll('.jenks')
+                        .append('svg')
+                        .attr('width', width)
+                        .attr('height', height)
+                        .append('g')
+                        .attr('class', 'map');
+                      
+                      const projection = d3.geoRobinson()
+                        .scale(100)
+                        .rotate([352, 0, 0])
+                        .translate( [width / 2, height / 2]);
+                      
+                      const path = d3.geoPath().projection(projection);
+                      
+                      svg.call(tip);
+                      
+                      queue()
+                        .defer(d3.json, 'src/data/world_countries.json')
+                        .defer(d3.tsv, 'src/data/world_population.tsv')
+                        .await(ready);
+                      
+                      function ready(error, geography, data) {
+                        data.forEach(d => {
+                          d[colorVariable] = Number(d[colorVariable].replace(',', ''));
+                        })
+                      
+                        const colorVariableValueByID = {};
+                      
+                        data.forEach(d => { colorVariableValueByID[d[geoIDVariable]] = d[colorVariable]; });
+                        geography.features.forEach(d => { d[colorVariable] = colorVariableValueByID[d.id] });
+                      
+                        // calculate ckmeans clusters
+                        // then use the max value of each cluster
+                        // as a break
+                        const numberOfClasses = color.range().length - 1;
+                        const ckmeansClusters = ss.ckmeans(data.map(d => d[colorVariable]), numberOfClasses);
+                        const ckmeansBreaks = ckmeansClusters.map(d => d3.min(d));
+                        console.log('numberOfClasses', numberOfClasses);
+                        console.log('ckmeansClusters', ckmeansClusters);
+                        console.log('ckmeansBreaks', ckmeansBreaks);
+                      
+                        // set the domain of the color scale based on our data
+                        color
+                          .domain(ckmeansBreaks);
+                        //
+                        // .domain(jenksNaturalBreaks)
+                        //
+                        // .domain(d3.extent(data, d => d[colorVariable]));
+                        //
+                        // .domain([
+                        //   10000,
+                        //   100000,
+                        //   500000,
+                        //   1000000,
+                        //   5000000,
+                        //   10000000,
+                        //   50000000,
+                        //   100000000,
+                        //   500000000,
+                        //   1500000000
+                        // ]);
+                      
+                        svg.append('g')
+                          .attr('class', 'countries')
+                          .selectAll('path')
+                          .data(geography.features)
+                          .enter().append('path')
+                            .attr('d', path)
+                            .style('fill', d => {
+                              if (typeof colorVariableValueByID[d.id] !== 'undefined') {
+                                return color(colorVariableValueByID[d.id])
+                              } 
+                              return 'white'
+                            })
+                            .style('fill-opacity',0.8)
+                            .style('stroke', d => {
+                                if (d[colorVariable] !== 0) {
+                                return 'white';
+                              } 
+                              return 'lightgray';
+                            })
+                            .style('stroke-width', 1)
+                            .style('stroke-opacity', 0.5)
+                            // tooltips
+                            .on('mouseover',function(d){
+                              tip.show(d);
+                              d3.select(this)
+                                .style('fill-opacity', 1)
+                                .style('stroke-opacity', 1)
+                                .style('stroke-width', 2)
+                            })
+                            .on('mouseout', function(d){
+                              tip.hide(d);
+                              d3.select(this)
+                                .style('fill-opacity', 0.8)
+                                .style('stroke-opacity', 0.5)
+                                .style('stroke-width', 1)
+                            });
+                      
+                        svg.append('path')
+                          .datum(topojson.mesh(geography.features, (a, b) => a.id !== b.id))
+                          .attr('class', 'names')
+                          .attr('d', path);
+                      }
+                      </script> 
+                  
+              </div>
+ 
+            <div class="panel panel-default">
+ 
+
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+
+                <div class="panel-body ">
+<div class="jenks2"></div>
+
+
+<!-- these four must go before map -->
+                    <script src="http://d3js.org/queue.v1.min.js"></script>
+                    <script src="http://d3js.org/topojson.v1.min.js"></script>
+                    <script src="https://d3js.org/d3-geo-projection.v1.min.js"></script> 
+                  <script src="src/js/d3-tip.js">  
+                  </script>
+                  <script src='src/js/d3/jenks.js'></script> 
+
+                </div> 
+              </div> 
+            </div> 
+            <div class="panel panel-default"> 
+              <div class="panel-heading" role="tab" id="headingThree"> 
+                <h4 class="panel-title"> 
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree"> 
+                    CALCULATOR 
+                  </a>
+
+                </h4>
+
+              </div>
+
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+
+                <div class="panel-body">
+ 
+             
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+    
+
+
+
+
+
+    </div>
+
+  </div>
+
+  </div>
+
+ 
+
+
+
+  <footer class="footer">
+
+    <div class="container">
+
+
+ 
+
+<p>Copyright &copy; 2018 All Rights Reserved. &nbsp; | &nbsp;
+                       <a href="http://www.thomasmaestas.net/profile.html#contactme" title="Contact Information: thomasmaestas.net/">
+                      Contact Thomas </a>&nbsp; | &nbsp; 
+          T_M_M
+                    </p>
+
+    </div>
+
+  </footer>
+
+<script src="dist/js/bundleTMM.js"></script>
+ 
+
+  <script src="dist/js/jquery.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script> <!--
+ Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>
+</body>
+
+
+
+</html>

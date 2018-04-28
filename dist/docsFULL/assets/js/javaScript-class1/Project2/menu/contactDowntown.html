@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Contact Us</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="../css/zamora.css" />
+	<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100%; border: 5px outset #33CCCC;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK8aFRYkkv4BbThrZ1j39K5jeMz-mhJmY&sensor=false&language=fr">
+    </script>
+    <script type="text/javascript">
+function initialize() {
+		var downtown = new google.maps.LatLng(35.085755,-106.650473);
+        var mapOptions = {
+          center: downtown,
+          zoom: 14,
+		  mapTypeId: google.maps.MapTypeId.ROADMAP
+		  };
+					
+		var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+		
+
+		var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Plaza Indian Trading Post </h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Plaza Indian Trading Post </b>' +
+      'has been family owned and operated  '+
+      'since 1947. '+
+      'Visit our Store at <a href="http://www.plazaindiantradingpost.com">'+
+      'www.plazaindiantradingpost.com</a></p> '+
+       '</div>'+
+      '</div>';
+
+		var infowindow = new google.maps.InfoWindow({
+		content: contentString,
+		maxWidth: 200
+		});
+  
+		var iconimage = 'sungodIcon.png';
+		
+		var cityimage = 'cabqLogo.png';
+				
+		var marker = new google.maps.Marker({
+		position : new google.maps.LatLng(35.095798, -106.669598),
+		map : map,
+		animation : google.maps.Animation.DROP,
+		icon : iconimage
+		});
+		
+		var citycenter = new google.maps.Marker({
+		position : new google.maps.LatLng(35.083542, -106.648148),
+		map : map,
+		icon : cityimage
+		});
+				
+		google.maps.event.addListener(marker, 'click', function() {
+		infowindow.open(map,marker);
+		});
+		
+        google.maps.event.addListener(marker, 'click', toggleBounce);
+		}
+function toggleBounce() {
+
+			if (marker.getAnimation() != null) {
+			marker.setAnimation(null);
+			} else {
+			marker.setAnimation(google.maps.Animation.BOUNCE);
+		}
+}
+	  
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+function loadScript() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=fr' +
+      'callback=initialize';
+  document.body.appendChild(script);
+  
+ window.onload = loadScript;
+}
+</script>
+</head>
+<body onload="initialize()">
+<div id="wrapper">
+<div class="nav">
+			<ul>
+			<li><a href="../index.html">HOME</a></li>
+			<li><a href="../zamora/tenants.html">MODERN COMMERCE</a></li>
+			<li><a href="../zamora/comm.html">COMMERCIAL HISTORY</a></li>
+			<li><a href="../zamora/genea.html">GENEALOGY HISTORY</a></li>
+			<li><a href="../zamora/arch.html">BUILDING HISTORY</a></li>
+			<li><a href="../zamora/current.html">ABOUT US</a></li>
+			</ul>
+</div>
+<h1 class="logo">Contact Us</h1>
+<div id="leftcolumn">
+	<ul>
+			<li></li>
+			<li><a href="../menu/tradingpost.html">Plaza Indian Trading Post</a></li>
+			<li><a href="../menu/primorosa.html">Plaza Primorosa</a></li>
+			<li><a href="../menu/casadefiesta.html">Casa de Fiesta</a></li>
+			<li><a href="../menu/balloon.html">Discovery Balloons</a></li>
+			<li><a href="../menu/hats.html">Old Town Hat Shop</a></li>
+			<li><a href="../menu/contact.html">Contact Us</a></li>
+	</ul>
+</div>
+<div id="rightcolumn">
+<div style="height:120px;">
+<img src="../media/shalom7.jpg" alt="19th C. Downtown Albuquerque" style="float:right;margin-left:10px;" width="200"/>
+<p style="display:block; padding:5px; font-weight:bold; font-size:1.2em;">Zamora Historical Mansion<br />
+2004 South Plaza NW<br />
+Albuquerque, NM 87104<br />
+(505)242-4661<br />
+</p>
+</div>
+<h2>Within walking distance from Downtown!</h2>
+<div class="nav2">
+			<ul>
+			<li><a href="contactBussing.html">Find us by Bus</a></li>
+			<li><a href="contactBike.html">Find us by Bike</a></li>
+			<li><a href="contactDowntown.html">Find us from Downtown</a></li>
+			<li><a href="contactSatellite.html">Find us by Satellite!</a></li>
+			</ul>
+</div>
+<div id="map-canvas" style="width: 600px; height: 600px"><div/>
+</div>
+</div>
+<div id="footer">
+Copyright &copy; 2012 Zamora's Historical Mansion<br />
+<a href="mailto:thomas76milton@gmail.com" target="_blank">
+Contact Webmaster</a>
+</div>
+</div>
+</body>
+</html>

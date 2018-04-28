@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Jackhammer</title>
+<meta http-equiv="content-type" content="text/html;
+charset=iso-8859-1" />
+<script type="text/javascript">
+/* <![CDATA[ */
+var jackhammers = new Array(11);
+var curJackhammer = 0;
+var direction;
+var begin;
+var imagesLoaded = 0;
+for(var i = 0; i < 11; ++i) {
+	jackhammers[i] = new Image();
+	jackhammers[i].src = "jackhammer" + i + ".gif";
+	if (i == 10)
+		begin = setInterval("bounce()", 90);
+}
+function bounce() {
+	if (curJackhammer == 10)
+		curJackhammer = 0;
+	else
+		++curJackhammer;
+	document.getElementsByTagName("img")[0].src = jackhammers[curJackhammer].src;
+	if (curJackhammer == 0)
+		direction = "up";
+	else if (curJackhammer == 10)
+		direction = "down";
+	document.getElementsByTagName("img")[0].src = jackhammers[curJackhammer].src;
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<h1>Jackhammer Man</h1>
+<p><img src="jackhammer1.gif" height="113" width="100" alt="Image of a man with a jackhammer." /></p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-color: #252f37;
+	color: #82888d;
+}
+h1, h2, h3 {
+	color: #c5c7c9;
+
+}
+body,td,th {
+	font-family: Tahoma;
+	font-size: 10px;
+}
+input {
+	font-family: Tahoma;
+	font-size: xx-small;
+}
+select {
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #5E5E5E;
+}
+.bg_bottom {
+	background-image: url(images/bottom.gif);
+	height: 28px;
+	width: 778px;
+}
+.input {
+	width: 138px;
+	font-family: Tahoma;
+	font-size: 10px;
+}
+.input02 {
+	width: 138px;
+	font-family: Tahoma;
+	height: 56px;
+}
+.txt_copyright {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #7f8a8f;
+}
+.txt_content {
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #82888d;
+}
+.txt_content_bold {
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight:bold;
+	color: #82888d;
+}
+.txt_content_title {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	color: #c5c7c9;
+}
+.txt_whote {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #FFFFFF;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Validate Credit Cards</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+    <script type="text/javascript">
+        /* <![CDATA[ */
+	function validateCard() {
+		if (document.forms[0].cardName.value == "American Express")
+		{
+			var cardProtocol = new RegExp("^3[47][0-9]{13}$");
+			if (cardProtocol.test(document.forms[0].cardNumber.value))
+				document.forms[0].ccResult.value = "Valid credit card number";
+			else
+				document.forms[0].ccResult.value = "Invalid credit card number";
+		}
+		else if (document.forms[0].cardName.value == "Diners Club")
+		{
+			var cardProtocol = new RegExp("^3(?:0[0-5]|[68][0-9])[0-9]{11}$");
+			if (cardProtocol.test(document.forms[0].cardNumber.value))
+				document.forms[0].ccResult.value = "Valid credit card number";
+			else
+				document.forms[0].ccResult.value = "Invalid credit card number";
+		}
+		else if (document.forms[0].cardName.value == "Discover")
+		{
+			var cardProtocol = new RegExp("^6(?:011|5[0-9]{2})[0-9]{12}$");
+			if (cardProtocol.test(document.forms[0].cardNumber.value))
+				document.forms[0].ccResult.value = "Valid credit card number";
+			else
+				document.forms[0].ccResult.value = "Invalid credit card number";
+		}
+		else if (document.forms[0].cardName.value == "JCB")
+		{
+			var cardProtocol = new RegExp("^(?:2131|1800|35\d{3})\d{11}$");
+			if (cardProtocol.test(document.forms[0].cardNumber.value))
+				document.forms[0].ccResult.value = "Valid credit card number";
+			else
+				document.forms[0].ccResult.value = "Invalid credit card number";
+		}
+		else if (document.forms[0].cardName.value == "Mastercard")
+		{
+			var cardProtocol = new RegExp("^5[1-5][0-9]{14}$");
+			if (cardProtocol.test(document.forms[0].cardNumber.value))
+				document.forms[0].ccResult.value = "Valid credit card number";
+			else
+				document.forms[0].ccResult.value = "Invalid credit card number";
+		}
+		else if (document.forms[0].cardName.value == "Visa")
+		{
+			var cardProtocol = new RegExp("^4[0-9]{12}(?:[0-9]{3})?$");
+			if (cardProtocol.test(document.forms[0].cardNumber.value))
+				document.forms[0].ccResult.value = "Valid credit card number";
+			else
+				document.forms[0].ccResult.value = "Invalid credit card number";
+		}
+	}
+        /* ]]> */
+    </script>
+
+</head>
+<body>
+    <form action="">
+    <h1>
+        Validate Credit Cards</h1>
+    <p>
+        Credit card:
+        <select name="cardName">
+            <option>American Express</option>
+            <option>Diners Club</option>
+            <option>Discover</option>
+            <option>JCB</option>
+            <option>Mastercard</option>
+            <option>Visa</option>
+        </select>
+        <br />
+        Number:
+        <input type="text" name="cardNumber" />
+    </p>
+    <p>
+        <input type="button" value="Validate" onclick="validateCard()" />
+    </p>
+    <p>
+        <input type="text" name="ccResult" size="50" />
+    </p>
+    </form>
+</body>
+</html>

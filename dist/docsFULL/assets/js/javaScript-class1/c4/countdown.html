@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Rocket Launch</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script type="text/javascript">
+        var countdown;
+        var count = 15;
+        function startAdPage() {
+            countdown = setInterval("startCountdown()", 10000);
+        }
+        function startCountdown() {
+            //alert(count);
+			document.timerForm.timeLeft.value = count;
+            --count;
+            if (count == 0) {
+                clearInterval(countdown);
+                //location.href = "rocket.html";
+				location.href = "http://www.nasa.gov";
+            }
+        }
+    </script>
+
+</head>
+<body >
+<input type = "button" value = "start" onClick = "startAdPage()">                
+				<form action="" name="timerForm">
+                    Time remaining
+                    <input type="text" name="timeLeft" size="1" value="15" style="background-color: Transparent;
+                        border: none; overflow: hidden; font: 25px tahoma; color: #3F3F3F" />
+                    seconds</p>
+                </form>
+</body>
+</html>

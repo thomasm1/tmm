@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Forestville Funding Online Banking</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function registerForm() {
+var firstName = document.forms[0].firstname.value;
+var lastName = document.forms[0].lastname.value;
+var acctnum = document.forms[0].acctnum.value;
+var userName = document.forms[0].username.value;
+var userPassword = document.forms[0].userpassword.value;
+var myDate = new Date();
+myDate.setFullYear(myDate.getFullYear() + 1);
+document.cookie = "firstname=" + encodeURIComponent(firstName) + "; expires=" + myDate.toUTCString();
+document.cookie = "lastname=" + encodeURIComponent(lastName) + "; expires=" + myDate.toUTCString();
+document.cookie = "acctnum=" + encodeURIComponent(acctnum) + "; expires=" + myDate.toUTCString();
+document.cookie = "name=" + encodeURIComponent(userName) + "; expires=" + myDate.toUTCString();
+document.cookie = "password=" + encodeURIComponent(userPassword) + "; expires=" + myDate.toUTCString();
+window.alert("Thank you for registering!");
+location.href = "ForestvilleFundingLogin.html";
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<h1>Forestville Funding</h1><hr />
+<h2>Online Banking Registration</h2>
+<form action="" method="get"
+enctype="application/x-www-form-urlencoded">
+<p><strong>First Name</strong><br />
+<input type="text" name="firstname" /></p>
+<p><strong>Last Name</strong><br />
+<input type="text" name="lastname" /></p>
+<p><strong>Account Number</strong><br />
+<input type="text" name="acctnum" /></p>
+<p><strong>User ID</strong><br />
+<input type="text" name="username" /></p>
+<p><strong>Password</strong><br />
+<input type="password" name="userpassword" /></p>
+<p><input type="button" value="Register"
+onclick="registerForm();" /></p>
+</form>
+</body>
+</html>

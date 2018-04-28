@@ -1,80 +1,43 @@
-# Thank you for purchasing an Official Bootstrap Theme <3 #
- ' * Bootstrap\n' +
-  ' * Copyright 2011-2016\n' +
-  ' * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n' +
-  ' */\n'
-Purchased from:
-https://www.udemy.com/the-complete-web-developer-course-2/learn/v4/content 
-Re: Rob Percival
+# React Express Starter Pack
 
+> Create full stack apps with React and Express. Run your client and server with a single command. 
 
-Within your Bootstrap Theme you’ll find the following directories and files, grouping common resources and providing both compiled and minified distribution files, as well as raw source files.
+### Redux Version
+This version does not include Redux
+[Click Here For Redux Version](https://github.com/bradtraversy/react_redux_express_starter) 
 
-(*NOTE: Themes now ship with support for 2 major Bootstrap versions; organized by top level directories, `v3` and `v4`.*)
+## Quick Start
 
-```
-theme/
-  ├── v3/*
-  └── v4
-      ├── gulpfile.js
-      ├── package.json
-      ├── README.md
-      ├── docs/
-      ├── less/
-      │   ├── bootstrap/
-      │   ├── custom/
-      │   ├── variables.less
-      │   └── toolkit.less
-      ├── js/
-      │   ├── bootstrap/
-      │   └── custom/
-      ├── fonts/
-      │   ├── bootstrap-entypo.eot
-      │   ├── bootstrap-entypo.svg
-      │   ├── bootstrap-entypo.ttf
-      │   ├── bootstrap-entypo.woff
-      │   └── bootstrap-entypo.woff2
-      └── dist/
-          ├── toolkit.css
-          ├── toolkit.css.map
-          ├── toolkit.min.css
-          ├── toolkit.min.css.map
-          ├── toolkit.js
-          └── toolkit.min.js
+``` bash
+# Install dependencies for server
+npm install
+
+# Install dependencies for client
+npm run client-install
+
+# Run the client & server with concurrently
+npm run dev
+
+# Run the Express server only
+npm run server
+
+# Run the React client only
+npm run client
+
+# Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
-#### Docs and Examples
+## App Info
 
-The `docs` directory contains all the static resources for your Themes docs and examples. To view, just open in your favorite browser!
+### Author
 
-```
-$ open docs/index.html
-```
+Brad Traversy
+[Traversy Media](http://www.traversymedia.com)
 
+### Version
 
-#### Gulpfile.js
+1.0.0
 
-We've also included an optional Gulp file to help you get started with theme customization. You’ll need to install Node.js and Gulp before using our included gulpfile.js.
+### License
 
-To install Node visit [https://nodejs.org/download](https://nodejs.org/download/).
-
-To install gulp, run the following command:
-
-```
-$ npm install gulp -g
-```
-
-When you’re done, install the rest of the theme's dependencies:
-
-```
-$ npm install
-```
-
-From here on out, simply run `gulp` from your terminal and you're good to go!
-
-+ `gulp` - recompiles and minifies your theme assets into your `dist` directory.
-
-
-#### Support
-
-If you experience any problems with the above, or if you think you've found a bug with your theme - please don't hesitate to reach out to themes@getbootstrap.com. thanks!!
+This project is licensed under the MIT License

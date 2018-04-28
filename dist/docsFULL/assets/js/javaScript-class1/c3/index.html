@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Table</title>
+</head>
+<body>
+<script type="text/javascript">
+function primeFunction() {
+loopAttempts = 0;
+var curCol = 0;
+var totalRow = 0;
+var total = 0;
+var maxnum = parseInt(document.primeCalculator.maxNum.value);
+var maxcol = parseInt(document.primeCalculator.maxCol.value);
+
+document.write("<table width='100%' border ='1'><tr>");
+
+for (var curNum = 1; curNum <= maxnum; ++curNum) {
+	loopAttempts++;
+	var isPrime = true;
+	var loopstop = parseInt(curNum/2); //
+	for (var i = 2; i <= loopstop; ++i) {
+		resultTest = curNum % i;
+		if (curNum == i) 
+		break;
+	
+		if (resultTest == 0) {
+			isPrime = false;
+		break;
+		}
+	}
+	if (isPrime === true){
+			//write 
+			document.write('<td>' + curNum + '</td>');
+		++total;
+		++curCol;
+		if(curCol == maxcol) {
+		document.write('</tr><tr>');
+		curCol = 0;
+		++totalRow;
+		}
+	}
+}
+document.write("</tr></table");
+document.write("<p>LoopAttempts:" + ' ' + loopAttempts + "</p>");
+var n = (total/loopAttempts);
+var num = new Number(n);
+var percentage=num.toFixed(2);
+document.write("<p>Total Amount of Prime Numbers:" + ' ' + total + "</p>");
+document.write("<p>Frequency of primes:" + ' ' + "<u>" +
+percentage + "</u>" + '  ' + 'among this number:' + ' ' + "<u>" + loopAttempts + "</u>" + "</p>");
+}
+</script>
+<form name="primeCalculator" >
+Maximum Number:<input type="text" name="maxNum" value="999"><br>
+Number of Columns:<input type="text" name="maxCol" value="10"><br>
+<input type="button" value="Calculate Primes!" onclick = "primeFunction();">
+</form>
+</body>
+</html>
