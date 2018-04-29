@@ -1177,5 +1177,13 @@ https://digiconomist.net/bitcoin-energy-consumption
 
 <hr /><a href="#martop">
 <button id="end">TOP</button>
+<p>&copy; 2018 All Rights Reserved. &nbsp;|&nbsp;
+<a href="http://www.thomasmaestas.net/profile.html#contactme" title="Contact Information: thomasmaestas.net/">
+  Contact Thomas </a>&nbsp; | &nbsp;
+<img src="dist/img/paypal.PNG" alt="PayPal Emblem" height="
+15"></img>
+<a href="https://www.paypal.com/paypalme/ThomasMaestas" style="text-decoration:none;">
+  &nbsp; Blog Support Very Appreciated!</a>
+</p>
 </a>
 `;

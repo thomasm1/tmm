@@ -3,6 +3,44 @@ console.log('blog-text.js looaaaded');
  
 document.getElementById("blogtext").innerHTML = `<div id="top"></div>
 
+
+<div id="18-04-28" class=" hidden             avr 18-03 -24"> 
+<hr />  
+<a href="#top"><button>Top</button></a> 
+ &nbsp; 
+<h4 class="  title dailytech longtitle">OUR DAILY TECH:</h4>  
+<h5 class="  subdailytech">Web Dev Affairs</h5>  
+<p class="  author">by Thomas Maestas, MA</p>   
+<h6    class="  chapternumber">April 28-29, 2018<br />Weekend</h6>    
+<h6    class="dailytitle chapternumber">This Time Baby I'll be Bullet-Proof
+<br />
+--La Roux</h6>   
+<p class="firstparagraph">Fitbit's Fashion Wearables has finally hit a stride with the Ionic, and after 2 weeks I'll say there are trade-offs betweeen the lighter-weight models versus the touch-screen. Granted, my conversation bows in reverence to the Apple Watch,<sup>1</sup>  whose Series 3 hardly has competitors... That said, I do give the watch my rave reviews--and finally Fitbit has solved the flimsy band problem (this time with more metal), 
+</p><p>The touch accuracy is fast, the graphics are really good, and finally a completely customizable "dashboard" with that stats you want. It's draw-backs can't be dismissed: An occasional I'm used to instant time, but every once in a while it goes into a "sleep" mode leading to a few-second delay for the screen to power up.    </p>
+
+<p class="cite">1. <a href="https://www.apple.com/apple-watch-series-3/" target="_blank">https://www.apple.com/apple-watch-series-3/</a></p>
+<p class="cite"><a href="https://www.cnet.com/products/fitbit-ionic/review/" target="_blank">https://www.cnet.com/products/fitbit-ionic/review/</a></p> 
+</div>
+
+
+<div id="18-04-27" class="hidden   avr 18-03 -24"> 
+<hr />  
+<a href="#top"><button>Top</button></a> 
+ &nbsp; 
+<h4 class="  title dailytech longtitle">OUR DAILY TECH:</h4>  
+<h5 class="  subdailytech">Web Dev Affairs</h5>  
+<p class="  author">by Thomas Maestas, MA</p>   
+<h6    class="  chapternumber">April 27, 2018<br /></h6>    
+<h6    class="dailytitle chapternumber">F
+<br />
+--La Roux</h6>   
+<p class="firstparagraph">  
+</div>
+
+
+
+
+
 <div id="18-04-26" class="              avr 18-03 -24"> 
 <hr />  
 <a href="#top"><button>Top</button></a> 
