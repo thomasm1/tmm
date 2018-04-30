@@ -210,9 +210,10 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
       <div class=" nav flex-column rightnav sidebar-sticky">
         <div class="  list-group">
             <a href="dice/index.html" class="list-group-item list-group-item-action">JAVASCRIPT DICE GAME</a> 
-        <a href="codeplayer.html" class="list-group-item list-group-item-action">JAVASCRIPT IN-BROWSER CODER</a>
-          <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action">DEMO FULL DASHBOARD WEB-APP </a>
-          <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action">D3-JS INTERACTIVE MAP OF WORLD CUP WINNERS</a>
+        <a href="codeplayer.html" class="hidden list-group-item list-group-item-action">JAVASCRIPT  CODER</a>
+           <a href="todo.html" class="list-group-item list-group-item-action">REACT&nbsp; TODO APP</a>  
+          <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action">    DASHBOARD WEB-APP </a> 
+          <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action">D3-JS INTERACTIVE MAP </a>
 
         </div>
 
@@ -244,54 +245,9 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     
     </script>
 
+<div id="a">
+</div>
 
-  <div class="section-a">
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-4">
-
-
-
-          <i class="fa fa-lightbulb-o "></i>
-
-          <h3>TMM Contracting &amp; Consulting</h3>
-
-          <p>Consulting experience includes four years' Program Evaluation and Statistics for K-12 programs, Higher Education
-            grants, and Public Data projects at Institute for Social Research; </p>
-
-        </div>
-
-        <div class="col-md-4">
-
-          <i class="fa fa-gear"></i>
-
-          <h3>TMM Data Analytics &amp; Visualization</h3>
-
-          <p>I provide Services and Consulting for big & small Data and Web solutions since 2016. Your data tell a story, let
-            me help you visualize a data-driven message.</p>
-
-        </div>
-
-        <div class="col-md-4">
-
-          <i class="fa fa-html5"></i>
-
-          <h3>TMM Web-App &amp; Mobile-App Development</h3>
-
-          <p>I provide Data-Driven, Analytic Development of your apps, even if it's sketched on a napkin! Data Visualization
-            using JavaScript-level, R-level, and Python-level for graphics, interactivity, and specific aims of the client.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
 
 
 
@@ -312,9 +268,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
                 <h4 class="panel-title">
 
                   <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-                    WORLD MAP with population
-
+ 
                   </a>
 
                 </h4>
@@ -323,57 +277,13 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 
-                <div class="panel-body  map0 map-img">
-                  <link rel="stylesheet" type="text/css" href="dist/css/styles.css"/>
+                <link rel="stylesheet" type="text/css" href="dist/css/styles.css"/>
+                <div id="bars" class="panel-body  map0 map-img">
            
-<script type="text/javascript">
-  var data = [10, 15, 30, 50, 80, 65, 55, 30, 20, 10, 8]; // <- A
 
-  function render(data) { // <- B
-      var bars = d3.selectAll(".map0").selectAll("div.h-bar") // <- C
-              .data(data); // Update <- D
-
-      // Enter
-      bars.enter() // <- E
-              .append("div") // <- F
-                  .attr("class", "h-bar") // <- G
-          .merge(bars) // Enter + Update <- H
-              .style("width", function (d) {
-                  return (d * 3) + "px"; // <- I
-              })
-              .text(function (d) {
-                  return d; // <- J
-              });
-
-
-      // Exit
-      bars.exit() // <- K
-              .remove();
-  }
-
-  setInterval(function () { // <- L
-      data.shift();
-      data.push(Math.round(Math.random() * 100));
-      render(data);
-  }, 1500);
-
-  render(data);
-</script>
-            <div class="hidden">
-            <p> Literate Jenks cut up data values into discrete categories. For instance, a choropleth map of poverty rates
-            is cut into nine buckets which each have a different color. Different scales are useful for different
-            kinds of data - you might use a linear scale, log scale, quantile, or so on.
-
-            </p>
-            <p>
-
-            Literate Jenks Natural Breaks
-            <sup id="sup-1-jenks">1</sup> Algorithm designed specifically for this case that tries to maximize the similarity of numbers
-            in groups while maximizing the distance between the groups. It tends to look good and be easily understood,
-            so it’s popular. It’s in ArcGIS, QGIS, and lots of other tools for maps and statistics
-            <sup id="jenks">1</sup>. 
-            </div>
-
+                  <script src="src/js/d3/bars.js">
+ 
+                  </script>
                   </div>
 
                 </p>
@@ -567,21 +477,13 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
 
 
-  <footer class="footer">
-    <div class="copyright">
-      <small> &copy; 2018 TMM &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;All Rights Reserved &nbsp;&nbsp; | &nbsp;&nbsp;
-          <a title="thomas@ourdailytech.com"
-              href="mailto:thomas@ourdailytech.com" target="_blank">thomas@ourdailytech.com</a> &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-          <a href="index.html">www.thomasmaestas.net</a>
-      </small>
-
-  </div>
-  </footer>
+  <footer id="footer" class="footer"> 
+  </footer> 
   <script src="dist/js/jquery.min.js"></script>
   <script src="dist/js/bootstrap.min.js"></script>
 
-  <script src="dist/tmm_bundle.js"></script>
-<script src="dist/js/calc.js"></script>
+  <script src="dist/tmm_bundle.js"></script> 
+   
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>
 </body>
 

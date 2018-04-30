@@ -79,6 +79,9 @@ __webpack_require__(2);
 __webpack_require__(3); 
 __webpack_require__(4);  
 __webpack_require__(5); 
+__webpack_require__(6); 
+__webpack_require__(7);
+__webpack_require__(8);
 
 /***/ }),
 /* 2 */
@@ -87,9 +90,7 @@ __webpack_require__(5);
 
 
 console.log('blog-mar-loader'); 
-document.getElementById("blog-mar").innerHTML = ` 
-
-<div id="18-03-24" class=" hidden   mar 18-03 -24">
+document.getElementById("blog-mar").innerHTML = `<div id="18-03-24" class=" hidden   mar 18-03 -24">
 <hr />
 <button>
 <a href="#martop">Top</a>
@@ -2515,43 +2516,66 @@ of utmost importance ...</p>
 /***/ (function(module, exports) {
 
 
-console.log('blog-text.js looaaaded'); 
+console.log('blog-text.js lo ded'); 
  
 document.getElementById("blogtext").innerHTML = `<div id="top"></div>
 
 
-<div id="18-04-28" class=" hidden             avr 18-03 -24"> 
+<div id="18-04-28" class="hidden               avr 18-03 -24"> 
 <hr />  
-<a href="#top"><button>Top</button></a> 
+<a href="#top2"><button>Top</button></a> 
  &nbsp; 
 <h4 class="  title dailytech longtitle">OUR DAILY TECH:</h4>  
 <h5 class="  subdailytech">Web Dev Affairs</h5>  
 <p class="  author">by Thomas Maestas, MA</p>   
 <h6    class="  chapternumber">April 28-29, 2018<br />Weekend</h6>    
-<h6    class="dailytitle chapternumber">This Time Baby I'll be Bullet-Proof
+<h6    class="dailytitle chapternumber">This Time Baby I'll be Bullet-Proof: Innovation for a 5G World
 <br />
 --La Roux</h6>   
-<p class="firstparagraph">Fitbit's Fashion Wearables has finally hit a stride with the Ionic, and after 2 weeks I'll say there are trade-offs betweeen the lighter-weight models versus the touch-screen. Granted, my conversation bows in reverence to the Apple Watch,<sup>1</sup>  whose Series 3 hardly has competitors... That said, I do give the watch my rave reviews--and finally Fitbit has solved the flimsy band problem (this time with more metal), 
-</p><p>The touch accuracy is fast, the graphics are really good, and finally a completely customizable "dashboard" with that stats you want. It's draw-backs can't be dismissed: An occasional I'm used to instant time, but every once in a while it goes into a "sleep" mode leading to a few-second delay for the screen to power up.    </p>
+<p class="firstparagraph">T-Mobile's potential acquirement of Sprint--for all of its monopoly overtones--may be a very good thing: We, as a society, are at the doorstep of 5G technology, which will fundamentally change every aspect of life. T-Mobile has always been the littleAlthough Sprint was always in last, 4th place among major carriers, their network infrastructure <i> and Bandwidth Rights</i> can help T-Mobile refashion the 5G tech the right way.</p>  
+<p class="hidden">
+Fitbit's acquirement of Pebble Watch exemplifies the technological hard-ware leap-frogging. This continual Big Fish - Little Fish cycle, of course, is part and parcel for fueling innovation. Fitbit's Fashion Wearables hit a stride with the Ionic, and after 2 weeks I'll say there are trade-offs betweeen the lighter-weight models versus the touch-screen. Granted, my conversation bows in reverence to the Apple Watch,<sup>1</sup>  whose Series 3 hardly has competitors... That said, I do give  my rave reviews to Fitbit's Ionic touch screen. The technology needed comes from the Pebble watch, which was purchased by Fitbit recently.
+The touch accuracy is right one, the graphics are really good, and finally a completely customizable "dashboard" with that stats you want. It's draw-backs can't be dismissed: On rare occasions, the watch enters a "sleep" mode leading to a few-second delay for the screen to power up. When you need the time, you need the time!   
+</p>
+<p class="hidden cite"><a href="https://www.apple.com/apple-watch-series-3/" target="_blank">https://www.apple.com/apple-watch-series-3/</a></p>
 
-<p class="cite">1. <a href="https://www.apple.com/apple-watch-series-3/" target="_blank">https://www.apple.com/apple-watch-series-3/</a></p>
-<p class="cite"><a href="https://www.cnet.com/products/fitbit-ionic/review/" target="_blank">https://www.cnet.com/products/fitbit-ionic/review/</a></p> 
+<p class="cite">1. <a href="http://www.businessinsider.com/5g-speed-network-lte-2018-1/" target="_blank">http://www.businessinsider.com/5g-speed-network-lte-2018-1</a></p>
+<p class="cite"><a href="https://www.cnet.com/products/fitbit-ionic/review/" target="_blank">https://www.cnet.com/products/fitbit-ionic/review/</a></p>
 </div>
 
 
-<div id="18-04-27" class="hidden   avr 18-03 -24"> 
+<div id="18-04-27" class="  hidden              avr 18-03 -24"> 
 <hr />  
-<a href="#top"><button>Top</button></a> 
+<a href="#top2"><button>Top</button></a> 
  &nbsp; 
 <h4 class="  title dailytech longtitle">OUR DAILY TECH:</h4>  
 <h5 class="  subdailytech">Web Dev Affairs</h5>  
 <p class="  author">by Thomas Maestas, MA</p>   
 <h6    class="  chapternumber">April 27, 2018<br /></h6>    
-<h6    class="dailytitle chapternumber">F
+<h6    class="dailytitle chapternumber">Data Privacy and Profit in the Twitter-verse 
 <br />
---La Roux</h6>   
-<p class="firstparagraph">  
+ </h6>    
+   <p class="firstparagraph" >All over, the new <i>Terms &amp; Conditions in Fine(r) Print</i> are alerting social media users to new compliance to ... new laws? I wrote in my <a href="#04-16-18">April 16th post</a> about the upcoming E.U. General Data Privacy Regulations, to which most of social media is unabashedly following. The climate doesn't hurt, but how will our social-media experiences be watered down?  </p>
+<p>Let's see what Twitter is telling us:<?p><p class="quote">
+
+As part of our ongoing commitment to transparency, and in preparation for new data protection laws that take effect next month, we’re updating our Terms of Service and Privacy Policy to empower you to make the best decisions about the information that you share with us. <br />
+<br />These updates will take effect on May 25, 2018. By using our services on or after that date, you’ll be agreeing to these revisions. You should read the documents in full, but the key updates in our Privacy Policy include:
+<br /><br />
+
+
+   More focus on the controls we offer you over your personal data;
+   <br /><br />
+   More focus on how Twitter shares your public data broadly and instantly, including through our developer tools;
+   <br /><br />
+   More transparency and control over how we share your data with business partners; and
+   <br /><br />
+   More clarity about how we share your data to prevent harm, comply with law, serve the public interest, and keep Twitter safe and welcoming for everyone
+   </p>
+   
+<p class="cite"><a href="https://help.twitter.com/en/rules-and-policies/update-privacy-policy" target="_blank">https://help.twitter.com/en/rules-and-policies/update-privacy-policy</a></p> 
 </div>
+
+
 
 
 
@@ -5778,6 +5802,7 @@ var showSecretMP = false;
 var showSecretMPB = false;
 var showSecretMAR = false;
 /////////////////////////////// 
+/*
 secretButton.addEventListener('click', toggleSecretState);
 secretButtonMP.addEventListener('click', toggleSecretStateMP);
 
@@ -5786,6 +5811,7 @@ secretButtonMPB.addEventListener('click', toggleSecretStateMPB);
 updateSecretParagraphMPB();
 secretButtonMAR.addEventListener('click', toggleSecretStateMAR);
 updateSecretParagraphMAR();
+*/
 /////////////////////////////// 
 function toggleSecretState() {
   showSecret = !showSecret;
@@ -10150,6 +10176,135 @@ var metaBlog = {
 
 // ReactDom.render(<App />, document.getElementById('react'))
 
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+
+
+console.log("calc loaded");
+document.getElementById("calc").innerHTML = `
+<form id="form">
+							<p>
+								<input class="bu" name="seven" onclick="updateString('7')" type="button" value="7" />
+								<input class="bu" name="eight" onclick="updateString('8')" type="button" value="8" />
+								<input class="bu" name="nine" onclick="updateString('9')" type="button" value="9" />
+								<input class="bu" name="div" onclick="updateString('/')" type="button" value="/" />
+								<br />
+								<input class="bu" name="four" onclick="updateString('4')" type="button" value="4" />
+								<input class="bu" name="five" onclick="updateString('5')" type="button" value="5" />
+								<input class="bu" name="six" onclick="updateString('6')" type="button" value="6" />
+								<input class="bu" name="mult" onclick="updateString('*')" type="button" value="*" />
+								<br />
+								<input class="bu" name="one" onclick="updateString('1')" type="button" value="1" />
+								<input class="bu" name="two" onclick="updateString('2')" type="button" value="2" />
+								<input class="bu" name="three" onclick="updateString('3')" type="button" value="3" />
+								<input class="bu" name="plus" onclick="updateString('+')" type="button" value="+" />
+								<br />
+								<input class="bu" name="openparenth" onclick="updateString('(')" type="button" value="(" />
+								<input class="bu" name="closeparenth" onclick="updateString(')')" type="button" value=")" />
+								<input class="bu" name="power" onclick="updateString(';-)')" type="button" value=";-)" />
+								<input class="bu" name="modulus" onclick="updateString(':-\)')" type="button" value=":-)" />
+								<br />
+								<input class="bu" name="zero" onclick="updateString('0')" type="button" value="0" />
+								<input class="bu" name="dot" onclick="updateString('.')" type="button" value="." />
+								<input class="bu" name="clear" onclick="document.getElementById("calc").input.value='';inputString=''" type="button" value="C"
+								/>
+								<input class="bu" name="minus" onclick="updateString('-')" type="button" value="-" />
+								<br />
+								<input class="bu" name="calc" onclick="document.getElementById("calc").input.value = eval(inputString); inputString=''" style="color:white;background-color:teal"
+								    type="button" value="=" />
+								<input class="bu prim" name="mem" onclick="document.getElementById("calc").storedValue.value = parseInt(document.getElementById("calc").storedValue.value) + parseInt(document.getElementById("calc").input.value)"
+								    type="button" value="M +" />
+								<input class="bu prim" name="recall" onclick="updateString(document.getElementById("calc").storedValue.value)" type="button" value="MRC"
+								/>
+								<input class="bu prim" name="memClear" onclick="document.getElementById("calc").storedValue.value=0" type="button" value="MC"
+								/>
+								<input name="storedValue" type="hidden" value="0" />
+								<br />
+								<br />
+								<input id="window" name="input" type="text" />
+							</p>
+                        </form>
+					`
+					
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+
+console.log("footer"); 
+ 
+document.getElementById("footer").innerHTML = `
+<div class="copyright">
+      <small> &copy; 2018 TMM &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;All Rights Reserved &nbsp;&nbsp; | &nbsp;&nbsp;
+          <a title="thomas@ourdailytech.com"
+              href="mailto:thomas@ourdailytech.com" target="_blank">thomas@ourdailytech.com</a> &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+          <a href="index.html">www.thomasmaestas.net</a>
+      </small>
+
+  </div>
+ `;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+
+
+console.log("a-banner loaded");
+document.getElementById("a").innerHTML = `
+  <div class="section-a">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+
+
+        <i class="fa fa-lightbulb-o "></i>
+
+        <h3>TMM Contracting &amp; Consulting</h3>
+
+        <p>Consulting experience includes four years' Program Evaluation and Statistics for K-12 programs, Higher Education
+          grants, and Public Data projects at Institute for Social Research; </p>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <i class="fa fa-gear"></i>
+
+        <h3>TMM Data Analytics &amp; Visualization</h3>
+
+        <p>I provide Services and Consulting for big & small Data and Web solutions since 2016. Your data tell a story, let
+          me help you visualize a data-driven message.</p>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <i class="fa fa-html5"></i>
+
+        <h3>TMM Web-App &amp; Mobile-App Development</h3>
+
+        <p>I provide Data-Driven, Analytic Development of your apps, even if it's sketched on a napkin! Data Visualization
+          using JavaScript-level, R-level, and Python-level for graphics, interactivity, and specific aims of the client.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+`
 
 /***/ })
 /******/ ]);

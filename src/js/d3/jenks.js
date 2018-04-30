@@ -1,3 +1,21 @@
+
+
+/*
+            <div class="hidden">
+            <p> Literate Jenks cut up data values into discrete categories. For instance, a choropleth map of poverty rates
+            is cut into nine buckets which each have a different color. Different scales are useful for different
+            kinds of data - you might use a linear scale, log scale, quantile, or so on.
+
+            </p>
+            <p>
+
+            Literate Jenks Natural Breaks
+            <sup id="sup-1-jenks">1</sup> Algorithm designed specifically for this case that tries to maximize the similarity of numbers
+            in groups while maximizing the distance between the groups. It tends to look good and be easily understood,
+            so it’s popular. It’s in ArcGIS, QGIS, and lots of other tools for maps and statistics
+            <sup id="jenks">1</sup>. 
+            </div>
+*/
 // # [Jenks natural breaks optimization](http://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization)
 //
 // Implementations: [1](http://danieljlewis.org/files/2010/06/Jenks.pdf) (python),

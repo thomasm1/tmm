@@ -10,9 +10,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'tmm_bundle.js',
-  }
-  /*
-  ,
+  }  
+  /*,
   module: {
     loaders: [{
         test: /\.js?$/,

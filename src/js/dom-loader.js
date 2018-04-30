@@ -20,6 +20,7 @@ var showSecretMP = false;
 var showSecretMPB = false;
 var showSecretMAR = false;
 /////////////////////////////// 
+/*
 secretButton.addEventListener('click', toggleSecretState);
 secretButtonMP.addEventListener('click', toggleSecretStateMP);
 
@@ -28,6 +29,7 @@ secretButtonMPB.addEventListener('click', toggleSecretStateMPB);
 updateSecretParagraphMPB();
 secretButtonMAR.addEventListener('click', toggleSecretStateMAR);
 updateSecretParagraphMAR();
+*/
 /////////////////////////////// 
 function toggleSecretState() {
   showSecret = !showSecret;

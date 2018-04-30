@@ -1,9 +1,7 @@
 
 
 console.log('blog-mar-loader'); 
-document.getElementById("blog-mar").innerHTML = ` 
-
-<div id="18-03-24" class=" hidden   mar 18-03 -24">
+document.getElementById("blog-mar").innerHTML = `<div id="18-03-24" class=" hidden   mar 18-03 -24">
 <hr />
 <button>
 <a href="#martop">Top</a>
