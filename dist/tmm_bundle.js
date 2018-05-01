@@ -2520,6 +2520,7 @@ console.log('blog-text.js lo ded');
  
 document.getElementById("blogtext").innerHTML = `<div id="top"></div>
 
+
 <div id="18-04-30" class="                avr 18-03 -24"> 
 <hr />  
 <a href="#top"><button>Top</button></a> 
@@ -2530,12 +2531,15 @@ document.getElementById("blogtext").innerHTML = `<div id="top"></div>
 <h6    class="  chapternumber">April 30, 2018<br /> </h6>    
 <h6    class="dailytitle chapternumber">Data Privacy and Permissions in the Twitter-verse<br />Part II: A Defense of Data Privacy Moderation
 <br /> </h6>   
-<p class="firstparagraph">Fitbit and Wearables' Contribution to Health in Society is clear<sup>1</sup>, yet much of the credit is due to increased social, activity-based networks.  relaxed data privacy. Given my previous post on the upcoming data privacy changes <i>in response to both Cambridge Analytica scandal <strong>and</strong> the long-planned E.U.'s roll-out of new Data Privacy regulations.</i></p>
+<p class="firstparagraph">Fitbit and Wearables' Contribution to Health in Society is clear<sup>1</sup>, yet much of the credit is due to increased social, activity-based networks.  And, new features and benefits depend on relaxed data privacy. Given my <a href="#18-04-11">April 11th post</a> on the upcoming data privacy changes <i>in response to both Cambridge Analytica scandal <strong>and</strong> E.U.'s long-planned Data Privacy regulations.</i></p>
   
-<p>Now is the worst time to clamp down on app permissions, <i>especially as Smart Watches begin to finally make in-roads</i> socially and hardware-wise.  Fitbit's acquirement of Pebble Watch exemplifies the  recent technological hard-ware leap-frogging.  Fitbit's Fashion Wearables' trade-offs betweeen the lighter-weight models versus functional touch-screen. This blogpost bows in reverence to the Apple Watch,<sup>1</sup> whose Series 3 hardly has competitors. I personally reommend the Fitbit Ionic: After three weeks, I'll say the touch accuracy is right on, the graphics are really good, and finally a completely customizable "dashboard" with that stats you want. It's draw-backs are minor, every once in a while the watch enters a "sleep" mode leading to a few-second delay for the screen to power up.</p>
-<p>All in all, we can't truly have a socially-connected society without flexible app permissions, so let's hope for fair and flexible data regulations ...  
+<p>So, now is the worst time to clamp down on app permissions, <i>especially as Smart Watches begin to finally make in-roads</i> socially and hardware-wise.  Fitbit's acquirement of Pebble Watch exemplifies the  recent technological hard-ware leap-frogging.  All in all, we can't truly have a socially-connected society without flexible app permissions, so let's hope for fair and flexible data regulations ...  
 </p>
+
+<p class="side">(Side Note: Fitbit's Fashion Wearables' trade-offs betweeen the lighter-weight models versus functional touch-screen. This blogpost bows in reverence to the Apple Watch,<sup>1</sup> whose Series 3 hardly has competitors. I personally reommend the Fitbit Ionic: After three weeks, I'll say the touch accuracy is right on, the graphics are really good, and finally a completely customizable "dashboard" with that stats you want. It's draw-backs are minor, every once in a while the watch enters a "sleep" mode leading to a few-second delay for the screen to power up.)</p>
 <p class="   cite">1. <a href="https://techcrunch.com/2018/02/13/fitbit-buys-twine-health-in-bid-to-become-a-more-serious-health-care-tool/" target="_blank">https://techcrunch.com/2018/02/13/fitbit-buys-twine-health-in-bid-to-become-a-more-serious-health-care-tool/</a></p>
+
+<p class="cite"><a href="https://www.apple.com/apple-watch-series-3/" target="_blank">https://www.apple.com/apple-watch-series-3/</a></p> 
 </div>
  
 
@@ -2552,7 +2556,7 @@ Weekend</h6>
 <h6    class="dailytitle chapternumber">Data Privacy and Permissions in the Twitter-verse<br />Part I: Conforming to E.U.'s Regulations 
 <br />
  </h6>    
-   <p class="firstparagraph" >All over, the new <i>Terms &amp; Conditions in Fine(r) Print</i> are alerting social media users to new compliance to ... new laws? I wrote in my <a href="#04-16-18">April 16th post</a> about the upcoming E.U. General Data Privacy Regulations, to which most of social media is unabashedly following. The climate doesn't hurt, but how will our social-media experiences be watered down?  </p>
+   <p class="firstparagraph" >All over, the new <i>Terms &amp; Conditions in Fine(r) Print</i> are alerting social media users to new compliance to ... new laws? I wrote in my <a href="#18-04-16">April 16th post</a> about the upcoming E.U. General Data Privacy Regulations, to which most of social media is unabashedly following. The climate doesn't hurt, but how will our social-media experiences be watered down?  </p>
 <p>Let's see what Twitter is telling us:<?p><p class="quote">
 
 As part of our ongoing commitment to transparency, and in preparation for new data protection laws that take effect next month, we’re updating our Terms of Service and Privacy Policy to empower you to make the best decisions about the information that you share with us. <br />
@@ -2569,9 +2573,9 @@ As part of our ongoing commitment to transparency, and in preparation for new da
    More clarity about how we share your data to prevent harm, comply with law, serve the public interest, and keep Twitter safe and welcoming for everyone
    </p>
    
-<p class="cite"><a href="https://help.twitter.com/en/rules-and-policies/update-privacy-policy" target="_blank">https://help.twitter.com/en/rules-and-policies/update-privacy-policy</a></p> 
-
-<p class="cite"><a href="https://www.apple.com/apple-watch-series-3/" target="_blank">https://www.apple.com/apple-watch-series-3/</a></p> 
+<p class="cite">1.<a href="https://help.twitter.com/en/rules-and-policies/update-privacy-policy" target="_blank">https://help.twitter.com/en/rules-and-policies/update-privacy-policy</a></p> 
+<p class="cite">2.<a href="https://www.bloomberg.com/news/articles/2018-04-16/facebook-s-zuckerberg-leans-in-to-meet-with-eu-digital-chief" target="_blank">https://www.bloomberg.com/news/articles/2018-04-16/facebook-s-zuckerberg-leans-in-to-meet-with-eu-digital-chief
+</a> </p> 
 </div>
 
 
@@ -2587,13 +2591,10 @@ As part of our ongoing commitment to transparency, and in preparation for new da
 <h6    class="dailytitle chapternumber">This Time Baby I'll be Bullet-Proof: Innovation for a 5G World
 <br />
 --La Roux</h6>   
-<p class="firstparagraph">T-Mobile's potential acquirement of Sprint--for all of its monopoly overtones--may be a very good thing: We, as a society, are at the doorstep of 5G technology, which will fundamentally change every aspect of life. T-Mobile has always been the little engine that could, but has become a powerhouse with their 8 billion purchase of low bandwidth, best for ubiquity needed by 5g.  Although Sprint was always in last, 4th place among major carriers, their network infrastructure <i> and Bandwidth Rights</i> can help T-Mobile catch up with AT&amp;T and Verizon's roll-outs.</p>  
+<p class="firstparagraph">T-Mobile's potential acquirement of Sprint--for all of its monopoly overtones--may be a very good thing: We, as a society, are at the doorstep of 5G technology, which will fundamentally change every aspect of life. T-Mobile has always been the little engine that could, but has become a powerhouse since last summer with their 8 billion dollar purchase of low bandwidth, which is specifically <i>best for the ubiquity needed for the 5g Revolution</i><sup>2</sup>.  Although Sprint was always in last, 4th place among major carriers, their network infrastructure <i> and Bandwidth Rights</i> can help T-Mobile catch up with AT&amp;T and Verizon's 5G roll-outs.</p>  
 <p class="cite">1. <a href="http://www.businessinsider.com/5g-speed-network-lte-2018-1/" target="_blank">http://www.businessinsider.com/5g-speed-network-lte-2018-1</a></p>
-<p class="cite"><a href="https://www.cnet.com/products/fitbit-ionic/review/" target="_blank">https://www.cnet.com/products/fitbit-ionic/review/</a></p>
+<p class="cite">2. <a href="https://www.theverge.com/2017/4/13/15291496/tmobile-fcc-incentive-auction-results-8-billion-airwaves-lte" target="_blank">https://www.theverge.com/2017/4/13/15291496/tmobile-fcc-incentive-auction-results-8-billion-airwaves-lte</a></p>
 </div>
-
-
-
 
 
 
