@@ -4,36 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-71584977-1');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-T85KNRD');
-    </script>
-    <!-- End Google Tag Manager -->
+  gtag('config', 'UA-71584977-1');
+</script>
     <meta charset="utf-8">
 
     <meta name="description" content="Sociology Data Analysis, Web Development and Statistical Consulting | Statistical Consultant. Get statistics help: 
@@ -70,7 +49,9 @@
 
     <link rel="stylesheet" href="dist/css/about.css" />
 
-    <style>
+    <style>.canvas2 {
+            z-index:1;position:fixed;
+            overflow:visible;left:200px;top:200px;}
             #bars {
                 position:absolute;
                 top:120px;
@@ -81,13 +62,42 @@
         </style>
 </head>
 
-<body>
+<body> 
+    
+<canvas class="canvas2" style="overflow-x:visible;" width="960" height="600"></canvas>
+<script src="https://unpkg.com/d3-array@1"></script>
+<script src="https://unpkg.com/d3-geo@1"></script>
+<script src="https://unpkg.com/d3-geo-projection@2"></script>
+<script src="https://unpkg.com/shapefile@0.6"></script>
+<script>
 
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T85KNRD" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+var canvas = document.querySelector(".canvas2"),
+    context = canvas.getContext("2d");
 
+var path = d3.geoPath()
+    .context(context)
+    .projection(d3.geoAlbersUsa()
+        .scale(1085)
+        .translate([canvas.width / 2.3, canvas.height / 2.7]));
+
+context.lineWidth = 0.1; 
+context.stroke.lineColor = 'red';
+
+shapefile.open("https://cdn.rawgit.com/matplotlib/basemap/v1.1.0/lib/mpl_toolkits/basemap/data/UScounties.shp", null)
+  .then(function(source) {
+    return source.read().then(function next(result) {
+      if (result.done) return;
+      context.beginPath();
+      path(result.value);
+      context.stroke();
+      return source.read().then(next);
+    });
+  })
+  .catch(function(error) {
+    console.error(error.stack);
+  });
+
+</script>
     <nav id="nav" class="  navbar navbar-default"></nav>
     <div  class="multi_drop_menu" id="menumenu"> 
     </div>
