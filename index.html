@@ -68,18 +68,23 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
       top: 0;
 
     }
+  
+    svg { background-color: transparent;overflow:visible; }
+    .svgHolder { margin: 0px; }
+    .daglink { fill: none; }
   </style>
 </head>
 
 
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T85KNRD" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
+<body> 
+    <div class='svgHolder'   style="opacity:.5;position:absolute;top:20px;" id="force"></div>
+    <!--
+      <div class='svgHolder' style="position:relative;" id="dag"></div>
+    -->
+  
+    <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+    <script type="text/javascript" src="src/js/d3/dag.js"></script>
   <nav id="nav" class="  navbar navbar-default">
 
     <img src="dist/img/thomas-maestas.jpg" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. " class="profile"
@@ -184,7 +189,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
   </nav>
 
-  <div class="showcase   map0">
+  <div class="showcase">
     <div class="container jumb  ">
       <h2 class="  dailytech alpho0">WELCOME&nbsp; &nbsp;TO&nbsp; &nbsp; TMM </h2>
 
@@ -211,7 +216,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
         <div class="  list-group">
           <a href="dice/index.html" class="list-group-item list-group-item-action">JAVASCRIPT DICE GAME</a>
           <a href="codeplayer.html" class="hidden list-group-item list-group-item-action">JAVASCRIPT CODER</a>
-          <a href="react-api-1.html" class="list-group-item list-group-item-action">REACT&nbsp; API LIST-MAKER APP</a>
+          <a href="dailytech-react.html" class="list-group-item list-group-item-action">REACT&nbsp; DAILY-TECH APP</a>
           <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action"> DASHBOARD WEB-APP </a>
           <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action">D3-JS INTERACTIVE MAP </a>
 
