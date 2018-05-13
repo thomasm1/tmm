@@ -633,3 +633,12 @@ div.progress-bar  {
 .capitalize {
  text-transform:capitalize !important; 
 } 
+#accordion {
+    z-index:4;
+}
+.canvas2 {
+    z-index:0;
+}
+
+.panel-heading a {z-index:10;
+}

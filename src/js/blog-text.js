@@ -53,9 +53,9 @@ As part of our ongoing commitment to transparency, and in preparation for new da
    <br /><br />
    More transparency and control over how we share your data with business partners; and
    <br /><br />
-   More clarity about how we share your data to prevent harm, comply with law, serve the public interest, and keep Twitter safe and welcoming for everyone
+   More clarity about how we share your data to prevent harm, comply with law, serve the public interest, and keep Twitter safe and welcoming for everyone.<sup>1</sup>
    </p>
-   
+ <p>This sounds like the least transparent of transparency documents!</p>   
 <p class="cite">1.<a href="https://help.twitter.com/en/rules-and-policies/update-privacy-policy" target="_blank">https://help.twitter.com/en/rules-and-policies/update-privacy-policy</a></p> 
 <p class="cite">2.<a href="https://www.bloomberg.com/news/articles/2018-04-16/facebook-s-zuckerberg-leans-in-to-meet-with-eu-digital-chief" target="_blank">https://www.bloomberg.com/news/articles/2018-04-16/facebook-s-zuckerberg-leans-in-to-meet-with-eu-digital-chief
 </a> </p> 
