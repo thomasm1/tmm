@@ -2,7 +2,7 @@
 
 console.log("calc loaded");
 document.getElementById("calc").innerHTML = `
-<form id="form">
+<form style="color:white;"  id="form">
 							<p>
 								<input class="bu" name="seven" onclick="updateString('7')" type="button" value="7" />
 								<input class="bu" name="eight" onclick="updateString('8')" type="button" value="8" />
@@ -41,7 +41,7 @@ document.getElementById("calc").innerHTML = `
 								<input name="storedValue" type="hidden" value="0" />
 								<br />
 								<br />
-								<input id="window" name="input" type="text" />
+								<input id="window"  style="color:white !important;background:blue;"  name="input" type="text" />
 							</p>
                         </form>
 					`

@@ -1,9 +1,9 @@
 // Generate DAG
-var nodeCount = 30;
+var nodeCount = 35;
 var svgWidth = 900, svgHeight = 800;
 // The nodes are indexed by topological sort.
 var nodes = d3.range(nodeCount).map(function(d) {
-  return { index: d, label: 'node ' + d };
+  return { index: d, label: 'NODE' + d };
 });
 var links = d3.range(nodeCount * nodeCount).map(function(i) {
   return {
@@ -53,7 +53,7 @@ var force = d3.layout.force()
     .links(links)
     .size([svgWidth, svgHeight])
     .linkDistance(30 * Math.sqrt(nodeCount))
-    .linkStrength(0.5)
+    .linkStrength(0.7)
     .charge(-300);
 // Run the simulation a few times to settle things down.
 force.start();
@@ -84,6 +84,7 @@ var svg = d3.select('#force')
     .attr({
         width: svgWidth,
         height: svgHeight,
+        transform: "translate(-50, 70)",
         xmlns: 'http://www.w3.org/2000/svg'
       });
 // This template defines an arrowhead, and is referred to by id.
