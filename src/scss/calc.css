@@ -1,12 +1,12 @@
 p.panel-body {
   font-family:'Monoton';
   background-color: #00b1ec44;
-background-image: url('../img/MaestasReykjavikBanner20.png'); 
+background-image: url('../img/MaestasReykjavikBanner.jpg'); 
 }     
      #form {
        
   background-color: #00b1ec44;
-  background-image: url('../img/MaestasReykjavikBanner20.png'); 
+  background-image: url('../img/MaestasReykjavikBanner.jpg'); 
      }
      #about {
           margin: 5px 0px 25px;
@@ -38,17 +38,17 @@ background-image: url('../img/MaestasReykjavikBanner20.png');
           opacity: .7;
       }
 
-      #window {
-          background-color: transparent;
+       #window input {
+          color: white !important;
           width: 160px;
           font-size: 1.5em;
           font-family: 'Roboto';
-          opacity: .9;
-          color: white;
+          opacity: .9; 
           margin-top: 0px;
           margin-left: auto;
           margin-right: auto;
           padding: 5px 5px 3px;
           height: 30px;
           line-height: 1.3em;
+
       }
