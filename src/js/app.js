@@ -1,8 +1,10 @@
 
-require('./blog-mar'); 
-require('./blog-feb'); 
-require('./blog-text');  
-require('./dom-loader'); 
+
+require('./blog-draft-may'); 
+require('./blog-draft-apr'); 
+require('./blog-draft-mar'); 
+require('./blog-draft-feb');   
 require('./calc'); 
+require('./modal');
 require('./footer');
 require('./abanner');

@@ -27,7 +27,7 @@ document.getElementById("a").innerHTML = `
 
         <h3>TMM Data Analytics &amp; Visualization</h3>
 
-        <p>I provide Services and Consulting for big & small Data and Web solutions since 2016. Your data tell a story, let
+        <p>I provide Services and Consulting for big & small Data since 2016 and Web solutions since 2012. Your data tell a story, let
           me help you visualize a data-driven message.</p>
 
       </div>
@@ -39,7 +39,7 @@ document.getElementById("a").innerHTML = `
         <h3>TMM Web-App &amp; Mobile-App Development</h3>
 
         <p>I provide Data-Driven, Analytic Development of your apps, even if it's sketched on a napkin! Data Visualization
-          using JavaScript-level, R-level, and Python-level for graphics, interactivity, and specific aims of the client.
+          using JavaScript for the Web and, R-level, and Python-level graphics, interactivity, and .
         </p>
 
       </div>
