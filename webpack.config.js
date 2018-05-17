@@ -4,7 +4,7 @@ module.exports = {
   entry: {
     app: [
     
-      './src/js/index.js' 
+      './src/js/app.js' 
     ],
   },
   output: {

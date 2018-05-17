@@ -7418,13 +7418,12 @@ p.panel-body {
   background-color: #9ac9e7;
   opacity: .7; }
 
-#window {
-  background-color: transparent;
+#window input {
+  color: white !important;
   width: 160px;
   font-size: 1.5em;
   font-family: 'Roboto';
   opacity: .9;
-  color: white;
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
