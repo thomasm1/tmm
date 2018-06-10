@@ -7401,11 +7401,11 @@ p.panel-body {
 
 #about:target {
   z-index: 15;
-  background-color: steelblue; }
+  background-color: #245985; }
 
 #main {
   float: right;
-  color: #9ac9e7;
+  color: white;
   max-height: 40px;
   max-width: 60px;
   z-index: 2;
@@ -7415,7 +7415,8 @@ p.panel-body {
   width: 35px;
   padding: 1px;
   margin-top: 3px;
-  background-color: #9ac9e7;
+  background-color: #503fee !important;
+  color: white;
   opacity: .7; }
 
 #window input {

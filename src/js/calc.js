@@ -1,48 +1,83 @@
+var inputString = "";
+
+function updateString(value) {
+
+    inputString += value;
+
+    document.forms[0].input.value = inputString;
+
+}
+
+		var innerform = document.querySelector("#form");
+    innerform.innerHTML = `
+    <form id="innerform" action=""> 
+    <input type="button" name="seven" id="bu" value="7" onclick="updateString('7')" />
+    
+    <input type="button" name="eight" id="bu" value="8" onclick="updateString('8')" />
+    
+    <input type="button" name="nine" id="bu" value="9" onclick="updateString('9')" />
+    
+    <input type="button" name="div" id="bu" value="/" onclick="updateString('/')" />
+    <br />
+    <br />
+    
+    <input type="button" name="four" id="bu" value="4" onclick="updateString('4')" />
+    
+    <input type="button" name="five" id="bu" value="5" onclick="updateString('5')" />
+    
+    <input type="button" name="six" id="bu" value="6" onclick="updateString('6')" />
+    
+    <input type="button" name="mult" id="bu" value="*" onclick="updateString('*')" />
+    <br />
+    <br />
+    
+    <input type="button" name="one" id="bu" value="1" onclick="updateString('1')" />
+    
+    <input type="button" name="two" id="bu" value="2" onclick="updateString('2')" />
+    
+    <input type="button" name="three" id="bu" value="3" onclick="updateString('3')" />
+    
+    <input type="button" name="plus" id="bu" value="+" onclick="updateString('+')" />
+    <br />
+    <br />
+    
+    <input type="button" name="openparenth" id="bu" value="(" onclick="updateString('(')" />
+    
+    <input type="button" name="closeparenth" id="bu" value=")" onclick="updateString(')')" />
+    
+    <input type="button" name="power" id="bu" value="^" onclick="updateString('^')" />
+    
+    <input type="button" name="modulus" id="bu" value=":-)" onclick="updateString(':-\)')" />
+    <br />
+    <br />
+    
+    <input type="button" name="zero" id="bu" value="0" onclick="updateString('0')" />
+    
+    <input type="button" name="dot" id="bu" value="." onclick="updateString('.')" />
+    
+    <input type="button" name="clear" id="bu" value="C" onclick="document.forms[0].input.value='';inputString=''" />
+    
+    <input type="button" name="minus" id="bu" value="-" onclick="updateString('-')" />
+    <br />
+    <br />
+    
+    <input type="button" style="background-color:blue;color:white;" name="calc" id="bu" value="=" onclick="document.forms[0].input.value = eval(inputString); inputString=''"
+    />
+    
+    <input type="button" name="mem" id="bu" value="M +" onclick="document.forms[0].storedValue.value = parseInt(document.forms[0].storedValue.value) + parseInt(document.forms[0].input.value)"
+    />
+    
+    <input type="button" name="recall" id="bu" value="MRC" onclick="updateString(document.forms[0].storedValue.value)" />
+    
+    <input type="button" name="memClear" id="bu" value="MC" onclick="document.forms[0].storedValue.value=0" /><br />
+    
+    <input type="hidden" name="storedValue" value="0" />
+    
+    <input id="window" type="text" name="input" />
+    
+    
+    
+    </form>
 
 
-console.log("calc loaded");
-document.getElementById("calc").innerHTML = `
-<form style="color:white;"  id="form">
-							<p>
-								<input class="bu" name="seven" onclick="updateString('7')" type="button" value="7" />
-								<input class="bu" name="eight" onclick="updateString('8')" type="button" value="8" />
-								<input class="bu" name="nine" onclick="updateString('9')" type="button" value="9" />
-								<input class="bu" name="div" onclick="updateString('/')" type="button" value="/" />
-								<br />
-								<input class="bu" name="four" onclick="updateString('4')" type="button" value="4" />
-								<input class="bu" name="five" onclick="updateString('5')" type="button" value="5" />
-								<input class="bu" name="six" onclick="updateString('6')" type="button" value="6" />
-								<input class="bu" name="mult" onclick="updateString('*')" type="button" value="*" />
-								<br />
-								<input class="bu" name="one" onclick="updateString('1')" type="button" value="1" />
-								<input class="bu" name="two" onclick="updateString('2')" type="button" value="2" />
-								<input class="bu" name="three" onclick="updateString('3')" type="button" value="3" />
-								<input class="bu" name="plus" onclick="updateString('+')" type="button" value="+" />
-								<br />
-								<input class="bu" name="openparenth" onclick="updateString('(')" type="button" value="(" />
-								<input class="bu" name="closeparenth" onclick="updateString(')')" type="button" value=")" />
-								<input class="bu" name="power" onclick="updateString(';-)')" type="button" value=";-)" />
-								<input class="bu" name="modulus" onclick="updateString(':-\)')" type="button" value=":-)" />
-								<br />
-								<input class="bu" name="zero" onclick="updateString('0')" type="button" value="0" />
-								<input class="bu" name="dot" onclick="updateString('.')" type="button" value="." />
-								<input class="bu" name="clear" onclick="document.getElementById("calc").input.value='';inputString=''" type="button" value="C"
-								/>
-								<input class="bu" name="minus" onclick="updateString('-')" type="button" value="-" />
-								<br />
-								<input class="bu" name="calc" onclick="document.getElementById("calc").input.value = eval(inputString); inputString=''" style="color:white;background-color:teal"
-								    type="button" value="=" />
-								<input class="bu prim" name="mem" onclick="document.getElementById("calc").storedValue.value = parseInt(document.getElementById("calc").storedValue.value) + parseInt(document.getElementById("calc").input.value)"
-								    type="button" value="M +" />
-								<input class="bu prim" name="recall" onclick="updateString(document.getElementById("calc").storedValue.value)" type="button" value="MRC"
-								/>
-								<input class="bu prim" name="memClear" onclick="document.getElementById("calc").storedValue.value=0" type="button" value="MC"
-								/>
-								<input name="storedValue" type="hidden" value="0" />
-								<br />
-								<br />
-								<input id="window"  style="color:white !important;background:blue;"  name="input" type="text" />
-							</p>
-                        </form>
-					`
-					
+    `

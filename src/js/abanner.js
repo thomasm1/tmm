@@ -17,7 +17,7 @@ document.getElementById("a").innerHTML = `
         <h3>TMM Contracting &amp; Consulting</h3>
 
         <p>Consulting experience includes four years' Program Evaluation and Statistics for K-12 programs, Higher Education
-          grants, and Public Data projects at Institute for Social Research; </p>
+          grants, and Public Data projects, including UNM's Institute for Social Research; </p>
 
       </div>
 
@@ -39,7 +39,7 @@ document.getElementById("a").innerHTML = `
         <h3>TMM Web-App &amp; Mobile-App Development</h3>
 
         <p>I provide Data-Driven, Analytic Development of your apps, even if it's sketched on a napkin! Data Visualization
-          using JavaScript for the Web and, R-level, and Python-level graphics, interactivity, and .
+          using JavaScript for the Web and, R-level, and Python-level graphics, with personalized interactivity.
         </p>
 
       </div>
