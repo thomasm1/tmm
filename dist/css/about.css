@@ -642,3 +642,12 @@ div.progress-bar  {
 
 .panel-heading a {z-index:10;
 }
+div.panel.panel-default * {
+    z-index:1001;
+}
+canvas.canvas2 {
+    z-index:1;
+} 
+.canvas2 {
+    z-index:1;
+} 

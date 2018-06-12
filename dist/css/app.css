@@ -8213,8 +8213,6 @@ a:hover {
   border: .5px solid steelblue; }
 
 /************************* ******/
-/************************* ******/
-/************************* ******/
 .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -8299,3 +8297,6 @@ nav {
 
 .green {
   color: green; }
+
+svg#svg {
+  z-index: 1001 !important; }

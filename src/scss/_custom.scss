@@ -574,13 +574,7 @@ a {
 .app-brand img {
   width: 100%;
 }
-.img {
-}
-.font {
-}
  
-
-
 
 /*              MENU    */
 .multi_drop_menu {
@@ -675,14 +669,7 @@ border-right-style:none;}
 
 
 /*visual */
-
-.multi_drop_menu li ul { 
-
  
-
- 
-
-}
 
 @media (min-width: 401px) {
  .multi_drop_menu li li a {  
@@ -866,9 +853,7 @@ text-align:right;
 color:#59f3ff; 
 margin-right:0px;
 margin-bottom:5px;
-}
-.twitter-follow-button {
- } 
+} 
  
 /*  POST APPLICATION.CSS   */
 
@@ -927,9 +912,7 @@ margin-bottom:5px;
   display: block;
   min-width: 500px;
 }
-
-.fixed-top ul li {}
-
+ 
 .fixed-top ul li a {
   color: aliceblue;
 }
@@ -1062,10 +1045,7 @@ a:hover {
   padding-top: 10px;
   border: .5px solid steelblue;
 }
-
-/************************* ******/
-/************************* ******/
-
+ 
 /************************* ******/
 
 .navbar-brand {
@@ -1170,3 +1150,7 @@ a:hover {
  .green {
   color:green;
 }
+
+svg#svg {
+  z-index:1001 !important;
+} 
