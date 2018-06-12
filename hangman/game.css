@@ -23,9 +23,8 @@ div.sidebar-sticky.nav {
 
   padding:10px;  
   font-family:'Roboto';
-  font-size:120%;
- 
-  background-color:rgb(156, 184, 212) ;
+  font-size:120%; 
+  background-color:rgba(156, 184, 212, .5) ;
 }
 .minwidth40 {
   min-width:40%;
