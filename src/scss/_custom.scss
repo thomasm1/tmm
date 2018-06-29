@@ -1116,20 +1116,20 @@ a:hover {
 
     h6.dailytitle {
       text-align: center;
-      font-weight: 600;
+      font-weight: 500;
     }
 
     .quote {
-      line-height: 1.5rem;
+      line-height: 1.7rem;
       font-weight: 500;
     }
 
     i {
-      font-weight: 600;
+      font-weight: 500;
     }
 
     strong {
-      font-weight: 700;
+      font-weight: 600;
     }
   footer { text-align:center;}
   .active a { 
@@ -1154,3 +1154,6 @@ a:hover {
 svg#svg {
   z-index:1001 !important;
 } 
+.new {
+  color:rgb(56, 56, 173);
+}

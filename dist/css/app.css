@@ -2,7 +2,7 @@
 /*         BOX         D3     geo-map  Jenks       */
 @import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600");
 @import url("https://fonts.googleapis.com/css?family=Monoton:100,200,300,400,500,600");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,600,600i,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 .names {
   fill: none;
@@ -8268,17 +8268,17 @@ h6.dailytitle.chapternumber {
 
 h6.dailytitle {
   text-align: center;
-  font-weight: 600; }
+  font-weight: 500; }
 
 .quote {
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   font-weight: 500; }
 
 i {
-  font-weight: 600; }
+  font-weight: 500; }
 
 strong {
-  font-weight: 700; }
+  font-weight: 600; }
 
 footer {
   text-align: center; }
@@ -8300,3 +8300,6 @@ nav {
 
 svg#svg {
   z-index: 1001 !important; }
+
+.new {
+  color: #3838ad; }
