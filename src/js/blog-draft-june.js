@@ -1,7 +1,51 @@
  
 console.log('blogger-june');
 var bloggerJune = function () {
+ 
+blogpost14 = 
+`
+<p class="quote"><i>
+All people going to the International Space Station must do so through Kazakhstan today. Since the space shuttle retired in 2011, there's no other ship capable of carrying people up there besides Soyuz, the Russian workhorse of many decades. NASA purchases seats for its astronauts; each mission is worth tens of millions of dollars. But the situation is going to change soon. 
+Two companies — Boeing and SpaceX — are developing commercial crew vehicles to carry astronauts to the ISS. They should start flying crews in the next year or two...</i><sup>1</sup>
+</p>
+<p class="firstparagraph">If there is ever a global stage marked by camaderie besides the World Cup, space would have to take a strong 2nd place--ISS collaboration breaks all bounds! But what's really going on with that place anyway? Past 2024--apparently not much, but that's because the moon is going on ...</p>
+<p class="quote">The latest [Congressional Budget Office's] request has no money for the space station past then[2024]. That's so that NASA can focus its resources on the Deep Space Gateway, a lunar space station that plays a part in the administration's request to send astronauts to the moon again before going on to Mars.
+<br /><br />
+The Europeans have expressed some interest in the Deep Space Gateway, but as for [Russian] Roscosmos, their direction is unclear. The [Russian] agency could join NASA on another space station, go on its own, or ally itself with newer space powers (such as China) for other work.<sup>1</sup>
+</p>
+<p>Besides the moon, I wouldn't be opposed to a year-and-a-half long trip to Mars--so long as I had plenty of reading material, and a round-trip ticket!
+`
+blogcite14 = 
+`
+<p class="footnotes">1. <a href="https://www.space.com/41038-roscosmos-russian-space-strategy-commercial-crew.html"   target="_blank">https://www.space.com/41038-roscosmos-russian-space-strategy-commercial-crew.html</a>
+</p>   
+`
+blogpost13 = 
+`
+<p class="firstparagraph">If there was ever a thing called "Continuing Education," that thing has become a learning, thinking mandate in the modern professional world. Learning to work side-by-side with our A.I. "automation workmates" has become a somewhat paradoxical burden whereby the more we learn, the more we get to shovel our work onto our <i>Ever-Cheerful automators</i>, and this is the least onerous burden I have ever had to bear...</i> It's called the <i>Abolition of boring tasks!</i> </p>
+<p>Many writers have touched on the freedom that digital automation affords us: The repetitive, mundane (i.e. mindless) tasks that once occupied days and weeks of our time can now be evaporated away in hours when we just ask for help from our digital automotons--but we first have to ask! </p>
+<p>And so, the work is no longer the work we do: <i>Our work is learning new digitally automated short-cuts, hacks, and clever work-arounds to better shovel the work off to our automotons</i>. But we can only be so clever, and so we have to learn to be more clever: hence the latest rage from colleges and universities with programs offering 'perpetual learning.' The Washington Post reports,</p>
+<p class="quote">
 
+In the future of work, robots are supposed to wipe out tons of jobs, create a bunch of new ones or deliver some combination of both. Economists predict any of these scenarios will force the average worker to do practically the same thing throughout their careers: keep learning and learning and learning.
+<br /><br />
+Some colleges in the United States are already preparing for this age of perpetual education, including the University of Michigan’s Ross School of Business. The Ann Arbor school launched a scholarship program that pays for graduates to take classes there forever, and the number of students is slowly growing.<sup>1</sup></p>
+<p>
+<p>But what really is the time-scale on this big transformation? Most things operate like they always have, and honestly, maybe we can be a little more picky about what, how, and <strong>why  we "optimize" the things we do. But that kind of old-fashioned Ludditism is not the age we live in. Today, everything has to change to stay compatible!  A more telling detail from the New York Times:</p>
+<p class="quote">And we’ve digitized only about 20 percent of the economy, meaning there’s tremendous technological climate change yet ahead. These climate changes are reshaping the ecosystem of work — wiping out huge numbers of middle-skilled jobs — and this is reshaping the ecosystem of learning, making lifelong learning the new baseline for advancement.<sup>2</sup></p>
+<p>20%? Really? So, it sounds like our productivity is <i>inversely proportional to work <strong>we</strong> do</i>, but rather the work--boring, mundane work--that we can effectively hand off to our automon partners--whatever the sector.  
+
+`
+blogcite13 = 
+`
+
+<p class="footnotes">1. <a href="https://www.nytimes.com/2018/06/26/opinion/political-parties-climate.html"   target="_blank">https://www.nytimes.com/2018/06/26/opinion/political-parties-climate.html</a>
+</p> 
+<p class="footnotes">2. <a href="https://www.washingtonpost.com/news/wonk/wp/2018/06/06/in-the-future-college-never-really-ends/?noredirect=on&utm_term=.4d7810952eb7"   target="_blank">https://www.washingtonpost.com/news/wonk/wp/2018/06/06/in-the-future-college-never-really-ends/?noredirect=on&utm_term=.4d7810952eb7</a>
+</p>  
+
+`
+ 
 blogpost12 = 
 `
 <p class="firstparagraph">Obnoxious misuse of A.I.Tech is a rare thing because developers are among the smartest and most humane among all professions, if I my humbly claim.  But <i>Tech consumers are not necessarily bound by such thoughtful solidarity.</i> The following exemplifies the darker side of A.I. tech...                                          </p>
@@ -137,7 +181,7 @@ blogpost6 =
   <p>What this means is that imminently, 50 variations of newly permitted State internet sales taxes for small businesses.<sup>2</sup> This will inevitably hurt variety, and likely lead to a lot of inter-state confusion: </p>
   <p class="quote">The new law may seem straightforward, but there are fairly complicated specifics when it comes to different jurisdictions and categorization of goods.
 <br /><br />
-  For example, New Jersey places a tax on marshmallows, which are considered candy and a luxury, but they don’t tax marshmallow fluff which is considered food. In some states Kitkat bars are categorized as food because they contain flour, but a snickers bar is candy. Meanwhile a snickers ice cream bar, which needs to be refrigerated, would be considered food and not taxed.<sup>1.</sup></p>
+  For example, New Jersey places a tax on marshmallows, which are considered candy and a luxury, but they don’t tax marshmallow fluff which is considered food. In some states Kitkat bars are categorized as food because they contain flour, but a snickers bar is candy. Meanwhile a snickers ice cream bar, which needs to be refrigerated, would be considered food and not taxed.<sup>1</sup></p>
   <p>Small, online businesses: Get your calculators ready!
   </p>
  
@@ -417,14 +461,34 @@ blogcite1 = `
 ` ;
 
   var url =  
-  [ {
+  [ 
+  {
+    id:'14', 
+  did:'06-30-18',
+  date:'June 30-July 1, 2018<br />Weekend ',
+    author:'by Thomas Maestas',
+    cat3:'Sociology Tomorrow!',
+    title:'The Space Powers that Be:<br />When Boeing issues a Ticket to the Moon', 
+    post:blogpost14,
+   blogcite:blogcite14
+ },{
+  id:'13', 
+did:'06-29-18',
+date:'July 29, 2018',
+  author:'by Thomas Maestas',
+  cat3:'A.I.Now',
+  title:'A.I. &amp; Work, Part II<br />Learning to Learn alongside a Cheerful Automoton Work-Partner', 
+  post:blogpost13,
+ blogcite:blogcite13
+},
+ {
     id:'12',
    
   did:'06-28-18',
   date:'June 28, 2018 ',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'A.I.Now',
-    title:'Fighting Obsessive Compulsive Quantitative Optimization Disorder and the Slide into a Weberian Iron Shell',
+    title:'A.I. &amp; Work, Part I<br />Fighting Obsessive Compulsive Quantitative Optimization Disorder and the Slide into a Weberian Iron Shell',
 
     post:blogpost12,
    blogcite:blogcite12
@@ -433,7 +497,7 @@ blogcite1 = `
    
   did:'06-27-18',
   date:'June 27, 2018 ',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'Web Dev Affairs',
     title:'Apple: You are our Tech Leader!',
 
@@ -443,7 +507,7 @@ blogcite1 = `
   id:'10',
   did:'06-26-18',
   date:'June 26, 2018 ',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'Sociology Tomorrow!',
     title:'T-Nation Makes the Case: Sprint Merger takes on the Senate',
     
@@ -453,7 +517,7 @@ blogcite1 = `
     id:'9',
     did:'06-25-18',
     date:'June 25, 2018 ',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'A.I.Now',
     title:'Modern Prometheus, Part III: <br />Accelerating Evolution of Neural Networks &agrave; la Nvidia GPU',
     post:blogpost9,
@@ -462,7 +526,7 @@ blogcite1 = `
     id:'8',
     did:'06-23-18',
     date:'June 23-24, 2018<br />Weekend',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'A.I.Now',
     title:'Modern Prometheus, Part II: <br />Broadening Evolution of Deep Learning Species &agrave; la Neural Network',
     post:blogpost8,
@@ -471,7 +535,7 @@ blogcite1 = `
     id:'7',
     did:'06-22-18',
     date:'June 22, 2018',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'A.I.Now',
     title:'Modern Prometheus, Part I.<br />Made from 8 billion transistors and 1,000 Cuda Cores:<br /> Today\'s Irreplaceable NVidia GPU',
     post:blogpost7,
@@ -480,7 +544,7 @@ blogcite1 = `
     id:'6',
     did:'06-21-18',
     date:'June 21, 2018',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'Sociology Tomorrow!',
     title:'"Taxation Without Representation is Tyranny!"<br /><br />-- James Otis, 1776',
     post:blogpost6,
@@ -490,7 +554,7 @@ blogcite1 = `
     id:'5',
     did:'06-20-18',
     date:'June 20, 2018',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'Sociology Tomorrow!',
     title:'A Healthy Internet is a Fast, Cooperative Internet: <br />Net Neutrality Protections move to State-Level Legislation',
     post:blogpost5,
@@ -499,7 +563,7 @@ blogcite1 = `
     id:'4',
     did:'06-19-18',
     date:'June 19, 2018',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'Musing Blockchain',
     title:'Rise of the Embattled 4th Estate',
     post:blogpost4,
@@ -509,7 +573,7 @@ blogcite1 = `
     id:'3',
     did:'06-18-18',
     date:'June 18, 2018',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'A.I.Now',
     title:'Machine Learning, Democratized:<br />Part II: Deep Learning\'s Origin Story',
     post:blogpost3,
@@ -518,7 +582,7 @@ blogcite1 = `
     id:'2',
     did:'06-16-18',
     date:'June 16-17, 2018<br />Weekend',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'Sociology Tomorrow!',
     title:'Machine Learning, Democratized<br />Part I: Google\'s ML Kit',
     post:blogpost2,
@@ -528,7 +592,7 @@ blogcite1 = `
     id:'1',
     did:'06-15-18',
     date:'June 15, 2018',
-    author:'by Thomas Maestas, MA',
+    author:'by Thomas Maestas',
     cat3:'Musing Blockchain',
     title:' The Spectre of a Headless Horseman:<br /> Why  Sociologists <i> are<span class="new">n\'t </span></i> Key Players in Data Analysis within the Domain of Blockchain Technologies?<br /><span class="new">A Re-Do of my <s >Feb 10,2018</s> post</span>',
     post:blogpost1,
