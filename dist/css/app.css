@@ -7318,7 +7318,7 @@ div#bars {
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none; } }
 
-@media (min-width: 400x) {
+@media (min-width: 400px) {
   .navbar-nav {
     float: left;
     margin: 0; }
@@ -7498,7 +7498,7 @@ h6 {
     float: right; }
 
 .table-tmm {
-  background: url(../img/bluechipTile.jpg) repeat 0; }
+  background: url(../img/greeninvert.png) repeat 0; }
 
 .comment_text {
   background: steelblue url("../img/MaestasReykjavikBanner20.png") repeat; }
@@ -7514,7 +7514,7 @@ h6 {
   padding: 5px 0 5px 15px; }
 
 .footer {
-  background: url(../img/bluechipTile.jpg) repeat 0; }
+  background: url(../img/greeninvert.png) repeat 0; }
   .footer a {
     color: lightskyblue;
     text-shadow: 0 1px 0 white; }
@@ -7535,7 +7535,7 @@ nav.table-tmm {
 /*   CUSTOM         */
 .navbar {
   opacity: .9;
-  background: #53d3ff;
+  background: #0000f1;
   color: #ffffff; }
 
 .navbar {
@@ -7587,7 +7587,7 @@ nav.table-tmm {
   padding: 30px 0;
   text-align: center;
   opacity: .7;
-  background: #53d3ff;
+  background: #0000f1;
   color: #ffffff; }
   .section-a .fa {
     font-size: 30px; }
@@ -7626,22 +7626,22 @@ nav.table-tmm {
   opacity: .7;
   padding: 60px 0;
   text-align: center;
-  background: #53d3ff;
+  background: #0000f1;
   color: #ffffff; }
   .section-c .btn-primary {
-    background: #20c6ff; }
+    background: #0000be; }
 
 .title-bar {
   background: url(../img/MaestasReykjavikBanner.png) repeat 0;
   padding-bottom: 10px;
-  border-bottom: 4px solid #00b0ec; }
+  border-bottom: 4px solid darkblue; }
 
 .main {
   margin-top: 30px; }
 
 footer {
   padding: 30px 0;
-  background: #008ab9;
+  background: #000058;
   color: #ffffff; }
 
 /*
@@ -7678,10 +7678,10 @@ div#userModal.modal.fade {
   background-color: #00b0ec; }
 
 .navbar {
-  background: url(../img/bluechipTile.jpg) repeat 0; }
+  background: url(../img/greeninvert.png) repeat 0; }
 
 .navbar-right {
-  background: url(../img/bluechipTile.jpg) repeat 0; }
+  background: url(../img/greeninvert.png) repeat 0; }
 
 .card-title {
   font-size: 1.2em; }
@@ -7695,7 +7695,7 @@ div#userModal.modal.fade {
   position: fixed;
   top: 0px;
   left: 0px;
-  max-height: 50px; }
+  max-height: 60px; }
 
 /* welcome and text*/
 .mb-4 {
@@ -7848,7 +7848,7 @@ li#div1m.media.list-group-item.p-4 {
   box-shadow: none; }
 
 .app-navbar .navbar-brand img {
-  width: 140px;
+  width: 200px;
   margin-top: 10px;
   margin-bottom: 0px; }
 
@@ -8284,7 +8284,9 @@ footer {
   text-align: center; }
 
 .active a {
-  background: blue !important; }
+  background: #2f2fbb !important;
+  border-radius: 14px;
+  opacity: 30%; }
 
 h2.alpha0 {
   z-index: 1; }

@@ -29,10 +29,7 @@
     <title>TMM | About</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
- 
- 
-     <script src="src/js/d3/d3.js">
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -97,8 +94,9 @@ shapefile.open("https://cdn.rawgit.com/matplotlib/basemap/v1.1.0/lib/mpl_toolkit
     console.error(error.stack);
   });
 
-</script>
-    <nav id="nav" class="  navbar navbar-default"></nav>
+</script> 
+
+<nav id="nav" class="  navbar navbar-default"></nav>
     <div  class="multi_drop_menu" id="menumenu"> 
     </div>
     <!-- multi_drop_menu END 1 -->
@@ -114,7 +112,7 @@ shapefile.open("https://cdn.rawgit.com/matplotlib/basemap/v1.1.0/lib/mpl_toolkit
                 <h2  >Thomas M. Maestas </h2>
             
                 <div id="bars"></div>
-                <script src="src/js/d3/bars.js"></script>
+                <script src="dist/js/bars.js"></script>
           </div>
                   <div class="panel" >
                   
@@ -229,12 +227,13 @@ shapefile.open("https://cdn.rawgit.com/matplotlib/basemap/v1.1.0/lib/mpl_toolkit
 
     <!-- Graphs -->
 
-    <script src="dist/js/jquery.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script src="src/js/nav.js"></script>
-    <script src="src/js/menumenu.js"></script>
-  <script src="src/js/accordion.js"></script>
-    <script src="src/js/footer.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  
+    <script src="dist/js/nav.js"></script>
+    <script src="dist/js/menumenu.js"></script>
+  <script src="dist/js/accordion.js"></script>
+    <script src="dist/js/footer.js"></script> 
      
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>

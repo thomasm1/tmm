@@ -1,10 +1,173 @@
- 
 console.log('blogger-july');
 var bloggerJuly = function () {
+  
+blogpost10 =  `<p class="quote">
+...The colossal shift in the chip world came with the advent of artificial intelligence (AI) and machine learning (ML). With these emerging technologies, a flood of new processors has arrived—and they are coming from unlikely sources. <br /><br />
+Microsoft is preparing an AI chip for its HoloLens VR/AR headset, and there’s potential for use in other devices. 
+<i> Google has a special AI chip for neural networks called the Tensor Processing Unit, or TPU, which is available for AI apps on the Google Cloud Platform. </i>Apple is working on an AI processor called the Neural Engine that will power Siri and FaceID.  <sup>1</sup></p>
+<p class="firstparagraph">All ... All the A.I. Tools a busy bee could ask for!
+</p>
+ `;
+blogcite10 =  `
+<p class="footnotes">1. <a href="
+https://arstechnica.com/gadgets/2018/07/the-ai-revolution-has-spawned-a-new-chips-arms-race/
+"   target="_blank">
+https://arstechnica.com/gadgets/2018/07/the-ai-revolution-has-spawned-a-new-chips-arms-race/
+</a>
+</p>     `
+  
+blogpost9 =  ` 
+<p class="firstparagraph">Moore's Law--a function of transistor count--has guided CPU bench-mark expectations along a fairly linear path year-by-year. However, computing requirements have multiplied while the mathematical relevence of the law wanes. <br /><br />
+<img src="dist/img/moores_law.png" width="400px" class="zoom" title="Moore's Law Graphic" /><br />Image Credit: ourworldindata.org <br /><br /> <i>Enter the Decision Tree, the Random Forest, Na&iuml;ve Bayes, and K-Nearest Neighbors</i>: The machine learning tools and theoretical building blocks to get more bang for the buck from all that computing power. How? <i> Teaching software to teach itself, which is the pathway out of computing-power deficits and the move from theoretical to practical</i> ...</p> 
+<p class="quote">
+Every technology follows a similar path of diszcovery, engineering, and transformation. In the case of electricity, Faraday uncovered new principles, but no one really knew how to make them useful. They first had to be understood well enough that people such as Edison, Westinghouse, and Tesla could figure out how to make things that people would be willing to buy.
  
-blogpost2 = 
+<br /><br />  The digital revolution, for all of its charms, has had a fairly limited economic impact, compared with earlier technologies such as electricity and the internal combustion engine. Even now, information technologies make up only about 6% of GDP in advanced economies. Compare that to manufacturing, health care, and energy, which make up 17%, 10%, and 8% of global GDP, respectively, and you can see how there is vastly more potential to make an impact beyond the digital world.
+<sup>2</sup></p>
+<p>... As the saying goes, <i>One crowded hour of glorious life is worth an age without a name.</i><sup>3</sup> And now the tide is high for Tech to venture out into the world and make a name for herself!
+`;
+blogcite9 =  ` 
+
+<p class="footnotes">2. <a href="https://ourworldindata.org/wp-content/uploads/2013/05/Transistor-Count-over-time.pngArticle"   target="_blank">https://ourworldindata.org/wp-content/uploads/2013/05/Transistor-Count-over-time.png</a>
+</p>
+<p class="footnotes">2. <a href="https://hbr.org/2018/07/the-industrial-era-ended-and-so-will-the-digital-era"   target="_blank">https://hbr.org/2018/07/the-industrial-era-ended-and-so-will-the-digital-era</a>
+</p>
+
+<p class="footnotes">3. Thomas Osbert Mordaunt`
+ 
+blogpost8 = `<p class="firstparagraph">Advances in computer science and data research follow the path of the tools that pave a developer's path: The tools make the worker, and therefore the work. For example, any of the Industrial Revolutions leaped forward with every new tool. <i>Now, Artificial Intelligence research and design  lurches forward by the tooling, but in a new fashion: Open source tools owned and operated by the community, the work by and for any community.</i>
+</p>
+<p> Neural network tools like TensorFlow.js, a "JavaScript library for training and deploying Machine Learning models in the browser and on Node.js" <sup>1</sup>  along with other programming-library frameworks, abstract away a layer of the visible mechanics. On the one hand, it is the democratization of cutting-edge technology, formerly siloed apart and under government, corporate or university controls. </p>
+<p>
+The genie is definitely out of the bottle, yet he or she is now at the keyboards across the globe. This has a clear effect in bringing technological innovation to the community, to the coffeeshops and meet-up groups, instead of clearly defined, bureaucratically-directed research ends. </p>
+<p>Therefore,  bootstrapping open-source projects brings the community to the forefront of technological innovation! Though the common mobile app has grown familiar for changing landscapes, those apps chiefly leverage the social network (links) of friends and professionals; while the common-use spread of machine-learning research provides leverage to the actual work (nodes) of progress</p>
+<p>Therefore, the tools provide one dimension of A.I.'s path, while the democratized distribution of tools across social networks provides a second dimensional path. This alters the A.I. evolution in the long-term, by means of short-term and frequent tooling revolutions.   </p>
+`;
+blogcite8 =   `
+<p class="footnotes">1. <a href=" https://js.tensorflow.org/"   target="_blank"> https://js.tensorflow.org/</a>
+</p>   
+`; 
+blogpost7 = `
+<p class="firstparagraph">Panic and anxiety cover the Snapchat countries across far-flung locales from Latvia to Denver to Spain--</i>and in one case blighting the entire island of the United Kingdom...</i></p>
+<p class="quote">Some users went to Twitter and shared their frustration.
+"I've been sending people abuse on snapchat for not replying to me only to discover its down. Oops?" one user tweeted.<br /><br />
+"Snapchat just went down. I can literally feel the panic of a thousand generations in my bones. #snapchat," another user posted.
+Snapchat currently has 166 million users globally. <sup>2</sup>
+</p>
+<p> A chronic technical problem before May 2018 when SnapCrash went public   dating to October. <sup>1</sup> -- scalability challenges strike again!</p> 
+<img src="dist/img/snapchat.PNG" width="350" class="zoom" /><br /><br />
+<p>But inquiring minds want to know, <i>What's the Story with Snapchat? </i>Not to mention the Conspiracy Theorists that blame Snapchat's devotion to Advertisers--too many distractions?</p>
+<p class="quote">
+[Snapchat] tweeted: “Some Snapchatters are having trouble with the app. We’re aware of the issue and working on a fix! We recommend staying logged into your account.”
+<br /><br />
+Snapchat recently confirmed that it is testing six-second long ads in Shows on its Discover section that won’t budge no matter how many times a user tries to tap to skip them.<br /><br />
+
+This development has been coming for some time as Snapchat looks to placate advertisers who have grown frustrated by users who, on average, only stay on an ad for two seconds before skipping.</p> 
+<p>Every kind of Server malfunction pales in comparison to the Affordable Healthcare Act web-app's abysmal first few months.<i> Get Well Soon, Snapchat--you're breaking our heart!</i></p>`;
+blogcite7 = `
+<p class="footnotes">1. <a href=" https://www.independent.co.uk/life-style/gadgets-and-tech/snapchat-down-not-working-android-broken-message-snap-inc-help-a8443236.html"   target="_blank"> https://www.independent.co.uk/life-style/gadgets-and-tech/snapchat-down-not-working-android-broken-message-snap-inc-help-a8443236.html</a>
+</p>    
+
+<p class="footnotes">2. <a href=" http://www.tribuneindia.com/news/science-technology/snapchat-outage-hits-users-globally/480068.html"   target="_blank"> http://www.tribuneindia.com/news/science-technology/snapchat-outage-hits-users-globally/480068.html</a>
+</p>    
+<p class="footnotes">3. <a href="https://outage.report/snapchat" target="_blank">https://outage.report/snapchat</a></p>
+ `
+ blogpost6 =  `
+ <p class="quote"><sup>0</sup><strong><small>
+ The term “extropy,” coined in 1967, is generally used to describe life’s capacity to reverse the spread of entropy across space and time. </small></strong><sup>1</sup>
+ </p>
+ <p class="firstparagraph">
+ Philosophies of A.I. range from the Aloof to Alarmed, from Punch-drunk Optimism to Harrowing Paranoia: A few vantage points from a Legacy New Yorker:</p>
+ <p class="quote">
+ Last summer, Oren Etzioni, the C.E.O. of the Allen Institute for Artificial Intelligence, in Seattle, referred to the fear of machine intelligence as a “Frankenstein complex.” Another leading researcher declared, “I don’t worry about that for the same reason I don’t worry about overpopulation on Mars.”<sup>1</sup></p>
+ <p class="quote">
+ Jaron Lanier, a Microsoft researcher and tech commentator, told me that even framing the differing views as a debate was a mistake. “This is not an honest conversation,” he said. “People think it is about technology, but it is really about religion, people turning to metaphysics to cope with the human condition. They have a way of dramatizing their beliefs with an end-of-days scenario—and one does not want to criticize other people’s religions.”
+ <sup>1</sup></p>
+ <p class="quote">
+ Bostrom had little interest in conventional philosophy—not least because he expected that superintelligent minds, whether biologically enhanced or digital, would make it obsolete. “Suppose you had to build a new subway line, and it was this grand trans-generational enterprise that humanity was engaged in, and everybody had a little role,” he told me. “So you have a little shovel. But if you know that a giant bulldozer will arrive on the scene tomorrow, then does it really make sense to spend your time today digging the big hole with your shovel? Maybe there is something else you could do with your time. Maybe you could put up a signpost for the great shovel, so it will start digging in the right place.” He came to believe that a key role of the philosopher in modern society was to acquire the knowledge of a polymath, then use it to help guide humanity to its next phase of existence—a discipline that he called “the philosophy of technological prediction.” 
+ <sup>1</sup></p>
+ <p>At the end of the day, we can ask "are we there yet?" over again, but a more pointed query asks not about time, but about place: "It may be highly unpredictable where a traveller will be one hour after the start of her journey, yet predictable that after five hours she will be at her destination.”
+ `;
+ blogcite6 =  `
+ 
+<p class="footnotes">1. <a href=" https://www.newyorker.com/magazine/2015/11/23/doomsday-invention-artificial-intelligence-nick-bostrom"   target="_blank"> https://www.newyorker.com/magazine/2015/11/23/doomsday-invention-artificial-intelligence-nick-bostrom</a>
+</p>    
+<p class="footnotes">1. <a href="https://nickbostrom.com/"   target="_blank"> https://nickbostrom.com/</a>
+</p>  
+
+ `;
+  blogpost5 = `
+ <p class="firstparagraph">It turns out that data is unevenly distributed between sectors, leading to monopoles of dominance: After all, who controls the data, controls the commanding heights. And yet, the very substance of Big Data derives from and belongs precisely to  individuals, aggregated, that checked "Agree" to a given app's Privacy Policy, from a given Internet Service Provider, using a given Browser ....</p>
+ <p>Now that physical products lose relative value for many reasons (not to mention easy downloads for 3-D printing), and alternately<i> informational data products gain value in the digital economy: hence the problem of allocating the value of personal data back to the person </i>... To this, the Canadian A.I. Mafia chimes in:</p>
+  <p class="quote">A persistent challenge for Element is the dearth of good data. The simplest way to train A.I. models is to feed them lots of well-labeled examples—thousands of cat images, or translated texts. Big Tech has access to so much consumer-oriented data that it’s all but impossible for anyone else to compete at building large-scale consumer products. But businesses, governments, and other institutions own huge amounts of private information. Even if a corporation uses Google for email, or Amazon for cloud computing, it doesn’t typically let those vendors access its internal databases about equipment malfunctions, or sales trends, or processing times. <br />
+  <br />That’s where Element sees an opening. If it can access several companies’ databases of, say, product images, it can then—with customers’ permission—use all of that information to build a better product-recommendation engine. Big Tech companies are also selling A.I. products and services to businesses—IBM is squarely focused on it—but no one has cornered the market. Element’s bet is that if it can embed itself in these organizations, it can secure a corporate data advantage similar to the one Big Tech has in consumer products.<sup>1.</sup></p>
+  <p>
+   <p>So will this kind of data democratization work? Not only so, but the Cambridge Analytica fiasco only briefly awakened public attention to the deep science underlying each of our "online digital signatures" ... the race is on among the Tech Giants to use A.I. to understand our lives, our keystrokes, our buying preferences better than we understand. And in turn, provide a great utility, and win our financial allegiance!
+`;
+
+
+blogcite5 = `
+
+<p class="footnotes">1. <a href="http://fortune.com/longform/element-ai-startup-tech/"   target="_blank">http://fortune.com/longform/element-ai-startup-tech/</a>
+</p>    
+
+`;
+ 
+  blogpost4 = ` 
+  <p class="quote">In the Modern Field of Artiificial Intelligence, all roads seem to lead to three researchers with ties to Canadian universities. The first, Geoffrey Hinton, a 70-year-old Brit who teaches at the University of Toronto, pioneered the subfield called deep learning that has become synonymous with A.I. The second, a 57-year-old Frenchman named Yann LeCun, worked in Hinton’s lab in the 1980s and now teaches at New York University. The third, 54-year-old Yoshua Bengio, was born in Paris, raised in Montreal, and now teaches at the University of Montreal. The three men are close friends and collaborators, so much so that people in the A.I. community call them the Canadian Mafia.<sup>1.</sup></p>
+
+  <p class="firstparagraph">A curious path of punctuated advancement due to insufficient memory and cpu power, characterized late 20th century A.I. development: Deep Learning development   lulls interrupted by rapid growth with each successive technological period.
+   Toronto's Dr. Geoff Hinton's single-layered A.I. algorithm gained brief fame, yet A.I. research no longer advanced  for ten years. </p>
+   <p class="quote">
+   Programs that performed well in the laboratory were useless in everyday situations; a simple act like picking up a ball turned out to require an overwhelming number of computations.
+
+The research fell into the first of several “A.I. winters.” As Bostrom notes in his book, “Among academics and their funders, ‘A.I.’ became an unwanted epithet.”<sup>1</sup> 
+</p>
+<p>
+Then came the GPU with Alex Khreshinski's famous image-recognition competition-winning penmanship detector, which notably is still in use by the banking system. This novel use of the GPU to accomplish parallel calculations rewrote the the A.I. field overnight. Also known as the "Cambrian Explosion", this event (and really just the algorithm) set off widespread advancements in the weeks and months follwoing, leading to new speciation ranging from the ANN, Neural Network, to a whole alphabet soup from Convolutional Neural Networks (CNN) <i>to far-reaching mutations of Reinforcement Learning</i>.<sup>2</sup>
+  </p>
+ 
+  <p> Along with Hinton's close collaborator throughout the 1980's and 90's, Dr. Yoshua Bengio of the University of Montr&eacute;al, the researchers remain committed to humanity's service:</p>
+   
+  <p class="quote">
+  Hinton moved from the U.S. to Canada in part due to disillusionment with Reagan-era politics and disapproval of military funding of artificial intelligence.[22] He believes political systems will use AI to "terrorize people". Hinton has petitioned against lethal autonomous weapons. Regarding existential risk from artificial intelligence, Hinton has stated that superintelligence seems more than 50 years away, but warns that "there is not a good track record of less intelligent things controlling things of greater intelligence". Asked in 2015 why he continues research despite his grave concerns, Hinton stated "I could give you the usual arguments. But the truth is that the prospect of discovery is too sweet." Hinton has also stated that "It is very hard to predict beyond five years" what advances AI will bring.<sup>1</sup></p>
+  
+  <p>While Hinton and company aren't necessarily Mahatma Gandhi-like, their devotion to a science prioritized to humanity' service and long-term best interest--free from monetary or other influence is admirable. No wonder their outlook on A.I.'s utility is so much brighter than that of Pessimist Elon Musk and company ... baah-humbug!
+ </p>
+   
+ 
+  `;
+ 
+
+  blogcite4 = `
+
+
+  <p class="footnotes">1. <a href="http://fortune.com/longform/element-ai-startup-tech/"   target="_blank">http://fortune.com/longform/element-ai-startup-tech/</a>
+  </p>    
+  <p class="footnotes">2. <a href="https://www.benzinga.com/pressreleases/18/06/p11846924/join-ai-pioneer-geoffrey-hinton-in-toronto-and-learn-from-global-leade"   target="_blank">https://www.benzinga.com/pressreleases/18/06/p11846924/join-ai-pioneer-geoffrey-hinton-in-toronto-and-learn-from-global-leade</a>
+  </p>     
+
+
+  `;
+
+  blogpost3 = ` 
+  <p class="firstparagraph">Already A.I. has shown its true colors as an ideal tool for solving disproportionately large, complex data problems: Similar to Watson's medical recommendations based on millions of pages read, the off-the scale amount of pages from every tech company is the item of interest. This is the flurry-to-snowstorm of Privacy Policies simultaneously released in response to the E.U.'s May 25th General Data Protection Regulations.  In reference to my June 30th post on A.I. workplace solutions, months of busy-reading-work all distilled to a fraction of the time to analyze those policies. Guess what? The rule-breaking is well under way!</p>
+  <p class="quote">Researchers from the European Union Institute in Florence worked with an EU consumer organization to create the software. They then used the program to examine the privacy policies of 14 major technology businesses, including by Alphabet Inc., Amazon.com Inc., and Facebook Inc.<br /><br />
+ 
+  They found that a third of those clauses were "potentially problematic" or contained "insufficient information." Another 11 percent of the policy’s sentences used unclear language, the academics said.  The researchers didn’t make public which companies’ policies violated which provisions of the law, publishing only aggregate findings for all of the companies in the study.<sup>1</sup></p>
+ 
+  <p>Aha! <i>The practices of Tech companies' use of A.I. to analyze customers' private data is well-known, but <strong>what do we actually know</strong> beyond just that? Behind the veil of commercial secret, much less is known than is led on ... until now. Now, A.I. becomes increasingly useful as a tattle-tale! </i> So by the same token that tech creates problems, Tech is the first to provide a solution. But A.I. rule-checking sounds good but raises another question: Who owns, or can access by alternate means, the personal data we have strewn across the internet? And what quality of data does each party have, or shares?  </p>
+  `;
+  
+  blogcite3 = `
+  
+<p class="footnotes">1. <a href="https://www.bloomberg.com/news/articles/2018-07-04/new-ai-tips-off-regulators-to-possible-eu-data-privacy-faults"   target="_blank">https://www.bloomberg.com/news/articles/2018-07-04/new-ai-tips-off-regulators-to-possible-eu-data-privacy-faults</a>
+</p>    
+  `;
+ 
+  blogpost2 = 
 `
-<p class="quote"><i>Power is “various forms of domination and subordination and the asymmetrical balance of forces which operate whenever and wherever social relations exist.”</i><br /><br />--Michele Foucault<sup>1</sup></p>
+<p class="quote"><i>Power is “various forms of domination and subordination and the asymmetrical balance of forces which operate whenever and wherever social relations exist.”  </i><sup>1</sup><br /><br />--Michel Foucault</p>
 <p class="firstparagraph">Ties and balances of power, at their fundamental core are constantly changing variations of symmetry between two agents, whether unilateral or bilateral: Two nodes interlinked. Magnified by overlapping networks and layers of relations, it's easy to see why long-standing institutions are interlocked, for better or worse ... Clearly the trend of turbulence and power grabs reaches far and wide:
  </p>
 <p class="quote">Poland was once a beacon for countries struggling to escape the yoke of the Soviet Union and embrace Western democracy. But it is now in league with neighboring nations, like Hungary, whose leaders have turned to authoritarian means to tighten their grip on power, presenting a grave challenge to a European Union already grappling with nationalist, populist and anti-immigrant movements.<br /><br />
@@ -26,7 +189,8 @@ blogcite2 =
 
 ` ;
   
-blogpost1 = `
+blogpost1 = `+
+
 <p class="quote">A vast majority of the half-million bodies in the inner asteroid belt may in fact be shrapnel from as few as five parent bodies called "planetesimals," scientists say. But the tangled orbits of those lost worlds meant they were doomed to collide, producing fragments that also collided, producing still more fragments in a cataclysmic cascade that's been going on for more than 4 billion years.<sup>1</sup></p><p> 
 </p>
 `;
@@ -37,10 +201,93 @@ blogcite1 =
 ` ;
   
   var url =  
-  [ 
-
+  [  
+ /*
+    {   
+    id:'11',
+    did:'07-13-18',
+    date:'July 13, 2018',
+    author:'by Thomas Maestas',
+    cat3:'Web Dev Affairs',
+    title:'', 
+    post:blogpost11,
+   blogcite:blogcite11     },  
+ */
+   {   
+      id:'10',
+      did:'07-12-18',
+      date:'July 12, 2018',
+      author:'by Thomas Maestas',
+      cat3:'A.I.Now',
+      title:'Tools of the A.I. Trade, Part III:<br />  Operation Architecture Drilldown', 
+      post:blogpost10,
+     blogcite:blogcite10     },  
  
+{   
+      id:'9',
+      did:'07-11-18',
+      date:'July 11, 2018',
+      author:'by Thomas Maestas',
+      cat3:'Web Dev Affairs',
+      title:'Tools of the A.I. Trade, Part II:<br />Machine Learning\'s Pedal to the Metal', 
+      post:blogpost9,
+     blogcite:blogcite9     },  
+          {   
+    id:'8',
+    did:'07-10-18',
+    date:'July 10, 2018',
+    author:'by Thomas Maestas',
+    cat3:'A.I.Now',
+    title:'Tools of the A.I. Trade, Part I: <br />The Proliferation of Machine Learning Modeling Libraries ', 
+    post:blogpost8,
+   blogcite:blogcite8     },  
+  { 
+    id:'7',
+    did:'07-09-18',
+    date:'July 9, 2018',
+    author:'by Thomas Maestas',
+    cat3:'Web Dev Affairs',
+    title:'187 million Snapchat Users and Enquiring Minds want to Know: Did Multiple Clusters Fail at once?...or is there Foul Play?', 
+    post:blogpost7,
+   blogcite:blogcite7     },
+       { 
+    id:'6',
+    did:'07-07-18',
+    date:'July 7-8, 2018<br />Weekend',
+    author:'by Thomas Maestas',
+    cat3:'Sociology Tomorrow!',
+    title:'Theories of Extropy <sup>0</sup>', 
+    post:blogpost6,
+   blogcite:blogcite6     },
     { 
+      id:'5',
+      did:'07-06-18',
+      date:'July 6, 2018',
+      author:'by Thomas Maestas',
+      cat3:'A.I.Now',
+      title:'The Canadian Mafia, Part II.<br />Data Better Recollected', 
+      post:blogpost5,
+     blogcite:blogcite5     },
+    
+   { 
+      id:'4',
+      did:'07-05-18',
+      date:'July 5, 2018',
+      author:'by Thomas Maestas',
+      cat3:'A.I.Now',
+      title:'The Canadian Mafia, Part I.<br /> On the Good-Natured Vision of the Godfathers of A.I.', 
+      post:blogpost4,
+     blogcite:blogcite4     },
+    { 
+      id:'3',
+      did:'07-04-18',
+      date:'July 4, 2018', 
+      author:'by Thomas Maestas',
+      cat3:'A.I.Now',
+      title:'Training Data, Big and Beloved Data<br />Big Data\s Most Notorious Rule-Breaker and Rule-Enforcer: A.I.',
+      post:blogpost3,
+     blogcite:blogcite3     }, 
+   { 
     id:'2',
     did:'07-03-18',
     date:'July 3, 2018',
@@ -56,7 +303,7 @@ blogcite1 =
   date:'July 2, 2018',
     author:'by Thomas Maestas',
     cat3:'Sociology Tomorrow!',
-    title:'Always Out to Impress!', 
+    title:'Celestial Bodies: Always Out to Impress!', 
     post:blogpost1,
    blogcite:blogcite1
  }  

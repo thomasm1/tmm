@@ -1,10 +1,10 @@
 /*   overrides */
 
 /************************* ******/
-$tmmBanner:  url(../img/silverchip.jpg)  repeat 0;
+$tmmBanner:  url(../img/greeninvert.png)  repeat 0;
 $tmm:  url(../img/T30small10.png) repeat;
 $blueRey: steelblue url('../img/MaestasReykjavikBanner20.png') repeat;
-$tmmBanner:  url(../img/bluechipTile.jpg)  repeat 0;
+$tmmBanner:  url(../img/greeninvert.png)  repeat 0;
 $body-bg:blue;
 $font-roboto:'Roboto';
 $bg-color: steelblue;
@@ -348,7 +348,8 @@ background:$tmmBanner;
 position:fixed;
 top:0px;
 left:0px;    
-max-height:50px;
+max-height:60px;
+ 
 
 } 
 /* welcome and text*/
@@ -540,7 +541,7 @@ a {
   box-shadow: none;
 }
 .app-navbar .navbar-brand img {
-  width: 140px;
+  width: 200px;
   margin-top: 10px;
   margin-bottom:0px;
 }
@@ -1133,7 +1134,9 @@ a:hover {
     }
   footer { text-align:center;}
   .active a { 
-    background:blue !important; 
+    background:rgb(47, 47, 187) !important; 
+    border-radius:14px;
+    opacity:30%;
   }
 
 
