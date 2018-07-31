@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="dailytech">
 
 
 
@@ -33,7 +33,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
   <title>TMM | Home</title>
 
-  <link rel="stylesheet" href="dist/css/app.css">
+  <link rel="stylesheet" href="dist/css/app_july.css">
 
   <style type="text/css">
     #rightmenu {
@@ -55,7 +55,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
 
 
-<body> 
+<body ng-if="'home'? 'maps': 'about'"> 
     <div class='svgHolder'   style="opacity:.5;position:absolute;top:20px;" id="force"></div>
     <!--
       <div class='svgHolder' style="position:relative;" id="dag"></div>
@@ -65,7 +65,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     <script type="text/javascript" src="dist/js/dag.js"></script>
   <nav id="nav" class="  navbar navbar-default">
 
-    <img src="dist/img/tmmchip.png" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. " class="profile"
+    <img src="dist/img/tmmpurple.png" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. " class="profile"
     />
 
     <div class="container  "> 
@@ -477,7 +477,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
 
-  <script src="dist/tmm_bundle.js"></script>
+  <script src="dist/tmm_bundle_july-1.js"></script>
  
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>
 </body>
