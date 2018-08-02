@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'tmm_bundle_july.js',
+    filename: 'tmm_bundle_july-3.js',
   }  
   /*,
   module: {

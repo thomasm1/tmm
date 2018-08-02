@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" ng-app="dailytech">
+<html lang="en" ng-app="tmm">
 
 
 
@@ -33,7 +33,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
   <title>TMM | Home</title>
 
-  <link rel="stylesheet" href="dist/css/app_july.css">
+  <link rel="stylesheet" href="dist/css/app.css">
 
   <style type="text/css">
     #rightmenu {
@@ -51,15 +51,19 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     .svgHolder { margin: 0px; }
     .daglink { fill: none; }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.min.js"></script>
+
+  <script src="dist/tmm-ang.js"></script>
+<script src="dist/post-list.controller.js"></script>
 </head>
 
 
 
-<body ng-if="'home'? 'maps': 'about'"> 
+<body ng-controller="tmmController"> 
     <div class='svgHolder'   style="opacity:.5;position:absolute;top:20px;" id="force"></div>
-    <!--
-      <div class='svgHolder' style="position:relative;" id="dag"></div>
-    -->
+  
+ 
   
     <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
     <script type="text/javascript" src="dist/js/dag.js"></script>
@@ -190,6 +194,26 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
     </div>
 
+    <div>
+        <post-list></post-list>
+          <ul >
+          <li ng-repeat="post in posts">{{post.did}}<br />
+          {{post.title}}</li>
+          </ul>
+          <p  >Total number of posts: {{$ctrl.posts.length}}</p>
+        </div>
+        <div id="marsreader" class="marsreader  ">
+  
+            <pre id="reqObject"></pre>
+            <img id="apod_img_id" width="100%" class="zoom" />
+            <p id="copyright"></p>
+            <h6 class="dailytech">Twython Space API </h6>
+            <h5 id="apod_title"></h5>
+            <p id="apod_explaination"></p>
+            <pre id="returnObject"></pre>
+
+        <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+          </div>
     <nav id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar">
       <div class=" nav flex-column rightnav sidebar-sticky">
         <div class="  list-group">
@@ -199,15 +223,10 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
           <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action">  INTERACTIVE WORLD CUP MAP  </a> 
           <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action"> DASHBOARD DEMO </a>
         </div>
-
-
-
-
-
-
+ 
+        </div>
       </div>
     </nav>
-  </div>
 
   <style>
     .counties {
@@ -219,7 +238,8 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
       stroke: #fff;
       stroke-linejoin: round;
     }
-  </style>
+  </style> 
+
   <svg id="svg" width="960" height="600"></svg>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -380,8 +400,8 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
                         <div id="paragraph-june"></div>  
                     
                         <div id="paragraph-may"></div>  
-                        <div id="paragraph-april"></div>    
-                        <div id="paragraph-march"></div>  
+                        <div id="paragraph-apr"></div>    
+                        <div id="paragraph-mar"></div>  
                         <div id="paragraph-feb"></div>
                     
                       </div>   
@@ -474,12 +494,11 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
   <footer id="footer" class="footer">
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
-
-  <script src="dist/tmm_bundle_july-1.js"></script>
- 
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>
+  <script src="dist/tmm_bundle_july-3.js"></script>
+   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>
 </body>
 
 

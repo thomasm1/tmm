@@ -617,25 +617,7 @@ date:'July 29, 2018',
     </div>` ;
 document.getElementById("paragraph-june").innerHTML += cat; 
 } 
- 
-for (i=0;i<url.length;i++){ 
-  var catMod = `
-  <div id="mod_${url[i].did}" class="blogDivMod"> 
-  <hr />  
-  <a href="#top-mod"><button>Top</button></a>   
-  <h4 class="title dailytech longtitle">OUR DAILY TECH:</h4>  
-  <h5 id="cat3" class="  subdailytech">${url[i].cat3}</h5>  
-  <p id="author" class="  author">${url[i].author}</p>   
-  <h6  id="date" class="  chapternumber">${url[i].date}</h6>    
-  <h6  id="title"   class="dailytitle chapternumber">${url[i].title}</h6>
-  <br />
-  <div id="post">${url[i].post}</div>
-  </div>
- <div id="blogcite">${url[i].blogcite}
- </div>`;
-document.getElementById("paragraph-june-mod").innerHTML += catMod; 
-}; 
-
+  
 };
 bloggerJune();  
 

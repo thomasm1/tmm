@@ -406,24 +406,7 @@ blogcite1 = `<p class="cite"><a href="https://www.tandfonline.com/doi/abs/10.108
     </div>` ;
 document.getElementById("paragraph-may").innerHTML += cat; 
 } 
- 
-for (i=0;i<url.length;i++){ 
-  var catMod = `
-  <div id="${url[i].did}_mod" class="blogDivMod"> 
-  <hr />  
-  <a href="#top-mod"><button>Top</button></a>   
-  <h4 class="title dailytech longtitle">OUR DAILY TECH:</h4>  
-  <h5 id="cat3" class="  subdailytech">${url[i].cat3}</h5>  
-  <p id="author" class="  author">${url[i].author}</p>   
-  <h6  id="date" class="  chapternumber">${url[i].date}</h6>    
-  <h6  id="title"   class="dailytitle chapternumber">${url[i].title}</h6>
-  <br />
-  <div id="post">${url[i].post}</div>
-  </div>
- <div id="blogcite">${url[i].blogcite}
- </div>`;
-document.getElementById("paragraph-may-mod").innerHTML += catMod;
-}
+  
 }; 
 
 

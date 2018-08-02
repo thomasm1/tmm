@@ -405,8 +405,7 @@ The forced retirements of up to 27 of 72 Supreme Court justices, including the t
 </p>
 `;
   blogcite2 =
-    `
-<p class="footnotes">2. <a href="https://books.google.com/books?id=6rfP0H5TSmYC&printsec=frontcover"   target="_blank">Foucault, Michel. Discipline and punish: The birth of the prison. Vintage, 2012.</a>
+    `<p class="footnotes">2. <a href="https://books.google.com/books?id=6rfP0H5TSmYC&printsec=frontcover"   target="_blank">Foucault, Michel. Discipline and punish: The birth of the prison. Vintage, 2012.</a>
 </p>   
 <p class="footnotes">2. <a href="https://www.nytimes.com/2018/07/03/world/europe/poland-supreme-court-protest.html"   target="_blank">https://www.nytimes.com/2018/07/03/world/europe/poland-supreme-court-protest.html</a>
 </p>   
@@ -683,24 +682,7 @@ The forced retirements of up to 27 of 72 Supreme Court justices, including the t
     </div>`;
     document.getElementById("paragraph-july").innerHTML += cat;
   }
-
-  for (i = 0; i < url.length; i++) {
-    var catMod = `
-  <div id="mod_${url[i].did}" class="blogDivMod"> 
-  <hr />  
-  <a href="#top-mod"><button>Top</button></a>   
-  <h4 class="title dailytech longtitle">OUR DAILY TECH:</h4>  
-  <h5 id="cat3" class="  subdailytech">${url[i].cat3}</h5>  
-  <p id="author" class="  author">${url[i].author}</p>   
-  <h6  id="date" class="  chapternumber">${url[i].date}</h6>    
-  <h6  id="title"   class="dailytitle cha-pternumber">${url[i].title}</h6>
-  <br />
-  <div id="post">${url[i].post}</div>
-  </div>
- <div id="blogcite">${url[i].blogcite}
- </div>`;
-    document.getElementById("paragraph-july-mod").innerHTML += catMod;
-  }
+ 
 
 };
 bloggerJuly();

@@ -1172,23 +1172,7 @@ target="_blank">https://www.trustnodes.com/2017/11/28/ethereums-proof-stake-casp
     document.getElementById("paragraph-feb").innerHTML += cat;
   }
   
-  for (i=0;i<url.length;i++){ 
-    var catMod = `
-    <div id="${url[i].did}_mod" class="blogDivMod"> 
-    <hr />  
-    <a href="#top-mod"><button>Top</button></a>   
-    <h4 class="title dailytech longtitle">OUR DAILY TECH:</h4>  
-    <h5 id="cat3" class="  subdailytech">${url[i].cat3}</h5>  
-    <p id="author" class="  author">${url[i].author}</p>   
-    <h6  id="date" class="  chapternumber">${url[i].date}</h6>    
-    <h6  id="title"   class="dailytitle chapternumber">${url[i].title}</h6>
-    <br />
-    <div id="post">${url[i].post}</div>
-    </div>`;
-    
-document.getElementById("paragraph-feb-mod").innerHTML += catMod;
-};
-
+ 
 
 
 

@@ -8,7 +8,7 @@ var path = d3.geoPath();
 
 var x = d3.scaleLinear()
 .domain([1, 10])
-.rangeRound([600, 860]);
+.rangeRound([400, 645]);
 
 var color = d3.scaleThreshold()
 .domain(d3.range(2, 10))

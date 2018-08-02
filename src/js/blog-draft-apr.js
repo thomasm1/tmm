@@ -3,7 +3,7 @@ console.log('blogger-apr');
 var bloggerApr = function () {
 
 
-  blogpost23 = `<p class="firstparagraph">Fitbit and Wearables' Contribution to Health in Society is clear<sup>1</sup>, yet much of the credit is due to increased social, activity-based networks.  And, new features and benefits depend on relaxed data privacy. Given my <a href="#18-04-11">April 11th post</a> on the upcoming data privacy changes <i>in response to both Cambridge Analytica scandal <strong>and</strong> E.U.'s long-planned Data Privacy regulations.</i></p>
+  blogpost23 = `<p class="firstparagraph">Fitbit and Wearables' Contribution to Health in Society is clear<sup>1</sup>, yet much of the credit is due to increased social, activity-based networks.  And, new features and benefits depend on relaxed data privacy. Given my <a                  href="#18-04-11">April 11th post</a> on the upcoming data privacy changes <i>in response to both Cambridge Analytica scandal <strong>and</strong> E.U.'s long-planned Data Privacy regulations.</i></p>
   
   <p>So, now is the worst time to clamp down on app permissions, <i>especially as Smart Watches begin to finally make in-roads</i> socially and hardware-wise.  Fitbit's acquirement of Pebble Watch exemplifies the  recent technological hard-ware leap-frogging.  All in all, we can't truly have a socially-connected society without flexible app permissions, so let's hope for fair and flexible data regulations ...  
   </p>
@@ -616,22 +616,6 @@ var bloggerApr = function () {
     </div>`;
     document.getElementById("paragraph-apr").innerHTML += cat;
   }
-
-  for (i=0;i<url.length;i++){ 
-    var catMod = `
-    <div id="${url[i].did}_mod" class="blogDivMod"> 
-    <hr />  
-    <a href="#top-mod"><button>Top</button></a>   
-    <h4 class="title dailytech longtitle">OUR DAILY TECH:</h4>  
-    <h5 id="cat3" class="  subdailytech">${url[i].cat3}</h5>  
-    <p id="author" class="  author">${url[i].author}</p>   
-    <h6  id="date" class="  chapternumber">${url[i].date}</h6>    
-    <h6  id="title"   class="dailytitle chapternumber">${url[i].title}</h6>
-    <br />
-    <div id="post">${url[i].post}</div>
-    </div>`;
-     document.getElementById("paragraph-apr-mod").innerHTML += catMod;  
-} 
-
+ 
 };
 bloggerApr();
