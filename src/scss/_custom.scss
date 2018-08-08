@@ -14,6 +14,12 @@ $rey: url(../img/MaestasReykjavikBanner.png) repeat 0;
 
 
 
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           darkblue !default;
+$navbar-default-toggle-icon-bar-bg:        #888 !default;
+$navbar-default-toggle-border-color:       #ddd !default;
+
+
 
 body {
   background: $bg-color;
