@@ -1,5 +1,40 @@
 console.log('blogger-july');  
-  var bloggerJuly = function () {  
+
+  var bloggerJuly = function () {
+
+    blogpost31 =  `<p class="quote">  <i>[Intel's]  i9-8950HK processor is the first mobile Intel processor with six cores and 12 threads. It comes fully unlocked. It has the new Intel thermal Velocity Boost, which automatically increases clock frequency up to 200 MHz if the processor temperature is low enough and there's enough turbo power, giving a turbo frequency of up to 4.8 GHz.</i></p>
+    <p class="quote" The i9-8950HK processor is the first mobile Intel processor with six cores and 12 threads. It comes fully unlocked. It has the new Intel thermal Velocity Boost, which automatically increases clock frequency up to 200 MHz if the processor temperature is low enough and there's enough turbo power, giving a turbo frequency of up to 4.8 GHz.</i>
+    </p>
+    <p class="firstparagraph"> Needs shape our inventions and our inventions shape our needs: With the brand new set of computing requirements from the Dawn of 5G serve up utility for the i9.  </p>
+    <p class="quote">The 8th Gen processors incorporate Intel Octane memory, a smart and adaptable system accelerator for desktop and mobile platforms using SATA-based storage technology.
+
+    Intel also has released a new Data Drive Acceleration feature that boosts a large secondary HDD hard drive.
+    
+    Together, Intel Octane and Data Drive Acceleration provide up to 4.7x the game loading speed and 1.7x faster media loading, Intel said.
+     </p>
+    <p class="firstparagraph">Intel's advances pale in comparison, however, to GPU and newer computing trends. This theme arises time after time in my posts, but mathematics will rewrite the rules of performance...</p>
+    <p class="quote">
+    The actual task of processing AI is a very different process from standard computing or GPU processing, hence the perceived need for specialized chips. A x86 CPU can do AI, but it does a task in 12 steps when only three are required; a GPU in some cases can also be overkill.
+
+    Generally, scientific computation is done in a deterministic fashion. You want to know two plus three equals five and calculate it to all of its decimal places—x86 and GPU do that just fine. But the nature of AI is to say 2.5 + 3.5 is observed to be six almost all of the time without actually running the calculation. What matters with artificial intelligence today is the pattern found in the data, not the deterministic calculation. 
+
+The result of this predictive problem solving is that AI calculations can be done with single precision calculations. So while CPUs and GPUs can both do it very well, they are in fact overkill for the task. A single-precision chip can do the work and do it in a much smaller, lower power footprint.</p>
+
+<p class="quote">Intel "can deliver on CPU functionality, which has dropped in performance, but still lags on GPUs and modems," noted Rob Enderle, principal analyst at the Enderle Group.
+
+"Much of the performance these days is gated by the modem and the GPU, not the CPU, which just isn't as importance as it once was," he told TechNewsWorld.
+
+Developers may not benefit much from the new processors, Enderle said, because "with IDF shut down, Intel's developer efforts are largely moot."
+</p> `;
+    blogcite31  = `
+    <p class="cite">1. <a href="https://www.technewsworld.com/story/85252.html"   target="_blank">https://www.technewsworld.com/story/85252.html
+    </a>
+    </p>
+    
+    <p class="cite">1. <a href="https://www.cnet.com/news/intel-core-i9-9900k-may-boost-to-5ghz/"   target="_blank">https://www.cnet.com/news/intel-core-i9-9900k-may-boost-to-5ghz/
+    </a>
+    </p>`
+    ;
     
     blogpost30 = `<p class="firstparagraph">Predictive analytics  has slowly progressed in sophistication over the past 45 years, and the current nexus with powerful machine-learning tools changes the health game: </p>
     <p class="quote"> A report by ABI Research June 2018 report highlighted a significant rise in patient monitoring devices, including AI for home-based preventative healthcare and predictive analytics, which could save hospitals around $52bn by 2021.<br /><br />
@@ -529,7 +564,16 @@ The forced retirements of up to 27 of 72 Supreme Court justices, including the t
   blogcite1 = `<p class="footnotes">1. <a href="https://www.washingtonpost.com/news/speaking-of-science/wp/2018/07/03/many-asteroids-might-be-remnants-of-five-destroyed-worlds-scientists-say/?noredirect=on&utm_term=.4f1e000cc632"   target="_blank">https://www.washingtonpost.com/news/speaking-of-science/wp/2018/07/03/many-asteroids-might-be-remnants-of-five-destroyed-worlds-scientists-say/?noredirect=on&utm_term=.4f1e000cc632</a>
 </p> 
 `;
-  var url =  [  {
+  var url =  [   {
+    id: '31',
+       did: '08-08-18',
+       date: 'August 8, 2018',
+       author: 'by Thomas Maestas',
+       cat3: 'A.I.Now. ',
+       title: 'New Math &amp; the Speed of Antiquation, a Case Study:<br />Mobile 8th Generation Intel',
+       post: blogpost31,
+       blogcite: blogcite31
+      },  {
     id: '30',
        did: '08-07-18',
        date: 'August 7, 2018<br />Weekend',
