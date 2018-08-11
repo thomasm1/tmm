@@ -2,41 +2,20 @@ console.log('blogger-july');
 
   var bloggerJuly = function () {
 
-    blogpost31 =  `<p class="quote">  <i>[Intel's]  i9-8950HK processor is the first mobile Intel processor with six cores and 12 threads. It comes fully unlocked. It has the new Intel thermal Velocity Boost, which automatically increases clock frequency up to 200 MHz if the processor temperature is low enough and there's enough turbo power, giving a turbo frequency of up to 4.8 GHz.</i></p>
-    <p class="quote" The i9-8950HK processor is the first mobile Intel processor with six cores and 12 threads. It comes fully unlocked. It has the new Intel thermal Velocity Boost, which automatically increases clock frequency up to 200 MHz if the processor temperature is low enough and there's enough turbo power, giving a turbo frequency of up to 4.8 GHz.</i>
+    blogpost32 =  `<p class="firstparagraph">Classification and Regression (Decision) Trees are not just accurate, multipurpose and foundational to predictive machine learning algorithms (e.g. random forests, bayesian trees, bagging), but the trees' final product reveals the different rationale for the output. Printed onto a sheet   of paper, both statistical practitioner and the domain professional intuitively and heuristically understand practical use for an analysis. This July 2017 Cancer study exemplifies the utility of healthcare-based algorithms of analysis ... 
     </p>
-    <p class="firstparagraph"> Needs shape our inventions and our inventions shape our needs: With the brand new set of computing requirements from the Dawn of 5G serve up utility for the i9.  </p>
-    <p class="quote">The 8th Gen processors incorporate Intel Octane memory, a smart and adaptable system accelerator for desktop and mobile platforms using SATA-based storage technology.
-
-    Intel also has released a new Data Drive Acceleration feature that boosts a large secondary HDD hard drive.
-    
-    Together, Intel Octane and Data Drive Acceleration provide up to 4.7x the game loading speed and 1.7x faster media loading, Intel said.
-     </p>
-    <p class="firstparagraph">Intel's advances pale in comparison, however, to GPU and newer computing trends. This theme arises time after time in my posts, but mathematics will rewrite the rules of performance...</p>
-    <p class="quote">
-    The actual task of processing AI is a very different process from standard computing or GPU processing, hence the perceived need for specialized chips. A x86 CPU can do AI, but it does a task in 12 steps when only three are required; a GPU in some cases can also be overkill.
-
-    Generally, scientific computation is done in a deterministic fashion. You want to know two plus three equals five and calculate it to all of its decimal places—x86 and GPU do that just fine. But the nature of AI is to say 2.5 + 3.5 is observed to be six almost all of the time without actually running the calculation. What matters with artificial intelligence today is the pattern found in the data, not the deterministic calculation. 
-
-The result of this predictive problem solving is that AI calculations can be done with single precision calculations. So while CPUs and GPUs can both do it very well, they are in fact overkill for the task. A single-precision chip can do the work and do it in a much smaller, lower power footprint.</p>
-
-<p class="quote">Intel "can deliver on CPU functionality, which has dropped in performance, but still lags on GPUs and modems," noted Rob Enderle, principal analyst at the Enderle Group.
-
-"Much of the performance these days is gated by the modem and the GPU, not the CPU, which just isn't as importance as it once was," he told TechNewsWorld.
-
-Developers may not benefit much from the new processors, Enderle said, because "with IDF shut down, Intel's developer efforts are largely moot."
+    <p class="quote">The aim of this study was to develop and validate a clinical predictive model for 1-year mortality among patients with colon cancer who survive for at least 30 days after surgery.<br /><br />Random forest, genetic algorithms and classification and regression trees were combined in order to identify the variables and partition points that optimally classify patients by risk of mortality. The resulting decision tree was categorized into four risk categories. Split-sample and bootstrap validation were performed.<sup>1</sup>
+    </p><br />
+    <img src="dist/img/irisCART.jpg" width="350px" class="zoom" /><br />
+    <p >And, now that sound methodology meets an increasingly user-friendly Machine Learning software toolset for wider practical applications, beginning firstly within healthcare technologies <i>and that second opinion!</p>.
 </p> `;
-    blogcite31  = `
-    <p class="cite">1. <a href="https://www.technewsworld.com/story/85252.html"   target="_blank">https://www.technewsworld.com/story/85252.html
-    </a>
-    </p>
-    
-    <p class="cite">1. <a href="https://www.cnet.com/news/intel-core-i9-9900k-may-boost-to-5ghz/"   target="_blank">https://www.cnet.com/news/intel-core-i9-9900k-may-boost-to-5ghz/
+    blogcite32  = `Image credits: https://www.xlstat.com/en/solutions/features/classification-and-regression-trees
+    <p class="cite">1. <a href="https://www.dovepress.com/combining-statistical-techniques-to-predict-postsurgical-risk-of-1-yea-peer-reviewed-article-CLEP#"   target="_blank">https://www.dovepress.com/combining-statistical-techniques-to-predict-postsurgical-risk-of-1-yea-peer-reviewed-article-CLEP#
     </a>
     </p>`
     ;
     
-    blogpost30 = `<p class="firstparagraph">Predictive analytics  has slowly progressed in sophistication over the past 45 years, and the current nexus with powerful machine-learning tools changes the health game: </p>
+    blogpost31 =  `<p class="firstparagraph">Predictive analytics  has slowly progressed in sophistication over the past 45 years, and the current nexus with powerful machine-learning tools changes the health game: </p>
     <p class="quote"> A report by ABI Research June 2018 report highlighted a significant rise in patient monitoring devices, including AI for home-based preventative healthcare and predictive analytics, which could save hospitals around $52bn by 2021.<br /><br />
 
     Accenture’s Digital Health Technology Vision 2018 report also claims that 85% of health executives in the US believe that every human will be directly impacted on a daily basis by an AI-based decision within the next three years.<br /><br />
@@ -62,19 +41,18 @@ Developers may not benefit much from the new processors, Enderle said, because "
     for research on the prevention of chronic disease, randomized
     trials are often infeasible because of their size, time,
     and budget requirements, as well as questionable generalizability
-    or ethical constraints [1].
+    or ethical constraints.<br /><br />
     On the other hand, nonexperimental studies of interventions
     have frequently been criticized because of their potential
     for selection bias. This concern reached a crescendo
     with the disparity in estimated effects of hormone replacement
     therapy from randomized trials and nonexperimental
-    studies [2]. This imbroglio highlighted the need to develop
+    studies. This imbroglio highlighted the need to develop
     and apply improved methods to reduce bias in nonexperimental
     studies in which selection bias or confounding is
-    likely to occur [3].<sup>3</sup></p>j
+    likely to occur .<sup>3</sup></p>
     <p>So, nowadays we don't ask for a second opinion when we can ask for a trillion opinions narrowed down to one heck of a second opinion!</p>`;
-
-    blogcite30 = ` 
+    blogcite31  = `
     <p class="cite">1. <a href="https://www.healthcareglobal.com/technology/ai-seen-less-threat-and-welcomed-health-professionals-research-reveals"   target="_blank">https://www.healthcareglobal.com/technology/ai-seen-less-threat-and-welcomed-health-professionals-research-reveals
     </a>
     </p>
@@ -82,9 +60,43 @@ Developers may not benefit much from the new processors, Enderle said, because "
     </a>
     </p>    <p class="cite">3. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1448214/"   target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1448214/
     </a>
+    </p>`
+    ;
+    
+    blogpost30 = `<p class="quote">  <i>[Intel's]  i9-8950HK processor is the first mobile Intel processor with six cores and 12 threads. It comes fully unlocked. It has the new Intel thermal Velocity Boost, which automatically increases clock frequency up to 200 MHz if the processor temperature is low enough and there's enough turbo power, giving a turbo frequency of up to 4.8 GHz.</i></p>
+    <p class="quote" The i9-8950HK processor is the first mobile Intel processor with six cores and 12 threads. It comes fully unlocked. It has the new Intel thermal Velocity Boost, which automatically increases clock frequency up to 200 MHz if the processor temperature is low enough and there's enough turbo power, giving a turbo frequency of up to 4.8 GHz.</i>
+    </p>
+    <p class="firstparagraph"> Needs shape our inventions and our inventions shape our needs: With the brand new set of mobile computing requirements serve up utility for the i9.  Intel's advances pale in comparison, however, to GPU and newer computing trends. This theme arises time after time in my posts, but mathematics will rewrite the rules of performance . . .</p>
+    <p class="quote">The 8th Gen processors incorporate Intel Octane memory, a smart and adaptable system accelerator for desktop and mobile platforms using SATA-based storage technology.<br /><br />
+
+    Intel also has released a new Data Drive Acceleration feature that boosts a large secondary HDD hard drive.
+    
+    Together, Intel Octane and Data Drive Acceleration provide up to 4.7x the game loading speed and 1.7x faster media loading, Intel said.
+     </p>
+    <p class="quote">
+    The actual task of processing AI is a very different process from standard computing or GPU processing, hence the perceived need for specialized chips. A x86 CPU can do AI, but it does a task in 12 steps when only three are required; a GPU in some cases can also be overkill.
+    <br /><br />
+    Generally, scientific computation is done in a deterministic fashion. You want to know two plus three equals five and calculate it to all of its decimal places—x86 and GPU do that just fine. But the nature of AI is to say 2.5 + 3.5 is observed to be six almost all of the time without actually running the calculation. What matters with artificial intelligence today is the pattern found in the data, not the deterministic calculation. 
+    <br /><br />
+The result of this predictive problem solving is that AI calculations can be done with single precision calculations. So while CPUs and GPUs can both do it very well, they are in fact overkill for the task. A single-precision chip can do the work and do it in a much smaller, lower power footprint.</p>
+
+<p class="quote">Intel "can deliver on CPU functionality, which has dropped in performance, but still lags on GPUs and modems," noted Rob Enderle, principal analyst at the Enderle Group.
+
+"Much of the performance these days is gated by the modem and the GPU, not the CPU, which just isn't as importance as it once was," he told TechNewsWorld.
+
+Developers may not benefit much from the new processors, Enderle said, because "with IDF shut down, Intel's developer efforts are largely moot."
+</p> `;
+
+    blogcite30 = ` 
+    <p class="cite">1. <a href="https://www.technewsworld.com/story/85252.html"   target="_blank">https://www.technewsworld.com/story/85252.html
+    </a>
+    </p>
+    
+    <p class="cite">2. <a href="https://www.cnet.com/news/intel-core-i9-9900k-may-boost-to-5ghz/"   target="_blank">https://www.cnet.com/news/intel-core-i9-9900k-may-boost-to-5ghz/
+    </a>
     </p>
      `;
-    blogpost29 = `<p class="firstparagraph">Batteries optimized by machine learning is a feature in the latest version of Android OS, Pie. Some may roll theirs, but the only of desserts that share nameship with the great constant, pie. <i>Mystical 3-1-4 also features A.I.-empowered Textual Analysis, which opens to multiple new possibilities:</i></p>
+    blogpost29 = `<p class="firstparagraph">Batteries optimized by machine learning is a feature in the latest version of Android OS, Pie. Some may roll theirs, but the only of desserts that share nameship with the great constant, pi. <i>Mystical 3-1-4 also features A.I.-empowered Textual Analysis, which opens to multiple new possibilities:</i></p>
     <p class="quote">The other new machine learning-powered feature is the smart text selection tool that recognizes the meaning of the text you selected and then allows you to suggest relevant actions like opening Google Maps or bringing up the share dialog for an address.<sup>1</sup></p>
     <p>Further, Android Pie's <i>Digital Wellness</i> features offer all the trending self-obedience features--not the least of which FitBit's guilt-inducing, and highly effective,<strong>walk prompts--already the bots are running my life and I obey!</p></strong>`;
     blogcite29 = ` 
@@ -92,9 +104,9 @@ Developers may not benefit much from the new processors, Enderle said, because "
     </a>
     </p>
      `;
-     blogpost28 =  `<p class="quote"><i>Bone is constantly turning over through a process in which cells called osteoclasts dig tunnels through bone, and then cells called osteoblasts re-pave those tunnels with new bone. Econs acknowledges that it sounds like an inefficient system, but it has to work this way because you obviously need to be able to use your bones while those repairs are taking place.</i></p> 
-     <p>Michael Econ, physician and member of the American Society for Bone and Mineral Research and a professor at the Indiana University School of Medicine.   
-     <p class="firstparagraph"><i>Digital Responsibility, the trending fad of 2018, spans from the upcoming Android Pie's in-device digital behavioral tools across the spectrum to Fitbit, Youtube, and others' timed get-up-and-walk push notifications.       </p>  `;
+     blogpost28 =  `<p class="quote"><i>Bone is constantly turning over through a process in which cells called osteoclasts dig tunnels through bone, and then cells called osteoblasts re-pave those tunnels with new bone. Econs acknowledges that it sounds like an inefficient system, but it has to work this way because you obviously need to be able to use your bones while those repairs are taking place.</i><br /><br />
+     --Michael Econ, physician and member of the American Society for Bone and Mineral Research   
+     <p class="firstparagraph"><i>Bone loss in space can reach 5 to 10% over the course of a year, however the sure cure is Digital Responsibility, the trending fad of 2018, spans from the upcoming Android Pie's in-device digital behavioral tools across the spectrum to Fitbit, Youtube, and others' timed get-up-and-walk push notifications.       </p>  `;
      blogcite28 = `<p class="cite">1. <a href="https://tonic.vice.com/en_us/article/ne5zg8/this-is-the-effect-working-out-has-on-your-bones"   target="_blank">https://tonic.vice.com/en_us/article/ne5zg8/this-is-the-effect-working-out-has-on-your-bones
      </a>
      </p> 
@@ -132,7 +144,7 @@ Developers may not benefit much from the new processors, Enderle said, because "
     <p class="cite">1. <a href="https://cointelegraph.com/news/institutional-investors-and-fintech-will-wall-street-go-head-first-into-crypto"   target="_blank">https://cointelegraph.com/news/institutional-investors-and-fintech-will-wall-street-go-head-first-into-crypto
     </a>
     </p> 
-    <p class="cite">1. <a href="https://www.businessinsider.com/8-3-2018-fintech-ecosystem-financial-technology-research-and-business-opportunities-2018-8?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+clusterstock+%28ClusterStock%29&r=US&IR=T&IR=T"   target="_blank">https://www.businessinsider.com/8-3-2018-fintech-ecosystem-financial-technology-research-and-business-opportunities-2018-8?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+clusterstock+%28ClusterStock%29&r=US&IR=T&IR=T
+    <p class="cite">2. <a href="https://www.businessinsider.com/8-3-2018-fintech-ecosystem-financial-technology-research-and-business-opportunities-2018-8?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+clusterstock+%28ClusterStock%29&r=US&IR=T&IR=T"   target="_blank">https://www.businessinsider.com/8-3-2018-fintech-ecosystem-financial-technology-research-and-business-opportunities-2018-8?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+clusterstock+%28ClusterStock%29&r=US&IR=T&IR=T
   </a>
   </p> 
     `; 
@@ -181,7 +193,7 @@ blogcite21 = `
 
   blogpost20 =  `<p class="firstparagraph">Space.com ...</p>
   <p class="quote">"NASA's Robonaut program and Roscosmos' FEDOR program seem to share the goal of creating robots that make it safer for humans to accomplish things in space that otherwise would be too dangerous for humans to attempt.<i> Still, the FEDOR androids' gun-wielding design might raise a few eyebrows."</i><sup>1</sup></p>
-  <img src="dist/img/droid.png" class="zoom" width="350px" />
+  <img src="dist/img/droid.jpg" class="zoom" width="288px" />
   `;
 blogcite20 = ` 
 <p class="footnotes">1. <a href="https://www.space.com/41253-russian-robots-fly-to-space.html"   target="_blank">https://www.space.com/41253-russian-robots-fly-to-space.html
@@ -422,7 +434,7 @@ The genie is definitely out of the bottle, yet he or she is now at the keyboards
 Snapchat currently has 166 million users globally. <sup>2</sup>
 </p>
 <p> A chronic technical problem before May 2018 when SnapCrash went public   dating to October. <sup>1</sup> -- scalability challenges strike again!</p> 
-<img src="dist/img/snapchat.PNG" width="350" class="zoom" /><br /><br />
+<img src="dist/img/snapchat.jpg" width="350" class="zoom" /><br /><br />
 <p>But inquiring minds want to know, <i>What's the Story with Snapchat? </i>Not to mention the Conspiracy Theorists that blame Snapchat's devotion to Advertisers--too many distractions?</p>
 <p class="quote">
 [Snapchat] tweeted: “Some Snapchatters are having trouble with the app. We’re aware of the issue and working on a fix! We recommend staying logged into your account.”
@@ -564,31 +576,40 @@ The forced retirements of up to 27 of 72 Supreme Court justices, including the t
   blogcite1 = `<p class="footnotes">1. <a href="https://www.washingtonpost.com/news/speaking-of-science/wp/2018/07/03/many-asteroids-might-be-remnants-of-five-destroyed-worlds-scientists-say/?noredirect=on&utm_term=.4f1e000cc632"   target="_blank">https://www.washingtonpost.com/news/speaking-of-science/wp/2018/07/03/many-asteroids-might-be-remnants-of-five-destroyed-worlds-scientists-say/?noredirect=on&utm_term=.4f1e000cc632</a>
 </p> 
 `;
-  var url =  [   {
+  var url =  [  {
+    id: '32',
+       did: '08-09-18',
+       date: 'August 9, 2018',
+       author: 'by Thomas Maestas',
+       cat3: 'Sociology Tomorrow!',
+       title: 'The Good Doctor, Part II:  <br />About that Second Opinion . . . <br />',
+       post: blogpost32,
+       blogcite: blogcite32
+      },    {
     id: '31',
        did: '08-08-18',
        date: 'August 8, 2018',
        author: 'by Thomas Maestas',
-       cat3: 'A.I.Now. ',
-       title: 'New Math &amp; the Speed of Antiquation, a Case Study:<br />Mobile 8th Generation Intel',
+       cat3: 'A.I.Now.',
+       title: 'The Good Doctor, Part I: <br /> How A.I.-Driven Predictive Analytics Rewrites Healthcare',
        post: blogpost31,
        blogcite: blogcite31
       },  {
-    id: '30',
-       did: '08-07-18',
-       date: 'August 7, 2018<br />Weekend',
-       author: 'by Thomas Maestas',
-       cat3: 'A.I.Now. ',
-       title: 'The Good Doctor:<br /> How A.I.-Driven Predictive Analytics Rewrites Healthcare',
-       post: blogpost30,
-       blogcite: blogcite30
-      },   {
+        id: '30',
+           did: '08-07-18',
+           date: 'August 7, 2018',
+           author: 'by Thomas Maestas',
+           cat3: 'Web Dev Affairs',
+           title: 'New Math &amp; the Speed of Antiquation, a Case Study:<br />Mobile 8th Generation Intel',
+           post: blogpost30,
+           blogcite: blogcite30
+          }, {
     id: '29',
        did: '08-06-18',
        date: 'August 6, 2018',
        author: 'by Thomas Maestas',
        cat3: 'Web Dev Affairs',
-       title: 'Pi',
+       title: 'Android Pi(e) Day',
        post: blogpost29,
        blogcite: blogcite29
       },  {

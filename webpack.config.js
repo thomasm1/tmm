@@ -1,4 +1,5 @@
-const path = require('path');
+require('babel-loader');
+const path = require('path');  
 
 module.exports = {
   entry: {
@@ -10,16 +11,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'tmm_bundle_july-4.js',
-  }  
-  /*,
+  }
+/*  ,
   module: {
-    loaders: [{
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-           presets: ['env', 'stage-0']
-        }
-    }]
-  }*/
-}
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+    ]
+  }
+  */
+};
