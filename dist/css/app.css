@@ -8301,11 +8301,43 @@ nav {
 .green {
   color: green; }
 
-svg#svg {
-  z-index: 1001 !important; }
-
 .new {
   color: #3838ad; }
+
+#rightmenu {
+  transform: translate(0px, 0px);
+  top: 20px; }
+
+nav#nav {
+  position: fixed;
+  top: 0; }
+
+svg#svg {
+  z-index: 0;
+  transform: translateY(10px);
+  background-color: transparent;
+  overflow: visible;
+  margin: 0px; }
+
+.daglink {
+  fill: none; }
+
+#tmmlogo {
+  border-radius: 3%;
+  max-height: 50px; }
+
+button#aria {
+  width: 100px; }
+
+.active {
+  color: orange;
+  font-weight: bold; }
+
+div#tmm {
+  float: right; }
+
+#marsreader {
+  min-height: 500px; }
 
 #marsreader {
   color: lightsteelblue;

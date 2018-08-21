@@ -1,6 +1,8 @@
+ 
+
 <!DOCTYPE html>
 
-<html lang="en" ng-app="tmm">
+<html lang="en">
 
 
 
@@ -39,50 +41,19 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   <title>TMM | Home</title>
 
   <link rel="stylesheet" href="dist/css/app.css">
-
-  <style type="text/css">
-    #rightmenu {
-      transform: translate(0px, 0px);
-      top: 20px;
-    }
-
-    nav#nav {
-      position: fixed;
-      top: 0;
-
-    }
-
-    svg {
-      background-color: transparent;
-      overflow: visible;
-    }
-
-    .svgHolder {
-      margin: 0px;
-    }
-
-    .daglink {
-      fill: none;
-    }
-#tmmlogo {
-  border-radius:3%;
-  max-height:50px;
-}
-button#aria {
-  width:100px;
-}
-  </style>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>
 
   <script src="dist/tmm-ang.js"></script>
-  <script src="dist/post-list.controller.js"></script>
+  <script src="components/home.js"></script>
+<!--  <script src="dist/post-list.controller.js"></script>-->
+   
 </head>
 
 
 
-<body ng-controller="tmmController">
+<body  ng-app="tmm"> 
   <div class='svgHolder' style="opacity:.5;position:absolute;top:20px;" id="force"></div>
 
 
@@ -91,16 +62,14 @@ button#aria {
   <script type="text/javascript" src="dist/js/dag.js"></script>
   <nav id="nav" class="  navbar navbar-default">
 
-    <img src="dist/img/tmmpurple.png" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. " id="tmmlogo" class="profile" />
+    <img src="dist/img/tmmpurple.png" alt="picture of Thomas at Satellite Cafe, Albuquerque Central Ave. " id="tmmlogo" class="profile"
+    />
 
     <div class="container  ">
       <div class=" navbar-header">
 
         <button type="button" id="aria" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
-
-
-
+          aria-controls="navbar"> 
           <span class="sr-only"> </span>
 
           <span class="icon-bar"></span>
@@ -113,53 +82,31 @@ button#aria {
 
         <a class="navbar-brand  " href="#"> </a>
 
-      </div>
-
-      <div id="navbar" class="collapse navbar-collapse  ">
-
-        <ul class="nav navbar-nav   nav-space">
-
-          <li class="active">
-
-            <a href="index.html">HOME</a>
-
+      </div> 
+      <div id="navbar" class="collapse navbar-collapse  "> 
+        <ul class="nav navbar-nav   nav-space"> 
+          <li class="active"> 
+            <a ui-sref="home" ui-sref-active="active">HOME</a> 
           </li>
-          <li>
-
-            <a href="services.html">SERVICES</a>
-
+          <li> 
+            <a ui-sref="services" ui-sref-active="active">SERVICES</a> 
+          </li> 
+          <li> 
+            <a ui-sref="about" ui-sref-active="active">ABOUT</a> 
           </li>
-
-          <li>
-
-            <a href="about.html">ABOUT</a>
-
+          <li> 
+            <a ui-sref="maps" ui-sref-active="active">MAPS</a> 
+          </li> 
+        </ul> 
+        <ul class="nav navbar-nav navbar-right"> 
+          <li> 
+            <a title="github" href="https://github.com/thomasm1" target="_blank"> 
+              <i class="fa fa-github"></i> 
+            </a> 
           </li>
-          <li>
-
-            <a href="maps.html">MAPS</a>
-
-          </li>
-
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-
-          <li>
-
-            <a title="github" href="https://github.com/thomasm1" target="_blank">
-
-              <i class="fa fa-github"></i>
-
-            </a>
-
-          </li>
-          <li>
-
-            <a title="twitter" href="https://twitter.com/ThomasMaestas" target="_blank">
-
-              <i class="fa fa-twitter"></i>
-
+          <li> 
+            <a title="twitter" href="https://twitter.com/ThomasMaestas" target="_blank"> 
+              <i class="fa fa-twitter"></i> 
             </a>
 
           </li>
@@ -186,27 +133,21 @@ button#aria {
         </ul>
 
       </div>
-
-      <!--/.nav-collapse -->
-
+ 
     </div>
 
   </nav>
-
+  
   <div class="showcase">
+    
+      
     <div class="container jumb  ">
       <h2 class="  dailytech alpho0">WELCOME&nbsp; &nbsp;TO&nbsp; &nbsp; TMM </h2>
 
 
-      <p class="lead">
-
-
-
-
-
-      </p>
-
-      <a href="#blog" class="  dailytech btn btn-primary">OUR DAILY TECH</a>
+      <p class="lead"> 
+      </p> 
+      <a href="#blog" class=" dailytech btn btn-primary">OUR DAILY TECH</a>
       <br />
       <br />
       <a href="http://ourdailytech.net" class="com btn btn-primary">
@@ -216,39 +157,13 @@ button#aria {
     </div>
 
     <div>
-      <post-list></post-list>
-      <ul>
-        <li ng-repeat="post in posts">{{post.did}}
-          <br /> {{post.title}}
-        </li>
-      </ul>
-      <p>Total number of posts: {{$ctrl.posts.length}}</p>
-    </div>
-    <div id="marsreader" class="marsreader  ">
-ls
--
-      <pre id="reqObject"></pre>
-      <img id="apod_img_id" width="100%" class="zoom" />
-      <p id="copyright"></p>
-      <h6 class="dailytech">Twython Space API </h6>
-      <h5 id="apod_title"></h5>
-      <p id="apod_explaination"></p> 
 
-      <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     </div>
-    <nav id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar">
-      <div class=" nav flex-column rightnav sidebar-sticky">
-        <div class="  list-group">
-          <a href="dice/index.html" class="list-group-item list-group-item-action">JAVASCRIPT DICE GAME</a>
-          <a href="dag-dagre/index.html" class="list-group-item list-group-item-action">DIRECED ACYCLIC GRAPH JSON-MAKER</a>
-          <a href="codeplayer.html" class="hidden list-group-item list-group-item-action">JAVASCRIPT CODER</a>
-          <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action"> INTERACTIVE WORLD CUP MAP </a>
-          <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action"> DASHBOARD DEMO </a>
-        </div>
+    <div id="marsreader" class="marsreader  "> 
+ 
+      <ui-view></ui-view> 
+    </div>
 
-      </div>
-  </div>
-  </nav>
 
   <style>
     .counties {
@@ -263,7 +178,7 @@ ls
 
   </style>
 
-  <svg id="svg" width="960" height="600"></svg>
+  <svg id="svg"></svg>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
@@ -273,246 +188,12 @@ ls
   </script>
 
   <div id="a">
-  </div>
-
-
-
-
-  <div class="section-b">
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-6">
-
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-            <div class="panel panel-default">
-
-              <div class="panel-heading" role="tab" id="headingOne">
-
-                <h4 class="panel-title">
-
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-                  </a>
-
-                </h4>
-
-              </div>
-
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-
-                <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
-                <div id="bars" class="panel-body  map0 map-img">
-
-
-                  <script src="dist/js/bars.js">
-
-
-                  </script>
-                </div>
-
-
-              </div>
-
-            </div>
-
-            <div class="panel panel-default hidden">
-
-              <div class="panel-heading" role="tab" id="headingTwo">
-
-                <h4 class="panel-title">
-
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#a-collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
-
-
-
-                  </a>
-
-                </h4>
-
-
-              </div>
-
-              <div id="a-collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
-
-                <div class="panel-body">
-
-                  <div aria-hidden="true" aria-labelledby="userModal" class="modal fade" id="userModal" role="dialog" tabindex="-1">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button aria-hidden="true" class="close" data-dismiss="modal" type="button"></button>
-
-                          <footer class="text-center">`
-                            <div class="container">
-                              <div class="row">
-                                <div class="col-xs-12">
-                                  <p>Copyright &copy; 2018 All Rights Reserved. &nbsp; | &nbsp;
-                                    <a href="http://www.thomasmaestas.net/profile.html#contactme" title="Contact Information: thomasmaestas.net/">
-                                      Contact Thomas </a>&nbsp; | &nbsp;
-                                    <img src="dist/img/paypal.PNG" alt="PayPal Emblem" height="15" />
-                                    <a href="https://www.paypal.com/paypalme/ThomasMaestas" style="color:white;text-decoration:none;">
-                                      &nbsp; TECH Blog Support Very Appreciated!</a>
-
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </footer>
-
-                          <div class="modal-body p-0">
-                            <div class="modal-body-scroller">
-                              <ul class="media-list media-list-users list-group">
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="panel panel-default hidden">
-              <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#a-collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
-                    C
-                  </a>
-
-                </h4>
-
-              </div>
-
-              <div id="a-collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-
-                <div class="panel-body">
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="col-md-6a" left>
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 id="blog" class="title dailytech panel-title">
-                  <span aria-expanded="true" aria-controls="collapseOne">
-                    OUR DAILY TECH BLOG
-                  </span>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-
-                  <div class="mod-behave ">
-                    <div id="top"></div>
-
-                    <div id="paragraph-july"></div>
-                    <div id="paragraph-june"></div>
-
-                    <div id="paragraph-may"></div>
-                    <div id="paragraph-apr"></div>
-                    <div id="paragraph-mar"></div>
-                    <div id="paragraph-feb"></div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel panel-default  hidden  ">
-              <div class="panel-heading" role="tab" id="bheadingTwo">
-                <h4 class=" dailytech panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#bcollapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
-                    READING MODAL
-                  </a>
-                </h4>
-              </div>
-              <div id="bcollapseTwo" class="    panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                  <div class="mod-behave ">
-                    <div id="top"></div>
-
-                    <div aria-hidden="true" aria-labelledby="userModal" class="modal fade" id="userModal" role="dialog" tabindex="-1">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button aria-hidden="true" class="close" data-dismiss="modal" type="button"></button>
-
-                            <footer class="text-center">`
-                              <div class="container">
-                                <div class="row">
-                                  <div class="col-xs-12">
-                                    <p>Copyright &copy; 2018 All Rights Reserved. &nbsp; | &nbsp;
-                                      <a href="http://www.thomasmaestas.net/profile.html#contactme" title="Contact Information: thomasmaestas.net/">
-                                        Contact Thomas </a>&nbsp; | &nbsp;
-                                      <img src="dist/img/paypal.PNG" alt="PayPal Emblem" height="15" />
-                                      <a href="https://www.paypal.com/paypalme/ThomasMaestas" style="color:white;text-decoration:none;">
-                                        &nbsp; TECH Blog Support Very Appreciated!</a>
-
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </footer>
-
-
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default   ">
-              <div class="panel-heading" role="tab" id="bheadingThree">
-                <h4 class=" dailytech panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#bcollapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
-                    JavaScript Calculator
-                  </a>
-                </h4>
-              </div>
-              <div id="bcollapseThree" class="  panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-
-                  <div id="form"></div>
-                  <script src="dist/js/calc.js"></script>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      </div>
-
     </div>
+  
 
-  </div>
+
+
+
 
 
 
@@ -527,7 +208,6 @@ ls
   <script src="dist/tmm_bundle_july-4.js"></script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>
 </body>
-
-
+ 
 
 </html>
