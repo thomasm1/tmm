@@ -64,7 +64,8 @@ background:rgb(166, 192, 226);
 }
 
 .dailytech {
-margin-top:10px;
+text-align:center;
+margin:10px;
 }
 .title {
 margin-top:20px;
@@ -79,6 +80,8 @@ padding:0px 26px;
 }
 .rightmenu {
 float:right;
+padding:30px 0px;
+min-height:800px;
 h6 {
   color:lightsteelblue;
   }
@@ -1198,7 +1201,7 @@ button#aria {
   width: 100px;
 }
 .active { 
-  color: orange; font-weight: bold; 
+  color:blue ; font-weight: bold; font-size:1.2em;
 }
 div#tmm {
   float:right;

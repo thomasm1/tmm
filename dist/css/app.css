@@ -7469,7 +7469,8 @@ h6 {
     color: blue; }
 
 .dailytech {
-  margin-top: 10px; }
+  text-align: center;
+  margin: 10px; }
 
 .title {
   margin-top: 20px; }
@@ -7483,7 +7484,9 @@ h6 {
   padding: 0px 26px; }
 
 .rightmenu {
-  float: right; }
+  float: right;
+  padding: 30px 0px;
+  min-height: 800px; }
   .rightmenu h6 {
     color: lightsteelblue; }
   .rightmenu a {
@@ -8330,8 +8333,9 @@ button#aria {
   width: 100px; }
 
 .active {
-  color: orange;
-  font-weight: bold; }
+  color: blue;
+  font-weight: bold;
+  font-size: 1.2em; }
 
 div#tmm {
   float: right; }

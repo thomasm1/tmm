@@ -4,7 +4,7 @@
 
       <h4>Random Walk Classification Tree</h4>
      
-      <canvas id="start" style="top:100px;position:fixed;overflow:visible;" width="700px" height="400px"></canvas>
+      <canvas id="start" style="top:100px;position:fixed;overflow:visible;" width="600px" height="300px"></canvas>
       <script>
         
         var canvas = document.querySelector("#start"),
@@ -78,37 +78,35 @@
         </script>
 
  
-      
-      <p class="lead">
-
-
-
-
-
-      </p>
- 
-     
+       
 
     </div>
 
     
-    <nav id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar">
-      <div class=" nav flex-column rightnav sidebar-sticky">
-        <div class="  list-group">
-          <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action">DASHBOARD WEB-APP</a>
-          <a href="bsc/index.html" class="list-group-item list-group-item-action">1-PAGE WEB-APP</a> 
-           
-          <a href="d3line.html" class="list-group-item list-group-item-action">DAG DIRECTED ACYCLIC GRAPH TOOL</a>
-          <a href="codeplayer.html" class="hidden list-group-item list-group-item-action">CSS-JS-HTML CODE PLAYER</a>
-          <a href="dice/index.html" class="list-group-item list-group-item-action">JS DICE GAME</a>   
-          <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action">INTERACTIVE MAP</a> 
-          
-        </div>
-  
-  </div>
-</nav>
 
  
+<style>
+    .counties {
+      fill: none;
+    }
+
+    .states {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+    }
+
+  </style>
+
+  <svg id="svg"></svg>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="dist/js/chlor.js">
+
+
+  </script>
+
 
     <div class="container">
 
@@ -154,23 +152,7 @@
                 </div> 
               </div> 
             </div> 
-            <div class="panel panel-default"> 
-              <div class="panel-heading" role="tab" id="headingThree"> 
-                <h4 class="panel-title"> 
-           
-
-                </h4>
-
-              </div>
-
-              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-
-                
-
-              </div>
-
-            </div>
-
+            
           </div>
 
         </div>

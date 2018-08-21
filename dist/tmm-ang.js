@@ -13,13 +13,13 @@ tmm.config(function($stateProvider) {
   var aboutState = {
     name: 'about',
     url: '/about',
-    template: '<h3>about </h3>'
+    templateUrl: 'views/about.html'
   }
  
   var servicesState = {
     name: 'services',
     url: '/services',
-    template: '<h3>services</h3>'
+    templateUrl: 'views/services.html'
   }  
   var mapsState = {
     name: 'maps',
