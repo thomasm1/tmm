@@ -7385,6 +7385,9 @@ div#bars {
   .navbar-form .form-group:last-child {
     margin-bottom: 0; } }
 
+nav.rightmenu {
+  min-width: 300px; }
+
 p.panel-body {
   font-family: 'Monoton';
   background-color: #00b1ec44;

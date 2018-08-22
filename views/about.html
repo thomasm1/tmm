@@ -1,10 +1,8 @@
  
     <title>TMM | About</title>
      
-     
-    <link rel="stylesheet" href="dist/css/styles.css"/> 
-    <link rel="stylesheet" href="dist/css/about.css" />
-
+       
+    <link rel="stylesheet" href="dist/css/about.css" /> 
     <style>.canvas2 {
             z-index:1;position:fixed;
             overflow:visible;left:200px;top:200px;}
@@ -18,39 +16,6 @@
         </style>
   
 <canvas class="canvas2" style="overflow-x:visible;" width="960" height="600"></canvas>
-<script src="https://unpkg.com/d3-array@1"></script>
-<script src="https://unpkg.com/d3-geo@1"></script>
-<script src="https://unpkg.com/d3-geo-projection@2"></script>
-<script src="https://unpkg.com/shapefile@0.6"></script>
-<script>
-
-var canvas = document.querySelector(".canvas2"),
-    context = canvas.getContext("2d");
-
-var path = d3.geoPath()
-    .context(context)
-    .projection(d3.geoAlbersUsa()
-        .scale(1085)
-        .translate([canvas.width / 2.3, canvas.height / 2.7]));
-
-context.lineWidth = 0.1; 
-context.stroke.lineColor = 'red';
-
-shapefile.open("https://cdn.rawgit.com/matplotlib/basemap/v1.1.0/lib/mpl_toolkits/basemap/data/UScounties.shp", null)
-  .then(function(source) {
-    return source.read().then(function next(result) {
-      if (result.done) return;
-      context.beginPath();
-      path(result.value);
-      context.stroke();
-      return source.read().then(next);
-    });
-  })
-  .catch(function(error) {
-    console.error(error.stack);
-  });
-
-</script> 
 
 <nav id="nav" class="  navbar navbar-default"></nav>
     <div  class="multi_drop_menu" id="menumenu"> 

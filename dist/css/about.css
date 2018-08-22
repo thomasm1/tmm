@@ -22,7 +22,7 @@ body {
 
     color: yellow;
 
-    background-image: url('../assets/bluechip.jpg');
+    background-image: url('../img/bluechipTile.jpg');
 
     height: 300px;
 
@@ -220,51 +220,7 @@ body {
 
 
 
-@media (max-width: 320px) {
-
-    .secondary_header ul li {
-
-        float: none;
-
-        margin-top: 28px;
-
-        margin-left: 0px;
-
-        width: 25%;
-
-    }
-
-    .container .secondary_header ul {
-
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        padding-top: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-        height: auto;
-        width: 100%;
-        text-align: center;
-    }
-
-    .secondary_header {
-
-        margin-top: 0px;
-
-        margin-right: 0px;
-
-        margin-bottom: 0px;
-
-        margin-left: 0px;
-
-        padding-top: 1px;
-
-        padding-bottom: 20px;
-
-
-    }
+ 
 
     #second {
         padding-right: 40%;
@@ -302,13 +258,7 @@ body {
     }
 
 
-
-    .container .secondary_header {}
-
-}
-
-
-
+ 
 
 @media (min-width: 1001px) {}
 
@@ -564,8 +514,7 @@ small {
 
 .container { 
     font-family: 'Poppins', sans-serif;
-    background-image: url('../img/bluechipTile.jpg') !important;
-    margin-top: 10px;
+    background-image: url('../img/bluechipTile.jpg') !important; 
     margin-right: auto;
     margin-left: auto;
     border: 5px outset #304bb6;
@@ -580,7 +529,12 @@ small {
     padding-right: 0px;
     padding-bottom: 0px;
 }
-
+.container a {
+    color:lightskyblue;
+}
+.container p {
+    padding:1%; 
+} 
 .primary_header {
     text-align: center;
     width: 100%;
@@ -620,13 +574,7 @@ div.progress-bar  {
     color:white;
     font-size:101%;
 }
-.container a {
-    color:lightskyblue;
-}
-.container p {
-    padding:1%;
-    background-color:rgba(51, 155, 240,.6) !important;
-}
+
 .lowercase {
     text-transform:default;
 }
@@ -651,3 +599,6 @@ canvas.canvas2 {
 .canvas2 {
     z-index:1;
 } 
+div.container.jumb {
+display:none;
+}

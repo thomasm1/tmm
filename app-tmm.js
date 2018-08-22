@@ -1,37 +1,64 @@
  
  
-var tmm = angular.module('tmm', ['ui.router']);
- 
-tmm.config(function($stateProvider) {
-
+var tmm = angular.module('tmm', ['ui.router']);  
+// inject the router instance into a `run` block by name
+/*
+tmm.run(function($uiRouter) {
+  var pluginInstance = $uiRouter.plugin(Visualizer);
+ });
+ */
+tmm.config(function($stateProvider) { 
   var tmmHomeState = {
     name: 'home',
     url: '/',
     component: 'home' 
-  }
+  };
   
   var aboutState = {
     name: 'about',
     url: '/about',
     templateUrl: 'views/about.html'
-  }
+  };
  
   var servicesState = {
     name: 'services',
     url: '/services',
     templateUrl: 'views/services.html'
-  }  
+  };
   var mapsState = {
     name: 'maps',
     url: '/maps',
     templateUrl: 'views/maps.html'
-  }
-
+  }; 
+ 
+  var postState = 
+  {
+    name: 'post',
+    url: '/posts/{postId}',
+    component: 'post',
+    resolve: {
+      post: function(PostsService, $transition$) {
+        return PostsService.getPost($transition$.params().postId);
+      }
+    }
+  };
+  var postsState = {
+    name: 'posts',
+    url: '/posts',
+    component: 'posts',
+    resolve: {
+      posts: function(PostsService) {
+        return PostsService.getAllPosts();
+      }
+    }
+  };
+ 
   $stateProvider.state(tmmHomeState);
   $stateProvider.state(aboutState);
   $stateProvider.state(servicesState);
-  $stateProvider.state(mapsState); 
-
+  $stateProvider.state(mapsState);   
+  $stateProvider.state(postState);
+  $stateProvider.state(postsState);  
 });
 /*
 tmm.controller('tmmController', function tmmController($scope) {
