@@ -28,7 +28,7 @@ tmm.config(function($stateProvider) {
   var mapsState = {
     name: 'maps',
     url: '/maps',
-    templateUrl: 'views/maps.html'
+    component: 'maps'
   }; 
  
   var postState = 
