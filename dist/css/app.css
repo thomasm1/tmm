@@ -8318,11 +8318,17 @@ nav#nav {
   position: fixed;
   top: 0; }
 
+svg {
+  z-index: 0;
+  transform: translateY(10px);
+  background-color: transparent;
+  overflow-x: clip;
+  margin: 0px; }
+
 svg#svg {
   z-index: 0;
   transform: translateY(10px);
   background-color: transparent;
-  overflow: visible;
   margin: 0px; }
 
 .daglink {

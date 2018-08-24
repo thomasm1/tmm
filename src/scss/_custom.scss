@@ -1179,12 +1179,18 @@ nav#nav {
 
 }
 
-svg#svg {
+svg  {
   z-index:0;
   transform:translateY(10px);
   background-color: transparent;
-  overflow: visible;
- 
+  overflow-x:clip; 
+  margin: 0px;
+}
+
+svg#svg  {
+  z-index:0;
+  transform:translateY(10px);
+  background-color: transparent; 
   margin: 0px;
 }
 
