@@ -1,0 +1,165 @@
+ 
+  <link rel="manifest" href="/manifest.json">
+  <meta content="Thomas M. Maestas" name="author" />
+  <title>OUR DAILY TECH BLOG</title>
+  <script src="src/vendor/d3.v3.min.js" charset="utf-8"></script>
+  <script src="src/vendor/FileSaver.min.js"></script>
+  <script src="src/vendor/jquery.min.js"></script>
+  <script src="src/vendor/klay.js"></script>
+  <script src="dist/js/lib/jquery-3.2.1.min.js"></script>
+  <link href="dist/css/style.css" rel="stylesheet" />
+  <link href="dist/css/dagstudio.css" rel="stylesheet" />
+ 
+  <style>
+    .mod-behave {
+      width: 100%;
+      min-width: 600px;
+    }
+  </style>
+  <!-- calcule script-->
+
+
+
+  <nav class="navbar navbar-toggleable-sm  fixed-top navbar-inverse bg-primary app-navbar">
+    <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-center hidden-md-up"
+      data-target="#navbarResponsive" data-toggle="collapse" type="button" id="toggler"> </button>
+    <a class="navbar-brand bg-blue" title="thomasmaestas.net" href="http://www.thomasmaestas.net">
+      <img alt="tmm logo" id="bluelogo" style="width:150px;height:100px;background-color:white;" src="dist/img/tmmpurple.png" /> </a>
+    <div class="collapse navbar-collapse multi_drop_menu  nav-pull-right " id="navbarResponsive">
+
+
+
+
+ 
+      <ul class="nav navbar-nav" style="background-color:skyblue;">
+
+        <li>
+
+          <a title="github" href="https://github.com/thomasm1" target="_blank">
+
+            <i class="fa fa-github"></i>
+
+          </a>
+
+        </li>
+        <li>
+
+          <a title="twitter" href="https://twitter.com/ThomasMaestas" target="_blank">
+
+            <i class="fa fa-twitter"></i>
+
+          </a>
+
+        </li>
+
+        <li>
+
+          <a title="facebook" href="https://www.facebook.com/thomas.m.maestas" target="_blank">
+
+            <i class="fa fa-facebook"></i>
+
+          </a>
+
+        </li>
+
+        <li>
+
+          <a title="linkedin" href="http://linkedin.com/in/thomasmaestas" target="_blank">
+
+            <i class="fa fa-linkedin"></i>
+
+          </a>
+
+        </li>
+      </ul>
+    </div>
+
+
+    <ul class="nav navbar-nav hidden-xs-up" id="js-popoverContent">
+      <li class="nav-item">&nbsp;</li>
+      <li class="nav-item title" id="title">&nbsp;</li>
+    </ul>
+
+    <div class="main " id="main">&nbsp;</div>
+
+    <ul>
+    </ul>
+  </nav>
+
+
+  <div class="container pt-4">
+
+
+    <div class="col-lg-6">
+      <button id="mmodalBtn" class=" title dailytech longtitle mbutton">
+        <h6 class="subtitle my-0 subdailytech white" title="About Blockchain Technologies in our Daily Lives"><br /> 
+       <br /><br />   <a class="well text-inherit mb-4 ">MUSING &nbsp; BLOCKCHAIN</a>
+        </h6>
+        <a class="well text-inherit  ">Directed Acyclic Graphs Tool</a>
+        <h6 class="subtitle  my-0 subdailytech white" title="Social Data &amp; Statistics ">
+          <a class="well text-inherit mb-4 ">SOCIOLOGY &nbsp; TOMORROW!</a>
+        </h6>
+        <a style="color:skyblue;"> OUR DAILY TECH </a>
+      </button>
+ 
+
+
+
+      <ul class="list-group media-list media-list-stream mb-4" id="center-col">
+        <li>
+          <div id="tech">
+            <div class="mod-behave ">
+
+             
+              <h5 id="avertissement">Drag 'n Drop the Vertices</h5>
+              <h6>Drag nodes from left sidebar.</h6>
+                <h6>Double-Click on nodes, drag to alter-node to make links/edges
+                  !</h6>
+                <h5>Download graphs in JSON format!</h5>
+                <div id="container" style="margin:20px">
+                  <div id="layerlist"></div>
+                  <div id="chart"></div>
+                  <div id="right-container">
+                    <div id="toolbox">
+                      <input type="file" id="hidden-file-upload">
+                      <input id="cleanup-input" type="image" title="cleanup graph" src="icons/magic-wand.png" alt="clean">
+                      <input id="upload-input" type="image" title="upload graph" src="icons/upload-icon.png" alt="upload graph">
+                      <input type="image" id="download-input" title="download graph" src="icons/download-icon.png" alt="download graph">
+                      <input type="image" id="delete-graph" title="delete graph" src="icons/trash-icon.png" alt="delete graph">
+                    </div>
+                    <!-- inline block-space fix
+              -->
+                    <div id="floater">
+                      <div id="metadata"></div>
+                      <input type="image" id="toggle-metadata" title="toggle box" src="icons/expand-icon.png" alt="toggle metadata">
+                    </div>
+                  </div>
+                </div>
+                <script src="dist/js/dagstudio.js"></script>
+
+            </div>
+            <!-- blog-text.js  BEGINS HERE -->
+
+
+
+         
+          </div>
+        </li>
+      </ul>
+    </div> 
+ 
+
+
+
+  </div>
+  <!-- end card card-link-list -->
+
+  </div>
+
+ 
+
+  <script src="dist/js/lib/tether.min.js"></script>
+  <script src="dist/js/lib/popper.min.js"></script>
+  <script src="dist/js/lib/bootstrap.min.js"></script>
+  <script src="dist/bundle_tmm.js"></script>
+ 

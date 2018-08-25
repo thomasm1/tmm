@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 
-<html lang="en"> 
+<html lang="en">
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || []; 
+    window.dataLayer = window.dataLayer || [];
+
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag('js', new Date()); 
-    gtag('config', 'UA-71584977-1'); 
+    gtag('js', new Date());
+    gtag('config', 'UA-71584977-1');
+
   </script>
-  <meta charset="utf-8"> 
+  <meta charset="utf-8">
 
   <meta name="description" content="Sociology Data Analysis, Web Development and Statistical Consulting | Statistical Consultant. Get statistics help: 
 Thomas offers services related to analyzing qualitative &amp; quantitative data and reporting results in academic journals and business briefs alike. 
@@ -21,29 +24,33 @@ and data analysis and web-application implementation. Data analysis and special 
 If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas will perform the analysis for you so you can focus on your
  project and avoid the web and statistical package learning curve.">
 
-  <meta name="keywords" content="  data analysis and visualization, sociology statistical tests"> 
-  <meta name="author" content="Thomas Maestas"> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <title>TMM | Home</title> 
+  <meta name="keywords" content="  data analysis and visualization, sociology statistical tests">
+  <meta name="author" content="Thomas Maestas">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TMM | Home</title>
   <link rel="stylesheet" href="dist/css/app.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script><script src="//unpkg.com/@uirouter/visualizer@4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>
+  <script src="//unpkg.com/@uirouter/visualizer@4"></script>
 
   <script src="app-tmm.js"></script>
- 
+
   <script src="components/posts.js"></script>
-  <script src="components/home.js"></script><!--
+  <script src="components/home.js"></script>
+  <!--
   <script src="dist/post-list.controller.js"></script>
---> 
+-->
   <script>
     var Visualizer = window['@uirouter/visualizer'].Visualizer;
+
   </script>
 </head>
 
 
 
 <body ng-app="tmm">
+  <base href="/" />
   <div class='svgHolder' style="opacity:.5;position:absolute;top:20px;" id="force"></div>
   <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
   <script type="text/javascript" src="dist/js/dag.js"></script>
@@ -74,6 +81,9 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
           </li>
           <li>
             <a ui-sref="maps" ui-sref-active="active">MAPS</a>
+          </li> 
+          <li>
+            <a ui-sref="dag" ui-sref-active="active">DAG-TOOL</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -112,17 +122,15 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
       </div>
 
-    </div>
-
-  </nav>
-
-  <div class="showcase">
-
-
+    </div> 
+  </nav> 
+  <div class="showcase"> 
     <div class="container jumb  ">
       <h2 class="  dailytech alpho0">WELCOME&nbsp; &nbsp;TO&nbsp; &nbsp; TMM </h2>
- 
+
       <script>
+
+
       </script>
 
       <p class="lead">
@@ -153,13 +161,24 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
-    <script src="dist/js/chlor.js">      </script>
+    <script src="dist/js/chlor.js">
+
+
+    </script>
 
     <div id="a">
-    </div> 
+    </div>--
+    <div class="card-block" id="footer">
 
-    <footer id="footer" class="footer">
-    </footer>
+      <p>Copyright &copy; 2018 All Rights Reserved. &nbsp; | &nbsp;
+        <a href="http://www.thomasmaestas.net" title="Contact Information: thomasmaestas.net/">
+          thomasmaestas.net</a>&nbsp; | &nbsp;
+        <img src="../dist/img/paypal.PNG" alt="PayPal Emblem" height="
+  15"></img>
+        <a href="https://www.paypal.com/paypalme/ThomasMaestas" style="color:white;text-decoration:none;">
+          &nbsp; Blog Support Appreciated!</a>
+      </p>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>

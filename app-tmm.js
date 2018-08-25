@@ -7,6 +7,9 @@ tmm.run(function($uiRouter) {
   var pluginInstance = $uiRouter.plugin(Visualizer);
  });
  */
+tmm.config(function ($locationProvider) {
+  $locationProvider.html5Mode(true);
+})
 tmm.config(function($stateProvider) { 
   var tmmHomeState = {
     name: 'home',
@@ -52,6 +55,11 @@ tmm.config(function($stateProvider) {
       }
     }
   };
+  var dagState = {
+    name: 'dag',
+    url: '/dag',
+    component: 'dag' 
+  };
  
   $stateProvider.state(tmmHomeState);
   $stateProvider.state(aboutState);
@@ -59,6 +67,7 @@ tmm.config(function($stateProvider) {
   $stateProvider.state(mapsState);   
   $stateProvider.state(postState);
   $stateProvider.state(postsState);  
+  $stateProvider.state(dagState); 
 });
 /*
 tmm.controller('tmmController', function tmmController($scope) {
