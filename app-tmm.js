@@ -40,8 +40,8 @@ tmm.config(function($stateProvider) {
     url: '/posts/{postId}',
     component: 'post',
     resolve: {
-      post: function(PostsService, $transition$) {
-        return PostsService.getPost($transition$.params().postId);
+      post: function(PostsService, $transition) {
+        return PostsService.getPost($transition.params().postId);
       }
     }
   };
@@ -58,7 +58,7 @@ tmm.config(function($stateProvider) {
   var dagState = {
     name: 'dag',
     url: '/dag',
-    component: 'dag' 
+    templateUrl: 'views/dag.html' 
   };
  
   $stateProvider.state(tmmHomeState);
