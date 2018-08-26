@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "gulp":"gulp",
+    "serve": "gulp serve"
+},
+  "author": "Thomas Maestas",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^5.8.38",
