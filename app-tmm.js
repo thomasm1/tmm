@@ -7,6 +7,7 @@ tmm.run(function($uiRouter) {
   var pluginInstance = $uiRouter.plugin(Visualizer);
  });
  */
+
 tmm.config(function ($locationProvider) {
   $locationProvider.html5Mode(true);
 })
@@ -68,6 +69,7 @@ tmm.config(function($stateProvider) {
   $stateProvider.state(postState);
   $stateProvider.state(postsState);  
   $stateProvider.state(dagState); 
+
 });
 /*
 tmm.controller('tmmController', function tmmController($scope) {

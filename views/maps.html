@@ -3,11 +3,10 @@
     <h2 class="  dailytech ">TMM MAPS</h2>
 
     <h4>Random Walk Classification Tree</h4>
-   
-    <canvas id="start" style="top:100px;position:fixed;overflow:visible;" width="700px" height="400px"></canvas>
+    <div id="start" style="top:100px;position:fixed;overflow:visible;" width="700px" height="400px"></div>
     <script>
       
-      var canvas = document.querySelector("#start"),
+      var canvas = document.getElementById("start"),
           context = canvas.getContext("2d"),
           width = canvas.width,
           height = canvas.height,
@@ -76,8 +75,6 @@
       }
       
       </script>
-
-
     
     <p class="lead">
 
@@ -92,7 +89,7 @@
   </div>
 
   
-  <nav id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar">
+  <nav ng-controller="mapsCtrl" id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar">
     <div class=" nav flex-column rightnav sidebar-sticky">
       <div class="  list-group">
         <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action">DASHBOARD WEB-APP</a>
@@ -103,7 +100,21 @@
         <a href="dice/index.html" class="list-group-item list-group-item-action">JS DICE GAME</a>   
         <a href="dist/docs/d3/globe_interact.html" class="list-group-item list-group-item-action">INTERACTIVE MAP</a> 
         
-      </div>
+
+<button ng-click="render()">render</button>
+<button ng-click="toggleGreeting()">Greeting</button>
+
+<button ng-click="mapsCtrl.toggleGreeting()">Greeting</button>
+     
+<h3>August:</h3>
+<ul>
+ <li ng-repeat="maps in $mapsCtrl.maps">
+   <a ui-sref="map({ mapId: map.id })">
+     {{map.name}}
+ </a>
+ </li>
+</ul>
+</div>
 
 </div>
 </nav>
@@ -164,6 +175,7 @@
             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 
               <div class="panel-body ">
+                <div class="jenks"></div>
 <div class="jenks2"></div>
 
 

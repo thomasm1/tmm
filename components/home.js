@@ -1,10 +1,11 @@
 angular.module('tmm').component('home', {
   templateUrl:  'views/home.html',
-  controller: function() {
-    this.greeting = 'TMM';
+  controller: 'homeController',
+  controllerAs: 'homeCtrl', function() {
+    homeCtrl.greeting = 'TMM';
   
-    this.toggleGreeting = function() {
-      this.greeting = (this.greeting == 'TMM') ? 'Our Daily Tech Post' :  'TMM';
+    homeCtrl.toggleGreeting = function() {
+      homeCtrl.greeting = (homeCtrl.greeting == 'TMM') ? 'Our Daily Tech Post' :  'TMM';
     }
   }
 })
