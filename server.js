@@ -167,6 +167,6 @@ app.get('/api/maps', (req, res) => {
 });
 
 const port = 5000;
-console.log(port);
+console.log(port + ":api/maps");
 app.listen(port, () => `Server running on port ${port}`);
 
