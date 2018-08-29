@@ -42,6 +42,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
   <script src="components/posts.js"></script>
   <script src="components/home.js"></script>
+  <script src="components/about.js"></script>
   <script src="components/maps.js"></script>
   <!--  <script src="components/dag.js"></script>
 
@@ -52,7 +53,37 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
 
 
-<body ng-app="tmm">
+<body  ng-app="tmm">
+   <!-- <section ng-app="myChartingApp" ng-controller="DemoCtrl">
+      <div ui-chart="someData" chart-options="myChartOpts" ></div>
+    </section>
+            
+    <script>
+        angular.module('myChartingApp', ['ui.chart'])
+          .value('charting', {
+            pieChartOptions: {
+              seriesDefaults: {
+                // Make this a pie chart.
+                renderer: jQuery.jqplot.PieRenderer,
+                rendererOptions: {
+                  // Put data labels on the pie slices.
+                  // By default, labels show the percentage of the slice.
+                  showDataLabels: true
+                }
+              },
+              legend: { show:true, location: 'e' }
+            }
+          })
+          .controller('DemoCtrl', function ($scope, charting) {
+            $scope.someData = [[
+              ['Heavy Industry', 12],['Retail', 9], ['Light Industry', 14],
+              ['Out of home', 16],['Commuting', 7], ['Orientation', 9]
+            ]];
+       
+            $scope.myChartOpts  = charting.pieChartOptions;
+          });
+      </script>  -->
+  <div>
   <div class="svgHolder" style="opacity:.5;position:absolute;top:20px;" id="force"></div>
   <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
   <script type="text/javascript" src="dist/js/dag.js"></script>
@@ -148,6 +179,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
     <script src="dist/tmm_bundle_july-4.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b774f963b674cb"></script>
+  </div>
 </body> 
 
 </html>

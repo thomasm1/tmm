@@ -21,7 +21,7 @@ tmm.config(function($stateProvider) {
   var aboutState = {
     name: 'about',
     url: '/about',
-    templateUrl: 'views/about.html'
+    templateUrl: 'views/about.html' 
   };
  
   var servicesState = {
@@ -71,6 +71,7 @@ tmm.config(function($stateProvider) {
   $stateProvider.state(dagState); 
 
 });
+
 /*
 tmm.controller('tmmController', function tmmController($scope) {
   $scope.posts = [
