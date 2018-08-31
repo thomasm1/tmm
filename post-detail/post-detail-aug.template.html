@@ -31,44 +31,44 @@
     </span>
     <dl>
       <dt>Citation Details</dt>
-      <dd>{{$ctrl.post.battery.type}}</dd>
-      <dt>Citations</dt>
-      <dd>{{$ctrl.post.battery.talkTime}}</dd>
+      <dd>{{$ctrl.post.laterCite.cat3}}</dd>
+      <dt>Subsequent post-blog Citations</dt>
+      <dd>{{$ctrl.post.laterCite.url}}</dd>
       <dt>Citations Count </dt>
-      <dd>{{$ctrl.post.battery.standbyTime}}</dd>
+      <dd>{{$ctrl.post.laterCite.length}}</dd>
     </dl>
   </li>
   <li>
     <span>Word Details</span>
     <dl>
       <dt>Word Count </dt>
-      <dd>{{$ctrl.post.storage.ram}}</dd>
+      <dd>{{$ctrl.post.wordStat.length}}</dd>
       <dt>Word Modes and Stats</dt>
-      <dd>{{$ctrl.post.storage.flash}}</dd>
+      <dd>{{$ctrl.post.wordStat.mean}}</dd>
     </dl>
   </li>
   <li>
     <span>Categories</span>
     <dl>
       <dt>Category Tags  </dt>
-      <dd>{{$ctrl.post.connectivity.cell}}</dd>
+      <dd>{{$ctrl.post.connectivity.story}}</dd>
       <dt>Related Blogs</dt>
-      <dd>{{$ctrl.post.connectivity.wifi}}</dd>
+      <dd>{{$ctrl.post.connectivity.media}}</dd>
       <dt>External Blogs</dt>
-      <dd>{{$ctrl.post.connectivity.bluetooth}}</dd>
+      <dd>{{$ctrl.post.connectivity.related}}</dd>
       <dt>Latest Research</dt>
-      <dd>{{$ctrl.post.connectivity.infrared | checkmark}}</dd>
+      <dd>{{$ctrl.post.connectivity.country | checkmark}}</dd>
       <dt>Gossip</dt>
       <dd>{{$ctrl.post.connectivity.gps | checkmark}}</dd>
     </dl>
   </li>
   <li>
-    <span>Citations</span>
+    <span>Citation Trustworthiness</span>
     <dl>
-      <dt>OS </dt>
-      <dd>{{$ctrl.post.android.os}}</dd>
-      <dt>UI</dt>
-      <dd>{{$ctrl.post.android.ui}}</dd>
+      <dt>Publisher</dt>
+      <dd>{{$ctrl.post.publisher.readerCount}}</dd>
+      <dt>Source</dt>
+      <dd>{{$ctrl.post.publisher.pop}}</dd>
     </dl>
   </li>
   <li>
