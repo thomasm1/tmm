@@ -1,30 +1,25 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
+<!DOCTYPE html> 
+<meta charset="utf-8">
+<html lang="en"> 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-
+    window.dataLayer = window.dataLayer || []; 
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'UA-71584977-1');
-
+    gtag('config', 'UA-71584977-1'); 
   </script>
   <style>
     .ui-view {
       margin-top:50px;
     }
   </style>
-  <meta charset="utf-8">
 
   <meta name="description" content="Sociology Data Analysis, Web Development and Statistical Consulting | Statistical Consultant. Get statistics help: 
-Thomas offers services related to analyzing qualitative &amp; quantitative data and reporting results in academic journals and business briefs alike. 
-Recent projects include research design, app design, and proof-of-concept for Xpansiv Data Systems, 
+Thomas offers services related to analyzing qualitative &amp; quantitative data and reporting results in academic journals and business briefs alike.  Recent projects include research design, app design, and proof-of-concept for Xpansiv Data Systems, 
 and data analysis and web-application implementation. Data analysis and special pricing offers competitive benefits for clients.  
 If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas will perform the analysis for you so you can focus on your
  project and avoid the web and statistical package learning curve.">
@@ -36,15 +31,28 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   <title>TMM | Home</title>
   <link rel="stylesheet" href="dist/css/app.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>
-  <script src="//unpkg.com/@uirouter/visualizer@4"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script> 
+  <!--<script src="bower_components/angular-animate/angular-animate.js"></script>
+  -->
   <script src="app-tmm.js"></script>
 
   <script src="components/posts.js"></script>
   <script src="components/home.js"></script>
-  <script src="components/about.js"></script>
+  <script src="components/about.js"></script>ß
   <script src="components/maps.js"></script>
-  <!--  <script src="components/dag.js"></script>
+<!--
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="app.animations.js"></script>
+  <script src="core/core.module.js"></script>
+  <script src="core/checkmark/checkmark.filter.js"></script>
+  <script src="core/post/post.module.js"></script>
+  <script src="core/post/post.service.js"></script>
+  <script src="post-list/post-list.module.js"></script>
+  <script src="post-list/post-list.component.js"></script>
+  <script src="post-detail/post-detail.module.js"></script>
+  <script src="post-detail/post-detail.component.js"></script>
+  <script src="components/dag.js"></script>
 
   <script src="dist/post-list.controller.js"></script>
 --> 
@@ -54,35 +62,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
 
 <body  ng-app="tmm">
-   <!-- <section ng-app="myChartingApp" ng-controller="DemoCtrl">
-      <div ui-chart="someData" chart-options="myChartOpts" ></div>
-    </section>
-            
-    <script>
-        angular.module('myChartingApp', ['ui.chart'])
-          .value('charting', {
-            pieChartOptions: {
-              seriesDefaults: {
-                // Make this a pie chart.
-                renderer: jQuery.jqplot.PieRenderer,
-                rendererOptions: {
-                  // Put data labels on the pie slices.
-                  // By default, labels show the percentage of the slice.
-                  showDataLabels: true
-                }
-              },
-              legend: { show:true, location: 'e' }
-            }
-          })
-          .controller('DemoCtrl', function ($scope, charting) {
-            $scope.someData = [[
-              ['Heavy Industry', 12],['Retail', 9], ['Light Industry', 14],
-              ['Out of home', 16],['Commuting', 7], ['Orientation', 9]
-            ]];
-       
-            $scope.myChartOpts  = charting.pieChartOptions;
-          });
-      </script>  -->
+ 
   <div>
   <div class="svgHolder" style="opacity:.5;position:absolute;top:20px;" id="force"></div>
   <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
@@ -100,7 +80,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand " href="#"> </a>
+        <a class="navbar-brand" href="#"> </a>
       </div>
  
     <div id="navbar" class="collapse navbar-collapse">

@@ -4,7 +4,7 @@
 angular.
   module('postDetail').
   component('postDetail', {
-    templateUrl: 'post-detail/post-detail.template.html',
+    templateUrl: 'post-detail/post-detail-aug.template.html',
     controller: ['$routeParams', 'Post',
       function PostDetailController($routeParams, Post) {
         var self = this;

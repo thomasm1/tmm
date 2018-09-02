@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.get('/api/maps', (req, res) => {
-  const maps = [
+app.get('/posts', (req, res) => {
+  const posts = [
         {
     id: '19',
     did: '08-22-18',
@@ -163,10 +163,10 @@ app.get('/api/maps', (req, res) => {
 
   ];
 
-  res.json(maps);
+  res.json(posts);
 });
 
-const port = 5000;
-console.log(port + ":api/maps");
+const port = 5005;
+console.log(port + ":posts");
 app.listen(port, () => `Server running on port ${port}`);
 

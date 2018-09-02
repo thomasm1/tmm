@@ -1,6 +1,6 @@
 
 
-
+<div class="container-fluid">
 <div class="post-images">
   <img ng-src="{{img}}" class="post"
       ng-class="{selected: img === $ctrl.mainImageUrl}"
@@ -24,7 +24,15 @@
       <dt>Tags</dt>
       <dd ng-repeat="availability in $ctrl.post.availability">{{availability}}</dd>
     </dl>
-  </li>
+ 
+      <span>Related Books</span>
+      <dl>
+        <dt>Statistics</dt>
+        <dd>{{$ctrl.post.camera.primary}}</dd>
+        <dt>Features</dt>
+        <dd>{{$ctrl.post.camera.features.join(', ')}}</dd>
+      </dl>
+    </li>
   <li>
     <span>
         Citations
@@ -94,29 +102,20 @@
   <li>
     <span>Statistics</span>
     <dl>
-      <dt>Statistics</dt>
+      <dt> </dt>
       <dd>{{$ctrl.post.hardware.cpu}}</dd>
       <dt>Statistics</dt>
       <dd>{{$ctrl.post.hardware.usb}}</dd>
       <dt>Audio Statistics</dt>
       <dd>{{$ctrl.post.hardware.audioJack}}</dd>
-      <dt>Statistics</dt>
-      <dd>{{$ctrl.post.hardware.fmRadio | checkmark}}</dd>
+      
       <dt>Statistics</dt>
       <dd>{{$ctrl.post.hardware.accelerometer | checkmark}}</dd>
     </dl>
   </li>
-  <li>
-    <span>Related Books</span>
-    <dl>
-      <dt>Statistics</dt>
-      <dd>{{$ctrl.post.camera.primary}}</dd>
-      <dt>Features</dt>
-      <dd>{{$ctrl.post.camera.features.join(', ')}}</dd>
-    </dl>
-  </li>
-  <li>
-    <span>Additional Features</span>
-    <dd>{{$ctrl.post.additionalFeatures}}</dd>
-  </li>
+  
+   
 </ul>
+
+
+</div>

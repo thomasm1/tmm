@@ -1,5 +1,5 @@
 body {
-  padding: 20px;
+  padding: 0px;
 }
 
 h1 {
@@ -31,11 +31,11 @@ h1 {
   background-color: white;
   display: none;
   float: left;
-  height: 400px;
+  height: 300px;
   margin-bottom: 2em;
   margin-right: 3em;
   padding: 2em;
-  width: 400px;
+  width: 300px;
 }
 
 .post:first-child {
