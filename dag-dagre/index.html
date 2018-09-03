@@ -13,17 +13,32 @@
   <script src="src/vendor/FileSaver.min.js"></script>
   <script src="src/vendor/jquery.min.js"></script>
   <script src="src/vendor/klay.js"></script>
-  <script src="dist/js/lib/jquery-3.2.1.min.js"></script>
-  <link href="dist/css/style.css" rel="stylesheet" />
-  <link href="dist/css/dagstudio.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/dagstudio.css" />
 </head>
 
 <body>
 
+  <script src="dist/js/lib/jquery-3.2.1.min.js"></script>
+  <link href="dist/css/style.css" rel="stylesheet" />
   <style>
     .mod-behave {
       width: 100%;
       min-width: 600px;
+    }
+    .ourdailytechblog {
+      width:260px;
+      height:120px;
+      color:white;
+      font-size:1.5em;
+      font-family:Monoton;
+      background-color:transparent;
+      background-image: url('dist/img/RBTriomphe.png');
+    }
+    body {
+      padding-top:40px;
+    }
+    #nav {
+      transform:translateY(40px);
     }
   </style>
   <!-- calcule script-->
@@ -33,15 +48,16 @@
   <nav class="navbar navbar-toggleable-sm  fixed-top navbar-inverse bg-primary app-navbar">
     <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-center hidden-md-up"
       data-target="#navbarResponsive" data-toggle="collapse" type="button" id="toggler"> </button>
-    <a class="navbar-brand bg-blue" title="thomasmaestas.net" href="http://www.thomasmaestas.net">
-      <img alt="tmm logo" id="bluelogo" style="width:150px;height:100px;background-color:white;" src="dist/img/tmmpurple.png" /> </a>
+    <a class="navbar-brand bg-blue" target="_blank" title="thomasmaestas.net" href="http://www.thomasmaestas.net">
+      <img alt="tmm logo" id="bluelogo" style="width:280px;height:110px;" src="dist/img/tmmpurple.png" /> </a>
     <div class="collapse navbar-collapse multi_drop_menu  nav-pull-right " id="navbarResponsive">
-
-
+ 
+        <a href="http://www.ourdailytech.net" title="Tech Blog" target="_blank">
+<button class="ourdailytechblog"> OUR DAILY TECH BLOG</button></a>
 
 
  
-      <ul class="nav navbar-nav" style="background-color:skyblue;">
+      <ul class="nav navbar-nav" id="nav">
 
         <li>
 
@@ -64,7 +80,7 @@
 
         <li>
 
-          <a title="facebook" href="https://www.facebook.com/thomas.m.maestas" target="_blank">
+          <a title="facebook" href="https://www.facebook.com/thomasm1.maestas" target="_blank">
 
             <i class="fa fa-facebook"></i>
 
@@ -109,7 +125,6 @@
         <h6 class="subtitle  my-0 subdailytech white" title="Social Data &amp; Statistics ">
           <a class="well text-inherit mb-4 ">SOCIOLOGY &nbsp; TOMORROW!</a>
         </h6>
-        <a style="color:skyblue;"> OUR DAILY TECH </a>
       </button>
 
 
@@ -151,7 +166,7 @@
                     </div>
                   </div>
                 </div>
-                <script src="dist/js/dagstudio.js"></script>
+                <script src="src/dagstudio.js"></script>
 
             </div>
             <!-- blog-text.js  BEGINS HERE -->
