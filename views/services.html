@@ -61,6 +61,28 @@ text-align:left;
 svg {
   display:none;
 }
+
+    #innerlink {
+      max-width:30%;
+      margin:10px;
+      float:left;
+    } 
+    #innerlink-low {
+      max-width:30%; 
+      float:right;
+    }
+.panel-body p {
+  text-align:justify;
+  font-size:1.2em;
+  padding-left:10%;
+  padding-right:10%;
+}
+.panel-title h4 {
+  padding:10px;
+}
+h3,h4,h5,h6 {
+  line-height:1.1em;
+}
 </style>
 <div class="container" ng-controller="servicesController">
 
@@ -82,7 +104,7 @@ svg {
 
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                <h4> Data Visualization </h4>
+                <h4> Data Visualization and Data Analytics</h4>
               </a>
             </h4>
           </div>
@@ -90,11 +112,24 @@ svg {
             <div class="panel-body">
               <p>I offer services for analyzing large data or small data, qualitative or quantitative data. Professional reporting
                 of results for academic journals and business briefs, meeting the analysis demands of professionals, students,
-                and researchers.</p>
+                and researchers.</p> 
+                <p>I have experience analyzing data from diverse fields, including sociology, criminology, natural resources,
+                    education, mental health, and business, among others.
+                  </p>
+                  <p>
+                    <strong> Past Projects </strong> include research design, completion, analysis, and report production for the Institute
+                    of Social Research at the University of New Mexico, natural gas pipeline analysis for Xpansiv Data Systems,
+                    and a bilingual program evaluation for Pivot Evaluation.
+                    <br />
+                    <br /> If you need help with R, Python, Stata or SPSS, contact me at
+                    <a style="color:yellow;" href="mailto:thomas@ourdailytech.com"> thomas@ourdailytech.com</a> and I can perform the analysis for you so you can focus on your project and avoid
+                    the statistical package learning curve.
+                  </p>
+ 
             </div>
           </div>
         </div>
-        <div class="panel panel-default">
+        <div class="hidden panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
@@ -117,7 +152,8 @@ svg {
                 <a style="color:yellow;" href="mailto:thomas@ourdailytech.com"> thomas@ourdailytech.com</a> and I can perform the analysis for you so you can focus on your project and avoid
                 the statistical package learning curve.
               </p>
-
+             
+               
             </div>
           </div>
         </div>
@@ -131,19 +167,20 @@ svg {
           </div>
           <div id="collapse3" class="panel-collapse collapse">
             <div class="panel-body">
-              <p class="hidden">
-                <strong> Past Projects </strong> include web-app design, front-end &amp; back-end web services, Google Analytics,
+             
+                <br /><br /><br /> 
+                  <div id="innerlink" class="list-group">
+                      <a href="http://www.thomasmaestas/tmm_demo/index.html"  target="_blank" class="  list-group-item list-group-item-action">DASHBOARD WEB-APP</a>
+                      <a href="http://www.thomasmaestas/bsc/index.html"  target="_blank" class="list-group-item list-group-item-action">1-PAGE WEB-APP</a>  
+                      <a href="http://www.thomasmaestas/dag-dagre/index.html"  target="_blank" class="list-group-item list-group-item-action">DAG DIRECTED ACYCLIC GRAPH TOOL</a>  
+                      <a href="http://www.thomasmaestas/dist/docs/d3/globe_interact.html" target="_blank"  class="list-group-item list-group-item-action">INTERACTIVE MAP</a>  
+                    </div>  
+                    <p  >  <strong> Past Projects </strong> include web-app design, front-end &amp; back-end web services, Google Analytics,
                 and search engine optimization reports for private-sector organizations, university department websites,
                 and non-profits</p>
-              <p class="hidden">These include University of New Mexico Institute of Social Research, Xpansiv Data Systems, Pivot Evaluation
+              <p >These include University of New Mexico Institute of Social Research, Xpansiv Data Systems, Pivot Evaluation
                 and Gift Givers Anonymous. </p>             <ul>
-                <li>
-                  <a href="bsc/index.html" class="list-group-item list-group-item-action">1-PAGE WEB-APP</a>
-                </li>
-                <li>
-                  <a href="tmm_demo/index.html" class="  list-group-item list-group-item-action"> DASHBOARD DEMO </a>
-
-                </li>
+               
               </ul>
             </div>
  
@@ -256,7 +293,12 @@ svg {
 
     </div>
 
-
+    <div id="innerlink-low" class="  list-group">
+        <a href="http://www.thomasmaestas/tmm_demo/index.html"  target="_blank" class="  list-group-item list-group-item-action">DASHBOARD WEB-APP</a>
+        <a href="http://www.thomasmaestas/bsc/index.html"  target="_blank" class="list-group-item list-group-item-action">1-PAGE WEB-APP</a>  
+        <a href="http://www.thomasmaestas/dag-dagre/index.html"  target="_blank" class="list-group-item list-group-item-action">DAG DIRECTED ACYCLIC GRAPH TOOL</a>  
+        <a href="http://www.thomasmaestas/dist/docs/d3/globe_interact.html" target="_blank"  class="list-group-item list-group-item-action">INTERACTIVE MAP</a>  
+      </div>  
  
 
 
