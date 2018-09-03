@@ -1162,7 +1162,9 @@ a:hover {
  .green {
   color:green;
 }
-
+.yellow {
+  color:yellow;
+}
  
 .new {
   color:rgb(56, 56, 173);
@@ -1193,7 +1195,9 @@ svg#svg  {
   background-color: transparent; 
   margin: 0px;
 }
-
+.svgHolder {
+  opacity:.5;position:absolute;top:20px;
+}
 .daglink {
   fill: none;
 }

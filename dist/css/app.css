@@ -1,9 +1,12 @@
-/*         BOX         D3     WIDGET       */
-/*         BOX         D3     geo-map  Jenks       */
 @import url("https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600");
 @import url("https://fonts.googleapis.com/css?family=Monoton:100,200,300,400,500,600");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,600,600i,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+.yellow {
+  color: yellow; }
+
+/*         BOX         D3     WIDGET       */
+/*         BOX         D3     geo-map  Jenks       */
 .names {
   fill: none;
   stroke: #fff;
@@ -8307,6 +8310,9 @@ nav {
 .green {
   color: green; }
 
+.yellow {
+  color: yellow; }
+
 .new {
   color: #3838ad; }
 
@@ -8330,6 +8336,11 @@ svg#svg {
   transform: translateY(10px);
   background-color: transparent;
   margin: 0px; }
+
+.svgHolder {
+  opacity: .5;
+  position: absolute;
+  top: 20px; }
 
 .daglink {
   fill: none; }
