@@ -16451,6 +16451,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /* docs overrides */
 /* july 23 final merge */
 /*   overrides */
+#blogs {
+  cursor: pointer;
+  padding: 0px; }
+
 #thomasm {
   padding: 5px 10px; }
 
@@ -16496,27 +16500,8 @@ img.media-object {
   background-color: #24abe9;
   background-color: #00b0ec !important; }
 
-.card-profile-img {
-  width: 40px;
-  height: 40px;
-  border: none; }
-
-.card-profile-img {
-  horizontal-align: middle;
-  min-width: 100px;
-  max-width: 100px;
-  min-height: 100px;
-  max-height: 100px; }
-
-img {
-  vertical-align: middle; }
-
-div.card-block#cal {
-  padding-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: transparent;
-  opacity: .9; }
+ul.nav.navbar-nav.navbar-right {
+  transform: translate(50px, 10px); }
 
 #text {
   display: none; }
@@ -16647,8 +16632,27 @@ li.nav-item.ml-2 {
   margin-right: 10px; }
 
 /* welcome and text*/
-.text-inherit {
-  color: white; }
+.card-profile-img {
+  width: 40px;
+  height: 40px;
+  border: none; }
+
+.card-profile-img {
+  horizontal-align: middle;
+  min-width: 100px;
+  max-width: 100px;
+  min-height: 100px;
+  max-height: 100px; }
+
+img {
+  vertical-align: middle; }
+
+div.card-block#cal {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  opacity: .9; }
 
 .card-block.mb-3 {
   margin-top: 20px;
@@ -16686,6 +16690,9 @@ div.card.card-profile.mb-4 {
 .mb-4 a {
   color: blue;
   text-align: center; }
+
+.card-block {
+  padding: 1.0rem; }
 
 .card-title {
   font-size: 1.2em; }
@@ -16778,6 +16785,12 @@ div.card-block.text-center {
   box-shadow: 0px 10px 50px transparent;
   font-weight: 800; }
 
+div.card-block#right-col {
+  min-height: 200px; }
+
+div.card.mb-4 {
+  min-height: 700px; }
+
 /* SECTION blocks 2, 3 */
 #center-col {
   background-color: #00b0ec;
@@ -16841,9 +16854,6 @@ li.map2.media.list-group-item.p-4 {
 .app-brand img {
   width: 100%; }
 
-div.card-block#right-col {
-  min-height: 200px; }
-
 a.nav-link {
   background-color: transparent; }
 
@@ -16905,27 +16915,8 @@ a.nav-link {
   min-height: 115px;
   background: transparent; }
 
-div.card.mb-4 {
-  min-height: 700px; }
-
 div#map0 {
   min-height: 700px; }
-
-.white {
-  color: white !important; }
-
-#headerquote {
-  padding-top: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: aliceblue;
-  line-height: 1.3rem; }
-
-#headerquote > .mb-4 {
-  line-height: 2rem; }
 
 #bluelogo {
   background-color: #14c8d4;
@@ -16939,12 +16930,16 @@ div#map0 {
   #tom.profile {
     display: none; }
   #bluelogo {
-    transform: translate(0px, -40px);
+    transform: translate(180px, -5px);
     float: right;
     margin-top: 0px;
     background-color: blue;
     height: 35px;
+    border-radius: 10%;
     width: 55px; } }
+
+ul.dailytech.archive {
+  color: lightskyblue; }
 
 @media (min-width: 700px) {
   #bluelogo {
@@ -16955,12 +16950,23 @@ img#moonscape {
   max-width: 100%; }
 
 /* SECTION UTILITIES */
-button {
+div.mod-behave button {
+  width: 60px; }
+
+h5 > button {
   font-family: monoton !important;
+  cursor: pointer;
   margin: 0px;
+  font-size: 120%;
+  background-color: transparent;
+  color: white;
+  border: none;
   text-transform: uppercase;
-  padding: 1% 1%;
-  max-width: 100%; }
+  padding: 3% 1% 3%; }
+
+h5 > button:hover {
+  color: lightblue;
+  border: solid .4px silver; }
 
 #toggler {
   background-color: #00b0ec;
@@ -16968,11 +16974,13 @@ button {
 
 .zoom {
   transition: transform .3s;
-  /* Animation */ }
+  /* Animation */
+  transform: translate("100px,0px"); }
 
 .zoom:hover {
-  transform: scale(2);
-  overflow: hidden;
+  transform: scale(1.8);
+  overflow: visible;
+  z-index: 100;
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
 
 .zoom4 {
@@ -16981,7 +16989,7 @@ button {
 
 .zoom4:hover {
   transform: scale(2);
-  overflow: hidden;
+  overflow: visible;
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
 
 .hidden {
@@ -17005,6 +17013,9 @@ h2.title {
 
 div.media-body.thesis {
   max-height: 470px; }
+
+.hover:hover {
+  color: rgba(59, 41, 156, 0.603); }
 
 /* GRID */
 .grid-container {
@@ -17128,7 +17139,7 @@ VALUES -
 /* Solid Texture */
 .svgTexture {
   background: url("../dist/img/TMM.gif") repeat center top;
-  background-position: 32rem;
+  background-position: 27rem;
   background-size: 60%;
   color: transparent;
   -webkit-font-smoothing: antialiased;
@@ -17150,7 +17161,7 @@ VALUES -
 .multi_drop_menu a {
   display: block;
   color: blue;
-  background-color: transparent;
+  background-color: rgba(48, 150, 209, 0.479);
   padding: .3em 1em;
   border-width: 4px;
   border-color: transparent; }
@@ -17161,7 +17172,7 @@ VALUES -
 
 .multi_drop_menu a:active {
   background: purple;
-  color: #ccc; }
+  color: #20004b; }
 
 .multi_drop_menu * {
   margin: 0;
@@ -17177,14 +17188,19 @@ VALUES -
   list-style-type: none;
   position: relative; }
 
+a.nav-link span {
+  color: aliceblue; }
+
 .multi_drop_menu li {
   float: left;
   list-style-type: none;
   position: relative; }
 
 .multi_drop_menu li a {
+  font-family: monoton;
   text-align: center;
   display: block;
+  color: blue;
   border-right-style: none;
   background-clip: padding-box;
   text-decoration: none; }
@@ -17208,14 +17224,19 @@ ul.list-unstyled.list-spaced.left li:hover {
 .multi_drop_menu li li {
   color: white; }
 
+/* */
 .multi_drop_menu li li a {
-  color: white;
+  font-family: roboto;
   background-color: #3097D1;
   border-right-style: none;
   text-align: left;
   border-top-style: solid;
   border-top-color: transparent; }
 
+ul.menu-left li {
+  transform: translate(-10px, -60px); }
+
+/* */
 .multi_drop_menu li ul {
   display: block;
   position: absolute;

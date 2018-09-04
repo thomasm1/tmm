@@ -90,7 +90,7 @@
 
 								context.fill();
 
-								context.strokeStyle = "#fff";
+								context.strokeStyle = "steelblue";
 
 								context.stroke();
 
