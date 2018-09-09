@@ -531,6 +531,8 @@ small {
 }
 .container a {
     color:lightskyblue;
+    font-size:1.4em;
+    text-align:center;
 }
 .container p {
     padding:1%; 
