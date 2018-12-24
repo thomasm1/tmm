@@ -35,6 +35,12 @@ tmm.config(function($stateProvider) {
     component: 'maps'
   }; 
  
+  var chartsState = {
+    name: 'charts',
+    url: '/charts',
+    component: 'charts'
+  }; 
+ 
   var postState = 
   {
     name: 'post',
@@ -66,6 +72,7 @@ tmm.config(function($stateProvider) {
   $stateProvider.state(aboutState);
   $stateProvider.state(servicesState);
   $stateProvider.state(mapsState);   
+  $stateProvider.state(chartsState);   
   $stateProvider.state(postState);
   $stateProvider.state(postsState);  
   $stateProvider.state(dagState); 
