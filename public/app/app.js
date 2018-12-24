@@ -64,7 +64,7 @@
             })
             .state('dataViz', { 
                 url: '/dataviz',
-                templateUrl: 'app/templates/dataviz.html'  ,
+                templateUrl: 'app/templates/dataViz.html'  ,
                 controller: 'dataViz' 
             }) 
             .state('schools', {
