@@ -39,6 +39,10 @@
                 url: '/codePlayer',
                 templateUrl: 'app/templates/codePlayer.html' 
             } ) 
+            .state('planets',  { 
+                url: '/planets',
+                templateUrl: 'app/templates/views/planets.html' 
+            } ) 
             .state('dendro',  { 
                 url: '/dendrogram',
                 templateUrl: 'app/templates/dendrogram.html' 
@@ -67,7 +71,7 @@
                 controller: 'dataSource' 
             })
             .state('dataViz', { 
-                url: '/dataviz',
+                url: '/dataViz',
                 templateUrl: 'app/templates/dataViz.html'  ,
                 controller: 'dataViz' 
             }) 
