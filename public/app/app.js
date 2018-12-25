@@ -35,6 +35,10 @@
                 url: '/chloropleth',
                 templateUrl: 'app/templates/chlor.html' 
             } ) 
+            .state('codePlayer',  { 
+                url: '/codePlayer',
+                templateUrl: 'app/templates/codePlayer.html' 
+            } ) 
             .state('dendro',  { 
                 url: '/dendrogram',
                 templateUrl: 'app/templates/dendrogram.html' 
@@ -145,8 +149,17 @@
                         templateUrl: '/app/templates/classroomDetail.html'
                     }
                 }
-            });
-
+            }) 
+            .state( {
+                name: 'maps',
+                url: '/maps',
+                component: 'maps'
+              })
+              .state({
+                name: 'dag',
+                url: '/dag',
+                templateUrl: 'app/templates/views/dag.html' 
+              });  
 
     }]);
 

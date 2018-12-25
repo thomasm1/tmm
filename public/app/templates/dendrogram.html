@@ -49,16 +49,20 @@
 svg {
   background:url('dist/images/silverchip.png');
 }
+.side-nav {
+  float:right;
+  min-width:155px;
+  max-width:155px;
+}
 
 </style>
  
 <script src="dist/js/d3/d3v4.min.js"></script>
 <svg id="dendrogram" width="600" height="2000"></svg>
 
+<div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
 
-<script>
-
-
+<script> 
 
 var svg = d3.select("#dendrogram"),
 

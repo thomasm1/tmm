@@ -22,9 +22,21 @@ svg#ssvg {
   min-width:1000px;
   min-height:600px;
 }
+.side-nav {
+  float:right; 
+            position:absolute;
+            top:150px;
+            left:85%; 
+min-width:135px;
+max-width:135px;
+          }
+}
 </style>
 
 <svg id="ssvg"></svg>
+<div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
+
+
 <script src="dist/js/d3/d3v4.min.js"></script>
 <script src="dist/js/d3/d3-scale-chromatic.v1.min.js"></script>
 <script src="dist/js/d3/topojson.v1.min.js"></script> 
