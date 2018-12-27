@@ -1,10 +1,11 @@
 (function () {
 
     angular.module('app')
-        .controller('HomeController', ['dataService', 'notifier', '$state', '$log', HomeController]);
+        .controller('HomeController', [/* '$log','dataService', 'notifier', */'$state', HomeController]);
 
-    function HomeController(dataService, notifier, $state, $log) {
+    function HomeController(/* $log, dataService, notifier, */ $state) {
 
+/*
         message = 'Sensor Controller';
 vm = this;
         vm.refresh = function() {
@@ -38,8 +39,17 @@ vm = this;
         function showError(message) {
             notifier.error(message);
         }
+        */
 
 // Vanilla
+
+document.getElementById('zero').addEventListener('click', function () {
+  
+    console.log("You finally clicked without jQuery");
+      d3.selectAll(".d3").style("display","none");
+    d3.selectAll(".zero").style("display","block");
+      
+  }); 
         document.getElementById('one').addEventListener('click', function () {
   
             console.log("You finally clicked without jQuery");

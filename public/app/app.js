@@ -65,16 +65,17 @@
                   }
                 }
             })
-            .state('dataSource', {
-                url: '/dataSource',
-                templateUrl: 'app/services/dataSource.html',
-                controller: 'dataSource' 
-            })
             .state('dataViz', { 
                 url: '/dataViz',
                 templateUrl: 'app/templates/dataViz.html'  ,
                 controller: 'dataViz' 
             }) 
+            /*
+            .state('dataSource', {
+                url: '/dataSource',
+                templateUrl: 'app/services/dataSource.html',
+                controller: 'dataSource' 
+            })
             .state('schools', {
                 url: '/schools',
                 controller: 'AllSchoolsController',
@@ -154,6 +155,7 @@
                     }
                 }
             }) 
+            */
             .state( {
                 name: 'maps',
                 url: '/maps',
@@ -166,6 +168,7 @@
               });  
 
     }]);
+    /*
 
     app.run(['$rootScope', '$log', function($rootScope, $log) {
 
@@ -198,7 +201,8 @@
             $log.debug('fromState', fromState);
             $log.debug('fromParams', fromParams);
         });
-
     }]);
+
+        */
 
 }());

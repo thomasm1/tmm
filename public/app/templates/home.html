@@ -29,10 +29,17 @@
     position:absolute;
     top:600px;
     margin:10px;
+} 
+pre#pre {
+    background: url('dist/images/bluechipTile.jpg');
+    margin:0;
+    padding:0;
+    color:rgb(243, 135, 116);  
+} 
+pre#pre  a {
+  color:yellow;
 }
-pre {
-    color:white;
-
+span.paper {
     background: url('dist/images/bluechipTile.jpg');
 }
   svg {
@@ -61,16 +68,18 @@ pre {
 
   <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
 
-  <button id="one">data source</button>
-  <button id="two">data flux</button>
+  <button class="datum" id="one">data source</button>
+  <button  class="datum" id="two">data flux</button>
   <!--
 <button id="three">three</button>
 <button id="four">data transition</button>
 -->
-  <button id="five">data transform</button>
-  <button id="six"> data generation</button>
+  <button class="datum"  id="five">data transform</button>
+  <button  class="datum" id="six"> data generation</button>
+  <button class="datum" id="zero">clear</button>
 
   <div class="charts">
+    <span class="paper"><p class="zero"  > 
     <div class="d3 one"></div>
     <svg class="d3 two " width="563" height="350"></svg>
     <div class="d3 four">
@@ -102,23 +111,24 @@ pre {
   <div class="svgHolder" id="force"></div>
   <script type="text/javascript" src="dist/js/d3/dag.js"></script>
   <div class="links">
-    <pre>
-
-    FIREBASE  
-    Static Hosting 
+<pre id="pre">
+  <br />
+  GOOGLE CLOUD FIRESTORE  
+    Firestore Serverless Functions
     <a href="https://ourdailytechdata.firebaseapp.com" target="_blank">https://ourdailytechdata.firebaseapp.com</a>
-    <a href="https://tm-host.firebaseapp.com" target="_blank">https://tm-host.firebaseapp.com</a>
-    <br /> 
-    AWS  
-    Serverless Functions, Hosting
+    Firebase Hosting 
+    <a href="https://tm-host.firebaseapp.com" target="_blank">https://tm-host.firebaseapp.com</a> 
+    
+  AMAZON WEB SERVICES
+    Lambda Functions using Cognito Authentication 
     <a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com</a>
-    <a href="https://s3.amazonaws.com/tmm-nov/index.html" target="_blank">https://s3.amazonaws.com/tmm-nov/index.html</a>
-    <br /> 
-    DATA ENDPOINTS -
-    Amazon S3 Static NoSQL Storage
+    S3 Hosting
+    <a href="https://s3.amazonaws.com/tmm-nov/index.html" target="_blank">https://s3.amazonaws.com/tmm-nov/index.html</a> 
+    AMAZON RDS + S3  DATABASE ENDPOINTS 
+    AWS S3 Static NoSQL Storage
     <a href="https://s3.amazonaws.com/tmm-nov/posts/april.json" target="_blank">https://s3.amazonaws.com/tmm-nov/posts/april.json</a>
     Amazon RDS Relational PostgreSQL Database 
     <a  >sensor-instance.caq9hvksjohf.us-east-1.rds.amazonaws.com</a>
-    </pre>
+</pre>
   </div>
 </div>

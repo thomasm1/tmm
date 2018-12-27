@@ -161,13 +161,9 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
          <ul class="nav navbar-nav navtech">
                 <li><a ui-sref="about" ui-sref-active="active">About</a></li>
                 <li><a ui-sref="profile" ui-sref-active="active">Profile</a></li>
-                <li><a ui-sref="chlor" ui-sref-active="active">Maps</a></li> 
-             
-            </ul>
-            
-        </ul>
-       
-
+                <li><a ui-sref="chlor" ui-sref-active="active">Maps</a></li>  
+            </ul> 
+        </ul> 
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav> 
@@ -190,6 +186,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
       </div>
     </div>
   </section>
+  <!--
   <section>
   <div id="sensor" class="pull-right">
   <ul>
@@ -199,8 +196,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
                 <li><a ui-sref="activities" ui-sref-active="active">Supersensors</a></li> </ul>
   </div>
   </section>
-
-  
+-->  
 </div>
   <footer class="site-footer">
     <div class="row column">
@@ -212,48 +208,52 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
  
   </footer>
 
-<!-- Libraries --> 
+<!-- Libraries 
          
 <script src="
    https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script> 
-<script src="scripts/kendo.all.min.js"></script>
-<script src="scripts/angular-kendo.js"></script>
+  --> 
 
+  <script src="dist/js/vendor/toastr.min.js"></script>
+  <script src="dist/js/vendor/angular.min.js"></script>
+  <script src="dist/js/vendor/angular-ui.min.js"></script>
+  <script src="dist/js/vendor/kendo.all.min.js"></script>
+  <script src="dist/js/vendor/angular-kendo.js"></script>
+  
 <!--
 <script src="dist/tmm_bundle.js"></script>   
--->
-<!-- Application code -->
+--><!-- Application code -->
 <script src="app/app.js"></script>
-  <script src="app/components/posts.js"></script>
-  <script src="app/components/about.js"></script> 
-  <script src="app/components/maps.js"></script> 
+<script src="app/components/posts.js"></script>
+<script src="app/components/about.js"></script> 
+<script src="app/components/maps.js"></script> 
 
 <script src="app/services/profileService.js"></script>
-<script src="app/services/dataService.js"></script>
 <script src="app/services/dataSource.js"></script> 
 <!---->
-<script src="app/services/notifier.js"></script>
 
-<script src="app/filters/activityMonthFilter.js"></script>
-  <script src="app/controllers/AboutController.js"></script> 
-  <script src="app/controllers/ProfileController.js"></script> 
+<script src="app/controllers/AboutController.js"></script> 
+<script src="app/controllers/ProfileController.js"></script> 
 <script src="app/controllers/HomeController.js"></script>
+<!--
+<script src="app/services/dataService.js"></script>
+<script src="app/services/notifier.js"></script>
+<script src="app/filters/activityMonthFilter.js"></script>
 <script src="app/controllers/AllSchoolsController.js"></script>
 <script src="app/controllers/AllClassroomsController.js"></script>
 <script src="app/controllers/AllActivitiesController.js"></script>
 <script src="app/controllers/ClassroomController.js"></script>
 <script src="app/controllers/ClassroomSummaryController.js"></script>
 <script src="app/controllers/ClassroomMessageController.js"></script>
- 
-<!--<script src="app/components/dtech/dtech.js"></script>  
+
+<script src="app/components/dtech/dtech.js"></script>  
 <script src="app/components/dag/dag.js"></script> 
- -->
-    <script src="app/controllers/register.js"></script> 
-    <script src="app/controllers/globalEvents.js"></script>
-    <script src="app/controllers/order.js"></script> 
-    <script src="app/controllers/dataViz.js"></script>
- 
+-->
+  <script src="app/controllers/register.js"></script> 
+  <script src="app/controllers/globalEvents.js"></script>
+  <script src="app/controllers/order.js"></script> 
+  <script src="app/controllers/dataViz.js"></script>
 </body>
 </html>

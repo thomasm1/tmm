@@ -1,9 +1,9 @@
 (function () {
 
 	angular.module('app')
-			.controller('AboutController', [    '$state', '$log', AboutController]);
+			.controller('AboutController', [    '$state',  AboutController]);
 
-	function AboutController(  $state, $log) {
+	function AboutController(  $state) {
 
 			var vm = this;
   
