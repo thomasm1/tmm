@@ -1,7 +1,7 @@
 
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="dist/js/vendor/jquery-1.12.4.js"></script>
 
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="dist/js/vendor/jquery-ui.js"></script>
         
 <style type="text/css">
   div.index {
@@ -27,8 +27,7 @@
     padding: 2px;
     margin-top: 2px;
     color: blue;
-    text-decoration: none;
-    border: solid 1px blue;
+    text-decoration: none; 
   }
 
   #header {
@@ -256,16 +255,13 @@
 
 
 
-    $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() +
-      "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+    $("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
 
 
 
     document.getElementById("outputPanel").contentWindow.eval($("#javascriptPanel").val());
 
-
-
-
+ 
 
 
 
