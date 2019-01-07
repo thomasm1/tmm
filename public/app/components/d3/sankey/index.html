@@ -170,7 +170,8 @@
             var path = sankey.link();
 
             // load the data (using the timelyportfolio csv method)
-            d3.csv("RiverBirtch7.csv", function(error, data) {
+            d3.csv("rb.csv", 
+function(error, data) {
 
                 //set up graph in same style as original example but empty
                 graph = {
