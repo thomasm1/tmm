@@ -35,7 +35,12 @@
                 url: '/chloropleth',
                 templateUrl: 'app/templates/chlor.html' 
             } ) 
-            .state('codePlayer',  { 
+          /*  .state('dice',  { 
+                url: '/dice',
+                templateUrl: 'app/templates/dice.html' 
+            } ) 
+           */
+           .state('codePlayer',  { 
                 url: '/codePlayer',
                 templateUrl: 'app/templates/codePlayer.html' 
             } ) 

@@ -2,8 +2,7 @@ const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const uglify = require('gulp-uglify');
-const babel = require('babel-core');
+const uglify = require('gulp-uglify'); 
 const concat = require('gulp-concat');
 
 

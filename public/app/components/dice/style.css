@@ -2,38 +2,6 @@
 *** GENERAL
 **********************************************/
 
-@import url('https://fonts.googleapis.com/css?family=Monoton:100,200,300,400,500,600');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600');
-
-body {
-
-    background-color: #00b0ec;
-background-image: url('../dist/img/MaestasReykjavikBanner20.png');   
-
-}
-#tmm_bck {
-    padding:2%;
-    margin:0px;
-	float:right;
-margin:30px 10px 33px 20px;
-color:blue;
-text-decoration:none;
-background-color: rgb(235, 82, 82);
-box-shadow: 0px 10px 50px rgba(251, 255, 0, 0.63);
-background-image: url('../dist/img/MaestasReykjavikBanner20.png');   
-}
-#rules {
-    background-color: #00b0ec;
-background-image: url('../dist/img/MaestasReykjavikBanner20.png');   
-width:90%;
-padding:1px 10px 0px 10px;
- margin: 0px 20px 20px ;
-border:solid .5px rgba(92, 94, 211, 0.582);
-font-size:1rem;
-max-height:250px;
-overflow-y:scroll;
-font-family:'Roboto';
-}
 .final-score {
     position: absolute;
     left: 50%;
@@ -41,12 +9,11 @@ font-family:'Roboto';
     top: 520px;
     color: #555;
     font-size: 18px;
-    font-family: ' Monoton';
+    font-family: 'Lato';
     text-align: center;
     padding: 10px;
     width: 160px;
     text-transform: uppercase;
-border:solid 1 silver;
 }
 
 .final-score:focus { outline: none; }
@@ -56,7 +23,8 @@ border:solid 1 silver;
 
 
 * {
-    
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     
 }
@@ -68,10 +36,10 @@ border:solid 1 silver;
 }
 
 body {
-     
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
     background-size: cover;
     background-position: center;
-    font-family: 'Monoton';
+    font-family: Lato;
     font-weight: 300;
     position: relative;
     height: 100vh;
@@ -79,17 +47,13 @@ body {
 }
 
 .wrapper {
-    max-width: 900px;
-    min-width:400px;
+    width: 1000px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #00b0ec;
-background-image: url('../dist/img/MaestasReykjavikBanner20.png');   
-
-margin-top:300px;
-    box-shadow: 0px 10px 50px rgba(251, 255, 0, 0.63);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 
@@ -97,8 +61,8 @@ margin-top:300px;
 .player-1-panel {
     width: 50%;
     float: left;
-    height: 900px;
-    padding: 5%;
+    height: 600px;
+    padding: 100px;
 }
 
 
@@ -108,34 +72,26 @@ margin-top:300px;
 **********************************************/
 
 .player-name {
-    font-size: 2rem;
-    font-weight:bold;
-    color:white;
+    font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px; 
-    margin-top: 110px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
     margin-bottom: 10px;
     position: relative;
 }
 
 .player-score {
-    font-family:'Monoton';
     text-align: center;
     font-size: 80px;
-    font-weight:bold;
-    color: darkblue;
+    font-weight: 100;
+    color: #EB4D4D;
     margin-bottom: 130px;
 }
 
-.active { 
-    
-    background-color: #575af0a8;
-background-image: url('../dist/img/MaestasReykjavikBanner20.png');   
-
-border:outset 3px yellow;
- }
-.active .player-name { font-weight: 400; }
+.active { background-color: #f7f7f7; }
+.active .player-name { font-weight: 300; }
 
 .active .player-name::after {
     content: "\2022";
@@ -146,24 +102,14 @@ border:outset 3px yellow;
     right: 10px;
     
 }
-input.final-score {  
-    margin:5px;
-    background-color:rgb(218, 224, 122) !important;
-background-image: url('../dist/img/MaestasReykjavikBanner20.png');   
 
-}
-button.btn-roll,button.btn-hold, button.btn-new {
-    background-color:aliceblue;
-}
 .player-current-box {
-    background-color: yellow;
-    border:outset 4px red;
-    color: darkblue;
-    width: 70%;
-    margin: 200px auto;
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
     padding: 12px;
     text-align: center;
-
 }
 
 .player-current-label {
@@ -185,7 +131,7 @@ button {
     color: #555;
     background: none;
     border: none;
-    font-family:  Monoton;
+    font-family: Lato;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
@@ -211,14 +157,9 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { 
-    box-shadow: 0px 10px 50px rgba(251, 255, 0, 0.63);
-    top: 45px;}
-.btn-roll {
-    box-shadow: 0px 10px 50px rgba(251, 255, 0, 0.63);
-     top: 403px;}
-.btn-hold { 
-     top: 467px;}
+.btn-new { top: 45px;}
+.btn-roll { top: 403px;}
+.btn-hold { top: 467px;}
 
 .dice {
     position: absolute;
@@ -226,13 +167,8 @@ i {
     top: 178px;
     transform: translateX(-50%);
     height: 100px;
-    box-shadow: 0px 10px 50px rgba(251, 255, 0, 0.63);
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
-.winner { 
-    background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
 
-p {
-    color:darkblue;
-    font-weight:bold;
-}
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }

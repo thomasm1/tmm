@@ -20,8 +20,7 @@
   .d3-tip:after {      
     box-sizing: border-box;
     display: inline;
-    font-size: 8px;
-    width: 100%;
+    font-size: 8px; 
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.6);
     position: absolute;

@@ -11,7 +11,7 @@ GAME RULES:
 
 var scores, roundScore, activePlayer, gamePlaying;
 
- // init();
+init();
 
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
