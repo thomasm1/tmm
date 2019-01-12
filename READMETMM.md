@@ -1,3 +1,7 @@
+## KENDO-UI
+## LESS
+http://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js
+
 ## GENERATORS:
 * Text Content Generator - http://www.lipsum.com
 * Favicon Generator - http://tools.dynamicdrive.com/favicon		
