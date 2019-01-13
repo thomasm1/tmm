@@ -13,19 +13,17 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
    
-  <link href="content/kendo.common.min.css" rel="stylesheet" type="text/css"/>
-         <link href="content/kendo.default.min.css" rel="stylesheet" type="text/css"/>
-         <link href="content/myCustom.css" rel="stylesheet" type="text/css"/>
    
 
 
 <script src="dist/js/vendor/jquery.3.3.1.min.js"></script>
     <script src="dist/js/vendor/bootstrap.4.min.js"></script>
         <link rel="stylesheet" href="dist/css/vendor/toastr.min.css"> 
-    <link href="dist/css/vendor/kendo.common.min.css"  rel="stylesheet"  />
+  <link href="content/kendo.common.min.css" rel="stylesheet" type="text/css"/>
+         <link href="content/kendo.default.min.css" rel="stylesheet" type="text/css"/> 
     <link href="dist/css/vendor/kendo.dataviz.min.css" rel="stylesheet"  />
-  <!--<link href="dist/css/vendor/kendo.silver.min.css" rel="stylesheet"  />
-    <link href="dist/css/vendor/kendo.silver.mobile.min.css" rel="stylesheet"  />
+  <link href="dist/css/vendor/kendo.silver.min.css" rel="stylesheet"  />
+  <!--  <link href="dist/css/vendor/kendo.silver.mobile.min.css" rel="stylesheet"  />
     <link href="dist/css/vendor/kendo.dataviz.default.min.css" rel="stylesheet"  />
  <link rel="stylesheet" href="app/css/bootstrap.cerulean.min.css" />
  -->   
@@ -50,7 +48,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
         color:yellow;
     } 
     a.navtmm {
-      background-image:url('dist/images/shadowbox.png');
+      background-image:url('dist/img/shadowbox.png');
       height:110px;
       max-height:110px;
       width:200px;  
@@ -91,7 +89,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
      padding-bottom: 3px; } 
      .navbar-default .navbar-toggle, .navbar-default { 
        background-color:blue;
-       background-image:url('dist/images/bluechipTile.jpg');
+       background-image:url('dist/img/bluechipTile.jpg');
      }
      
     div.side-nav {
@@ -191,7 +189,15 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
       </div>
     </div>
   </section> 
-</div>
+  
+</div> 
+  <div id="sensor"  >
+  <ul> 
+      <li><a ui-sref="schools" ui-sref-active="active">_..<span class="sr-only"> </span></a></li> 
+      <li><a ui-sref="classrooms" ui-sref-active="active">_.</a></li>
+      <li><a ui-sref="activities" ui-sref-active="active">_...</a></li> 
+  </ul>
+  </div> 
   <footer class="site-footer">
     <div class="row column">
       <nav class="footer-nav">

@@ -1,4 +1,4 @@
-angular.module('tmm').component('dag', {
+angular.module('app').component('dag', {
   templateUrl:  'templates/views/dag.html',
   controller: function() {
     this.dag = 'Directed Acyclic Graph';
