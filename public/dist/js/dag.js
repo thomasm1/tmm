@@ -182,7 +182,7 @@ function tick() {
 // Everything is ready. Start the simulation!
 force.start()
     .on('tick', tick)
-    .tick().tick();
+    .tick();
 force.stop();
 
 

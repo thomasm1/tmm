@@ -1,11 +1,11 @@
 (function () {
 
     angular.module('app')
-        .controller('HomeController', [/* '$log','dataService', 'notifier', */'$state', HomeController]);
+        .controller('HomeController', [ '$log','dataService', 'notifier', '$state', HomeController]);
 
-    function HomeController(/* $log, dataService, notifier, */ $state) {
+    function HomeController( $log, dataService, notifier,  $state) {
 
-/*
+
         message = 'Sensor Controller';
 vm = this;
         vm.refresh = function() {
@@ -39,7 +39,6 @@ vm = this;
         function showError(message) {
             notifier.error(message);
         }
-        */
 
 // Vanilla
 

@@ -24,8 +24,8 @@ var path = d3.geoPath()
     .projection(projection)
 
 function ready (error, data) { 
-    var countries = topojson.feature(data, data.objects.countries).features
-    console.log(data)
+    var countries = topojson.feature(data, data.objects.countries).features;
+    console.log(data);
 
     svg.selectAll(".country")
     .data(countries)

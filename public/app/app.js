@@ -74,8 +74,7 @@
                 url: '/dataViz',
                 templateUrl: 'app/templates/dataViz.html'  ,
                 controller: 'dataViz' 
-            }) 
-            /*
+            })  
             .state('dataSource', {
                 url: '/dataSource',
                 templateUrl: 'app/services/dataSource.html',
@@ -159,8 +158,7 @@
                         templateUrl: '/app/templates/classroomDetail.html'
                     }
                 }
-            }) 
-            */
+            })  
             .state( {
                 name: 'maps',
                 url: '/maps',
@@ -172,8 +170,7 @@
                 templateUrl: 'app/templates/views/dag.html' 
               });  
 
-    }]);
-    /*
+    }]); 
 
     app.run(['$rootScope', '$log', function($rootScope, $log) {
 
@@ -207,7 +204,5 @@
             $log.debug('fromParams', fromParams);
         });
     }]);
-
-        */
-
+ 
 }());
