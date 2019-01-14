@@ -75,11 +75,20 @@
                 templateUrl: 'app/templates/dataViz.html'  ,
                 controller: 'dataViz' 
             })  
+            .state('dataEvents', { 
+                url: '/dataEvents',
+                templateUrl: 'app/templates/dataEvents.html'  ,
+                controller: 'dataEvents' 
+            })  
             .state('dataSource', {
                 url: '/dataSource',
                 templateUrl: 'app/services/dataSource.html',
                 controller: 'dataSource' 
-            })
+            }) 
+            .state('dataMVVM', {
+                url: '/dataMVVM',
+                templateUrl: 'app/templates/dataMVVM.html' 
+            }) 
             .state('schools', {
                 url: '/schools',
                 controller: 'AllSchoolsController',

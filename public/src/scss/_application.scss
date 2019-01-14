@@ -909,5 +909,14 @@ body {
     }
 }
     nav.rightmenu {
-    min-width:300px;
+    min-width:230px;
+    opacity:.9;
+}
+img.external-link {
+    opacity:.76;
+    max-width:12px;
+    max-height:12px;
+    border-radius:5%;
+    margin-left:2px;
+    margin-right:2px;
 }
