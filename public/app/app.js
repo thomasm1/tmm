@@ -176,8 +176,8 @@
               .state({
                 name: 'dagdagre',
                 url: '/dagdagre',
-                templateUrl: 'app/templates/dagdagre.html', 
-                controller: 'dagController'
+                templateUrl: 'app/templates/dagdagre.html' 
+              //  controller: 'dagController'
               });  
 
     }]); 
