@@ -1,4 +1,15 @@
-// (c) Tim Zaman 2016
+(function () {
+
+	angular.module('app')
+			.controller('DagController', [    '$state',  DagController]);
+
+	function DagController(  $state) {
+
+			var vm = this;
+  
+	console.log(' DagController loaded...'); 
+  
+    // (c) Tim Zaman 2016
 // Licence: MIT
 // Sources:
 //   https://bl.ocks.org/cjrd/6863459 -- original [MIT]
@@ -978,3 +989,33 @@ document.onload = (function(d3, saveAs, Blob, undefined){
     graph.setupMetadata();
 
 })(window.d3, window.saveAs, window.Blob);
+
+// 	var secretButton = document.querySelector('#secret-button'); // ME
+// 	var secretParagraph = document.querySelector('#secret-paragraph');
+
+//  ('#secret-paragraphAUG');///////////////////////////////// 
+// 	var showSecret = false; 
+	 
+// 	/////////////////////////////// 
+// 	secretButton.addEventListener('click', toggleSecretState);  
+// 	/////////////////////////////// 
+// 	function toggleSecretState() {
+// 	  showSecret = !showSecret;
+// 	  updateSecretParagraph();
+// 	  updateSecretButton();
+// 	}  
+ 
+// 	/////////////////////////////// 
+// 	function updateSecretButton() {
+// 	  if (showSecret) {
+// 		secretButton.innerHTML = ' '; // GOES BACK TO DEFAULT
+// 		secretButton.style.fontFamily = 'Monoton';
+// 	  } else {
+// 		secretButton.innerHTML = ', M.A.'; // TOGGLE OPEN
+// 		secretButton.style.fontFamily = 'Monoton';
+// 	  }
+//     } 
+     
+	 
+}  
+}());

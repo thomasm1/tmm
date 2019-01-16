@@ -12,7 +12,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   <meta name="author" content="Thomas Maestas">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+  <link rel="manifest" href="/manifest.json">
    
 
 
@@ -23,6 +23,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   <link href="dist/css/vendor/kendo.common.min.css" rel="stylesheet" type="text/css"/>
     <link href="dist/css/vendor/kendo.dataviz.min.css" rel="stylesheet"  />
   <link href="dist/css/vendor/kendo.silver.min.css" rel="stylesheet"  />
+
   <!--  <link href="dist/css/vendor/kendo.silver.mobile.min.css" rel="stylesheet"  />
     <link href="dist/css/vendor/kendo.dataviz.default.min.css" rel="stylesheet"  />
  <link rel="stylesheet" href="app/css/bootstrap.cerulean.min.css" />
@@ -164,7 +165,6 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
          <ul class="nav navbar-nav navtech">
                 <li><a ui-sref="about" ui-sref-active="active">About</a></li>
                 <li><a ui-sref="profile" ui-sref-active="active">Profile</a></li>
-                <li><a ui-sref="chlor" ui-sref-active="active">Maps</a></li>  
             </ul> 
         </ul> 
         </div><!-- /.navbar-collapse -->
@@ -237,6 +237,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 <script src="app/services/dataSource.js"></script> 
 <!---->
 
+<script src="app/controllers/DagController.js"></script>  
 <script src="app/controllers/AboutController.js"></script> 
 <script src="app/controllers/ProfileController.js"></script> 
 <script src="app/controllers/HomeController.js"></script> 
@@ -251,7 +252,6 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 <script src="app/controllers/ClassroomMessageController.js"></script>
 
 <script src="app/components/dtech/dtech.js"></script>  
-<script src="app/components/dag.js"></script>  
   <script src="app/controllers/register.js"></script> 
   <script src="app/controllers/dataEvents.js"></script>
   <script src="app/controllers/order.js"></script> 

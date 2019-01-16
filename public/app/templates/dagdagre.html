@@ -1,4 +1,73 @@
-// (c) Tim Zaman 2016
+ 
+  <script src="dist/js/vendor/d3.v3.min.js" charset="utf-8"></script> 
+  <script src="dist/js/vendor/jquery-3.2.1.min.js"></script>
+ <script src="dist/js/vendor/klay.js"></script>
+  <script src="dist/js/vendor/FileSaver.min.js"></script> 
+
+  <link href="dist/css/dag.css" rel="stylesheet" />
+  <link href="dist/css/dagstudio.css"  rel="stylesheet"  />
+  <style>
+    .mod-behave {
+      width: 100%;
+      min-width: 600px;
+    } 
+    .navtech-wrapper {
+      display:none;
+    }
+    .svgHolder {
+display:none;
+    }
+input {
+  background-color:lightblue;
+  border:1px solid darkblue;
+  padding:4px 4px 0px 4px;
+}
+ 
+  </style>   
+ 
+
+    <div class="col-lg-6"> 
+
+
+
+
+
+
+
+
+
+ 
+          <div id="tech">
+            <div class="mod-behave ">
+
+             
+              <h5 id="avertissement">Drag 'n Drop the Vertices</h5>
+              <h6>Drag nodes from left sidebar.</h6>
+                <h6>Double-Click on nodes, drag to alter-node to make links/edges
+                  !</h6>
+                <h5>Download graphs in JSON format!</h5>
+                *Resize screen width to activate graph
+                <div id="container" style="margin:20px">
+                  <div id="layerlist"></div>
+                  <div id="chart"></div>
+                  <div id="right-container">
+                    <div id="toolbox">
+                      <input type="file" id="hidden-file-upload">
+                      <input id="cleanup-input" type="image" title="cleanup graph" src="dist/icons/magic-wand.png" alt="clean">
+                      <input id="upload-input" type="image" title="upload graph" src="dist/icons/upload-icon.png" alt="upload graph">
+                      <input type="image" id="download-input" title="download graph" src="dist/icons/download-icon.png" alt="download graph">
+                      <input type="image" id="delete-graph" title="delete graph" src="dist/icons/trash-icon.png" alt="delete graph">
+                    </div>
+                    <!-- inline block-space fix
+              -->
+                    <div id="floater">
+                      <div id="metadata"></div>
+                      <input type="image" id="toggle-metadata" title="toggle box" src="dist/icons/expand-icon.png" alt="toggle metadata">
+                    </div>
+                  </div>
+                </div>
+                <script >
+                // (c) Tim Zaman 2016 src="dist/js/dagstudio.js"
 // Licence: MIT
 // Sources:
 //   https://bl.ocks.org/cjrd/6863459 -- original [MIT]
@@ -978,3 +1047,25 @@ document.onload = (function(d3, saveAs, Blob, undefined){
     graph.setupMetadata();
 
 })(window.d3, window.saveAs, window.Blob);
+
+</script>
+
+            </div>
+            <!-- blog-text.js  BEGINS HERE -->
+
+
+
+         
+          </div> 
+    </div> 
+ 
+
+ 
+  <!-- end card card-link-list 
+ 
+  <script src="dist/js/vendor/tether.min.js"></script>
+  <script src="dist/js/vendor/popper.min.js"></script>
+  <script src="dist/js/vendor/bootstrap.js"></script>  
+-->
+
+  </div>
