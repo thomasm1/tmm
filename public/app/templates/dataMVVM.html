@@ -1,5 +1,5 @@
 <style>
-#template-source, #container, #container2 { 
+#template-target, #container, #container2 { 
   width:45%;
   margin:4px auto;
   padding:10px;
@@ -26,34 +26,35 @@ svg {
 
 
 	 <div id="dataMVVM">
-<div id="template-source"></div> 
+<div id="template-target"></div> 
 
-		<script type="text/x-kendo-template" id="template-target">
-			<h4>#= listName #</h4>
-			<ul>
-	        # for (var i = 0; i < cars.length; i++) { #
-	            <li>#= cars[i]["year"] # #= cars[i]["make "] # - #= cars[i]["model"] #</li>
-	        # } #
-	        </ul>
-		</script>
-
+		<script type="text/x-kendo-template" id="template-source"> 
+				<h4>#= listName #</h4>
+				<ul>
+						# for (var i = 0; i < cars.length; i++) { #
+				<li>#= cars[i]["year"] # #= cars[i]["make"] # - #= cars[i]["model"] #</li>
+						# } #
+				</ul>
+		</script> 
 		<script type="text/javascript">
 			$(document).ready(function() { 
 				var data = {
 					listName: "x-kendo-template",
 					cars: [
-						{year: 2012, make: "first-entry", model: "Italia"},
-						{year: 2010, make: "second-entry", model: "Gallarda"}
+						{year: 2010, make: "first:", model: "Italia"},
+						{year: 2011, make: "second:", model: "Gallarda"},
+						{year: 2012, make: "first:", model: "Italia"},
+						{year: 2013, make: "second:", model: "Gallarda"}
 					]
 				}; 
-				var carsTemplate = kendo.template($("#template-target").html())(data);
-				$("#template-source").html(carsTemplate);
+				var carsTemplate = kendo.template($("#template-source").html())(data);
+				$("#template-target").html(carsTemplate);
 
 			});
 		</script>
 
-
-<div class="container">
+ 
+<div class="container"> 
 
   	<div id="container">
 			<input data-bind="value: make" data-value-update="keyup"/><br/>
@@ -99,10 +100,9 @@ svg {
 			<input id="save" type="submit" value="console-save"/>
 		</div>
 
+
 		<script type="text/javascript">
-
 			$(document).ready(function(){
-
 				var validator = $("#container2").kendoValidator({
 					rules: {
 						noKia: function(input) {
@@ -127,4 +127,45 @@ svg {
   
       <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
       
+			
+<style>
+.contentForm {radius:10px;
+max-width:300px;
+	background-color:darkblue;
+	margin:20px 0 20px -25px;
+float:left;
+
+}
+.contentForm input {
+	background-color:darkslateblue;
+}
+.placehold {
+	color:orange; 
+	display:block; 
+	text-align: center;
+}
+.contentForm textarea {
+	background:transparent;
+}
+</style>
+	   <div class="contentForm">
+		   <form name="contactForm" novalidate>
+
+			   <input type="text" placeholder="name" name="name" ng-model="contact.name" ng-required="true"/>
+			   <span><br /> 
+					 
+				</span>
+			   <input type="text" placeholder="email" name="email" ng-model="contact.email" ng-required="true" />
+			  
+			   <textarea placeholder="Comment" name="comment" ng-model="contact.comment" ></textarea>
+			   <input type="submit" value="Send" /> 
+		   </form>
+		   <div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
+			   <small class="placehold">Fill me in!</small>
+		   </div> 
+		   
+		   <div ng-show="contactForm.email.$touched && contactForm.email.$valid">
+				<small class="placehold" style="color:yellow; ">good!</small>
+			</div>
+	   </div> 
 		</div> 

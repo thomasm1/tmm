@@ -11,10 +11,22 @@
 
         $stateProvider
             .state('home', {
-                url: '/',
-                templateUrl: '/app/templates/home.html',
-                controller: 'HomeController',
-                controllerAs: 'home'
+                url: '/', 
+                views: {
+                 '': {  
+                    templateUrl: '/app/templates/home.html',
+                    controller: 'HomeController',
+                    controllerAs: 'home',
+            'columnOne@home': {
+                             template: 'This Col'},
+            'columnTwo@home': { 
+                             templateUrl: 'app/templates/chlor.html', 
+                             controller:  function($scope) {
+                                 $scope.titles = ['title-A', 'title-B', 'title-C'];
+                             }
+                         }
+                     }, 
+            }
             })
             .state('register', {
                 url: '/register',
@@ -27,13 +39,16 @@
                 controller: 'ProfileController'
             }) 
             .state('about',  { 
-                url: '/about',
-                templateUrl: 'app/templates/about.html',
-                controller: 'AboutController' 
-            } )
+                url: '/about', 
+                templateUrl: 'app/templates/about.html', 
+                controller: 'AboutController'  
+            })
             .state('chlor',  { 
                 url: '/chloropleth',
-                templateUrl: 'app/templates/chlor.html' 
+                templateUrl: 'app/templates/chlor.html', 
+                controller:  function($scope) {
+                    $scope.titles = ['title-A', 'title-B', 'title-C'];
+                }
             } ) 
           /*  .state('dice',  { 
                 url: '/dice',
@@ -174,13 +189,13 @@
                 component: 'maps'
               })
               .state({
-                name: 'dagdagre',
-                url: '/dagdagre',
-                templateUrl: 'app/templates/dagdagre.html' 
-              //  controller: 'dagController'
+                name: 'dag',
+                url: '/dag',
+                templateUrl: 'app/templates/views/dag.html' 
               });  
 
     }]); 
+ 
 
     app.run(['$rootScope', '$log', function($rootScope, $log) {
 
