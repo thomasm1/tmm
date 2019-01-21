@@ -189,9 +189,9 @@
                 component: 'maps'
               })
               .state({
-                name: 'dag',
+                name: 'dagdagre',
                 url: '/dag',
-                templateUrl: 'app/templates/views/dag.html' 
+                templateUrl: 'app/templates/dagdagre.html' 
               });  
 
     }]); 
