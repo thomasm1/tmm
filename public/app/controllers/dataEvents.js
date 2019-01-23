@@ -57,29 +57,29 @@
        });
     
     
-       vm.twitterSearch = new kendo.data.DataSource({
-                transport: {
-                     read: {
-                      url: "http://demos.kendoui.com/service/Twitter/Search",
-                      dataType: "jsonp",
-                      data: { q: "#kendoui" }
-                   }
-                },
-                schema: { // describe the result format
-                             data: function(data) { // the data which the data source will be bound to is in the "results" field
-                                 return data.statuses || [];
-                             }
-                         },
-             });	
+      //  vm.twitterSearch = new kendo.data.DataSource({
+      //           transport: {
+      //                read: {
+      //                 url: "//demos.kendoui.com/service/Twitter/Search",
+      //                 dataType: "jsonp",
+      //                 data: { q: "#kendoui" }
+      //              }
+      //           },
+      //           schema: { // describe the result format
+      //                        data: function(data) { // the data which the data source will be bound to is in the "results" field
+      //                            return data.statuses || [];
+      //                        }
+      //                    },
+      //        });	
     
-             $("#searchResults").kendoGrid({
-                dataSource: vm.twitterSearch,
-                columns: [ 
-                         { field: "created_at", title: "Tweeted"} ,
-                         { field: "user.screen_name", title: "Tweeter" } , 
-                         { field: "text", title: "Tweet" }
-                      ],
-             });		
+      //        $("#searchResults").kendoGrid({
+      //           dataSource: vm.twitterSearch,
+      //           columns: [ 
+      //                    { field: "created_at", title: "Tweeted"} ,
+      //                    { field: "user.screen_name", title: "Tweeter" } , 
+      //                    { field: "text", title: "Tweet" }
+      //                 ],
+      //        });		
                
     
       
