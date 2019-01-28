@@ -90,7 +90,41 @@ span.paper {
   </div> 
 
   <div class="svgHolder" id="force"></div>
-  <script type="text/javascript" src="dist/js/d3/dag.js"></script>
+  <div id="d3banner"></div>
+  <div id="js"></div>
+  <div id="css"></div>
+  <script type="text/javascript" >
+ 
+  var bodyElem = d3.select('#d3banner'),
+    jsElem = d3.select('#js'),
+    jsPanel = bodyElem.append('div').attr('id', 'jsPanel')
+      .style('opacity','.5')
+      .style('transform','translateY(119px)');
+    cssElem = d3.select('#css'),
+    cssPanel = bodyElem.append('div').attr('id', 'cssPanel')
+      .style('opacity','.7')
+      .style('transform','translateY(169px)');
+
+function setupPanel(panel, elem, title) {
+  panel.append('h3').text(title);
+  return panel.append('pre').append('code').text(elem.html().trim());
+}
+
+var jsCode = setupPanel(jsPanel, jsElem, 'Welcome');
+var cssCode = setupPanel(cssPanel, cssElem, 'Thomas M Maestas');
+
+// var hljsRoot = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1';
+
+bodyElem.append('link')
+  .attr('rel', 'stylesheet')
+  .attr('href', '/dist/css/xcode.min.css') // hljsRoot + '/styles/xcode.min.css');
+bodyElem.append('script')
+  .attr('src', '/dist/js/vendor/highlight.min.js') // hljsRoot + '/highlight.min.js')
+  .on('load', function() {
+    hljs.highlightBlock(jsCode.node());
+    hljs.highlightBlock(cssCode.node());
+  });
+  </script>
   <div class="links">
 <pre id="pre">
   <br />
@@ -104,7 +138,7 @@ span.paper {
     Lambda Functions using Cognito Authentication 
     <a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com</a>
     S3 Hosting
-    <a href="https://s3.amazonaws.com/tmm-nov/index.html" target="_blank">https://s3.amazonaws.com/tmm-nov/index.html</a> 
+    <a href="http://dailytechfilter.s3-website-us-east-1.amazonaws.com/" target="_blank">http://dailytechfilter.s3-website-us-east-1.amazonaws.com/</a> 
     AMAZON RDS + S3  DATABASE ENDPOINTS 
     AWS S3 Static NoSQL Storage
     <a href="https://s3.amazonaws.com/tmm-nov/posts/april.json" target="_blank">https://s3.amazonaws.com/tmm-nov/posts/april.json</a>
