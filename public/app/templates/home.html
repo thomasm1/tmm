@@ -77,43 +77,40 @@ span.paper {
   <div class="charts">
     <span class="paper"><p class="zero"  > 
     <div class="d3 one"></div>
+    
     <svg class="d3 two " width="563" height="350"></svg>
-    <div class="d3 four">
-
-    </div> 
-    <div class="d3 five">
-
-    </div>
-    <div class="d3 six">
-    </div>
-    <div class="d3 seven"></div>
+    <div class="d3 four">  </div> 
+    <div class="d3 five">   </div>
+    <div class="d3 six">  </div>
+    <div class="d3 seven">  </div>
   </div> 
 
   <div class="svgHolder" id="force"></div>
+
+
   <div id="d3banner"></div>
   <div id="js"></div>
   <div id="css"></div>
   <script type="text/javascript" >
- 
   var bodyElem = d3.select('#d3banner'),
     jsElem = d3.select('#js'),
     jsPanel = bodyElem.append('div').attr('id', 'jsPanel')
       .style('opacity','.5')
-      .style('transform','translateY(119px)');
+      .style('transform','translateY(49px)')
+      .style('width','300px');
     cssElem = d3.select('#css'),
     cssPanel = bodyElem.append('div').attr('id', 'cssPanel')
       .style('opacity','.7')
-      .style('transform','translateY(169px)');
+      .style('transform','translateY(90px)')
+      .style('width','300px');
 
 function setupPanel(panel, elem, title) {
   panel.append('h3').text(title);
   return panel.append('pre').append('code').text(elem.html().trim());
 }
-
-var jsCode = setupPanel(jsPanel, jsElem, 'Welcome');
+var welcome = 'Welcome'
+var jsCode = setupPanel(jsPanel, jsElem, welcome);
 var cssCode = setupPanel(cssPanel, cssElem, 'Thomas M Maestas');
-
-// var hljsRoot = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1';
 
 bodyElem.append('link')
   .attr('rel', 'stylesheet')
@@ -124,6 +121,8 @@ bodyElem.append('script')
     hljs.highlightBlock(jsCode.node());
     hljs.highlightBlock(cssCode.node());
   });
+  
+// var hljsRoot = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1';
   </script>
   <div class="links">
 <pre id="pre">
