@@ -1,7 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8"> 
+<!doctype html>
+<html  lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">      <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []; 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-71584977-1'); 
+  </script>
+
   <meta name="description" content="Sociology Data Analysis, Web Development and Statistical Consulting | Statistical Consultant. Get statistics help: 
 Thomas offers services related to analyzing qualitative &amp; quantitative data and reporting results in academic journals and business briefs alike.  Recent projects include research design, app design, and proof-of-concept for Xpansiv Data Systems, 
 and data analysis and web-application implementation. Data analysis and special pricing offers competitive benefits for clients.  
@@ -12,26 +24,15 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   <meta name="author" content="Thomas Maestas">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="dist/css/vendor/toastr.min.css"> 
-    <link href="dist/css/vendor/kendo.common.min.css"  rel="stylesheet"  />
-    <link href="dist/css/vendor/kendo.dataviz.min.css" rel="stylesheet"  />
-  <!--<link href="dist/css/vendor/kendo.silver.min.css" rel="stylesheet"  />
-    <link href="dist/css/vendor/kendo.silver.mobile.min.css" rel="stylesheet"  />
-    <link href="dist/css/vendor/kendo.dataviz.default.min.css" rel="stylesheet"  />
- <link rel="stylesheet" href="app/css/bootstrap.cerulean.min.css" />
- -->   
-    <link rel="stylesheet" href="dist/css/app.css" />
+  <title>TMM | Home</title>
     
   <style> 
     .ui-view {
-      margin-top:50px; 
+      margin-top:110px; 
     }
     .alpho0 {
-      color:darkcyan;
+      color:white;
+      padding:20px;
     } 
     h1.title {
       display:none;
@@ -39,29 +40,33 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     input {
       color:yellow;
       background:darkblue;
-      z-index:100;
+      z-index:10;
     }
     a {
         color:yellow;
     } 
     a.navtmm {
-      background-image:url('dist/images/shadowbox.png');
-      height:110px;
-      max-height:110px;
-      width:200px;  
+      background-image:url('dist/images/tmm-purple.png');
+      height:120px;
+      max-height:120px;
+      width:230px;  
     }
     footer h5 {
       color:yellow;
     }
     footer { 
       position:relative;
-      top:150px;
+      top:750px;
     }
-    .svgHolder {
-     opacity:.5;
-      position:absolute;
-      top:180px;
-    } 
+
+    /* HOME.HTML */
+.links {
+    max-width:500px;  
+    float:right;
+    position:absolute;
+    top:400px;
+    margin:10px;
+}
   .navtech {
     text-align: center;
     margin: 3px; 
@@ -80,19 +85,131 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     .social li {
       margin:0;
       color:yellow;
+    }  
+    .svgHolder {
+     opacity:.5;
+      position:absolute;
+      top:200px;  
     } 
+    .svgHolder svg * { 
+    }
+div#force.svgHolder *{ 
+}
+pre {
+    background: url('dist/images/bluechipTile.jpg');
+    margin:0;
+    padding:0;
+}
+pre p {
+    color:rgb(243, 135, 116);  
+}
+pre a {
+  color:yellow;
+}
+span.paper {
+  background:url('dist/images/silverchip.png');
+}
 .navbar-nav > li > a { 
       padding-top:  4px; 
      padding-bottom: 3px; } 
      .navbar-default .navbar-toggle, .navbar-default { 
+       background-color:blue;
+       background-image:url('dist/images/bluechipTile.jpg');
      }
-  </style>
-</head>
-<body ng-app="app">
+     
+    div.side-nav {
+        position: absolute;
+        top: 150px;
+        left: 95%;
+        min-width: 90px;
+        max-width: 90px; 
+      }   
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+      ul.dailytech {
+        border-radius:8px;
+        border:outset 2px silver;
+      }
+      ul.dailytech li {
+        color:lightsteelblue;
+        } 
+.charts { 
+  min-height:80px; 
+}
+.d3 {
+  min-height:390px;
+  background-color:transparent; 
+  border:inset 2px blue; 
+  display:none;
+  position:relative;
+  top:180px;
+}
+.d3.one#one {
+  position:absolute;
+  top: 20px;
+}
+.one, .two, .three, .four, .five, .six, .seven {
+  float:left;
+  width:600px;
+  margin:10px;
+  border: solid 1px blue;   
+} 
+.six * {margin-top:440px;
+}
+
+  svg {
+            border: 1px solid black;
+        }
+    
+        circle {
+            fill: #dc143c;
+        } 
+        button.datum {
+        color:yellow;
+    background: url('dist/images/bluechipTile.jpg');
+          margin:3px; 
+          border-radius:10px; margin:5px;
+          min-height:40px;
+        }
+      button:hover {
+        color:rgb(42, 42, 161);
+    background: url('dist/images/bluechipTile.jpg');
+      }
+      button a {
+        color:yellow;
+      }
+      .zero {display:block; 
+      }
+      #zero{
+        color:white;
+        background-color:rgba(20, 20, 116, 0.582);
+      }
+      div.d3.one {
+position:absolute;
+top:50px;
+left:-10px;
+      }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="dist/css/vendor/toastr.min.css"> 
+    <link href="dist/css/vendor/kendo.common.min.css"  rel="stylesheet"  />
+    <link href="dist/css/vendor/kendo.dataviz.min.css" rel="stylesheet"  />
+  <!--<link href="dist/css/vendor/kendo.silver.min.css" rel="stylesheet"  />
+    <link href="dist/css/vendor/kendo.silver.mobile.min.css" rel="stylesheet"  />
+    <link href="dist/css/vendor/kendo.dataviz.default.min.css" rel="stylesheet"  />
+ <link rel="stylesheet" href="app/css/bootstrap.cerulean.min.css" /> 
+   
+ -->   
+    <link rel="stylesheet" href="dist/css/app.css" />
+  <link rel="stylesheet" href="dist/css/font.css"> 
+  
+</head>
+<body ng-app="app" class="page-home"> 
+  <base href="/" />  
+  <div>
+  <nav  class="navbar navbar-default">
+    <div class="container-fluid"> 
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -103,7 +220,6 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
             <a class="navbar-brand navtmm" ui-sref="home"></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling   -->
         <div class="collapse navbar-collapse navtech-wrapper" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right pull-right dailytech">
           <li>
@@ -130,7 +246,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
           <li>
 
-            <a title="linkedin" href="httpd://linkedin.com/in/thomasmaestas" target="_blank">
+            <a title="linkedin" href="https://linkedin.com/in/thomasmaestas" target="_blank">
 
               <i class="fa fa-linkedin"></i>
 
@@ -142,43 +258,57 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
          <ul class="nav navbar-nav navtech">
                 <li><a ui-sref="about" ui-sref-active="active">About</a></li>
                 <li><a ui-sref="profile" ui-sref-active="active">Profile</a></li>
-                <li><a ui-sref="chlor" ui-sref-active="active">Maps</a></li> 
-                <li><a ui-sref="dendro" ui-sref-active="active">Nodes</a></li>  
-                <li><a ui-sref="dataViz" ui-sref-active="active">Data Viz</a></li> 
-             
-            </ul>
-            
-        </ul>
-       
-
+                <li><a ui-sref="chlor" ui-sref-active="active">Maps</a></li>   
+            </ul> 
+        </ul> 
         </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav> 
+    </div><!-- /.container-fluid --> 
+  </nav> 
+    <div class="container jumb  ">
+      <h1 class="  dailytech alpho0">WELCOME&nbsp; &nbsp;TO&nbsp; &nbsp; TMM </h2>
 
-
-  <script src="dist/js/d3/d3v3.min.js"></script>
-  <div class="svgHolder"   id="force"></div> 
-  <script type="text/javascript" src="dist/js/dag.js"></script>
-<div ui-view></div>
-
-      <section class="home-quote">
+       
+      <br />
+      <br />
+    </div>
+<div id="index" class="index">
+  <div ng-include="'app/templates/svg-net.html'"></div>
+</div>
+<div class="ui-view">
+    <ui-view></ui-view>   
+  </div>
+    <!--
+<div id="index-bottom" class="index">c
+  <section class="home-quote">
     <div class="row column medium-8 xxlarge-6">
       <div class="quote-wrap">
         <div class="quote"> 
       </div>
     </div>
-  </section>
+  </section> 
   <section>
-  <div class="pull-right">
-  <ul>
-  
-                <li><a ui-sref="schools" ui-sref-active="active">Sensors<span class="sr-only"> </span></a></li>
-                 <li><a ui-sref="controllers" ui-sref-active="active">Sensor Controllers</a></li> 
-
-                <li><a ui-sref="classrooms" ui-sref-active="active">Subsensors</a></li>
-                <li><a ui-sref="activities" ui-sref-active="active">Supersensors</a></li> </ul>
+  <div id="sensor" class="pull-right">
+  <ul> 
+      <li><a ui-sref="schools" ui-sref-active="active">Sensors<span class="sr-only"> </span></a></li> 
+      <li><a ui-sref="classrooms" ui-sref-active="active">Subsensors</a></li>
+      <li><a ui-sref="activities" ui-sref-active="active">Supersensors</a></li> 
+  </ul>
   </div>
-  </section>
+  </section> 
+  <section class="home-sign-up"> 
+    <div class="row column">
+      <img class="icon-w" >
+
+      <form onsubmit="javascript:void(0);">
+        <input type="email" placeholder="Enter your email address">
+        <button type="button">Submit</button>
+      </form>
+      <h2 class="section-title">Sign Up</h2>b
+      <p class="content">  Enter your email to enter the limited private beta</p>
+    </div> 
+  </section> 
+</div>
+-->
   <footer class="site-footer">
     <div class="row column">
       <nav class="footer-nav">
@@ -189,46 +319,60 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
  
   </footer>
 
-<!-- Libraries --> 
+<!-- Libraries 
          
-<script src="scripts/jquery.min.js"></script> 
-
 <script src="
    https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script> 
-<script src="scripts/kendo.all.min.js"></script>
-<script src="scripts/angular-kendo.js"></script>
+--> 
+<script src="dist/js/vendor/toastr.min.js"></script>
+<script src="dist/js/vendor/angular.min.js"></script>
+<script src="dist/js/vendor/angular-ui.min.js"></script>
+<script src="dist/js/vendor/kendo.all.min.js"></script>
+<script src="dist/js/vendor/angular-kendo.js"></script>
 
-<!-- Application code --><script src="app/app.js"></script>
+<!--
+<script src="dist/tmm_bundle.js"></script>   
+-->
+<!-- Application code -->
+<script src="app/app.js"></script>
+  <script src="app/components/posts.js"></script>
+  <script src="app/components/about.js"></script> 
+  <script src="app/components/maps.js"></script> 
+
+<script src="app/services/profileService.js"></script>
+<script src="app/services/dataSource.js"></script> 
+<!---->
+
+  <script src="app/controllers/AboutController.js"></script> 
+  <script src="app/controllers/ProfileController.js"></script> 
+<script src="app/controllers/HomeController.js"></script>
+<!--
 <script src="app/services/dataService.js"></script>
 <script src="app/services/notifier.js"></script>
 <script src="app/filters/activityMonthFilter.js"></script>
-<script src="app/controllers/HomeController.js"></script>
-  <script src="app/controllers/AboutController.js"></script> 
-  <script src="app/controllers/ProfileController.js"></script>   
-
 <script src="app/controllers/AllSchoolsController.js"></script>
 <script src="app/controllers/AllClassroomsController.js"></script>
 <script src="app/controllers/AllActivitiesController.js"></script>
 <script src="app/controllers/ClassroomController.js"></script>
 <script src="app/controllers/ClassroomSummaryController.js"></script>
 <script src="app/controllers/ClassroomMessageController.js"></script>
-
-</body>
-  <script src="components/posts.js"></script>
-  <script src="components/about.js"></script> 
-  <script src="components/maps.js"></script> 
-
-<script src="app/services/profileService.js"></script>
-<script src="app/services/dataService.js"></script>
-<script src="app/services/dataSource.js"></script> 
-<!----> 
+ 
+<script src="app/components/dtech/dtech.js"></script>  
+<script src="app/components/dag/dag.js"></script> 
+ -->
     <script src="app/controllers/register.js"></script> 
     <script src="app/controllers/globalEvents.js"></script>
     <script src="app/controllers/order.js"></script> 
-    <script src="app/controllers/dataViz.js"></script>  
+    <script src="app/controllers/dataViz.js"></script>
+ 
 
-  <script src="dist/js/main.js"></script>
+ 
+  </div>
+  
+
+  <script src="dist/js/vendor.js"></script> 
+  <script src="dist/js/main.js"></script> 
 </body>
 </html>

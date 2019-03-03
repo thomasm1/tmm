@@ -109,7 +109,7 @@ color:white;
   border:0px solid red;
     box-shadow: 0px 10px 50px silver; 
       background-color: #00b0ec;
-  background-image: url('../img/MaestasReykjavikBanner20.jpg');   
+  background-image: url('../img/MaestasReykjavikBanner20.png');   
   border-radius:0px;
   border:0px solid red;
    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);	 
@@ -189,7 +189,7 @@ min-width:500px;
 div.card-header {  
 	margin-top:5px;
 	background-color: #00b0ec;
-	background-image: url('../img/MaestasReykjavikBanner20.jpg'); 
+	background-image: url('../img/MaestasReykjavikBanner20.png'); 
 	padding-top:20px;
   min-height:180px;
   border:0px solid red;
@@ -224,7 +224,7 @@ div.col-lg-6  {
 
 	margin-top:0px;
 	background-color: #00b0ec;
-	background-image: url('../img/MaestasReykjavikBanner20.jpg'); 
+	background-image: url('../img/MaestasReykjavikBanner20.png'); 
 	padding-top:30px;
   min-height:230px;
   border-radius:0px;
@@ -270,7 +270,7 @@ div.card-block.text-center {
 li#div1m.media.list-group-item.p-4 {
    margin-top:20px;
    background-color: #00b0ec;
-background-image: url('../img/MaestasReykjavikBanner20.jpg'); 
+background-image: url('../img/MaestasReykjavikBanner20.png'); 
 	padding-top: 0px;
   min-height:180px;
   border-radius:0px;

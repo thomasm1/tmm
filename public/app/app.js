@@ -11,10 +11,22 @@
 
         $stateProvider
             .state('home', {
-                url: '/',
-                templateUrl: '/app/templates/home.html',
-                controller: 'HomeController',
-                controllerAs: 'home'
+                url: '/', 
+                views: {
+                 '': {  
+                    templateUrl: '/app/templates/home.html',
+                    controller: 'HomeController',
+                    controllerAs: 'home',
+            'columnOne@home': {
+                             template: 'This Col'},
+            'columnTwo@home': { 
+                             templateUrl: 'app/templates/chlor.html', 
+                             controller:  function($scope) {
+                                 $scope.titles = ['title-A', 'title-B', 'title-C'];
+                             }
+                         }
+                     }, 
+            }
             })
             .state('register', {
                 url: '/register',
@@ -27,13 +39,29 @@
                 controller: 'ProfileController'
             }) 
             .state('about',  { 
-                url: '/about',
-                templateUrl: 'app/templates/about.html',
-                controller: 'AboutController' 
-            } )
+                url: '/about', 
+                templateUrl: 'app/templates/about.html', 
+                controller: 'AboutController'  
+            })
             .state('chlor',  { 
                 url: '/chloropleth',
-                templateUrl: 'app/templates/chlor.html' 
+                templateUrl: 'app/templates/chlor.html', 
+                controller:  function($scope) {
+                    $scope.titles = ['title-A', 'title-B', 'title-C'];
+                }
+            } ) 
+          /*  .state('dice',  { 
+                url: '/dice',
+                templateUrl: 'app/templates/dice.html' 
+            } ) 
+           */
+           .state('codePlayer',  { 
+                url: '/codePlayer',
+                templateUrl: 'app/templates/codePlayer.html' 
+            } ) 
+            .state('planets',  { 
+                url: '/planets',
+                templateUrl: 'app/templates/views/planets.html' 
             } ) 
             .state('dendro',  { 
                 url: '/dendrogram',
@@ -57,15 +85,24 @@
                   }
                 }
             })
+            .state('dataViz', { 
+                url: '/dataViz',
+                templateUrl: 'app/templates/dataViz.html'  ,
+                controller: 'dataViz' 
+            })  
+            .state('dataEvents', { 
+                url: '/dataEvents',
+                templateUrl: 'app/templates/dataEvents.html'  ,
+                controller: 'dataEvents' 
+            })  
             .state('dataSource', {
                 url: '/dataSource',
                 templateUrl: 'app/services/dataSource.html',
                 controller: 'dataSource' 
-            })
-            .state('dataViz', { 
-                url: '/dataviz',
-                templateUrl: 'app/templates/dataviz.html'  ,
-                controller: 'dataViz' 
+            }) 
+            .state('dataMVVM', {
+                url: '/dataMVVM',
+                templateUrl: 'app/templates/dataMVVM.html' 
             }) 
             .state('schools', {
                 url: '/schools',
@@ -145,10 +182,20 @@
                         templateUrl: '/app/templates/classroomDetail.html'
                     }
                 }
-            });
+            })  
+            .state( {
+                name: 'maps',
+                url: '/maps',
+                component: 'maps'
+              })
+              .state({
+                name: 'dagdagre',
+                url: '/dag',
+                templateUrl: 'app/templates/dagdagre.html' 
+              });  
 
-
-    }]);
+    }]); 
+ 
 
     app.run(['$rootScope', '$log', function($rootScope, $log) {
 
@@ -181,7 +228,6 @@
             $log.debug('fromState', fromState);
             $log.debug('fromParams', fromParams);
         });
-
     }]);
-
+ 
 }());

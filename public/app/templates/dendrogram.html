@@ -47,7 +47,12 @@
   display:none;
 }
 svg {
-  background:url('dist/images/silverchip.png');
+  background:url('dist/img/silverchip.png');
+}
+.side-nav {
+  float:right;
+  min-width:155px;
+  max-width:155px;
 }
 
 </style>
@@ -55,10 +60,8 @@ svg {
 <script src="dist/js/d3/d3v4.min.js"></script>
 <svg id="dendrogram" width="600" height="2000"></svg>
 
-
-<script>
-
-
+<div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
+<script> 
 
 var svg = d3.select("#dendrogram"),
 
@@ -153,3 +156,5 @@ d3.csv("data/dendrogram.csv", function(error, data) {
 
 
 </script>
+
+ 

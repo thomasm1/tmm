@@ -482,14 +482,14 @@ small {
 }
 
 .panel-default {
-  background-image:   url('../images/bluechipTile.jpg')  repeat 0 !important;
+  background-image:   url('../img/bluechipTile.jpg')  repeat 0 !important;
   
   background-color: #52BAD5;
 }
 
 .container { 
   font-family: 'Poppins', sans-serif;
-  background-image: url('../images/bluechipTile.jpg') !important; 
+  background-image: url('../img/bluechipTile.jpg') !important; 
   margin-right: auto;
   margin-left: auto;
   border: 5px outset #304bb6;

@@ -1,11 +1,11 @@
 // Karma configuration
-// Generated on Mon Oct 15 2018 19:15:33 GMT-0600 (Mountain Daylight Time)
+// Generated on Sun Aug 30 2015 15:40:35 GMT+0200 (CEST)
 
 module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '/',
+    basePath: '',
 
 
     // frameworks to use
@@ -14,12 +14,18 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    files: [ 'spec/*.js',
-    'src/test/*.spec.js'
+    files: [
+      'lib/angular/angular.min.js',
+      'lib/angular/angular-resource.min.js',
+      'lib/angular/angular-route.min.js',
+      'lib/angular/angular-mocks.js',
+      'lib/bootstrap/ui-bootstrap-tpls.min.js',
+      'src/**/*.js',
+      'spec/**/*.js'
     ],
 
 
-    // list of files / patterns to exclude
+    // list of files to exclude
     exclude: [
     ],
 
@@ -55,15 +61,11 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
-
-    // Concurrency level
-    // how many browser should be started simultaneous
-    concurrency: Infinity
+    singleRun: false
   })
 }

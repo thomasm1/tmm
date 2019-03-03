@@ -1,0 +1,56 @@
+{
+  "name": "ourdailytechblog",
+  "version": "1.0.0",
+  "description": "Blog Commentaries on",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --output-public-path=/"
+  },
+  "author": "thomas maestas",
+  "license": "ISC",
+  "homepage": "http://www.thomasmaestas.com",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "d3": "^4.13.0",
+    "font-awesome": "^4.7.0",
+    "jshint-loader": "^0.8.4",
+    "popper.js": "^1.11.1",
+    "webpack": "^3.8.1",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "bundle-loader": "^0.5.0",
+    "chartjs": "^0.3.24",
+    "css-loader": "^0.28.10",
+    "file-loader": "^0.7.2",
+    "d3": "^4.13.0",
+    "json-loader": "^0.5.7",
+    "just.randomcolor": "^0.1.1",
+    "griddle-react": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.3.1",
+    "react": "^0.13.3",
+    "react-dom": "^15.1.0",
+    "react-router": "^0.13.6",
+    "style-loader": "^0.20.3",
+    "url-loader": "^0.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/thomasm1/bs5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/github.com/thomasm1/issues"
+  }
+}
