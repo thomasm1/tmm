@@ -1,0 +1,41 @@
+
+<style>
+#searchResults {
+    margin:0px auto;
+    width:90%;
+    max-height:500px;
+    overflow-y:scroll;
+}
+#dataEvents {
+    background-color:rgba(123,21,123,.5);
+}
+#kendoui {
+    margin:10px auto;
+    width:90%;
+    min-height:30px;
+}
+#cars {
+    margin:10px auto;
+    width:90%;
+}
+</style> 
+
+        <div id="dataEvents" ng-controller="dataEvents">
+        
+
+		<div id="kendoui"></div>
+
+<h4> Dynamic Data: Twitter Feed </h4>
+ 
+		<div id="searchResults"></div>
+        <h4> Interactive Data  </h4>
+
+		<div id="cars"></div>
+ 
+
+            <div kendo-tree-view="vm.treeWidget" k-options="vm.treeOptions"></div>
+
+
+        </div>
+      <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
+      
