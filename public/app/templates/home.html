@@ -73,6 +73,7 @@ span.paper {
   <button class="datum"  id="five">data transform</button>
   <button  class="datum" id="six"> data generation</button>
   <button class="datum" id="zero">clear</button>
+<<<<<<< HEAD
 
   <div class="charts">
     <span class="paper"><p class="zero"  > 
@@ -143,6 +144,75 @@ bodyElem.append('script')
     
     AngularJS + Route 53:<br />
     <a href="http://dailytechfilter.net" target="_blank">http://dailytechfilter.net aliasing http://daily-filter.s3-website-us-east-1.amazonaws.com</a>     
+=======
+
+  <div class="charts">
+    <span class="paper"><p class="zero"  > 
+    <div class="d3 one"></div>
+    
+    <svg class="d3 two " width="563" height="350"></svg>
+    <div class="d3 four">  </div> 
+    <div class="d3 five">   </div>
+    <div class="d3 six">  </div>
+    <div class="d3 seven">  </div>
+  </div> 
+
+  <div class="svgHolder" id="force"></div>
+
+
+  <div id="d3banner"></div>
+  <div id="js"></div>
+  <div id="css"></div>
+  <script type="text/javascript" >
+  var bodyElem = d3.select('#d3banner'),
+    jsElem = d3.select('#js'),
+    jsPanel = bodyElem.append('div').attr('id', 'jsPanel')
+      .style('opacity','.5')
+      .style('transform','translateY(49px)')
+      .style('width','300px');
+    cssElem = d3.select('#css'),
+    cssPanel = bodyElem.append('div').attr('id', 'cssPanel')
+      .style('opacity','.7')
+      .style('transform','translateY(90px)')
+      .style('width','300px');
+
+function setupPanel(panel, elem, title) {
+  panel.append('h3').text(title);
+  return panel.append('pre').append('code').text(elem.html().trim());
+}
+var welcome = 'Welcome'
+var jsCode = setupPanel(jsPanel, jsElem, welcome);
+var cssCode = setupPanel(cssPanel, cssElem, 'Thomas M Maestas');
+
+bodyElem.append('link')
+  .attr('rel', 'stylesheet')
+  .attr('href', '/dist/css/xcode.min.css') // hljsRoot + '/styles/xcode.min.css');
+bodyElem.append('script')
+  .attr('src', '/dist/js/vendor/highlight.min.js') // hljsRoot + '/highlight.min.js')
+  .on('load', function() {
+    hljs.highlightBlock(jsCode.node());
+    hljs.highlightBlock(cssCode.node());
+  });
+  
+// var hljsRoot = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1';
+  </script>
+  <div class="links">
+<pre id="pre">
+  <br />
+  GOOGLE CLOUD FIRESTORE  
+    Firestore Serverless Functions
+    <a href="https://ourdailytechdata.firebaseapp.com" target="_blank">https://ourdailytechdata.firebaseapp.com</a>
+    Firebase Hosting 
+    <a href="https://tm-host.firebaseapp.com" target="_blank">https://tm-host.firebaseapp.com</a> 
+    
+  AMAZON WEB SERVICES
+    Lambda Functions using Cognito Authentication 
+    <a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html</a>
+    S3 Lambda GET Serverless API Gateway
+    <a href="https://o8fasqpzp4.execute-api.us-east-1.amazonaws.com/prod/ThomasMiltonServerless" target="_blank">https://o8fasqpzp4.execute-api.us-east-1.amazonaws.com/prod/ThomasMiltonServerless</a>
+    
+    <a href="http://daily-filter.s3-website-us-east-1.amazonaws.com" target="_blank">Angular:<br /> http://daily-filter.s3-website-us-east-1.amazonaws.com</a>     
+>>>>>>> 4f1953f915eac2247707a9c7536649a0cc6c7a16
     <a href="http://tmm-react.s3-website-us-east-1.amazonaws.com/" target="_blank">React: <br /> http://tmm-react.s3-website-us-east-1.amazonaws.com</a> 
     <a href="http://our-daily-tech.s3-website-us-east-1.amazonaws.com" target="_blank">Angular: <br /> http://our-daily-tech.s3-website-us-east-1.amazonaws.com</a> 
     <a href="http://aws-tmm.s3-website-us-east-1.amazonaws.com" target="_blank">http://aws-tmm.s3-website-us-east-1.amazonaws.com</a> 
