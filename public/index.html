@@ -107,9 +107,12 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
       }
       ul.dailytech li * {
         color:darkblue;
-        }
-
-  </style>
+        } 
+      body  {margin:0px;padding:0px;
+            background-color:rgba(0, 0, 228);
+            background:url('dist/img/bluechipTile.png');}
+      
+      </style>
 </head>
 <body ng-app="app">
 
@@ -172,13 +175,17 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 </nav> 
 <div id="index" class="index">
 
-  <script src="dist/js/d3/d3v3.min.js"></script>
+  <script src="dist/js/d3/d3v3.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
   <div class="svgHolder"   id="force"></div> 
   <script type="text/javascript" src="dist/js/dag.js"></script>
 
 
 </div>
 <div ui-view></div>
+
+
+<!-- 
 <div id="index-bottom" class="index">
 
 
@@ -191,6 +198,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
   </section> 
   
 </div> 
+
   <div id="sensor"  >
   <ul> 
       <li><a ui-sref="schools" ui-sref-active="active">_..<span class="sr-only"> </span></a></li> 
@@ -198,6 +206,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
       <li><a ui-sref="activities" ui-sref-active="active">_...</a></li> 
   </ul>
   </div> 
+   -->
   <footer class="site-footer">
     <div class="row column">
       <nav class="footer-nav">
@@ -205,9 +214,9 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 <div ng-include="'app/templates/footer.html'"></div>
       </nav>
     </div>
- 
-  </footer>
 
+  </footer>
+  
 <!-- Libraries 
          
 <script src="
