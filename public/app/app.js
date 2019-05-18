@@ -49,12 +49,15 @@
                 controller:  function($scope) {
                     $scope.titles = ['title-A', 'title-B', 'title-C'];
                 }
-            } ) 
-          /*  .state('dice',  { 
-                url: '/dice',
-                templateUrl: 'app/templates/dice.html' 
-            } ) 
-           */
+            } )  
+            .state('globe_update',  { 
+                url: '/globe_update',
+                templateUrl: 'app/templates/globe_upd.html' 
+            } )  
+            .state('globe_interact',  { 
+                url: '/globe',
+                templateUrl: 'app/templates/globe_inter.html' 
+            } )  
            .state('codePlayer',  { 
                 url: '/codePlayer',
                 templateUrl: 'app/templates/codePlayer.html' 
