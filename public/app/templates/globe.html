@@ -2,10 +2,7 @@
    
   
     <h2 class="blue dailytech ">TMM MAPS</h2>
-
-    <h4>D3-JS Chloropleth Map</h4>
-    <h5>Unemployment Rate by County</h5>
-  
+ 
  
     <style>
       body { 
@@ -36,10 +33,17 @@
       margin: 6px;
         border: solid .5 darkslateblue;
     }
-
+  svg#globe {
+    width:1000px;
+    height:600px;
+  }
+  
+  
+    .map, .svgHolder, .external {
+      display:none;
+    }
   </style>
 
-<svg id="mapsvg-inter"></svg>
 <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
 
 
@@ -54,21 +58,21 @@
         width = 1000 - margin,
         height = 600 - margin;
 
-    d3.select("#mapsvg-inter")
+    d3.select("#globe")
       .append("h2")
       .text("World Cup 1930 - 2014");
       
-      d3.select("#mapsvg-inter").transition()
+      d3.select("#globe").transition()
           .duration(3000)
-          .delay(100)
-          .style("background-color", "silver");
+          .delay(100) 
+          .style("background-color", "rgba(0,0,230,.5)");
        
-    var svg = d3.select("#mapsvg-inter")
+    var svg = d3.select("#globe")
         .append("svg")
         .attr("width", width + margin)
         .attr("height", height + margin)
         .append('g')
-        .attr('class', 'map');
+        .attr('class', 'globe');
 
     var years = [];
 
@@ -88,7 +92,7 @@
                  .enter()
                  .append('path')
                  .attr('d', path)
-                 .style('fill', 'lightBlue')
+                 .style('fill', 'darkslateblue')
                  .style('stroke', 'black')
                  .style('stroke-width', 0.5);
     function plot_points(data) {
@@ -172,9 +176,9 @@
           var countries = filtered[0].values['teams'];
           function update_countries(d) {
               if(countries.indexOf(d.properties.name) !== -1) {
-                  return "lightBlue";
+                  return "darkgreen";  // active, dirty
               } else {
-                  return '#e4e6e5';
+                  return '#e4e6e5';  // unactive, pristine;
               }
           }
           svg.selectAll('path')
@@ -190,7 +194,7 @@
         year_idx++;
         if(year_idx >= years.length) {
             clearInterval(year_interval);
-            var buttons = d3.select("#mapsvg-inter")
+            var buttons = d3.select("#globe")
                     .append("div")
                     .attr("class", "years_buttons")
                     .selectAll("div")
@@ -207,12 +211,12 @@
                   .transition()
                   .duration(200)
                   .style("color", "white")
-                  .style("background", "grey");
+                  .style("background", "blue");
 
                 d3.select(this)
                   .transition()
                   .duration(200)
-                  .style("background", "lightBlue")
+                  .style("background", "blue")
                   .style("color", "darkslateblue")
                   .style("border", "solid 1px darkslateblue");
                 update(d);
@@ -239,9 +243,6 @@ Use D3 to load the GeoJSON file
 
 d3.json("data/world_countries.json", draw);
 </script>
-<h1 style="float:clear;color:darkslateblue;">World Cup Participation &amp; Attendance, 1930 - 2014</h1>
-<h4 style="float:right;color:darkslateblue;margin-right:200px;margin-top:20px;border:solid 1px darkslateblue;padding:5px;"><a style="text-decoration:none;" ui-sref="home">
-back to TMM</a></h4>
-<h4>Click on Year in Timeline Bar for</h4><h4>Geographic View of Nations</h4>
-<h3 style="float:right;color:darkslateblue;background-color:orange;margin-right:200px;margin-top:20px;border:solid 1px darkslateblue;padding:5px;"><a style="text-decoration:none;" ui-sref="globe_update">
-Click for nation view</a></h3> 
+<br /><br />
+<h3 style="float:left;color:white;">World Cup Participation &amp; Attendance, 1930 - 2014</h3>
+  

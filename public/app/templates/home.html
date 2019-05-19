@@ -2,9 +2,6 @@
 <link rel="stylesheet" href="dist/css/iris.css" />
 <script src="dist/js/d3/d3v4.min.js"></script> 
 <style>
-  .charts { 
-  min-height:80px; 
-}
 .d3 {
   min-height:390px;
   background-color:transparent; 
@@ -59,16 +56,15 @@ span.paper {
     background: url('dist/img/bluechipTileT8.png');
       }
 .blue {
-  font-family:monoton;
+  font-family:'Roboto';
 }
 .map {
   z-index:0;
+  display:block;
 }
 </style>
 
 <div id="home">
-
-  <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
 
   <button class="datum" id="one">data source</button>
   <button  class="datum" id="two">data flux</button>
@@ -80,10 +76,13 @@ span.paper {
   <button  class="datum" id="six"> data generation</button>
   <button class="datum" id="zero">clear</button>
 
+  <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
+
   <div class="charts">
-    <span class="paper"><p class="zero"  > 
-    <div class="d3 one"></div>
-    
+    <span class="paper">
+        <p class="zero"  ></p> 
+    </span>
+    <div class="d3 one"></div> 
     <svg class="d3 two " width="563" height="350"></svg>
     <div class="d3 four">  </div> 
     <div class="d3 five">   </div>

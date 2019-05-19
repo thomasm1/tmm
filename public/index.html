@@ -31,6 +31,9 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
     <link rel="stylesheet" href="dist/css/app.css" />
     
   <style> 
+    .map {
+      display:none;
+    }
     .ui-view {
       margin-top:50px; 
     }
@@ -99,7 +102,7 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
         left: 95%;
         min-width: 90px;
         max-width: 90px;
-        z-index:0;
+        z-index:3;
       }   
       ul.dailytech {
         border-radius:8px;
@@ -182,8 +185,10 @@ If you need help with R, Python, Stata or SPSS, contact Thomas Maestas. Thomas w
 
 
 </div>
+
 <div class="map"></div>
 <div ui-view></div>
+<svg id="globe"></svg> 
 
 
 <!-- 

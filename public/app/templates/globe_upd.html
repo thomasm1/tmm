@@ -18,10 +18,13 @@
     stroke: #fff;
     stroke-linejoin: round;
   }
-svg#ssvg {
-  min-width:1000px;
-  min-height:600px;
+svg#mapsvg-upd {
+width:1000px;
+ height:600px;
 }
+    .maps, .svgHolder {
+      display:none;
+    }
 .side-nav {
   float:right; 
             position:absolute;
@@ -33,7 +36,6 @@ max-width:135px;
 }
 </style>
 
-<svg id="mapsvg-upd"></svg>
 <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>

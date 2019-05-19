@@ -4,9 +4,15 @@
   font-weight:bold;
   padding:4px 0 4px 4px;
 } 
+    nav.rightmenu * {
+      text-align: left;
+      font-family: 'roboto';
+      font-size:1.7rem;
+
+    }
 .blue {
   color:blue;
-  font-size:1.5rem; 
+  font-weight:bold !important; 
   border:solid;
   border-width:.5px;
   border-color:skyblue;
@@ -17,15 +23,15 @@
         <div class="nav flex-column rightnav sidebar-sticky home-nav"> 
           <div class="  list-group">     <br />
           
-              <span class="blue">&nbsp;Data-Driven Documents(d3js)&nbsp;</span> <br />
+              <span class="blue">&nbsp;Data-Driven Documents(&nbsp;</span> <br />
               <a ui-sref="globe" ui-sref-active="active"  class="yellow  list-group-item list-group-item-action">Dynamic Maps</a> 
               <a ui-sref="chlor" ui-sref-active="active" class="yellow  list-group-item list-group-item-action">Static Maps</a>   
               <a ui-sref="planets" ui-sref-active="active" class="yellow  list-group-item list-group-item-action">Dynamic Data</a>   
               <a ui-sref="dendro" ui-sref-active="active" class="yellow  list-group-item list-group-item-action">Static Data</a>
               <a ui-sref="dataMVVM" ui-sref-active="active"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-              <br />
-              <span class="blue">&nbsp;TMM External Links&nbsp;</span>   
-
+         <br /><br /><br />
+         <div class="external">
+           <span class="blue">&nbsp;TMM External Links&nbsp;</span>    
            <a href="http://tmm.net.s3-website-us-east-1.amazonaws.com" target="_blank" class="yellow  list-group-item list-group-item-action">OMBD Film Search  &nbsp;<img class="external-link" width="18px" src="dist/img/external.png"/></a>
            <a href="https://thomasmaestas.net/dag-dagre/"  target="_blank"  class="yellow  list-group-item list-group-item-action">DAG to JSON<br />Live Editor Tool    &nbsp;<img class="external-link" width="18px" src="dist/img/external.png"/></a>
             <a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/#/codePlayer"  target="_blank"  class="yellow  list-group-item list-group-item-action">JavaScript/HTML/CSS <br />Live Editor Tool    &nbsp;<img class="external-link" width="18px" src="dist/img/external.png"/></a>
@@ -40,7 +46,6 @@
             <br /><span class="blue">&nbsp;Fiction&nbsp;</span>
             <a href="https://ourdailytech.net/_For_Cat_Eyes_Only_" target="_blank"  class=" list-group-item list-group-item-action com btn btn-primary"><small>_For_Cat_Eyes_Only_&nbsp;<img class="external-link" width="18px" src="dist/img/external.png"/><br />
             </a> <br /> 
-          </div>
     
     
           <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 pull-right">
@@ -51,8 +56,10 @@
             <h5>Number of subsensors listed: </h5>
             <p>{{ home.classroomCount }}</p>
             <h5>Number of supersensors listed: </h5>
-            <p>{{ home.activityCount }}</p>
-    
+            <p>{{ home.activityCount }}</p> 
           </div>
+          </div> <!--end external class 
+          </div> -->
+
         </div>
       </nav>
