@@ -1,0 +1,1 @@
+Computer/Administrative Templates/Windows Components/Windows PowerShell
