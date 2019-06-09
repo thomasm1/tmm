@@ -1,131 +1,302 @@
- 
-    
-    <title>TMM | About</title> 
-       
-    <link rel="stylesheet" href="dist/css/about.css" /> 
-    <style> 
-           
-div#force.svgHolder {
-   display:none;
-}
+<title>
 
+    TMM | About</title>
+   <link rel="stylesheet" href="dist/css/profile.css" /> 
+    <style>.canvas2 {
+            z-index:1;position:fixed;
+            overflow:visible;left:200px;top:200px;}
+            
+            #profile { 
+                padding:10px;
+                margin:10px;
+            }
+          .svgHolder {
+            display:none;
+          }
+          
     ul {
         list-style-type:none;
         padding:0;
     }
     ul li {
-        padding:0;
+        padding:5px;
+        margin:5px;
     } 
+    a.white {
+      color:white;
+    }
         </style>
-   
-    <!-- multi_drop_menu END 1 -->
+<style>
+    div#force.svgHolder {
+        display: none;
+    }
+     
+     
+    #desc {
+        text-align:justify;
+        padding:20px;
+        margin-right:30px;
+    }
+    p#desc {
+        font-size:1.5rem;
+    }
+    img, frame {
+        padding:10px;
+        border:1px solid darkblue;
+    }
+
+     
+    ul {
+        list-style-type:none;
+        padding:0;
+    }
+    ul li {
+        padding:5px;
+        margin:5px;
+    } 
+    a.white {
+      color:white;
+    }
+    /*                 #secret-button  ******* */
+
+
+.secret {
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    padding: 10px;
+    font-family: 'Roboto';
+    cursor: pointer;
+    outline: none; 
+    background-color: transparent;
+    padding: 10px; 
+    cursor: pointer;
+    outline: none;
+}
+
+.secret:hover {
+    background-color: steelblue;
+    color: #0b5e9c;
+    cursor: pointer;
+}
+  
+.paragraph {
+    max-height:650px;
+    overflow-y:scroll;
+}
  
-    <div >
-    <div class="container">
+    #secret-button {
+    color:aliceblue; 
+    font-family:'monoton';
+    }
+    #secret-button::before {
+        content: "Thomas M. Maestas";
+    }
+    #secret-button:hover { 
+    color:yellow;
+    font-weight:bold;
+    cursor: pointer;
+    border:solid .5px white; 
+    } 
+    #secret-button:hover::before {
+        content: "About Thomas M. Maestas";
+      }
+   a, span {
+       color:aliceblue;
+   }
+    #secret-paragraph { 
+    font-family:'Roboto'; 
+    display:none;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:justify;
+    max-height:500px;
+    overflow-y:scroll;
+    max-width:95%;
+    background-color:rgb(6, 2, 61);
+    background-image:url('dist/img/bluechipTile.png');
+    }
+
+    #secret-paragraph .firstparagraph::first-letter {
+        font-size: 200%;
+        font-weight: bold;
+        border: solid thin white;
+        padding: 4pt;
+        margin: 15px 4px 5px 0px;
+    } 
+    .active {
+        color:yellow;
+    }
+    #aboutme {
+        text-align:justify;
+    }
+  div#aboutme a {
+        color:skyblue;
+    }
+</style>
+
+<!-- multi_drop_menu END 1 -->
+     <div  class="container"   >
+           
+        <div class="row">
+                <div   class="multi_drop_menu">
+                        <ul>
+                         <li>
+                                    <a class="dailytech white"  ui-sref-active="active" ui-sref="about"> ABOUT  
+                                    </a>
+                                    <ul> 
+                                   
+                                   
+                                    </ul>
+                                </li>
+
+                                <li> 
+                                    <a  ui-sref-active="active" ui-sref="profile"  class="dailytech pro white "> 
+                                        Portfolio </a>
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.thomasmaestas.net/dist/docs/CV_2019_MaestasThomas.pdf" target="_blank">CV-english</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.thomasmaestas.net/dist/docs/docu/CV2017_frMaestasThomas_.pdf" target="_blank">CV-français</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://hdl.handle.net/1928/31677" target="_blank">Education Thesis</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.thomasmaestas.net/dist/docs/docu/DataPresentADD_health_networks.pdf" target="_blank">Education Data Analysis R-LaTeX</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.thomasmaestas.net/dist/docs/docu/ADAHighSchoolNetworks.html" target="_blank">Education Data Analysis R-3.3</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.thomasmaestas.net/dist/docs/docu/edregression.htm" target="_blank">Education Data Analysis SPSS-24</a>
+                                        </li>
                 
-          <img class="zoom" style="border:1px solid blue;border-radius: 30px 10px;width:120px;float:right;" src="dist/img/webCottonwood.jpg" />
-<br /><br />
-        <div id="thomas">     
-<h4 class="secret" id="secret-button" ng-click="toggleSecretState()"></h4>
-<p id="secret-paragraph">&nbsp;</p>
-          </div> 
- 
+                                        <li>
+                                            <a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime"
+                                                target="_blank">Environment Data Analysis Tableau</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.thomasmaestas.net/d3/globe_interact.html"> Data Visualization D3.js</a>
+                                        </li>
+                
+                
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a  class="dailytech white">
+                                        <span  >Conference 
+                                            <br />Presentations</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;">
+                                                <span>
+                                                    <em>
+                                                        <strong>
+                                                            "Great Expectations Deferred: Contextualizing Community College Transfer Intentions"
+                                                            <br
+                                                            />
+                                                        </strong>
+                                                    </em>
+                                                </span>2016 ASA-American Sociological Conference
+                                                <br />@Seattle, WA</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://hscmediasite.unm.edu/unm/Catalog"
+                                                target="_blank" style="width:350px;">
+                                                <span>
+                                                    <strong>
+                                                        <em>
+                                                            "Social Determinants of Healthy Aging"
+                                                            <br />
+                                                        </em>
+                                                    </strong>
+                                                </span>Dec 2015 UNM Health Sciences Institute for Ethics Colloquium
+                                                <br />@Albuquerque, NM</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://tinyurl.com/pcq6mjx" target="_blank" style="width:350px;">
+                                                <span>
+                                                    <i>
+                                                        <strong>"The Effects of Peer Association on Adolescents' Graduation Outcomes: An HLM
+                                                            Approach"
+                                                            <br />
+                                                        </strong>
+                                                    </i>
+                                                </span>2015 ASA Conference
+                                                <br />@Chicago, Illinois</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf"
+                                                target="_blank" style="width:350px;">
+                                                <span>
+                                                    <em>
+                                                        <strong>
+                                                            "Great Expectations: A Study on the Determinants of College Graduation Expectations"
+                                                            <br
+                                                            />
+                                                        </strong>
+                                                    </em>
+                                                    2014 NIH-UNC Adolescent Health Data Users Conference, Session 6
+                                                    <br /> @Bethesda, Maryland
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                </div>
+        </div>
 
         <hr>
 
-        <div class="row">
-
-            <div class="col-xs-7 media mediat">
- 
-
-                    <div class="media-body">
-
-
-
-                        <ul>
-                            <li class="two">Mobile &amp; Web App Development :<br />
-                                <small>
-                                    <i> Vanilla JS, React 16, Angular 5, Modernizr</i>
-                                </small>
-                            </li>
-                            <li class="one">Data Analysis and Visualization :<br />
-                                <small>
-                                    <i> Python Pandas, R, Plot.ly, D3-JS</i>
-                                </small>
-                            </li>
-                            </small>
-                            </li>
-
-                            <li class="two">Language Translation :<br />
-                                <small>
-                                    <i> French, Spanish </i>
-                                </small>
-                            </li>
-
-                            <li class="one">Statistical Syntax Translation :<br />
-                                <small>
-                                    <i> R 3.1-3.4 to/from Python 2.7-3.6</i>
-                                </small>
-                            </li>
-                            </small>
-
-                        </ul>
-                      
-                    </div>
- 
-
-            </div> 
-          
-            <div class="col-xs-5  mediat  ">
-
-
-                <div class="row  "> 
-                    <div class="col-lg-6 mediac  ">
-                                <h4>Contact Information
-                            <br /></h4>
-              
-<br />
-                        <h6 class="two lowercase">
-                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                            <a target="_blank" class= href="http://thomasmaestas.net">  &nbsp;www.thomasmaestas.net</a>
-                        </h6>
-                      
-
-
-                        <h6 class="lowercase">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
-                            <a target="_blank" href="mailto:thomas@ourdailytech.com">  &nbsp;thomas@ourdailytech.com</a>
-                        </h6>
-                        <h6 class="two lowercase">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
-                            <a target="_blank" href="mailto:thomas@ourdailytech.com">  &nbsp;thomas.maestas@hotmail.com</a>
-                        </h6>
-
-                        <h6 class="  lowercase">
-                            <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
-                            <a target="_blank" href="https://github.com/thomasm1">  &nbsp;github.com/thomasm1</a>
-                        </h6>
-                        <h6 class="two capitalize">
-                            <span class="glyphicon glyphicon-download" aria-hidden="true"> </span>
-                            <a target="_blank" href="dist/docs/CV_2019_MaestasThomas.pdf"> &nbsp;2019 CV Download</a>
-                        </h6>
-                        <h6 class="  lowercase">
-                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>   <span style="color:lightskyblue"> <span class="capitalize">Albuquerque, NM; </span> </span>
-                        </h6>
-                    </div>
-
+       
                 </div>
 
             </div>
-            <div>
-                 
- 
-            </div>
-            <iframe id="iframe" width="422" height="240" src="https://www.youtube.com/embed/RfJgT89hEME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <img src="dist/img/earthSpaceDefense.jpg" style="float:right;width:100%;" class="zoom">
-                            <p style="text-align:right;">2015 casting as Earth Space Defense Major General, (blue) 4th from right; Trailer:@ 00:43</p>  
-    
-    </div>
- 
+          
+    <div class="container">
+<div id="aboutme">
 
-</div>
+    <h5 style="text-align:center">Hello, I'm Thomas, Thank you for  visiting my site.</h5>
+  <p class="firstparagraph">   Technology shapes much of my life, and in many respects it frames my future plans! <br />
+  Technology is integral to my professional, academic, and enterprising endeavors, 
+  and    I love to chime in about so many topics of the Day...  
+  </p>
+  <p  class="firstparagraph">
+  My career pursuits  has focused on data analytsis on topics like education evaluation in K-12 and higher education. Now, extend my data-related experience into web-app designs and development, specializing in data visualization with JavaScript and Python programming.  
+  In 2015, I earned my Masters in Quantitative Sociology from  <a href="http://www.unm.edu" target="_blank"> <span>the University of New Mexico</span></a>--an education that continues to guide my professional aims. I love to read and study languages, so naturally I earned my Bachelors in French History.   I began sociology of education doctoral studies at <a href="" target="_blank">l'Universit&eacute; de Montr&eacute;al</a> in the Fall of 2016, but discontinued in order to pursue my tech career.
+ </p>
+  <p  class="firstparagraph"> My social media, you can find me ...
+  <span><a href="https://www.quora.com" target="_blank">Quora,</a><a href="https://www.historum.com" target="_blank"> Historium, </a><a href="https://www.instagram.com" target="_blank">Instagram, </a><a href="https://www.facebook.com" target="_blank">Facebook, </a><a href="https://www.meetup.com" target="_blank">Meet-Up, </a> Hiking Group, and Alliance Francaise.</span>  I have lived in
+<a href="https://www.parisinfo.com/" target="_blank">Paris, France</a> and
+<a href="http://www.ny.gov/" target="_blank">New York</a> and <a href="https://www.visittheusa.com/state/texas" target="_blank">Texas. I currently live in the Wild West, Albuquerque, New Mexico where I contract my small business, <a href="http://www.thomasmaestas.net/"> <span> T M M</span></a>, providing Contractual Services and Consulting for Big &amp; Small Data and Web solutions since 2016</span>
+</a>   </p>  
+</ul>
+</div> <!--end aboutme -->
+        <img class="zoom" style="border:1px solid blue;border-radius: 30px 10px;width:120px;float:right;" src="dist/img/webCottonwood.jpg" />
+        <br /><br />
+        <div id="thomas">
+
+            <h4 class="secret" id="secret-button" ng-mouseover="toggleSecretState()"> </h4>
+            <p id="secret-paragraph">&nbsp;</p>
+        </div>
+
+
+        <hr>
+
+        <div class="row"> 
+
+            <div class="col-xs-5  mediat  ">
+
+                <p id="desc">2015 casting as Earth Space Defense Major General, (blue) 4th from right; Trailer:@ 00:43</p>
+
+            </div> 
+            <iframe id="iframe" width="422" height="240" src="https://www.youtube.com/embed/RfJgT89hEME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <img src="dist/img/earthSpaceDefense.jpg" style="float:right;width:100%;" class="zoom"><br />
+            
+        </div>
+ 
+    </div>

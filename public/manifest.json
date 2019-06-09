@@ -1,15 +1,7 @@
 {
-  "short_name": "TMM App",
-  "name": "tmm",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "slateblue"
+  "main.css": "static1/css/main.css",
+  "main.css.map": "static/css/main.c17080f1.css.map",
+  "main.js": "static1/js/main.js",
+  "main.js.map": "static/js/main.11d9061f.js.map",
+  "static\\media\\favicon.ico": "static/media/favicon.ico"
 }

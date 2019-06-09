@@ -9,6 +9,24 @@ form#registrationForm {
 div.svgHolder#force {
  display:none;
 }
+#registrationForm input {
+    font-size:.9rem;
+    float:left;
+    max-height:30px;
+
+}
+
+    ul {
+        list-style-type:none;
+        padding:0;
+    }
+    ul li {
+        padding:5px;
+        margin:5px;
+    } 
+    a.white {
+      color:white;
+    }
 </style>
 <div ng-controller="registerController as vm">
      <!--
@@ -36,8 +54,7 @@ div.svgHolder#force {
                 </div>
             </div>
         </div> 
-        <section class="form-wrap"> 
-            <h3>Observatory and Meteorological Dashboard</h3>
+        <section class="form-wrap">  
             <form id="registrationForm"> 
              
               <input type="submit" value="Dashboard"><br /><br />
@@ -50,10 +67,10 @@ div.svgHolder#force {
               <input type="password" id="password2InputRegister" placeholder="Confirm Password" pattern=".*" required> <br /><br /> 
             </form>
         </section>  
-        <script src="dist/js/vendor/aws-cognito-sdk.min.js"></script>
+        <!-- <script src="dist/js/vendor/aws-cognito-sdk.min.js"></script>
         <script src="dist/js/vendor/amazon-cognito-identity.min.js"></script>
         <script src="dist/js/config.js"></script>
-        <script src="dist/js/cognito-auth.js"></script> 
+        <script src="dist/js/cognito-auth.js"></script>  -->
 
 
 </div>

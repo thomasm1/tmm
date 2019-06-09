@@ -17,14 +17,10 @@
   border: solid 1px blue;   
 } 
 .six * {margin-top:440px;
-}
-.links {
-    max-width:500px;  
-    float:right;
-    position:absolute;
-    top:600px;
-    margin:10px;
 } 
+pre {
+  max-height:500px;
+}
 pre#pre {
   background:url('dist/img/bluechipTileT8.png');
     margin:0;
@@ -56,15 +52,34 @@ span.paper {
     background: url('dist/img/bluechipTileT8.png');
       }
 .blue {
-  font-family:'Roboto';
+  font-family:'Roboto'; 
+  color:darkblue;
 }
 .map {
   z-index:0;
   display:block;
 }
+#btns {
+  position:absolute;
+  top:130px;
+  left:10px;
+}
+
+    ul {
+        list-style-type:none;
+        padding:0;
+    }
+    ul li {
+        padding:5px;
+        margin:5px;
+    } 
+    a.white {
+      color:white;
+    }
 </style>
 
 <div id="home">
+<div id="btns">
 
   <button class="datum" id="one">data source</button>
   <button  class="datum" id="two">data flux</button>
@@ -75,7 +90,7 @@ span.paper {
   <button class="datum"  id="five">data transform</button>
   <button  class="datum" id="six"> data generation</button>
   <button class="datum" id="zero">clear</button>
-
+  </div>
   <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
 
   <div class="charts">
@@ -167,38 +182,5 @@ bodyElem.append('script')
   
 // var hljsRoot = 'https://cdnjs.csloudflare.com/ajax/libs/highlight.js/8.1';
   </script> -->
-  <div class="links">
-   <span class="blue">&nbsp;TMM Cloud Deployments&nbsp;</span>  
-<pre id="pre">
-
-  GOOGLE CLOUD FIRESTORE  
-    Firestore Serverless Functions
-    <a href="https://ourdailytechdata.firebaseapp.com" target="_blank">https://ourdailytechdata.firebaseapp.com</a>
-    Firebase Hosting 
-    <a href="https://tm-host.firebaseapp.com" target="_blank">https://tm-host.firebaseapp.com</a> 
-    
-  AWS CLOUD & SERVERLESS
-    Cognito Authentication Lambda + API Gateway
-    <a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html</a> 
-    React + S3:     
-    <a href="http://tmm-react.s3-website-us-east-1.amazonaws.com/" target="_blank">http://tmm-react.s3-website-us-east-1.amazonaws.com</a> 
-    Route 53 + S3 using API Gateway: Lambda GET Method
-    <a href="http://thomasmilton.net" target="_blank">http://thomasmilton.net 
-    https://o8fasqpzp4.execute-api.us-east-1.amazonaws.com/prod/thomasMiltonFunction</a>
-    AngularJS + Route 53: 
-    <a href="http://dailytechfilter.net" target="_blank">http://dailytechfilter.net aliasing http://daily-filter.s3-website-us-east-1.amazonaws.com</a> 
-    Angular: 
-    <a href="http://our-daily-tech.s3-website-us-east-1.amazonaws.com" target="_blank">http://our-daily-tech.s3-website-us-east-1.amazonaws.com</a> 
-
-  AMAZON RDS + S3  DATABASE ENDPOINTS 
-    AWS S3 Static NoSQL Storage
-    <a href="https://s3.amazonaws.com/tmm-nov/posts/april.json" target="_blank">https://s3.amazonaws.com/tmm-nov/posts/april.json</a>
-    Amazon RDS Relational PostgreSQL Database 
-    <a  >sensor-instance.caq9hvksjohf.us-east-1.rds.amazonaws.com</a> 
-    S3 Static Hosting 
-    <a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com</a> 
-    <br /><br />
-    <br /><br />  
-</pre>
-  </div>
+ 
 </div>

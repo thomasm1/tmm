@@ -505,10 +505,10 @@ small {
   padding-bottom: 0px;
 }
 .container a {
-  color:lightskyblue;  
+  color:darkblue;  
 }
 .container p {
-  padding:1%; 
+  padding:2%; 
 } 
 .primary_header {
   text-align: center;

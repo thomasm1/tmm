@@ -5,8 +5,9 @@
 
 	function AboutController(  $state) {
 
-			var vm = this;
-  
+			var vm = this; 
+
+			
 	console.log(' AboutController loaded...');
  
  

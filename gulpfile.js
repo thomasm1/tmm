@@ -58,5 +58,5 @@ gulp.task('serve', ['sass'], function () {
 });
 
 // Default Task   // gulp
-gulp.task('default', ['message', 'copyHtml', 'imageMin']);
+gulp.task('default', ['sass', 'message', 'copyHtml', 'imageMin']);
 // gulp serve
