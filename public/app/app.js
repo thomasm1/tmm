@@ -60,7 +60,7 @@
             } ) 
             .state('planets',  { 
                 url: '/planets',
-                templateUrl: 'app/templates/views/planets.html' 
+                templateUrl: 'app/templates/planets.html' 
             } ) 
             .state('dendro',  { 
                 url: '/dendrogram',
