@@ -12,10 +12,10 @@ gulp.task('message', function(){
   });
 
 // Copy All HTML files
-gulp.task('copyHtml', function(){
-    gulp.src(['public/*.html','public/templates/*.html','public/templates/views/*.html'])
-        .pipe(gulp.dest('public/dist/html'));
-  });
+//gulp.task('copyHtml', function(){
+//    gulp.src(['public/*.html','public/app/templates/*.html'])
+//        .pipe(gulp.dest('public/dist/html'));
+//  });
   
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function () {
@@ -27,9 +27,9 @@ gulp.task('sass', function () {
  
 // Optimize img
 gulp.task('imageMin', () =>
-	gulp.src('public/src/images/*')
+	gulp.src('public/src/img/*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('public/dist/images'))
+		.pipe(gulp.dest('public/dist/img'))
 );
 
 // Minify JS
@@ -58,5 +58,5 @@ gulp.task('serve', ['sass'], function () {
 });
 
 // Default Task   // gulp
-gulp.task('default', ['sass', 'message', 'copyHtml', 'imageMin']);
+gulp.task('default', ['sass', 'message',  'imageMin']); // 'copyHtml'  (unneeded)
 // gulp serve

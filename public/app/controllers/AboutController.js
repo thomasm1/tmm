@@ -81,7 +81,7 @@
 	 <ul >
 		<li  > Thomas Provides Contractual Services and Consulting for Big &amp; Small Data and Web solutions since 2016 </span>
 
-			<a href="http://www.thomasmaestas.net/"> <span> T M M </span></a>
+			<a href="https://thomasmaestas.net/"> <span> T M M </span></a>
 			
 					<li>Masters Sociology and Bachelors French History <a href="http://www.unm.edu" target="_blank"> <span>University of New Mexico, Albuquerque</span></a>
 

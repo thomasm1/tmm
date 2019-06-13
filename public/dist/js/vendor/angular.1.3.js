@@ -16452,7 +16452,7 @@ var inputType = {
         <file name="index.html">
          <script>
            function Ctrl($scope) {
-             $scope.text = 'http://google.com';
+             $scope.text = 'https://google.com';
            }
          </script>
          <form name="myForm" ng-controller="Ctrl">
@@ -16475,7 +16475,7 @@ var inputType = {
           var input = element(by.model('text'));
 
           it('should initialize to model', function() {
-            expect(text.getText()).toContain('http://google.com');
+            expect(text.getText()).toContain('https://google.com');
             expect(valid.getText()).toContain('true');
           });
 
