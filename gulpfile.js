@@ -10,12 +10,7 @@ const concat = require('gulp-concat');
 gulp.task('message', function(){
     return console.log('Gulp TMM is running...');
   });
-
-// Copy All HTML files
-//gulp.task('copyHtml', function(){
-//    gulp.src(['public/*.html','public/app/templates/*.html'])
-//        .pipe(gulp.dest('public/dist/html'));
-//  });
+ 
   
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function () {
@@ -27,7 +22,7 @@ gulp.task('sass', function () {
  
 // Optimize img
 gulp.task('imageMin', () =>
-	gulp.src('public/src/img/*')
+	gulp.src(['public/src/img/*.jpg','public/src/img/*.png','public/src/img/*.PNG'])
 		.pipe(imagemin())
 		.pipe(gulp.dest('public/dist/img'))
 );
@@ -58,5 +53,4 @@ gulp.task('serve', ['sass'], function () {
 });
 
 // Default Task   // gulp
-gulp.task('default', ['sass', 'message',  'imageMin']); // 'copyHtml'  (unneeded)
-// gulp serve
+gulp.task('default', ['sass', 'message',  'imageMin']);   // gulp serve
