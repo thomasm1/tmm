@@ -1,11 +1,11 @@
-//require('babel-loader');
+require('babel-loader');
 const path = require('path');  
 
 module.exports = {
   entry: {
     app: [
       'babel-polyfill',
-      './public/src/js/app.js' 
+      './index.js' 
     ],
   },
   output: {
