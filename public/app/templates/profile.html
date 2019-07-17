@@ -4,7 +4,8 @@
     
        
     <link rel="stylesheet" href="dist/css/profile.css" /> 
-    <style>.canvas2 {
+    <style>
+    .canvas2 {
             z-index:1;position:fixed;
             overflow:visible;left:200px;top:200px;}
             
@@ -20,6 +21,13 @@
         list-style-type:none;
         padding:0;
     }
+    .progress-bar-success {
+      color: darkblue  !important ;
+    }
+    
+    .progress-bar-warning {
+      color: darkblue  !important;
+    }
     ul li {
         padding:5px;
         margin:5px;
@@ -29,256 +37,63 @@
     }
     h4 {
       color:darkblue;
+      font-weight:normal;
     }
     h3 {
       color:darkred;
       padding:20px;
       font-weight:bold;
-    }
+    } 
         </style>
    
     <!-- multi_drop_menu END 1 -->
- 
-    <div >
-    <div  class="container">
-           
-        <div class="row">
-                <div   class="multi_drop_menu">
-                        <ul>
-                         <li>
-                                    <a class="dailytech white" ui-sref="about"> About  
-                                    </a>
-                                    <ul> 
-                                   
-                                   
-                                    </ul>
-                                </li>
-
-                                <li> 
-                                    <a ui-sref="profile" class="dailytech pro white "> 
-                                        Portfolio </a>
-                                    <ul>
-                                        <li>
-                                            <a href="https://thomasmaestas.net/dist/docs/CV_2019_MaestasThomas.pdf" target="_blank">CV-english</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://thomasmaestas.net/dist/docs/docu/CV2017_frMaestasThomas_.pdf" target="_blank">CV-français</a>
-                                        </li>
-                                        <li>
-                                            <a href="http://hdl.handle.net/1928/31677" target="_blank">Education Thesis</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://thomasmaestas.net/dist/docs/docu/DataPresentADD_health_networks.pdf" target="_blank">Education Data Analysis R-LaTeX</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://thomasmaestas.net/dist/docs/docu/ADAHighSchoolNetworks.html" target="_blank">Education Data Analysis R-3.3</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://thomasmaestas.net/dist/docs/docu/edregression.htm" target="_blank">Education Data Analysis SPSS-24</a>
-                                        </li>
-                
-                                        <li>
-                                            <a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime"
-                                                target="_blank">Environment Data Analysis Tableau</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://thomasmaestas.net/d3/globe_interact.html"> Data Visualization D3.js</a>
-                                        </li>
-                
-                
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a  class="dailytech white">
-                                        <span  >Conference 
-                                            <br />Presentations</span>
-                                    </a>
-                                    <ul>
-                                        <li>
-                                            <a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;">
-                                                <span>
-                                                    <em>
-                                                        <strong>
-                                                            "Great Expectations Deferred: Contextualizing Community College Transfer Intentions"
-                                                            <br
-                                                            />
-                                                        </strong>
-                                                    </em>
-                                                </span>2016 ASA-American Sociological Conference
-                                                <br />@Seattle, WA</a>
-                                        </li>
-                                        <li>
-                                            <a href="http://hscmediasite.unm.edu/unm/Catalog"
-                                                target="_blank" style="width:350px;">
-                                                <span>
-                                                    <strong>
-                                                        <em>
-                                                            "Social Determinants of Healthy Aging"
-                                                            <br />
-                                                        </em>
-                                                    </strong>
-                                                </span>Dec 2015 UNM Health Sciences Institute for Ethics Colloquium
-                                                <br />@Albuquerque, NM</a>
-                                        </li>
-                                        <li>
-                                            <a href="http://tinyurl.com/pcq6mjx" target="_blank" style="width:350px;">
-                                                <span>
-                                                    <i>
-                                                        <strong>"The Effects of Peer Association on Adolescents' Graduation Outcomes: An HLM
-                                                            Approach"
-                                                            <br />
-                                                        </strong>
-                                                    </i>
-                                                </span>2015 ASA Conference
-                                                <br />@Chicago, Illinois</a>
-                                        </li>
-                                        <li>
-                                            <a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf"
-                                                target="_blank" style="width:350px;">
-                                                <span>
-                                                    <em>
-                                                        <strong>
-                                                            "Great Expectations: A Study on the Determinants of College Graduation Expectations"
-                                                            <br
-                                                            />
-                                                        </strong>
-                                                    </em>
-                                                    2014 NIH-UNC Adolescent Health Data Users Conference, Session 6
-                                                    <br /> @Bethesda, Maryland
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                            </ul>
-                </div>
-        </div>
-
-        <hr>
-
-       
-                </div>
-
-            </div>
-          
+  
 <div class="container" >
- 
-
-  <div class="panel">
-
-    <div  >
-
-
-   <!--   <div class="panel-group" id="accordion"> 
-          
-  <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <p>I offer services for analyzing large data or small data, qualitative or quantitative data. Professional reporting
-                of results for academic journals and business briefs, meeting the analysis demands of professionals, students,
-                and researchers.</p> 
-                <p>I have experience analyzing data from diverse fields, including sociology, criminology, natural resources,
-                    education, mental health, and business, among others.
-                  </p>
-                  <p>
-                    <strong> Past Projects </strong> include research design, completion, analysis, and report production for the Institute
-                    of Social Research at the University of New Mexico, natural gas pipeline analysis for Xpansiv Data Systems,
-                    and a bilingual program evaluation for Pivot Evaluation.
-                    <br />
-                    <br /> If you need help with R, Python, Stata or SPSS, contact me at
-                    <a style="color:yellow;" href="mailto:thomas@ourdailytech.com"> thomas@ourdailytech.com</a> and I can perform the analysis for you so you can focus on your project and avoid
-                    the statistical package learning curve.
-                  </p>
-
-            </div>
-          </div>
-           --> 
-        <div class="hidden panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion"  >
-                <h4> Data Analytics
-                </h4>
-              </a>
-            </h4>
-          </div>
-          <div id="collapse2" class="panel-collapse collapse">
-            <div ng-if="about" class="panel-body">
-           <div ng-include="'app/templates/about.html'">
-           
-              <!-- <p>I have experience analyzing data from diverse fields, including sociology, criminology, natural resources,
-                education, mental health, and business, among others.
-              </p>
-              <p>
-                <strong> Past Projects </strong> include research design, completion, analysis, and report production for the Institute
-                of Social Research at the University of New Mexico, natural gas pipeline analysis for Xpansiv Data Systems,
-                and a bilingual program evaluation for Pivot Evaluation.
-                <br />
-                <br /> If you need help with R, Python, Stata or SPSS, contact me at
-                <a style="color:yellow;" href="mailto:thomas@ourdailytech.com"> thomas@ourdailytech.com</a> and I can perform the analysis for you so you can focus on your project and avoid
-                the statistical package learning curve.
-              </p> -->
-             
-             </div> <!--end ng-include-->  
-            </div>
-          </div>
-        </div>
-       
-      </div>
-    </div>
- 
-
-
-    <div class="row">
-
-    </div>
-
-    <hr>
-
+  
     <div class="row">
 
       <div class="col-xs-6">
 
-        <div class="media mediat">
+        <div id="skills" class="media mediat skills">
 
-
-          <div class="media-body col-lg-6">
-
+ 
             <h4>Skills </h4>
 
-            <ul>
-              <li class="two">Mobile &amp; Web App Development :
-                <br />
-                <small>
-                  <i> Vanilla JS, React 16, Angular, Kendo-UI</i>
-                </small>
-              </li>
-              <li class="one">Data Analysis and Visualization :
-                <br />
-                <small>
-                  <i> Python Pandas, R, Plot.ly, D3-JS</i>
-                </small>
-              </li>
-              </small>
-              </li>
-
-              <li class="two">Language Translation :
-                <br />
-                <small>
-                  <i> French, Spanish </i>
-                </small>
-              </li> 
-            </ul>
-          </div>
-
+           <p>I specialize in latest App Front-End technologies, with full product development life-cycle experience from Proof-of-Concept to General Audience Release, using Agile Methodology. I have 7 years professional experience in UI/UX, <span class="tog" id="tog-button" onclick="tog()" >more ...</span><span id="tog-paragraph"></span></p>
+  
         </div>
+<script> 
+var togButton = document.querySelector("#tog-button")
+var togParagraph = document.querySelector('#tog-paragraph'); 
+var skillsParagraph = document.querySelector('#skills'); 
+var togState = false;
+togButton.style.color = "yellow"; 
+togButton.style.cursor = "pointer";
 
+function tog() {
+  togState = !togState;
+  if (togState) {
+    togParagraph.textContent = "including AngularJS/2+, React, HTML5/CSS3-SASS/ES6+/XSLT. My Cloud proficiency includes AWS, GCP, MongoDB Atlas, and Firebase. </p><p>My data-app focus includes AJAX, REST API, MEAN/MERN full-stack, Angular-Django, and Linux-Apache-MySQL-Python skills. In sum, I'm a team player whether Linux Bash or DOS, I learn fast and I work with passion.";
+    togButton.innerHTML = "<button>hide</button> ";
+    togButton.style.color = "orange";
+skillsParagraph.style.overflowY = "scroll";
+
+skillsParagraph.style.maxHeight = "309px";
+  } else {
+    togParagraph.textContent = ''; // TOGGLE OPEN
+    togButton.textContent = "more  ... ";
+    togButton.style.color = "yellow";
+skillsParagraph.style.overflowY = "hidden";
+  } 
+};
+ 
+</script>
       </div>
 
       <div class="col-xs-6  mediat  " style="text-align:left !important">
 
         <div class="row  " >
-          <div class="col-lg-6 mediac contact ">
+          <div class="col-lg-6 mediac ">
             <h4>Contact Information
               <br />
             </h4>
@@ -325,71 +140,160 @@
 
     <div class="row media-left ">
 
-      <div class="media-left mediat col-sm-4 col-lg-6">
-        <hr/>
-        <h4 class="text-center">Education</h4>
+      <div class="media-left mediat col-sm-4 col-lg-6"> 
+        <h4 class="text-center">Education</h4> 
 
-        <hr>
-
-        <div class="row">
-
-          <div class="col-xs-6">
+        <div class="row"> 
+          
+        <h5>
+            <span class=" label label-default">Masters, Quantitative Sociology</span>
+          </h5>
+          <div class="col-xs-10">
 
             <h5>University of New Mexico</h5>
 
           </div>
 
-          <div class="col-xs-6">
+          <div class="col-xs-2">
 
-            <h6 class="text-right">
-              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>   Dec 2015</h6>
+              <!-- <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> -->
+            <h6 class="text-right"> 2015
+            </h6>
 
           </div>
 
-        </div>
+        <!-- </div>
 
-        <h5>
-          <span class="b label label-default">Masters</span>
-        </h5>
+ 
+        <div class="row second"  > -->
 
-        <p>Sociology. University of New Mexico, Albuquerque NM. </p>
-
-        <div class="row second"  >
-
-          <div class="col-xs-6">
+            <h5>
+                <span class="b label label-default">Bachelors, History (Cum laude)</span>
+              </h5>
+          <div class="col-xs-10">
 
             <h5>University of New Mexico</h5>
 
           </div>
 
-          <div class="col-xs-6">
-
+          <div class="col-xs-2">
+              <!-- <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> -->
             <h6 class="text-right">
-              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Dec 2001</h6>
+              2001</h6>
 
           </div>
 
-        </div>
+        </div> 
+        <!----->
+<div   class="multi_drop_menu" >
+    <ul> 
 
-        <h5>
-          <span class="b label label-default">Bachelors</span>
-        </h5>
+            <li style="display:block;"> 
+                <a ui-sref="profile" class="  pro white "> 
+                    Academic Portfolio </a>
+                <ul>
+                    <li>
+                        <a href="https://thomasmaestas.net/dist/docs/CV_2019_MaestasThomas.pdf" target="_blank">CV-english</a>
+                    </li>
+                    <li>
+                        <a href="https://thomasmaestas.net/dist/docs/docu/CV2017_frMaestasThomas_.pdf" target="_blank">CV-français</a>
+                    </li>
+                    <li>
+                        <a href="http://hdl.handle.net/1928/31677" target="_blank">Education Thesis</a>
+                    </li>
+                    <li>
+                        <a href="https://thomasmaestas.net/dist/docs/docu/DataPresentADD_health_networks.pdf" target="_blank">Education Data Analysis R-LaTeX</a>
+                    </li>
+                    <li>
+                        <a href="https://thomasmaestas.net/dist/docs/docu/ADAHighSchoolNetworks.html" target="_blank">Education Data Analysis R-3.3</a>
+                    </li>
+                    <li>
+                        <a href="https://thomasmaestas.net/dist/docs/docu/edregression.htm" target="_blank">Education Data Analysis SPSS-24</a>
+                    </li>
 
-        <p>History (Cum laude). University of New Mexico, Albuquerque NM, Minor: French. </p>
+                    <li>
+                        <a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime"
+                            target="_blank">Environment Data Analysis Tableau</a>
+                    </li>
+                    <li  >
+                        <a  class=" ">
+                            <span  >Academic<br />Presentations</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;">
+                                    <span>
+                                        <em>
+                                            <strong>
+                                                "Great Expectations Deferred: Contextualizing Community College Transfer Intentions"
+                                                <br
+                                                />
+                                            </strong>
+                                        </em>
+                                    </span>2016 ASA-American Sociological Conference
+                                    <br />@Seattle, WA</a>
+                            </li>
+                            <li> 
+                              <!--http://hscmediasite.unm.edu/unm/Catalog-->
+                                <a href="#"
+                                    target="_blank" style="width:350px;">
+                                    <span>
+                                        <strong>
+                                            <em>
+                                                "Social Determinants of Healthy Aging"
+                                                <br />
+                                            </em>
+                                        </strong>
+                                    </span>Dec 2015 UNM Health Sciences Institute for Ethics Colloquium
+                                    <br />@Albuquerque, NM</a>
+                            </li>
+                            <li>
+                                <a href="http://tinyurl.com/pcq6mjx" target="_blank" style="width:350px;">
+                                    <span>
+                                        <i>
+                                            <strong>"The Effects of Peer Association on Adolescents' Graduation Outcomes: An HLM
+                                                Approach"
+                                                <br />
+                                            </strong>
+                                        </i>
+                                    </span>2015 ASA Conference
+                                    <br />@Chicago, Illinois</a>
+                            </li>
+                            <li>
+                                <a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf"
+                                    target="_blank" style="width:350px;">
+                                    <span>
+                                        <em>
+                                            <strong>
+                                                "Great Expectations: A Study on the Determinants of College Graduation Expectations"
+                                                <br
+                                                />
+                                            </strong>
+                                        </em>
+                                        2014 NIH-UNC Adolescent Health Data Users Conference, Session 6
+                                        <br /> @Bethesda, Maryland
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
+
+                </ul>
+            </li>
+            
+            
+        </ul>
+</div>
+<!---->
       </div>
 
 
 
       <div class="mediat col-sm-4 col-lg-6">
+  
+        <h4 class="text-center">Data Visualization </h4> 
  
-        <hr>
-        <h4 class="text-center">Skills </h4>
-
-        <hr>
-        <h5>Data Visualization</h5>
-
-        <hr>
 
         <!-- Green Progress Bar -->
 
@@ -397,28 +301,27 @@
 
         <div class="progress">
 
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-            style="width: 80%">R-Shiny, Seaborn, Plot.ly</div>
+            <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+            style="width: 80%">JS: D3, NVD3, Dimple </div></small>
 
         </div>
         <div class="progress">
 
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-            style="width: 80%">D3, NVD3, Dimple</div>
+            <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+            style="width: 80%">Python: Plot.ly/Matplotlib</div></small>
 
         </div>
-        <div class="progress">
-
+        <small> <div class="progress"> 
           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-            style="width: 70%">Tableau </div>
+            style="width: 70%">R: R-Studio</div></small>
 
         </div>
 
         <div class="progress">
 
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-            style=" width: 60%">PL/SQL
-          </div>
+            <small><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style=" width: 60%">Tableau
+          </div></small>
 
         </div>
 
@@ -428,24 +331,22 @@
 
 
       <div class="mediat col-sm-4 col-lg-6 align-right">
-        <hr>
-        <h5>App &amp; Web Dev</h5>
-
-        <hr>
+       
+          <h4 class="text-center">App &amp; Web Dev </h4>  
 
         <!-- Green Progress Bar -->
 
         <div class="progress">
 
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
-            style="width: 85%"> React, Angular</div>
+            <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+            style="width: 85%"> React, Angular 1 &amp; 6+</div></small>
 
         </div>
 
         <div class="progress">
 
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-            style="width: 80%">Git Versioning, Jasmine Testing</div>
+            <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+            style="width: 80%">JavaScript, TypeScript</div></small>
 
         </div>
 
@@ -453,37 +354,36 @@
 
         <div class="progress">
 
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-            style="width:78%">AWS, Google Cloud</div>
+            <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+            style="width:78%">AWS Microservices</div></small>
 
         </div>
         <!-- Yellow Progress Bar -->
 
         <div class="progress">
 
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
-            style="width:75%">Gulp, Grunt, Babel, Webpack</div>
+            <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
+            style="width:75%">Git, Unit Testing</div></small>
         </div>
 
         <!-- Red Progress Bar -->
 
         <div class="progress">
 
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"
-            style="width: 70%">NodeJS, Python</div>
+            <small><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"
+            style="width: 70%">NodeJS, Python</div></small>
 
         </div>
         <div class="progress">
 
-          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
-            style="width: 55%">PHP</div> 
+            <small><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+            style="width: 55%">MySQL</div> 
         </div>
 
       </div>
     </div>
 
- 
-    <br/>
+  
 
     <div class="row second mediat  media-left hidden " id="second">
       <hr/>
@@ -629,15 +529,15 @@
 
  <div class="links" id="portfolio"> 
 <pre id="pre"> 
-  <h3>Portfolio, Thomas Maestas: Front-End Applications and Cloud-Based Services</h3>
+  <h3>Coding Portfolio, Thomas Maestas: Front-End Applications and Cloud-Based Services</h3>
   <h4>ReactJS + S3:</h4>   
     <a href="http://dailytech-react.s3-website-us-east-1.amazonaws.com/" target="_blank">http://dailytech-react.s3-website-us-east-1.amazonaws.com/</a> 
     <a href="http://tmm-react.s3-website-us-east-1.amazonaws.com" target="_blank">http://tmm-react.s3-website-us-east-1.amazonaws.com</a>  
-  <h4>Angular-7 Data App:</h4> 
-  <a href="http://tm-angular-7.s3-website-us-east-1.amazonaws.com" target="_blank">http://tm-angular-7.s3-website-us-east-1.amazonaws.com</a>     
-  <h4>AngularJS + Route 53:</h4> 
-  <a href="http://dailytechfilter.net" target="_blank">http://dailytechfilter.net aliasing http://daily-filter.s3-website-us-east-1.amazonaws.com</a>  
-  <a href="http://our-daily-tech.s3-website-us-east-1.amazonaws.com" target="_blank">http://our-daily-tech.s3-website-us-east-1.amazonaws.com</a> 
+   <h4>Angular-7 Data App:</h4> 
+   <a href="http://tm-angular-7.s3-website-us-east-1.amazonaws.com" target="_blank">http://tm-angular-7.s3-website-us-east-1.amazonaws.com</a>     
+   <h4>AngularJS + Route 53:</h4> 
+   <a href="http://dailytechfilter.net" target="_blank">http://dailytechfilter.net aliasing http://daily-filter.s3-website-us-east-1.amazonaws.com</a>  
+   <a href="http://our-daily-tech.s3-website-us-east-1.amazonaws.com" target="_blank">http://our-daily-tech.s3-website-us-east-1.amazonaws.com</a> 
 
   <h4>Route 53 + S3 using API Gateway: Lambda GET Method</h4>
     <a href="http://thomasmilton.net" target="_blank">http://thomasmilton.net 

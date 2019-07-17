@@ -183,8 +183,7 @@ Thomas Maestas offers services related to analyzing qualitative &amp; quantitati
 </div>
 
 <div class="map"></div>
-<div ui-view></div>
-<svg id="globe"></svg> 
+<div ui-view></div>  
  
   <footer class="site-footer">
     <div class="row column">
@@ -242,5 +241,14 @@ Thomas Maestas offers services related to analyzing qualitative &amp; quantitati
 
 <script src="dist/tmm_bundle.js"></script>   
 
+<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/service-worker.js')
+		.then((registration) => {
+			console.log('SW registered');
+			})
+		.catch((err) => {
+      console.log('SW error', err); }); } 
+      </script>
 </body>
 </html>

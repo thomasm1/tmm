@@ -419,7 +419,7 @@ padding:10px;
 }
 
 .mediac a {
-  color: lightskyblue !important;
+  color: white !important;
   font-size:113%;
 }
 
@@ -435,14 +435,13 @@ padding:10px;
 }
 
 .mediac h4 {
-
-  font-weight: bold;
+ 
   font-size: 2rem;
   text-align: center;
 }
 
 #chart {
-
+  text-transform: capitalize;
   background-color:rgba(51, 155, 240,.5) !important;
   max-width: 100%;
   margin: 0px;
@@ -579,7 +578,9 @@ display:none;
 .dailytech { 
   font-size: 1.5rem;
 }
-.dailytech.pro { 
+.pro { 
   font-size:1.7rem;
-}
- 
+  min-width:100%;
+  float:left; 
+  transform:translateX( 80px )
+} 
