@@ -407,38 +407,6 @@ padding:10px;
   text-align: center;
 }
 
-.mediat {
-  padding: 15px 10px 20px 10px;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  margin-right: 0px;
-  background-color:rgba(51, 155, 240,.7) !important;
-  min-width: 30%;
-
-
-}
-
-.mediac a {
-  color: white !important;
-  font-size:113%;
-}
-
-.media-left {
-  padding-left: 0px;
-}
-
-.mediac h6 {
-  padding: 4px;
-  font-size: 1.4rem;
-  text-align: left;
-  color: aliceblue;
-}
-
-.mediac h4 {
- 
-  font-size: 2rem;
-  text-align: center;
-}
 
 #chart {
   text-transform: capitalize;
@@ -578,9 +546,3 @@ display:none;
 .dailytech { 
   font-size: 1.5rem;
 }
-.pro { 
-  font-size:1.7rem;
-  min-width:100%;
-  float:left; 
-  transform:translateX( 80px )
-} 

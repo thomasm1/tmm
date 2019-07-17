@@ -5,6 +5,45 @@
        
     <link rel="stylesheet" href="dist/css/profile.css" /> 
     <style>
+      
+.mediat {
+  padding: 15px 10px 20px 10px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-right: 0px;
+  background-color:rgba(51, 155, 240,.7) !important;
+  min-width: 30%;
+
+
+}
+
+.mediac a {
+  color: white !important;
+  font-size:113%;
+}
+
+.media-left {
+  padding-left: 0px;
+}
+
+.mediac h6 {
+  padding: 4px;
+  font-size: 1.4rem;
+  text-align: left;
+  color: aliceblue;
+}
+
+.mediac h4 {
+ 
+  font-size: 2rem;
+  text-align: center;
+}
+      .pro { 
+  font-size:1.7rem;
+  min-width:100%;
+  float:left; 
+  transform:translateX( 80px )
+} 
     .canvas2 {
             z-index:1;position:fixed;
             overflow:visible;left:200px;top:200px;}
@@ -35,6 +74,13 @@
     a.white {
       color:white;
     }
+    .progress a { 
+      text-decoration:underline;
+    }
+    .progress a:hover {
+      color:white;
+      font-weight:bold;
+    }
     h4 {
       color:darkblue;
       font-weight:normal;
@@ -44,28 +90,45 @@
       padding:20px;
       font-weight:bold;
     } 
+     
+    div#skills  {  
+      float:left;
+      min-height:234px; 
+      
+    }
+    div#skills p {
+      font-weight:normal; 
+      font-size:1.5rem;
+      
+    }
+   .multi_drop_menu  li:last-child a {
+     border:outset 3px silver; 
+   } 
+   .multi_drop_menu  li:last-child a:hover {
+     border:inset 3px silver; 
+   } 
+   #skills-wrap {
+    padding-right:0px !important;padding-left:0px !important;
+   }
         </style>
-   
     <!-- multi_drop_menu END 1 -->
   
 <div class="container" >
   
-    <div class="row">
+    <div class="row" >
 
-      <div class="col-xs-6">
+      <div class="col-xs-6" id="skills-wrap">
 
-        <div id="skills" class="media mediat skills">
-
- 
-            <h4>Skills </h4>
-
-           <p>I specialize in latest App Front-End technologies, with full product development life-cycle experience from Proof-of-Concept to General Audience Release, using Agile Methodology. I have 7 years professional experience in UI/UX, <span class="tog" id="tog-button" onclick="tog()" >more ...</span><span id="tog-paragraph"></span></p>
+        <div id="skills" class="media mediat skills"> 
+         <h4  id="skills-title">Skills </h4> 
+           <p>I specialize in latest App Front-End technologies, with full product development life-cycle experience from Proof-of-Concept to General Audience Release, using Agile Methodology. I have 7 years professional experience in UI/UX, <span class="tog" id="tog-button" onclick="tog()" > more ...</span><span id="tog-paragraph"></span></p>
   
         </div>
 <script> 
 var togButton = document.querySelector("#tog-button")
 var togParagraph = document.querySelector('#tog-paragraph'); 
-var skillsParagraph = document.querySelector('#skills'); 
+var skillsParagraph = document.querySelector('#skills');  
+var skillsTitle = document.querySelector('#skills-title'); 
 var togState = false;
 togButton.style.color = "yellow"; 
 togButton.style.cursor = "pointer";
@@ -73,17 +136,19 @@ togButton.style.cursor = "pointer";
 function tog() {
   togState = !togState;
   if (togState) {
-    togParagraph.textContent = "including AngularJS/2+, React, HTML5/CSS3-SASS/ES6+/XSLT. My Cloud proficiency includes AWS, GCP, MongoDB Atlas, and Firebase. </p><p>My data-app focus includes AJAX, REST API, MEAN/MERN full-stack, Angular-Django, and Linux-Apache-MySQL-Python skills. In sum, I'm a team player whether Linux Bash or DOS, I learn fast and I work with passion.";
+    togParagraph.textContent = " including AngularJS/2+, React, HTML5/CSS3-SASS/ES6+/XSLT. My Cloud proficiency includes AWS, GCP, MongoDB Atlas, and Firebase. </p><p>My data-app focus includes AJAX, REST API, MEAN/MERN full-stack, Angular-Django, and Linux-Apache-MySQL-Python skills. In sum, I'm a team player whether Linux Bash or DOS, I learn fast and I work with passion.";
     togButton.innerHTML = "<button>hide</button> ";
     togButton.style.color = "orange";
+    skillsTitle.style.display = "none";
 skillsParagraph.style.overflowY = "scroll";
 
-skillsParagraph.style.maxHeight = "309px";
+skillsParagraph.style.maxHeight = "234px";
   } else {
     togParagraph.textContent = ''; // TOGGLE OPEN
     togButton.textContent = "more  ... ";
     togButton.style.color = "yellow";
 skillsParagraph.style.overflowY = "hidden";
+    skillsTitle.style.display = "block";
   } 
 };
  
@@ -93,23 +158,25 @@ skillsParagraph.style.overflowY = "hidden";
       <div class="col-xs-6  mediat  " style="text-align:left !important">
 
         <div class="row  " >
-          <div class="col-lg-6 mediac ">
-            <h4>Contact Information
-              <br />
+          <div class="col-lg-6 mediac skills">
+            <h4>Contact Information 
             </h4>
  
-            <h6 class="two lowercase">
+            <!-- <h6 class="two lowercase">
               <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
               <a target="_blank" class=h ref="https://thomasmaestas.net"> &nbsp;www.thomasmaestas.net</a>
+            </h6> -->
+            <h6 class=" lowercase">
+              <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
+              <a target="_blank" href="mailto:thomas.maestas@hotmail.com"> &nbsp;thomas.maestas@hotmail.com</a>
             </h6>
- 
-            <h6 class="lowercase">
+            <!-- <h6 class="lowercase">
               <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
               <a target="_blank" href="mailto:thomas@ourdailytech.com"> &nbsp;thomas@ourdailytech.com</a>
-            </h6>
-            <h6 class="two lowercase">
-              <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
-              <a target="_blank" href="mailto:thomas@ourdailytech.com"> &nbsp;thomas.maestas@hotmail.com</a>
+            </h6> -->
+            <h6 class="two  lowercase">
+              <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+              <a target="_blank" href="https://www.linkedin.com/in/thomasmaestas/"> &nbsp;linkedin.com/in/thomasmaestas/</a>
             </h6>
 
             <h6 class="  lowercase">
@@ -118,13 +185,17 @@ skillsParagraph.style.overflowY = "hidden";
             </h6>
             <h6 class="two capitalize lowercase">
               <span class="glyphicon glyphicon-download" aria-hidden="true"> </span>
-              <a target="_blank" href="dist/docs/CV_2019_MaestasThomas.pdf"> &nbsp;2019 Resume Download</a>
+              <a target="_blank" href="dist/docs/CV_2019_MaestasThomas.pdf"> &nbsp;2019  Resume</a>
             </h6>
-            <h6 class="  lowercase">
+            <!-- <h6 class=" capitalize lowercase">
+              <span class="glyphicon glyphicon-download" aria-hidden="true"> </span>
+              <a target="_blank" href="dist/docs/CVacademicEN_ThomasMaestas.pdf"> &nbsp;2019 Academic Resume</a>
+            </h6> -->
+            <!-- <h6 class="">
               <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
               <span style="color:lightskyblue">
               Albuquerque, NM </span> 
-            </h6>
+            </h6> -->
 
           </div>
 
@@ -189,95 +260,90 @@ skillsParagraph.style.overflowY = "hidden";
     <ul> 
 
             <li style="display:block;"> 
-                <a ui-sref="profile" class="  pro white "> 
+                <a ui-sref="profile" class="pro white "> 
                     Academic Portfolio </a>
                 <ul>
                     <li>
-                        <a href="https://thomasmaestas.net/dist/docs/CV_2019_MaestasThomas.pdf" target="_blank">CV-english</a>
+                        <a href="https://thomasmaestas.net/dist/docs/CVacademicEN_ThomasMaestas.pdf" target="_blank">Academic CV</a>
                     </li>
                     <li>
-                        <a href="https://thomasmaestas.net/dist/docs/docu/CV2017_frMaestasThomas_.pdf" target="_blank">CV-français</a>
+                        <a href="https://thomasmaestas.net/dist/docs/CVacademicFR_ThomasMaestas.pdf" target="_blank">CV-français</a>
                     </li>
+                    <li  >
+                      <a  class=" ">
+                          <span  >Academic<br />Presentations</span>
+                      </a>
+                      <ul>
+                          <li>
+                              <a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;">
+                                  <span>
+                                      <em>
+                                          <strong>
+                                              "Great Expectations Deferred: Contextualizing Community College Transfer Intentions"
+                                              <br
+                                              />
+                                          </strong>
+                                      </em>
+                                  </span>2016 ASA-American Sociological Conference
+                                  <br />@Seattle, WA</a>
+                          </li>
+                          <li> 
+                            <!--http://hscmediasite.unm.edu/unm/Catalog-->
+                              <a href="#"
+                                  target="_blank" style="width:350px;">
+                                  <span>
+                                      <strong>
+                                          <em>
+                                              "Social Determinants of Healthy Aging"
+                                              <br />
+                                          </em>
+                                      </strong>
+                                  </span>Dec 2015 UNM Health Sciences Institute for Ethics Colloquium
+                                  <br />@Albuquerque, NM</a>
+                          </li>
+                          <li>
+                              <a href="http://tinyurl.com/pcq6mjx" target="_blank" style="width:350px;">
+                                  <span>
+                                      <i>
+                                          <strong>"The Effects of Peer Association on Adolescents' Graduation Outcomes: An HLM
+                                              Approach"
+                                              <br />
+                                          </strong>
+                                      </i>
+                                  </span>2015 ASA Conference
+                                  <br />@Chicago, Illinois</a>
+                          </li>
+                          <li>
+                              <a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf"
+                                  target="_blank" style="width:350px;">
+                                  <span>
+                                      <em>
+                                          <strong>
+                                              "Great Expectations: A Study on the Determinants of College Graduation Expectations"
+                                              <br
+                                              />
+                                          </strong>
+                                      </em>
+                                      2014 NIH-UNC Adolescent Health Data Users Conference, Session 6
+                                      <br /> @Bethesda, Maryland
+                                  </span>
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+
                     <li>
                         <a href="http://hdl.handle.net/1928/31677" target="_blank">Education Thesis</a>
                     </li>
                     <li>
-                        <a href="https://thomasmaestas.net/dist/docs/docu/DataPresentADD_health_networks.pdf" target="_blank">Education Data Analysis R-LaTeX</a>
+                        <a href="https://thomasmaestas.net/dist/docs/DataPresentADD_health_networks.pdf" target="_blank">Education Data Analysis R-LaTeX</a>
                     </li>
+                    
                     <li>
-                        <a href="https://thomasmaestas.net/dist/docs/docu/ADAHighSchoolNetworks.html" target="_blank">Education Data Analysis R-3.3</a>
+                        <a href="https://thomasmaestas.net/dist/docs/edregression.htm" target="_blank">Education Data Analysis SPSS-24</a>
                     </li>
-                    <li>
-                        <a href="https://thomasmaestas.net/dist/docs/docu/edregression.htm" target="_blank">Education Data Analysis SPSS-24</a>
-                    </li>
-
-                    <li>
-                        <a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime"
-                            target="_blank">Environment Data Analysis Tableau</a>
-                    </li>
-                    <li  >
-                        <a  class=" ">
-                            <span  >Academic<br />Presentations</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;">
-                                    <span>
-                                        <em>
-                                            <strong>
-                                                "Great Expectations Deferred: Contextualizing Community College Transfer Intentions"
-                                                <br
-                                                />
-                                            </strong>
-                                        </em>
-                                    </span>2016 ASA-American Sociological Conference
-                                    <br />@Seattle, WA</a>
-                            </li>
-                            <li> 
-                              <!--http://hscmediasite.unm.edu/unm/Catalog-->
-                                <a href="#"
-                                    target="_blank" style="width:350px;">
-                                    <span>
-                                        <strong>
-                                            <em>
-                                                "Social Determinants of Healthy Aging"
-                                                <br />
-                                            </em>
-                                        </strong>
-                                    </span>Dec 2015 UNM Health Sciences Institute for Ethics Colloquium
-                                    <br />@Albuquerque, NM</a>
-                            </li>
-                            <li>
-                                <a href="http://tinyurl.com/pcq6mjx" target="_blank" style="width:350px;">
-                                    <span>
-                                        <i>
-                                            <strong>"The Effects of Peer Association on Adolescents' Graduation Outcomes: An HLM
-                                                Approach"
-                                                <br />
-                                            </strong>
-                                        </i>
-                                    </span>2015 ASA Conference
-                                    <br />@Chicago, Illinois</a>
-                            </li>
-                            <li>
-                                <a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf"
-                                    target="_blank" style="width:350px;">
-                                    <span>
-                                        <em>
-                                            <strong>
-                                                "Great Expectations: A Study on the Determinants of College Graduation Expectations"
-                                                <br
-                                                />
-                                            </strong>
-                                        </em>
-                                        2014 NIH-UNC Adolescent Health Data Users Conference, Session 6
-                                        <br /> @Bethesda, Maryland
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
+ 
+                   
 
                 </ul>
             </li>
@@ -302,25 +368,30 @@ skillsParagraph.style.overflowY = "hidden";
         <div class="progress">
 
             <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-            style="width: 80%">JS: D3, NVD3, Dimple </div></small>
+            style="width: 80%"> 
+            JS: D3, NVD3, Dimple </div></small>
 
         </div>
         <div class="progress">
 
             <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-            style="width: 80%">Python: Plot.ly/Matplotlib</div></small>
+            style="width: 80%"><a href="https://thomasmaestas.net/dist/docs/IKM-Exam_Python3.pdf" target="_blank"  title="IKM Exam: Python3 Proficiency, 2019">Python</a>: Plot.ly/Matplotlib</div></small>
 
         </div>
         <small> <div class="progress"> 
           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-            style="width: 70%">R: R-Studio</div></small>
+            style="width: 70%"><li>
+              <a href="https://thomasmaestas.net/dist/docs/ADAHighSchoolNetworks.html" target="_blank" title="DEMO LINK:  Education Data Analysis, using R-Studio">R: R-Studio</a>
+          </li></div></small>
 
         </div>
 
         <div class="progress">
 
             <small><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-            style=" width: 60%">Tableau
+            style=" width: 60%"> 
+            <a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime"
+            target="_blank" title="DEMO LINK:  CO2 Environment Data Analysis, using Tableau">Tableau</a>
           </div></small>
 
         </div>
@@ -339,7 +410,11 @@ skillsParagraph.style.overflowY = "hidden";
         <div class="progress">
 
             <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
-            style="width: 85%"> React, Angular 1 &amp; 6+</div></small>
+            style="width: 85%">
+            
+            <a href="https://thomasmaestas.net/dist/docs/IKM-Exam_Angular2.pdf" target="_blank"  title="IKM Exam: Angular Proficiency, 2019">Angular, </a>
+            <a target="_blank"  href="https://thomasmaestas.net/dist/docs/IKM-Exam_React_React-Native.pdf"  title="IKM Exam: React Proficiency, 2019">React  (&amp; Native) </a>
+            </div></small>
 
         </div>
 
@@ -355,7 +430,7 @@ skillsParagraph.style.overflowY = "hidden";
         <div class="progress">
 
             <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-            style="width:78%">AWS Microservices</div></small>
+            style="width:78%"><a href="https://thomasmaestas.net/dist/docs/AWScert_CloudEcononics_TechnicalProfessional.pdf" target="_blank"  title="AWS Partners Certification: Technical Professional and Cloud Economics">AWS Microservices</a></div></small>
 
         </div>
         <!-- Yellow Progress Bar -->
@@ -363,7 +438,7 @@ skillsParagraph.style.overflowY = "hidden";
         <div class="progress">
 
             <small><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"
-            style="width:75%">Git, Unit Testing</div></small>
+            style="width:75%">GIT, Unit Testing</div></small>
         </div>
 
         <!-- Red Progress Bar -->
@@ -371,7 +446,8 @@ skillsParagraph.style.overflowY = "hidden";
         <div class="progress">
 
             <small><div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"
-            style="width: 70%">NodeJS, Python</div></small>
+            style="width: 70%">NodeJS, 
+            <a href="https://thomasmaestas.net/dist/docs/IKM-Exam_Python3.pdf" target="_blank"  title="IKM Exam: Python3 Proficiency, 2019">Python</a></div></small>
 
         </div>
         <div class="progress">
@@ -557,8 +633,7 @@ skillsParagraph.style.overflowY = "hidden";
     <a  >sensor-instance.caq9hvksjohf.us-east-1.rds.amazonaws.com</a> 
   <h4>S3 Static Hosting </h4>
     <a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com</a> 
-    <br /><br />
-    <br /><br />  
+ 
 </pre>
   </div>
 
