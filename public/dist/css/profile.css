@@ -471,8 +471,10 @@ small {
   padding-right: 0px;
   padding-bottom: 0px;
 }
-.container a {
-  color:darkblue;  
+.container a { 
+  font-size:1.6rem;
+  color:darkblue;
+  font-weight:bold;
 }
 .container p {
   padding:2%; 

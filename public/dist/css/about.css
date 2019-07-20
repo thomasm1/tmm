@@ -229,7 +229,7 @@ small {
     padding-bottom: 0px;
 }
 .container a {
-    color:lightskyblue;  
+    color:lightskyblue !important;  
 }
 .container p {
     padding:1%; 

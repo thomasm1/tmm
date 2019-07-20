@@ -111,7 +111,10 @@ button {
 
 .blue {
   background-color: #add8e6;
-  color: #f0f8ff; }
+  padding:4px;
+  color: darkblue;
+  font-size:1.5rem;
+ }
 
 .cell {
   min-width: 40px;
@@ -6944,7 +6947,7 @@ li.nav-item.ml-2 {
   border: 0px solid red;
   box-shadow: 0px 10px 50px silver;
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../img/greeninvert.png");
   border-radius: 0px;
   border: 0px solid red;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
@@ -6993,14 +6996,14 @@ div.card.card-link-list {
 
 div.card.card-profile.mb-4#div5 {
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner20.jpg"); }
+  background-image: url("../img/greeninvert.png"); }
 
 div.card.card-profile.mb-4 {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3); }
 
 div.card-header {
   background-color: #00b0ec;
-  background-image: url("../src/MaestasReykjavikBanner20.jpg");
+  background-image: url("../src/greeninvert.png");
   padding-top: 20px;
   min-height: 180px;
   border: 0px solid red;
@@ -7020,7 +7023,7 @@ div.col-lg-3 {
 div.card.visible-md-block.visible-lg-block {
   margin-top: 0px;
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../img/greeninvert.png");
   padding-top: 30px;
   min-height: 230px;
   border-radius: 0px;
@@ -7054,14 +7057,14 @@ div.card-block.text-center a {
 
 div.card-block.text-center {
   background-color: #00b0ec;
-  background-image: url("../src/img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../src/img/greeninvert.png");
   box-shadow: 0px 10px 50px transparent;
   font-weight: 800; }
 
 /* blocks 2, 3 */
 #center-col {
   background-color: #00b0ec;
-  background-image: url("../src/img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../src/img/greeninvert.png");
   padding-top: 0px;
   min-height: 180px;
   border-radius: 0px;
@@ -7069,7 +7072,7 @@ div.card-block.text-center {
 
 li.map2.media.list-group-item.p-4 {
   background-color: #00b0ec;
-  background-image: url("../src/img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../src/img/greeninvert.png");
   padding-top: 0px;
   min-height: 180px;
   border-radius: 0px;
@@ -7463,7 +7466,7 @@ body {
   background: steelblue;
   color: #fff;
   font-family: "Roboto";
-  background: steelblue url("../img/MaestasReykjavikBanner20.jpg") repeat;
+  background: steelblue url("../img/greeninvert.png") repeat;
   margin-left: auto;
   margin-right: auto; }
 
@@ -7529,7 +7532,7 @@ h6 {
   background: url(../img/greeninvert.png) repeat 0; }
 
 .comment_text {
-  background: steelblue url("../img/MaestasReykjavikBanner20.jpg") repeat; }
+  background: steelblue url("../img/greeninvert.png") repeat; }
 
 .msg {
   font-family: 'Roboto';
@@ -7660,7 +7663,7 @@ nav.table-tmm {
     background: #0000be; }
 
 .title-bar {
-  background: url(../img/MaestasReykjavikBanner20.jpg) repeat 0;
+  background: url(../img/greeninvert.png) repeat 0;
   padding-bottom: 10px;
   border-bottom: 4px solid darkblue; }
 
@@ -7803,7 +7806,7 @@ div#cal.card-block {
 div.card-header {
   margin-top: 5px;
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../img/greeninvert.png");
   padding-top: 20px;
   min-height: 180px;
   border: 0px solid red;
@@ -7812,7 +7815,7 @@ div.card-header {
 
 .list-group-item {
   background-color: #00b0ec3e;
-  background-image: url("../img/MaestasReykjavikBanner20.jpg"); }
+  background-image: url("../img/greeninvert.png"); }
 
 /* post picture  
 
@@ -7820,7 +7823,7 @@ div.card-header {
 div.card.visible-md-block.visible-lg-block {
   margin-top: 0px;
   background-color: #00b0ec;
-  background-image: url("../img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../img/greeninvert.png");
   padding-top: 30px;
   min-height: 230px;
   border-radius: 0px;
@@ -7858,14 +7861,14 @@ div.card-block.text-center {
 li#div1m.media.list-group-item.p-4 {
   margin-top: 20px;
   background-color: #00b1ec44;
-  background-image: url("../img/MaestasReykjavikBanner20.jpg");
+  background-image: url("../img/greeninvert.png");
   padding-top: 0px;
   min-height: 180px;
   border-radius: 0px;
   border: 0px solid red; }
   li#div1m.media.list-group-item.p-4 a {
     background-color: #00b1ec44;
-    background-image: url("../img/MaestasReykjavikBanner20.jpg"); }
+    background-image: url("../img/greeninvert.png"); }
 
 /* navbar */
 .app-navbar {
