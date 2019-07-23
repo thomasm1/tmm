@@ -76,9 +76,7 @@
 	Given that assumptions about population growth and climate change are true (I believe both are true), then global population well-being is threatened earlier than expected. Therefore, my antithesis holds that  smart, effective <i>Sharing of Burden</i>, Sharing of Power, and <i>Sharing of Resources</i> is critical to meeting the imminent challenges of the two said assumptions.  
 	</p>
 	<p class="firstparagraph">Diversity and Equality<br />
-	Workplace culture too often abides by the ethos of "work harder, not smarter." Non-diverse workplaces lack the full set of problem-solving tools that are necessary in a complex, diverse world. 
-	</p>
-	<p>A better workforce integration along gender, racial, and socio-economic lines is a more heterogeneous workforce: more agile, creative, and efficiently team-oriented workforce--in short, a smarter workforce.
+	Workplace culture too often abides by the ethos of "work harder, not smarter." Non-diverse workplaces may lack the full set of problem-solving tools that are necessary in a complex, diverse world.  A better workforce integration along gender, racial, and socio-economic lines is a more heterogeneous workforce: more agile, creative, and efficiently team-oriented workforce--in short, a smarter workforce.
 	</p> 
 	`;
 	
