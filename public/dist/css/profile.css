@@ -342,7 +342,7 @@ h2#profile {
   color:rgb(206, 223, 245);
   padding:.5% 2%;
 text-align:justify;
-  background-color:rgba(51, 155, 240,.4) !important;
+  /* background-color:rgba(51, 155, 240,.4) !important; */
   font-size:110%!important;
 }
 

@@ -36,8 +36,7 @@
 .d3-tip:after {
   box-sizing: border-box;
   display: inline;
-  font-size: 8px;
-  width: 100%;
+  font-size: 8px; 
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -7547,7 +7546,7 @@ h6 {
 .footer {
   background: url(../img/greeninvert.png) repeat 0; }
   .footer a {
-    color: lightskyblue;
+    color: darkblue;
     text-shadow: 0 1px 0 white; }
 
 /*          Pinterest           */
@@ -8177,9 +8176,9 @@ p.firstparagraph::first-letter {
   border: solid thin darkslategrey;
   padding: 4pt;
   margin: 2pt; }
-
+/* 
 .list-group a:hover {
-  background: transparent; }
+  background: transparent; } */
 
 img.rounded-circle {
   opacity: 1; }
