@@ -339,15 +339,11 @@ h2#profile {
 }
 
 .panel, .panel p, .panel h2, h3, h4 {
-  color:rgb(206, 223, 245);
-  padding:.5% 2%;
-text-align:justify;
-  /* background-color:rgba(51, 155, 240,.4) !important; */
-  font-size:110%!important;
+  color:rgb(206, 223, 245); 
 }
 
 .panel-heading {
-  background-color:rgba(51, 155, 240,.4) !important;
+  /* background-color:rgba(51, 155, 240,.4) !important; */
 
 }
 
@@ -548,3 +544,284 @@ display:none;
 .dailytech { 
   font-size: 1.5rem;
 }
+/* 
+
+--------------------------------------------
+
+
+
+INLIN 
+*/
+.mediat {
+  padding: 15px 10px 20px 10px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-right: 0px;
+  min-width: 30%;
+}
+
+.mediat-row {
+
+  background-color: rgba(51, 155, 240, .7) !important;
+}
+
+.mediac a {
+  color: white !important;
+  font-size: 113%;
+}
+
+.media-left {
+  padding-left: 0px;
+}
+
+.mediac h6 {
+  padding: 4px;
+  font-size: 1.4rem;
+  text-align: left;
+  color: aliceblue;
+}
+
+.mediac h4 {
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pro {
+  font-size: 1.7rem;
+  min-width: 100%;
+  float: left;
+  transform: translateX(80px)
+}
+
+.canvas2 {
+  z-index: 1;
+  position: fixed;
+  overflow: visible;
+  left: 200px;
+  top: 200px;
+}
+
+#profile {
+  padding: 10px;
+  margin: 10px;
+}
+
+.svgHolder {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.progress-bar-success {
+  color: darkblue !important;
+}
+
+.progress-bar-warning {
+  color: darkblue !important;
+}
+
+ul li {
+  padding: 5px;
+  margin: 5px;
+}
+
+a.white {
+  color: white;
+}
+
+.progress a {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.progress a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+h4 {
+  color: darkblue;
+  font-weight: bold;
+}
+
+pre h4 {
+
+  text-align: left;
+}
+ 
+
+div#skills {
+  float: left;
+  min-height: 234px;
+
+}
+
+div#skills p {
+  font-weight: normal;
+  font-size: 1.5rem;
+
+}
+
+.multi_drop_menu li:last-child a {
+  border: outset 3px silver;
+}
+
+.multi_drop_menu li:last-child a:hover {
+  border: inset 3px silver;
+}
+
+#skills-wrap {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.panel h2, h3, h4 {
+  background-color: rgba(51, 155, 240,.4) !important;
+}
+
+.mediat-row:first-child { 
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* background:transparent; */
+}
+
+.mediat {
+  padding: 15px 10px 20px 10px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-right: 0px;
+  min-width: 30%;
+}
+
+.mediat-row {
+
+  background-color: rgba(51, 155, 240, .7) !important;
+}
+
+.mediac a {
+  color: white !important;
+  font-size: 113%;
+}
+
+.media-left {
+  padding-left: 0px;
+}
+
+.mediac h6 {
+  padding: 4px;
+  font-size: 1.4rem;
+  text-align: left;
+  color: aliceblue;
+}
+
+.mediac h4 {
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pro {
+  font-size: 1.7rem;
+  min-width: 100%;
+  float: left;
+  transform: translateX(80px)
+}
+
+.canvas2 {
+  z-index: 1;
+  position: fixed;
+  overflow: visible;
+  left: 200px;
+  top: 200px;
+}
+
+#profile {
+  padding: 10px;
+  margin: 10px;
+}
+
+.svgHolder {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.progress-bar-success {
+  color: darkblue !important;
+}
+
+.progress-bar-warning {
+  color: darkblue !important;
+}
+
+ul li {
+  padding: 5px;
+  margin: 5px;
+}
+
+a.white {
+  color: white;
+}
+
+.progress a {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.progress a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+h4 {
+  color: darkblue;
+  font-weight: bold;
+}
+
+pre h4 {
+
+  text-align: left;
+}
+ 
+
+div#skills {
+  float: left;
+  min-height: 234px;
+
+}
+
+div#skills p {
+  font-weight: normal;
+  font-size: 1.5rem;
+
+}
+
+.multi_drop_menu li:last-child a {
+  border: outset 3px silver;
+}
+
+.multi_drop_menu li:last-child a:hover {
+  border: inset 3px silver;
+}
+
+#skills-wrap {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.panel h2,
+h3,
+h4 {
+  background-color: rgba(51, 155, 240, .4) !important;
+}
+
+.mediat-row:first-child {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px; 
+} 

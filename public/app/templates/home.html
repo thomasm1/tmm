@@ -1,20 +1,25 @@
 <title>TMM | Home</title>
 <link rel="stylesheet" href="dist/css/iris.css" />
 <!-- <script src="dist/js/d3/d3v4.min.js"></script> -->
-<style>
-  svg {
-   transform:translateY(-2px);
-  }
+<style> 
 
   .map {
     z-index: 0;
     display: block;
   }
+  #welcome {
+    position:absolute;
+    top:170px;
+    left:10%;
+    color:darkblue;
+    
+    
+  }
 </style>
 
-<div id="home">
-
-  <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
+<div id="welcome"><h3>Hello, I'm Thomas and Welcome to my personal website!</h3></div>
+<div id="home"> 
+  <!-- <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div> -->
 
 
   <script type="text/javascript">
@@ -23,7 +28,7 @@
 
       var margin = 175,
         width = 1920 - margin,
-        height = 980 - margin;
+        height = 1000 - margin;
 
       var svg = d3.select(".map")
         .append("svg")
@@ -35,8 +40,8 @@
         .style('z-index', '0');
 
       var projection = d3.geo.mercator()
-        .scale(200)
-        .translate([width / 2.7, height / 1.9]);
+        .scale(170)
+        .translate([width / 3.3, height / 1.6]);
 
       var path = d3.geo.path().projection(projection);
 

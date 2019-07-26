@@ -4,9 +4,9 @@
         .controller('ProfileController', [ '$q', '$log',   '$state',   ProfileController]);
 
     function ProfileController( $q, $log,  $state) {
-      
-        var vm = this; 
-         
+        
+        vm = this; 
+        vm.demos = false; 
  
     }
 

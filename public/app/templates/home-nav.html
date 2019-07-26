@@ -18,8 +18,12 @@
   border-color:skyblue;
   border-radius: 15%;
 }
+nav.demos {
+  display:none;
+}
 </style>
-<nav id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar">
+<button class="btn btn-primary" ng-click="demoHide()">Demos</button>
+<nav id="rightmenu" class="rightmenu col-md-2 d-none d-md-block bg-light sidebar demos">
         <div class="nav flex-column rightnav sidebar-sticky home-nav"> 
           <div class="  list-group">     <br />
               <span class="blue"><a href="https://thomasmaestas.net/#/profile#portfolio">Coding Portfolio </a></span><br /><br />
