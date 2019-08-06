@@ -1,7 +1,7 @@
 <title>
 
     TMM | About</title>
-<link rel="stylesheet" href="dist/css/profile.css" />
+<link rel="stylesheet" href="dist/css/profile.min.css" />
 <style>
     .canvas2 {
         z-index: 1;
@@ -10,74 +10,69 @@
         left: 200px;
         top: 200px;
     }
-
+    
     #profile {
         padding: 10px;
         margin: 10px;
     }
-
+    
     .svgHolder {
         display: none;
     }
-
+    
     ul {
         list-style-type: none;
         padding: 0;
     }
-
+    
     ul li {
         padding: 5px;
         margin: 5px;
     }
-
+    
     a.white {
         color: white;
     }
-</style>
-<style>
+    
     div#force.svgHolder {
         display: none;
     }
-
-
+    
     #desc {
         text-align: justify;
         padding: 20px;
         margin-right: 30px;
     }
-
+    
     p#desc {
         font-size: 1.5rem;
     }
-
+    
     img,
     frame {
         padding: 10px;
         border: 1px solid darkblue;
     }
-
-
+    
     ul {
         list-style-type: none;
         padding: 0;
     }
-
+    
     ul li {
         padding: 5px;
         margin: 5px;
     }
-
+    
     a.white {
         color: white;
     }
-
+    
     .container a {
         color: lightskyblue !important;
     }
-
     /*                 #secret-button  ******* */
-
-
+    
     .secret {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -90,38 +85,38 @@
         cursor: pointer;
         outline: none;
     }
-
+    
     .secret:hover {
         background-color: steelblue;
         color: #0b5e9c;
         cursor: pointer;
     }
-
+    
     .paragraph {
         max-height: 650px;
         overflow-y: scroll;
     }
-
+    
     #secret-button {
         color: aliceblue;
         font-family: 'monoton';
     }
-
+    
     #secret-button::before {
         content: "Thomas M. Maestas";
     }
-
+    
     #secret-button:hover {
         color: yellow;
         font-weight: bold;
         cursor: pointer;
         border: solid .5px white;
     }
-
+    
     #secret-button:hover::before {
         content: "About Thomas M. Maestas";
     }
-
+    
     #secret-paragraph {
         font-family: 'Roboto';
         display: none;
@@ -134,7 +129,7 @@
         background-color: rgb(6, 2, 61);
         background-image: url('dist/img/bluechipTile.png');
     }
-
+    
     #secret-paragraph .firstparagraph::first-letter {
         font-size: 200%;
         font-weight: bold;
@@ -142,11 +137,11 @@
         padding: 4pt;
         margin: 15px 4px 5px 0px;
     }
-
+    
     .active {
         color: yellow;
     }
-
+    
     #aboutme {
         text-align: justify;
         padding-left: 10%;
@@ -155,16 +150,11 @@
         border-top-left-radius: 30px;
         background: rgba(0, 0, 139, .7);
     }
-
+    
     div#aboutme a {
         color: skyblue;
     }
-/* 
-    h3.aboutbanner {
-        text-align: center;
-        padding: 20px 0px; 
-    } */
-
+    
     .panel,
     .panel p,
     .panel h2,
@@ -176,28 +166,23 @@
         font-size: 110% !important;
     }
 </style>
- 
 
-<h3 class="aboutbanner">ABOUT ME</h3>
+
+<h3 class="banner">ABOUT ME</h3>
 
 <div class="container">
-    <img class="zoom" style="border:1px solid blue;border-radius: 30px 10px;width:120px;float:right;"
-        src="dist/img/webCottonwood.jpg" />
+    <img class="zoom" style="border:1px solid blue;border-radius: 30px 10px;width:120px;float:right;" src="dist/img/webCottonwood.jpg" />
     <div id="aboutme">
 
         <p class="firstparagraph"> Technology shapes much of my life, and in many respects it frames my future plans!
-            <br />
-            Technology is integral to my professional, academic, and enterprising endeavors,
-            and I love to chime in about so many topics of the Day...
+            <br /> Technology is integral to my professional, academic, and enterprising endeavors, and I love to chime in about so many topics of the Day...
         </p>
         <p class="firstparagraph">
-            My career pursuits have focused on data analysis vis-&agrave;-vis topics like education evaluation in K-12
-            and higher education. Currently, I extend my data-related experience into web-app designs and development,
-            specializing in data visualization with JavaScript and Python programming.
-            In 2015, I earned my Masters in Quantitative Sociology from <a href="http://www.unm.edu" target="_blank">
-                <span>the University of New Mexico</span></a>--an education that continues to guide my professional
-            aims. I love to read and study languages, so naturally I earned my Bachelors in French History. I began
-            sociology of education doctoral studies at <a href="" target="_blank">l'Universit&eacute; de
+            My career pursuits have focused on data analysis vis-&agrave;-vis topics like education evaluation in K-12 and higher education. Currently, I extend my data-related experience into web-app designs and development, specializing in data visualization with
+            JavaScript and Python programming. In 2015, I earned my Masters in Quantitative Sociology from
+            <a href="http://www.unm.edu" target="_blank">
+                <span>the University of New Mexico</span></a>--an education that continues to guide my professional aims. I love to read and study languages, so naturally I earned my Bachelors in French History. I began sociology of education doctoral
+            studies at <a href="" target="_blank">l'Universit&eacute; de
                 Montr&eacute;al</a> in the Fall of 2016, but discontinued in order to pursue my tech career.
         </p>
         <p class="firstparagraph"> My social media, you can find me ...
@@ -206,12 +191,11 @@
                 </a><a href="https://www.facebook.com" target="_blank">Facebook, </a><a href="https://www.meetup.com"
                     target="_blank">Meet-Up, </a> Hiking Group, and Alliance Francaise.</span> <br />I have lived in
             <a href="https://www.parisinfo.com/" target="_blank">Paris, France</a>,
-            <a href="http://www.ny.gov/" target="_blank">New York</a>, <a href="https://www.visittheusa.com/state/texas"
-                target="_blank">Texas</a> and <a href="https://www.mtl.org/fr" target="_blank">Montr&eacute;al,
-                Qu&eacute;bec.</a> I currently live in the Wild West, Albuquerque, New Mexico where I contract my small
-            business, <a href="https://thomasmaestas.net/"> <span> T M M</span></a>, providing Contractual Services and
-            Consulting for Big &amp; Small Data and Web solutions since 2016.</span>
-            </a> </p>
+            <a href="http://www.ny.gov/" target="_blank">New York</a>, <a href="https://www.visittheusa.com/state/texas" target="_blank">Texas</a> and <a href="https://www.mtl.org/fr" target="_blank">Montr&eacute;al,
+                Qu&eacute;bec.</a> I currently live in the Wild West, Albuquerque, New Mexico where I contract my small business,
+            <a href="https://thomasmaestas.net/"> <span> T M M</span></a>, providing Contractual Services and Consulting for Big &amp; Small Data and Web solutions since 2016.</span>
+            </a>
+        </p>
     </div>
     <!--end aboutme -->
     <div id="thomas">
@@ -223,8 +207,7 @@
         <p id="desc">2015 casting as Earth Space Defense Major General, (blue) 4th from right; Trailer:@ 00:43</p>
 
         <img src="dist/img/earthSpaceDefense.jpg" style="float:right;width:100%;" class="zoom"><br />
-        <iframe id="iframe" width="422" height="240" src="https://www.youtube.com/embed/RfJgT89hEME" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe id="iframe" width="422" height="240" src="https://www.youtube.com/embed/RfJgT89hEME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
 </div>

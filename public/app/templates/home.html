@@ -1,66 +1,65 @@
 <title>TMM | Home</title>
-<link rel="stylesheet" href="dist/css/iris.css" />
+<!-- <link rel="stylesheet" href="dist/css/iris.css" /> -->
 <!-- <script src="dist/js/d3/d3v4.min.js"></script> -->
-<style> 
-
-  .map {
-    z-index: 0;
-    display: block;
-  }
-  #welcome {
-    position:absolute;
-    top:170px;
-    left:10%;
-    color:darkblue;
+<style>
+    .map {
+        z-index: 0;
+        display: block;
+    }
     
-    
-  }
+    #welcome {
+        position: absolute;
+        top: 170px;
+        left: 10%;
+        color: darkblue;
+    }
 </style>
 
-<div id="welcome"><h3>Hello, I'm Thomas and Welcome to my personal website!</h3></div>
-<div id="home"> 
-  <!-- <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div> -->
+<div id="welcome">
+    <h3>Hello, I'm Thomas and Welcome to my personal website!</h3>
+</div>
+<div id="home">
+    <!-- <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div> -->
 
 
-  <script type="text/javascript">
-    function draw(geo_data) {
-      "use strict";
+    <script type="text/javascript">
+        function draw(geo_data) {
+            "use strict";
 
-      var margin = 175,
-        width = 1920 - margin,
-        height = 1000 - margin;
+            var margin = 175,
+                width = 1920 - margin,
+                height = 1000 - margin;
 
-      var svg = d3.select(".map")
-        .append("svg")
-        .attr("width", width + margin)
-        .attr("height", height + margin)
-        .attr("overflow-x", "hidden")
-        .append('g')
-        .attr('class', 'map')
-        .style('z-index', '0');
+            var svg = d3.select(".map")
+                .append("svg")
+                .attr("width", width + margin)
+                .attr("height", height + margin)
+                .attr("overflow-x", "hidden")
+                .append('g')
+                .attr('class', 'map')
+                .style('z-index', '0');
 
-      var projection = d3.geo.mercator()
-        .scale(170)
-        .translate([width / 3.3, height / 1.6]);
+            var projection = d3.geo.mercator()
+                .scale(170)
+                .translate([width / 3.3, height / 1.6]);
 
-      var path = d3.geo.path().projection(projection);
+            var path = d3.geo.path().projection(projection);
 
-      var map = svg.selectAll('path')
-        .data(geo_data.features);
+            var map = svg.selectAll('path')
+                .data(geo_data.features);
 
-      map.enter()
-        .append('path')
-        .attr('d', path)
-        .style('fill', 'rgba(29,29,171,.4')
-        .style('stroke-width', 0.4)
-        .style('stroke', "darkblue")
-      map.exit();
-    };
+            map.enter()
+                .append('path')
+                .attr('d', path)
+                .style('fill', 'rgba(29,29,171,.4')
+                .style('stroke-width', 0.4)
+                .style('stroke', "darkblue")
+            map.exit();
+        };
+    </script>
 
-  </script>
-
-  <script type="text/javascript">
-    d3.json("data/world_countries.json", draw);
-  </script>
+    <script type="text/javascript">
+        d3.json("data/world_countries.json", draw);
+    </script>
 
 </div>

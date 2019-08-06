@@ -2,244 +2,248 @@
 <html>
 
 <head lang="en">
-  <meta charset="UTF-8">
-  <meta name="description"
-    content="Software Development Consulting, Thomas Maestas. 
+    <meta charset="UTF-8">
+    <meta name="description" content="Software Development Consulting, Thomas Maestas. 
 Thomas Maestas offers services related to analyzing qualitative &amp; quantitative data and reporting results in academic journals and business briefs alike.  Recent projects include research design, app design, and proof-of-concept for Xpansiv Data Systems,  and data analysis and web-application implementation. Data analysis and special pricing offers competitive benefits for clients.">
 
-  <meta name="keywords"
-    content="web development,  Thomas Maestas, data analysis and visualization, sociology statistical tests">
-  <meta name="author" content="Thomas Maestas">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="manifest" href="/manifest.json">
+    <meta name="keywords" content="web development,  Thomas Maestas, data analysis and visualization, sociology statistical tests">
+    <meta name="author" content="Thomas Maestas">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="dist/js/vendor/jquery.3.3.1.min.js"></script>
+  <script src="dist/js/vendor/bootstrap.4.min.js"></script>  -->
+    <link rel="stylesheet" href="dist/css/app.min.css" />
 
-  <script src="dist/js/vendor/jquery.3.3.1.min.js"></script>
-  <script src="dist/js/vendor/bootstrap.4.min.js"></script> 
-  <link rel="stylesheet" href="dist/css/app.css" />
-
-  <style>
-    .map {
-      display: none;
-    }
-
-    .ui-view {
-      margin-top: 50px;
-    }
-
-    .alpho0 {
-      color: darkcyan;
-    }
-
-    h1.title {
-      display: none;
-    }
-
-    input {
-      color: yellow;
-      background: darkblue;
-      z-index: 100;
-    }
-
-    a.navtmm {
-      background-image: url('dist/img/shadowbox.png');
-      height: 110px;
-      max-height: 110px;
-      width: 200px;
-    }
-
-    footer h5 {
-      color: darkblue;
-      line-height: 2rem;
-      font-size: 1.6rem;
-    }
-
-    footer {
-      position: relative;
-      top: 750px;
-    }
- .map {
-   margin:0;
- }
-    .svgHolder {
-      opacity: .5;
-      position: absolute;
-      top: 180px;
-    }
-
-    .navtech {
-      text-align: center;
-      margin: 3px;
-      font-family: 'Monoton';
-      float: left;
-      font-weight: 100;
-      font-size: 1.1rem;
-    }
-    div.row {
-      background:rgba(0, 0, 139, 0.7);
-    }
-    .social {
-      font-size: .9rem;
-      margin: 0;
-      border-radius: 5%;
-      margin-top: 5px;
-      border-color: white;
-    }
-
-    .social li {
-      margin: 0;
-      color: yellow;
-    }
-
-    .navbar-nav>li>a {
-      padding-top: 4px;
-      padding-bottom: 3px;
-    }
-
-    .navbar-default .navbar-toggle,
-    .navbar-default {
-      background-color: blue;
-      background-image: url('dist/img/bluechipTile.jpg');
-    }
-
-    div.side-nav {
-      position: absolute;
-      top: 150px;
-      left: 95%;
-      min-width: 90px;
-      max-width: 90px;
-      z-index: 3;
-    }
-
-    ul.dailytech {
-      border-radius: 8px;
-      border: outset 2px silver;
-    }
-
-    ul.dailytech li * {
-      color: darkblue;
-    }
-
-    body {
-      margin: 0px;
-      padding: 0px;
-      background-color: rgba(0, 0, 228); 
-    }
-
-    .menu-btn {
-      background-image: url('dist/img/greeninvert.png') !important;
-      border-radius: 5px;
-    }
-  </style>
+    <style>
+        .map {
+            display: none;
+        }
+        
+        .ui-view {
+            margin-top: 50px;
+        }
+        
+        .alpho0 {
+            color: darkcyan;
+        }
+        
+        h1.title {
+            display: none;
+        }
+        
+        input {
+            color: yellow;
+            background: darkblue;
+            z-index: 100;
+        }
+        
+        a.navtmm {
+            background-image: url('dist/img/shadowbox.png');
+            height: 110px;
+            max-height: 110px;
+            width: 200px;
+        }
+        
+        footer h5 {
+            color: darkblue;
+            line-height: 2rem;
+            font-size: 1.6rem;
+        }
+        
+        footer {
+            position: relative;
+            top: 750px;
+        }
+        
+        .map {
+            margin: 0;
+        }
+        
+        .svgHolder {
+            opacity: .5;
+            position: absolute;
+            top: 180px;
+        }
+        
+        .navtech {
+            text-align: center;
+            margin: 3px;
+            font-family: 'Monoton';
+            float: left;
+            font-weight: 100;
+            font-size: 1.1rem;
+        }
+        
+        div.row {
+            background: rgba(0, 0, 139, 0.7);
+        }
+        
+        .social {
+            font-size: .9rem;
+            margin: 0;
+            border-radius: 5%;
+            margin-top: 5px;
+            border-color: white;
+        }
+        
+        .social li {
+            margin: 0;
+            color: yellow;
+        }
+        
+        .navbar-nav>li>a {
+            padding-top: 4px;
+            padding-bottom: 3px;
+        }
+        
+        .navbar-default .navbar-toggle,
+        .navbar-default {
+            background-color: blue;
+            background-image: url('dist/img/bluechipTile.jpg');
+        }
+        
+        div.side-nav {
+            position: absolute;
+            top: 150px;
+            left: 95%;
+            min-width: 90px;
+            max-width: 90px;
+            z-index: 3;
+        }
+        
+        ul.dailytech {
+            border-radius: 8px;
+            border: outset 2px silver;
+        }
+        
+        ul.dailytech li * {
+            color: darkblue;
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgba(0, 0, 228);
+        }
+        
+        .menu-btn {
+            background-image: url('dist/img/greeninvert.png') !important;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body ng-app="app">
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="menu-btn navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="menu-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand navtmm" ui-sref="home"></a>
-      </div>
+                <a class="navbar-brand navtmm" ui-sref="home"></a>
+            </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling   -->
-      <div class="collapse navbar-collapse navtech-wrapper" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right pull-right dailytech">
-          <li>
-            <a title="github" href="https://github.com/thomasm1" target="_blank">
-              <i class="fa fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a title="twitter" href="https://twitter.com/ThomasMaestas" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
+            <!-- Collect the nav links, forms, and other content for toggling   -->
+            <div class="collapse navbar-collapse navtech-wrapper" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right pull-right dailytech">
+                    <li>
+                        <a title="github" href="https://github.com/thomasm1" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="twitter" href="https://twitter.com/ThomasMaestas" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
 
-          </li>
+                    </li>
 
-          <li>
+                    <li>
 
-            <a title="facebook" href="https://www.facebook.com/thomasm1.maestas" target="_blank">
+                        <a title="facebook" href="https://www.facebook.com/thomasm1.maestas" target="_blank">
 
-              <i class="fa fa-facebook"></i>
+                            <i class="fa fa-facebook"></i>
 
-            </a>
+                        </a>
 
-          </li>
+                    </li>
 
-          <li>
+                    <li>
 
-            <a title="linkedin" href="https://linkedin.com/in/thomasmaestas" target="_blank">
+                        <a title="linkedin" href="https://linkedin.com/in/thomasmaestas" target="_blank">
 
-              <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-linkedin"></i>
 
-            </a>
+                        </a>
 
-          </li>
+                    </li>
 
-        </ul>
-        <ul class="nav navbar-nav navtech">
-          <li><a ui-sref="about" ui-sref-active="active"><small>ABOUT</small></a></li>
-          <li><a ui-sref="profile" ui-sref-active="active"><small>PROFILE</small></a></li>
-        </ul>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  <div id="index" class="index">
+                </ul>
+                <ul class="nav navbar-nav navtech">
+                    <li><a ui-sref="about" ui-sref-active="active"><small>ABOUT</small></a></li>
+                    <li><a ui-sref="profile" ui-sref-active="active"><small>PROFILE</small></a></li>
+                </ul>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div id="index" class="index">
 
-    <script src="dist/js/d3/d3v3.min.js"></script>
+        <script src="dist/js/d3/d3v3.min.js"></script>
 
 
-  </div>
-
-  <div class="map"></div>
-  <div ui-view></div> 
-  <!-- <footer> -->
-    <div  class="site-footer row column">
-      <nav class="footer-nav">  
-
-        <div ng-include="'app/templates/footer.html'"></div>
-     </nav>
     </div>
 
-  <!-- </footer>  -->
+    <div class="map"></div>
+    <div ui-view></div>
+    <!-- <footer> -->
+    <div class="site-footer row column">
+        <nav class="footer-nav">
 
-  <script src="dist/js/vendor/toastr.min.js"></script>
-  <script src="dist/js/vendor/angular.min.js"></script>
-  <script src="dist/js/vendor/angular-ui.min.js"></script>
-  <!-- Application code -->
-  <script src="app/app.js"></script>
-  <script src="app/services/notifier.js"></script>
+            <div ng-include="'app/templates/footer.html'"></div>
+        </nav>
+    </div>
+
+    <!-- </footer>  -->
+
+    <script src="dist/js/vendor/toastr.min.js"></script>
+    <script src="dist/js/vendor/angular.min.js"></script>
+    <script src="dist/js/vendor/angular-ui.min.js"></script>
+    <!-- Application code -->
+    <script src="app/app.js"></script>
+    <script src="app/services/notifier.js"></script>
 
 
-  <script src="app/controllers/AboutController.js"></script>
-  <script src="app/controllers/ProfileController.js"></script>
-  <script src="app/controllers/PlanetsController.js"></script>
-  <script src="app/controllers/HomeController.js"></script>
+    <script src="app/controllers/AboutController.js"></script>
+    <script src="app/controllers/ProfileController.js"></script>
+    <script src="app/controllers/PlanetsController.js"></script>
+    <script src="app/controllers/HomeController.js"></script>
 
-  <script src="dist/tmm_bundle.js"></script>
+    <!-- <script src="dist/tmm_bundle.js"></script> -->
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then((registration) => {
-          console.log('SW registered');
-        })
-        .catch((err) => {
-          console.log('SW error', err);
-        });
-    } 
-  </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((registration) => {
+                    console.log('SW registered');
+                })
+                .catch((err) => {
+                    console.log('SW error', err);
+                });
+        }
+    </script>
 </body>
 
 </html>

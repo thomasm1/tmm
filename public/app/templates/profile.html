@@ -1,172 +1,169 @@
 <title>TMM | Profile</title>
 
 
-<link rel="stylesheet" href="dist/css/profile.css" />
-  
+<link rel="stylesheet" href="dist/css/profile.min.css" />
+
 <div class="container">
 
-  <div style="background:transparent" class="row mediat-row">
+    <div style="background:transparent" class="row mediat-row">
 
-    <div class="col-xs-6" id="skills-wrap">
+        <div class="col-xs-6" id="skills-wrap">
 
-      <div id="skills" class="media mediat skills">
-        <h4 id="skills-title">Thomas M. Maestas </h4>
-        <p>I specialize in latest App Front-End technologies, with full product development life-cycle experience from
-          Proof-of-Concept to General Audience Release, using Agile Methodology. I have 7 years professional experience
-          in UI/UX, <span class="tog" id="tog-button" onclick="tog()"> more ...</span><span id="tog-paragraph"></span>
-        </p>
+            <div id="skills" class="media mediat skills">
+                <h4 class="banner" id="skills-title">Thomas M. Maestas </h4>
+                <p>I specialize in latest App Front-End technologies, with full product development life-cycle experience from Proof-of-Concept to General Audience Release, using Agile Methodology. I have 7 years professional experience in UI/UX, <span class="tog"
+                        id="tog-button" onclick="tog()"> more ...</span><span id="tog-paragraph"></span>
+                </p>
 
-      </div>
-      <script>
-        var togButton = document.querySelector("#tog-button")
-        var togParagraph = document.querySelector('#tog-paragraph');
-        var skillsParagraph = document.querySelector('#skills');
-        var skillsTitle = document.querySelector('#skills-title');
-        var togState = false;
-        togButton.style.color = "yellow";
-        togButton.style.cursor = "pointer";
+            </div>
+            <script>
+                var togButton = document.querySelector("#tog-button")
+                var togParagraph = document.querySelector('#tog-paragraph');
+                var skillsParagraph = document.querySelector('#skills');
+                var skillsTitle = document.querySelector('#skills-title');
+                var togState = false;
+                togButton.style.color = "yellow";
+                togButton.style.cursor = "pointer";
 
-        function tog() {
-          togState = !togState;
-          if (togState) {
-            togParagraph.textContent = " including AngularJS/2+, React, HTML5/CSS3-SASS/ES6+/XSLT. My Cloud proficiency includes AWS, GCP, MongoDB Atlas, and Firebase. </p><p>My data-app focus includes AJAX, REST API, MEAN/MERN full-stack, Angular-Django, and Linux-Apache-MySQL-Python skills. In sum, I'm a team player whether Linux Bash or DOS, I learn fast and I work with passion.";
-            togButton.innerHTML = "<button>hide</button> ";
-            togButton.style.color = "orange";
-            skillsParagraph.style.overflowY = "scroll";
+                function tog() {
+                    togState = !togState;
+                    if (togState) {
+                        togParagraph.textContent = " including AngularJS/2+, React, HTML5/CSS3-SASS/ES6+/XSLT. My Cloud proficiency includes AWS, GCP, MongoDB Atlas, and Firebase. </p><p>My data-app focus includes AJAX, REST API, MEAN/MERN full-stack, Angular-Django, and Linux-Apache-MySQL-Python skills. In sum, I'm a team player whether Linux Bash or DOS, I learn fast and I work with passion.";
+                        togButton.innerHTML = "<button>hide</button> ";
+                        togButton.style.color = "orange";
+                        skillsParagraph.style.overflowY = "scroll";
 
-            skillsParagraph.style.maxHeight = "234px";
-          } else {
-            togParagraph.textContent = ''; // TOGGLE OPEN
-            togButton.textContent = "more  ... ";
-            togButton.style.color = "yellow";
-            skillsTitle.style.display = "block";
-          }
-        };
+                        skillsParagraph.style.maxHeight = "234px";
+                    } else {
+                        togParagraph.textContent = ''; // TOGGLE OPEN
+                        togButton.textContent = "more  ... ";
+                        togButton.style.color = "yellow";
+                        skillsTitle.style.display = "block";
+                    }
+                };
+            </script>
+        </div>
 
-      </script>
-    </div>
+        <div class="col-xs-6  mediat  " style="text-align:left !important">
 
-    <div class="col-xs-6  mediat  " style="text-align:left !important">
+            <div style="background:transparent" class="row ">
+                <div style="background:transparent" class="col-lg-6 mediac media   skills">
+                    <h4 class="banner">Contact Information
+                    </h4>
 
-      <div style="background:transparent" class="row ">
-        <div style="background:transparent" class="col-lg-6 mediac media   skills">
-          <h4>Contact Information
-          </h4>
-
-          <!-- <h6 class="two lowercase">
+                    <!-- <h6 class="two lowercase">
               <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
               <a target="_blank" class=h ref="https://thomasmaestas.net"> &nbsp;www.thomasmaestas.net</a>
             </h6> -->
-          <h6 class=" lowercase">
-            <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
-            <a target="_blank" href="mailto:thomas.maestas@hotmail.com"> &nbsp;thomas.maestas@hotmail.com</a>
-          </h6>
-          <!-- <h6 class="lowercase">
+                    <h6 class=" lowercase">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
+                        <a target="_blank" href="mailto:thomas.maestas@hotmail.com"> &nbsp;thomas.maestas@hotmail.com</a>
+                    </h6>
+                    <!-- <h6 class="lowercase">
               <span class="glyphicon glyphicon-envelope" aria-hidden="true"> </span>
               <a target="_blank" href="mailto:thomas@ourdailytech.com"> &nbsp;thomas@ourdailytech.com</a>
             </h6> -->
-          <h6 class="two  lowercase">
-            <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
-            <a target="_blank" href="https://www.linkedin.com/in/thomasmaestas/">
+                    <h6 class="two  lowercase">
+                        <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+                        <a target="_blank" href="https://www.linkedin.com/in/thomasmaestas/">
               &nbsp;linkedin.com/in/thomasmaestas/</a>
-          </h6>
+                    </h6>
 
-          <h6 class="  lowercase">
-            <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
-            <a target="_blank" href="https://github.com/thomasm1"> &nbsp;github.com/thomasm1</a>
-          </h6>
-          <h6 class="two capitalize lowercase">
-            <span class="glyphicon glyphicon-download" aria-hidden="true"> </span>
-            <a target="_blank" href="dist/docs/CV_2019_MaestasThomas.pdf"> &nbsp;2019 Resume</a>
-          </h6>
-          <!-- <h6 class=" capitalize lowercase">
+                    <h6 class="  lowercase">
+                        <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+                        <a target="_blank" href="https://github.com/thomasm1"> &nbsp;github.com/thomasm1</a>
+                    </h6>
+                    <h6 class="two capitalize lowercase">
+                        <span class="glyphicon glyphicon-download" aria-hidden="true"> </span>
+                        <a target="_blank" href="dist/docs/CV_2019_MaestasThomas.pdf"> &nbsp;2019 Resume</a>
+                    </h6>
+                    <!-- <h6 class=" capitalize lowercase">
               <span class="glyphicon glyphicon-download" aria-hidden="true"> </span>
               <a target="_blank" href="dist/docs/CVacademicEN_ThomasMaestas.pdf"> &nbsp;2019 Academic Resume</a>
             </h6> -->
-          <!-- <h6 class="">
+                    <!-- <h6 class="">
               <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
               <span style="color:lightskyblue">
               Albuquerque, NM </span> 
             </h6> -->
 
-        </div>
+                </div>
 
-      </div>
+            </div>
+
+        </div>
 
     </div>
 
-  </div>
- 
-  <div class="row media-left  mediat-row">
+    <div class="row media-left  mediat-row">
 
-    <div class="media-left mediat col-sm-4 col-lg-6">
-      <h4 class="text-center">Education</h4>
+        <div class="media-left mediat col-sm-4 col-lg-6">
+            <h4 class="banner text-center">Education</h4>
 
-      <div style="background:transparent" class="row ">
+            <div style="background:transparent" class="row ">
 
-        <h5>
-          <span class=" label label-default">Masters, Quantitative Sociology</span>
-        </h5>
-        <div class="col-xs-10">
+                <h5>
+                    <span class=" label label-default">Masters, Quantitative Sociology</span>
+                </h5>
+                <div class="col-xs-10">
 
-          <h5>University of New Mexico</h5>
+                    <h5>University of New Mexico</h5>
 
-        </div>
+                </div>
 
-        <div class="col-xs-2">
+                <div class="col-xs-2">
 
-          <!-- <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> -->
-          <h6 class="text-right"> 2015
-          </h6>
+                    <!-- <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> -->
+                    <h6 class="text-right"> 2015
+                    </h6>
 
-        </div>
+                </div>
 
-        <!-- </div>
+                <!-- </div>
 
  
         <div class="row second"  > -->
 
-        <h5>
-          <span class="b label label-default">Bachelors, History (Cum laude)</span>
-        </h5>
-        <div class="col-xs-10">
+                <h5>
+                    <span class="b label label-default">Bachelors, History (Cum laude)</span>
+                </h5>
+                <div class="col-xs-10">
 
-          <h5>University of New Mexico</h5>
+                    <h5>University of New Mexico</h5>
 
-        </div>
+                </div>
 
-        <div class="col-xs-2">
-          <!-- <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> -->
-          <h6 class="text-right">
-            2001</h6>
+                <div class="col-xs-2">
+                    <!-- <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> -->
+                    <h6 class="text-right">
+                        2001</h6>
 
-        </div>
+                </div>
 
-      </div>
-      <!----->
-      <div class="multi_drop_menu">
-        <ul>
-
-          <li style="display:block;">
-            <a ui-sref="profile" class="pro white ">
-              Academic Portfolio </a>
-            <ul>
-              <li>
-                <a href="https://thomasmaestas.net/dist/docs/CVacademicEN_ThomasMaestas.pdf" target="_blank">Academic
-                  CV</a>
-              </li>
-              <li>
-                <a href="https://thomasmaestas.net/dist/docs/CVacademicFR_ThomasMaestas.pdf"
-                  target="_blank">CV-français</a>
-              </li>
-              <li>
-                <a class=" ">
-                  <span>Academic<br />Presentations</span>
-                </a>
+            </div>
+            <!----->
+            <div class="multi_drop_menu">
                 <ul>
-                  <li>
-                    <a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;">
-                      <span>
+
+                    <li style="display:block;">
+                        <a ui-sref="profile" class="pro white ">
+              Academic Portfolio </a>
+                        <ul>
+                            <li>
+                                <a href="https://thomasmaestas.net/dist/docs/CVacademicEN_ThomasMaestas.pdf" target="_blank">Academic
+                  CV</a>
+                            </li>
+                            <li>
+                                <a href="https://thomasmaestas.net/dist/docs/CVacademicFR_ThomasMaestas.pdf" target="_blank">CV-français</a>
+                            </li>
+                            <li>
+                                <a class=" ">
+                                    <span>Academic<br />Presentations</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="http://tinyurl.com/gmtj4v4" target="_blank" style="width:350px;">
+                                            <span>
                         <em>
                           <strong>
                             "Great Expectations Deferred: Contextualizing Community College Transfer Intentions"
@@ -174,12 +171,12 @@
                           </strong>
                         </em>
                       </span>2016 ASA-American Sociological Conference
-                      <br />@Seattle, WA</a>
-                  </li>
-                  <li>
-                    <!--http://hscmediasite.unm.edu/unm/Catalog-->
-                    <a href="#" target="_blank" style="width:350px;">
-                      <span>
+                                            <br />@Seattle, WA</a>
+                                    </li>
+                                    <li>
+                                        <!--http://hscmediasite.unm.edu/unm/Catalog-->
+                                        <a href="#" target="_blank" style="width:350px;">
+                                            <span>
                         <strong>
                           <em>
                             "Social Determinants of Healthy Aging"
@@ -187,11 +184,11 @@
                           </em>
                         </strong>
                       </span>Dec 2015 UNM Health Sciences Institute for Ethics Colloquium
-                      <br />@Albuquerque, NM</a>
-                  </li>
-                  <li>
-                    <a href="http://tinyurl.com/pcq6mjx" target="_blank" style="width:350px;">
-                      <span>
+                                            <br />@Albuquerque, NM</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://tinyurl.com/pcq6mjx" target="_blank" style="width:350px;">
+                                            <span>
                         <i>
                           <strong>"The Effects of Peer Association on Adolescents' Graduation Outcomes: An HLM
                             Approach"
@@ -199,12 +196,11 @@
                           </strong>
                         </i>
                       </span>2015 ASA Conference
-                      <br />@Chicago, Illinois</a>
-                  </li>
-                  <li>
-                    <a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf"
-                      target="_blank" style="width:350px;">
-                      <span>
+                                            <br />@Chicago, Illinois</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.cpc.unc.edu/projects/addhealth/events/20140613AddHealthUsersConferenceAbstracts.pdf" target="_blank" style="width:350px;">
+                                            <span>
                         <em>
                           <strong>
                             "Great Expectations: A Study on the Determinants of College Graduation Expectations"
@@ -214,80 +210,79 @@
                         2014 NIH-UNC Adolescent Health Data Users Conference, Session 6
                         <br /> @Bethesda, Maryland
                       </span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
 
-              <li>
-                <a href="http://hdl.handle.net/1928/31677" target="_blank">Education Thesis</a>
-              </li>
-              <li>
-                <a href="https://thomasmaestas.net/dist/docs/DataPresentADD_health_networks.pdf"
-                  target="_blank">Education Data Analysis R-LaTeX</a>
-              </li>
+                            <li>
+                                <a href="http://hdl.handle.net/1928/31677" target="_blank">Education Thesis</a>
+                            </li>
+                            <li>
+                                <a href="https://thomasmaestas.net/dist/docs/DataPresentADD_health_networks.pdf" target="_blank">Education Data Analysis R-LaTeX</a>
+                            </li>
 
-              <li>
-                <a href="https://thomasmaestas.net/dist/docs/edregression.htm" target="_blank">Education Data Analysis
+                            <li>
+                                <a href="https://thomasmaestas.net/dist/docs/edregression.htm" target="_blank">Education Data Analysis
                   SPSS-24</a>
-              </li>
+                            </li>
 
 
 
-            </ul>
-          </li>
+                        </ul>
+                    </li>
 
 
-        </ul>
-      </div>
-      <!---->
-    </div>
+                </ul>
+            </div>
+            <!---->
+        </div>
 
 
 
-    <div class="mediat col-sm-4 col-lg-6">
+        <div class="mediat col-sm-4 col-lg-6">
 
-      <h4 class="text-center">Data Visualization </h4>
+            <h4 class="banner text-center">Data Visualization </h4>
 
 
-      <!-- Green Progress Bar -->
+            <!-- Green Progress Bar -->
 
-      <!-- Blue Progress Bar -->
+            <!-- Blue Progress Bar -->
 
-      <div class="progress">
+            <div class="progress">
 
-        <small>
+                <small>
           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
             aria-valuemax="100" style="width: 80%">
-            JS: D3, NVD3, Dimple </div>
+            JavaScript: D3, NVD3 </div>
         </small>
 
-      </div>
-      <div class="progress">
+            </div>
+            <div class="progress">
 
-        <small>
+                <small>
           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
             aria-valuemax="100" style="width: 80%"><a href="https://thomasmaestas.net/dist/docs/IKM-Exam_Python3.pdf"
               target="_blank" title="IKM Exam: Python3 Proficiency, 2019">Python</a>: Plot.ly/Matplotlib</div>
         </small>
 
-      </div>
-      <small>
+            </div>
+            <small>
         <div class="progress">
           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0"
             aria-valuemax="100" style="width: 70%">
             <li>
               <a href="https://thomasmaestas.net/dist/docs/ADAHighSchoolNetworks.html" target="_blank"
-                title="DEMO LINK:  Education Data Analysis, using R-Studio">R: R-Studio</a>
+                title="DEMO LINK:  Education Data Analysis, using R-Studio">R: R-Studio ggplot2</a>
             </li>
           </div>
       </small>
 
-    </div>
+        </div>
 
-    <div class="progress">
+        <div class="progress">
 
-      <small>
+            <small>
         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0"
           aria-valuemax="100" style=" width: 60%">
           <a href="https://public.tableau.com/profile/thomas.milton.maestas#!/vizhome/CarbonFootprint_1/C02NationTime"
@@ -295,77 +290,77 @@
         </div>
       </small>
 
+        </div>
+
     </div>
 
-  </div>
- 
-  <div class="mediat col-sm-4 col-lg-6 align-right">
+    <div class="mediat col-sm-4 col-lg-6 align-right">
 
-    <h4 class="text-center">App &amp; Web Dev </h4>
+        <h4 class="text-center banner">App &amp; Web Dev </h4>
 
-    <!-- Green Progress Bar -->
+        <!-- Green Progress Bar -->
 
-    <div class="progress">
+        <div class="progress">
 
-      <small>
+            <small>
         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0"
           aria-valuemax="100" style="width: 85%">
 
           <a href="https://thomasmaestas.net/dist/docs/IKM-Exam_Angular2.pdf" target="_blank"
             title="IKM Exam: Angular Proficiency, 2019">Angular, </a>
           <a target="_blank" href="https://thomasmaestas.net/dist/docs/IKM-Exam_React_React-Native.pdf"
-            title="IKM Exam: React Proficiency, 2019">React (&amp; Native) </a>
+            title="IKM Exam: React Proficiency, 2019">React</a>
         </div>
       </small>
 
-    </div>
+        </div>
 
-    <div class="progress">
+        <div class="progress">
 
-      <small>
+            <small>
         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
           aria-valuemax="100" style="width: 80%">JavaScript, TypeScript</div>
       </small>
 
-    </div>
+        </div>
 
-    <!-- Blue Progress Bar -->
+        <!-- Blue Progress Bar -->
 
-    <div class="progress">
+        <div class="progress">
 
-      <small>
+            <small>
         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0"
           aria-valuemax="100" style="width:78%"><a
             href="https://thomasmaestas.net/dist/docs/AWScert_CloudEcononics_TechnicalProfessional.pdf" target="_blank"
             title="AWS Partners Certification: Technical Professional and Cloud Economics">AWS Microservices</a></div>
       </small>
 
-    </div>
-    <!-- Yellow Progress Bar -->
+        </div>
+        <!-- Yellow Progress Bar -->
 
-    <div class="progress">
+        <div class="progress">
 
-      <small>
+            <small>
         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="83" aria-valuemin="0"
           aria-valuemax="100" style="width:75%">GIT, Unit Testing</div>
       </small>
-    </div>
+        </div>
 
-    <!-- Red Progress Bar -->
+        <!-- Red Progress Bar -->
 
-    <div class="progress">
+        <div class="progress">
 
-      <small>
+            <small>
         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="76" aria-valuemin="0"
           aria-valuemax="100" style="width: 70%">NodeJS,
           <a href="https://thomasmaestas.net/dist/docs/IKM-Exam_Python3.pdf" target="_blank"
             title="IKM Exam: Python3 Proficiency, 2019">Python</a></div>
       </small>
 
-    </div>
-    <div class="progress">
+        </div>
+        <div class="progress">
 
-      <small>
+            <small>
         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0"
           aria-valuemax="100" style="width: 55%">MySQL</div>
     </div>
@@ -520,39 +515,45 @@
 <div class="row">
   <div class="col-xs-11">
     <div class="links" id="portfolio">
-        <h3>Coding Portfolio</h3>
-        <h4>Front-End Applications &amp; Cloud-Based Services</h4>
+        <h3 class="banner">Coding Portfolio</h3>
+        <h4 class="banner sub">Front-End Applications &amp; Cloud-Based Services</h4>
       <pre id="pre">
-<h4>ReactJS + S3:</h4>   
-<a href="http://dailytech-react.s3-website-us-east-1.amazonaws.com/" target="_blank">http://dailytech-react.s3-website-us-east-1.amazonaws.com/</a> 
-<a href="http://tmm-react.s3-website-us-east-1.amazonaws.com" target="_blank">http://tmm-react.s3-website-us-east-1.amazonaws.com</a>  
-<h4>Angular-7 Data App:</h4> 
-<a href="http://tm-angular-7.s3-website-us-east-1.amazonaws.com" target="_blank">http://tm-angular-7.s3-website-us-east-1.amazonaws.com</a>     
-<h4>AngularJS + Route 53:</h4> 
-<a href="http://dailytechfilter.net" target="_blank">http://dailytechfilter.net aliasing http://daily-filter.s3-website-us-east-1.amazonaws.com</a>  
-<a href="http://our-daily-tech.s3-website-us-east-1.amazonaws.com" target="_blank">http://our-daily-tech.s3-website-us-east-1.amazonaws.com</a> 
+<h4> React App hosted by AWS S3</h4>   
+Demo of authenticated routing, Create-Read-Update-Delete (CRUD), forms, &amp; Data API:
+<a href="http://dailytech-react.s3-website-us-east-1.amazonaws.com/" target="_blank">dailytech-react.s3-website-us-east-1.amazonaws.com</a>
 
-<h4>Route 53 + S3 using API Gateway</h4>
-AWS Lambda GET Method
-<a href="http://thomasmilton.net" target="_blank">http://thomasmilton.net 
-https://o8fasqpzp4.execute-api.us-east-1.amazonaws.com/prod/thomasMiltonFunction</a>
-<h4>Google Cloud Firestore</h4>
-Firestore Serverless Functions
-<a href="https://ourdailytechdata.firebaseapp.com" target="_blank">https://ourdailytechdata.firebaseapp.com</a>
+Demo of Redux data calculatations, D3 graphing, routing, forms, &amp; CRUD:
+<a href="http://tmm-react.s3-website-us-east-1.amazonaws.com" target="_blank">tmm-react.s3-website-us-east-1.amazonaws.com</a>  
 
-Firebase Hosting 
-<a href="https://tm-host.firebaseapp.com" target="_blank">https://tm-host.firebaseapp.com</a>  
-<h4>AWS Cloud & Serverless</h4>
+<h4> Angular 7 data app</h4> 
+Demo of CRUD data control, form validation, CSS animation &amp; data filters:
+<a href="http://tm-angular-7.s3-website-us-east-1.amazonaws.com" target="_blank">tm-angular-7.s3-website-us-east-1.amazonaws.com</a>   
+
+<h4> AngularJS 1.5 Blog app with AWS Route 53 DNS:</h4> 
+Demo of data filtering, routing, modals, and API calls
+<a href="http://dailytechfilter.net" target="_blank">dailytechfilter.net </a>
+
+Demo of data filtering, routing, modals, and XML-Http methods  
+<a href="http://our-daily-tech.s3-website-us-east-1.amazonaws.com" target="_blank">our-daily-tech.s3-website-us-east-1.amazonaws.com</a> 
+
+<h4>AWS Serverless apps using AWS Lambda &amp; API Gateway</h4>
+Lambda GET Method "Armchair Bitcoinist Console" prototype
+<a href="http://thomasmilton.net" target="_blank">thomasmilton.net</a>
 Cognito Authentication Lambda + API Gateway
-<a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html</a>  
+<a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html" target="_blank">abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com/register.html</a>  
+
+<h4>Google Cloud Firestore</h4> 
+Firebase Hosting 
+<a href="https://ourdailytechdata.firebaseapp.com" target="_blank">ourdailytechdata.firebaseapp.com</a> 
+
 <h4>AWS Relational Database Service</h4>
-AWS S3 Static NoSQL Storage
-<a href="https://s3.amazonaws.com/tmm-nov/posts/april.json" target="_blank">https://s3.amazonaws.com/tmm-nov/posts/april.json</a>
+AWS S3 Static Data API
+<a href="https://s3.amazonaws.com/tmm-nov/posts/april.json" target="_blank">s3.amazonaws.com/tmm-nov/posts/april.json</a>
 
 Amazon RDS PostgreSQL Database Endpoints
 <a  >sensor-instance.caq9hvksjohf.us-east-1.rds.amazonaws.com</a> 
-<h4>S3 Static Hosting </h4>
-<a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com" target="_blank">http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com</a> 
+<h4>AWS S3 Static Hosting </h4>
+<a href="http://abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com" target="_blank">abq-aws-thomas-maestas.s3-website-us-east-1.amazonaws.com</a> 
 
       </pre>
     </div>
@@ -563,20 +564,22 @@ Amazon RDS PostgreSQL Database Endpoints
       
         <div class="nav flex-column rightnav sidebar-sticky home-nav">
         <div class="  list-group"> <br />
-          <span class="blue">&nbsp;Data-Driven Documents&nbsp;</span> <br />
+          <span class="blue">&nbsp;TMM Demos&nbsp;</span> <br />
           <!-- <a href="https://thomasmaestas.net/#/globe" ui-sref-active="active"  class="yellow  list-group-item list-group-item-action">Dynamic Maps</a>  -->
-          <a ui-sref="chlor" ui-sref-active="active" class="yellow  list-group-item list-group-item-action">Static
-            Maps</a>
-          <a ui-sref="planets" ui-sref-active="active" class="yellow  list-group-item list-group-item-action">Dynamic
-            Data</a>
+          <!-- <a ui-sref="chlor" ui-sref-active="active" class="yellow  list-group-item list-group-item-action">Static Maps</a>-->
+            <a ui-sref="planets" ui-sref-active="active" class="yellow  list-group-item list-group-item-action">Dynamic
+            JavaScript</a>
           <!-- <a ui-sref="dendro" ui-sref-active="active" class="hidden yellow  list-group-item list-group-item-action">Static Data</a> -->
           <a ui-sref="dataMVVM" ui-sref-active="active">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <br /><br /><br />
           <div class="external">
 
-            <span class="blue">TMM External Demos&nbsp;</span>
+            <span class="blue">TMM External Demos&nbsp;</span> 
+            <a href="http://thomasmilton.net" target="_blank"
+            class="yellow  list-group-item list-group-item-action">Serverless API&nbsp;<img class="external-link"
+              width="18px" src="dist/img/external.png" /></a>
             <a href="http://tmm.net.s3-website-us-east-1.amazonaws.com" target="_blank"
-              class="yellow  list-group-item list-group-item-action">OMDb Film Search &nbsp;<img class="external-link"
+              class="yellow  list-group-item list-group-item-action">OMDb-API Movie Finder &nbsp;<img class="external-link"
                 width="18px" src="dist/img/external.png" /></a>
             <a href="http://tmm-dag.s3-website-us-east-1.amazonaws.com" target="_blank"
               class="yellow  list-group-item list-group-item-action">DAG to JSON<br />Live Editor Tool &nbsp;<img
@@ -592,7 +595,7 @@ Amazon RDS PostgreSQL Database Endpoints
            &nbsp;<img class="external-link" width="18px" src="dist/img/external.png"/></a> -->
 
             <br /> <br /><span class="blue">&nbsp;Blog&nbsp;</span>
-            <a href="https://ourdailytech.net" target="_blank" class="yellow  list-group-item list-group-item-action">
+            <a href="https://ourdaiytech.net" target="_blank" class="yellow  list-group-item list-group-item-action">
               Our_Daily_Tech_Blog &nbsp;<img class="external-link" width="18px" src="dist/img/external.png" /><br />
             </a>
 
