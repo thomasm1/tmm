@@ -9,16 +9,122 @@
     
     #welcome {
         position: absolute;
-        top: 170px;
-        left: 10%;
+        top: 120px;
+        left: 40px;
         color: darkblue;
+    } 
+    canvas {
+        border: none;
+        margin: 50px 0px 0px 0px;
+    }
+
+    #hypercube-options {
+        margin: 0px 0 0 20px;
+    }
+
+    label {
+        margin: 0 20px;
+        font-size: 17px;
+        cursor: pointer;
+        color:rgb(0, 0, 139);
+		font-family:Roboto;
     }
 </style>
 
 <div id="welcome">
     <h3>Hello, I'm Thomas and Welcome to my personal website!</h3>
-</div>
+</div> 
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script> -->
+
+<canvas id="octaplex-canvas"></canvas>
+<form id="hypercube-options">
+    <label><input type="checkbox" name="rotate_xy" />Rotate xy</label>
+    <label><input type="checkbox" name="rotate_yz" />Rotate yz</label>
+    <label><input type="checkbox" name="rotate_xz" />Rotate xz</label>
+    <label><input type="checkbox" name="rotate_xw" />Rotate xw</label>
+    <label><input type="checkbox" name="rotate_yw" />Rotate yw</label>
+    <label><input type="checkbox" name="rotate_zw" />Rotate zw</label>
+</form>
+<script type="text/javascript">
+    d3.text("data/600cell.ascii", function (err, text) {
+        var data = Hypersolid.parseVEF(text);
+
+        function NewShape() { };
+
+        Hypersolid.NewShape = function () {
+            return new NewShape();
+        };
+
+        NewShape.prototype = Hypersolid.Shape(data[0], data[1], data[2]);
+
+        var octaplex = Hypersolid.NewShape();
+        var octaplexView = Hypersolid.Viewport(octaplex, document.getElementById('octaplex-canvas'), {
+            width: 440,
+            height: 440,
+            scale: 2.5,
+            lineWidth: 2,
+            lineJoin: 'round'
+        });
+        octaplexView.draw();
+
+        // animation
+        options = document.getElementById('hypercube-options');
+
+        function render() {
+            if (options) {
+                checkboxes = options.getElementsByTagName('input');
+            }
+            if (options.rotate_xz.checked) {
+                rotate("xz", 0.008);
+            }
+            if (options.rotate_yz.checked) {
+                rotate("yz", 0.008);
+            }
+            if (options.rotate_xw.checked) {
+                rotate("xw", 0.008);
+            }
+            if (options.rotate_yw.checked) {
+                rotate("yw", 0.008);
+            }
+            if (options.rotate_xy.checked) {
+                rotate("xy", 0.008);
+            }
+            if (options.rotate_zw.checked) {
+                rotate("zw", 0.008);
+            }
+        };
+
+        function rotate(plane, x) {
+            octaplex.rotate(plane, x);
+            octaplexView.draw();
+        };
+
+        window.requestAnimFrame = window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+
+        (function animloop() {
+            requestAnimFrame(animloop);
+            render();
+        })();
+    });
+</script>
+ 
+<!--
+
+
+
+-->
 <div id="home">
+  
+
+
+
     <!-- <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div> -->
 
 
