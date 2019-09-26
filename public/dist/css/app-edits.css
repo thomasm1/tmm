@@ -1,0 +1,115 @@
+.map {
+    display: none;
+}
+
+.ui-view {
+    margin-top: 50px;
+}
+
+.alpho0 {
+    color: darkcyan;
+}
+
+h1.title {
+    display: none;
+}
+
+input {
+    color: yellow;
+    background: darkblue;
+    z-index: 100;
+}
+
+a.navtmm {
+    background-image: url('../img/shadowbox.png');
+    height: 110px;
+    max-height: 110px;
+    width: 200px;
+}
+
+footer h5 {
+    color: darkblue;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+
+footer {
+    position: relative;
+    top: 750px;
+}
+
+.map {
+    margin: 0;
+}
+
+.svgHolder {
+    opacity: .5;
+    position: absolute;
+    top: 180px;
+}
+
+.navtech {
+    text-align: center;
+    margin: 3px;
+    font-family: 'Monoton';
+    float: left;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+div.row {
+    background: rgba(0, 0, 139, 0.7);
+}
+
+.social {
+    font-size: .9rem;
+    margin: 0;
+    border-radius: 5%;
+    margin-top: 5px;
+    border-color: white;
+}
+
+.social li {
+    margin: 0;
+    color: yellow;
+}
+
+.navbar-nav>li>a {
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default {
+    background-color: blue;
+    background-image: url('../img/bluechipTile.jpg');
+}
+
+div.side-nav {
+    position: absolute;
+    top: 150px;
+    left: 95%;
+    min-width: 90px;
+    max-width: 90px;
+    z-index: 3;
+}
+
+ul.dailytech {
+    border-radius: 8px;
+    border: outset 2px silver;
+}
+
+ul.dailytech li * {
+    color: darkblue;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 228);
+}
+
+.menu-btn {
+    background-image: url('../img/greeninvert.png') !important;
+    border-radius: 5px;
+}

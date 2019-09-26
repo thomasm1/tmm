@@ -1,8 +1,8 @@
-(function () {
+(function() {
 
     var app = angular.module('app', ['ui.router']);
 
-    app.config(['$logProvider', '$stateProvider', '$urlRouterProvider', function ($logProvider, $stateProvider, $urlRouterProvider) {
+    app.config(['$logProvider', '$stateProvider', '$urlRouterProvider', function($logProvider, $stateProvider, $urlRouterProvider) {
 
         $logProvider.debugEnabled(true);
 
@@ -21,7 +21,7 @@
                         },
                         'columnTwo@home': {
                             templateUrl: 'app/templates/chlor.html',
-                            controller: function ($scope) {
+                            controller: function($scope) {
                                 $scope.titles = ['title-A', 'title-B', 'title-C'];
                             }
                         }
@@ -46,9 +46,10 @@
             .state('chlor', {
                 url: '/chloropleth',
                 templateUrl: 'app/templates/chlor.html',
-                controller: function ($scope) {
-                    $scope.titles = ['title-A', 'title-B', 'title-C'];
-                }
+                controller: 'ChlorController'
+                    // controller: function($scope) {
+                    //     $scope.titles = ['title-A', 'title-B', 'title-C'];
+                    // }
             })
             .state('globe', {
                 url: '/globe',
@@ -76,9 +77,9 @@
     }]);
 
 
-    app.run(['$rootScope', '$log', function ($rootScope, $log) {
+    app.run(['$rootScope', '$log', function($rootScope, $log) {
 
-        $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
 
             $log.debug('successfully changed states');
             $log.debug('event', event);
@@ -91,13 +92,13 @@
             $log.debug('fromParams', fromParams);
         });
 
-        $rootScope.$on('$stateNotFound', function (event, unfoundState, fromState, fromParams) {
+        $rootScope.$on('$stateNotFound', function(event, unfoundState, fromState, fromParams) {
 
             $log.error('The requested state was not found: ', unfoundState);
 
         });
 
-        $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
+        $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
 
             $log.error('An error occurred while changing states: ', error);
 
