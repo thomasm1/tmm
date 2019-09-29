@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module('app', ['ui.router']);
+    var app = angular.module('app', ['ui.router', 'd3']);
 
     app.config(['$logProvider', '$stateProvider', '$urlRouterProvider', function($logProvider, $stateProvider, $urlRouterProvider) {
 
@@ -53,7 +53,8 @@
             })
             .state('globe', {
                 url: '/globe',
-                templateUrl: 'app/templates/globe.html'
+                templateUrl: 'app/templates/globe.html',
+                controller: 'GlobeController'
             })
             .state('codePlayer', {
                 url: '/codePlayer',
