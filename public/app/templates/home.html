@@ -6,34 +6,20 @@
         z-index: 0;
         display: block;
     }
-    
+
     #welcome {
         position: absolute;
         top: 120px;
         left: 40px;
         color: darkblue;
     }
-    
+
     canvas {
         border: none;
-        margin: 50px 0px 0px 0px;
+        margin: 50px 0px 0px -10px;
     }
-    
-    #hypercube-options {
-        margin: 0px 0 0 20px;
-    }
-    
-    .hyper {
-        text-align: left;
-        margin: 0 40px;
-        color: rgb(0, 0, 139);
-        font-family: Roboto;
-    }
-    
-    a.hyper {
-        font-size: 1.7rem;
-    }
-    
+
+
     label {
         margin: 0 20px;
         font-size: 17px;
@@ -41,33 +27,72 @@
         color: rgb(0, 0, 139);
         font-family: Roboto;
     }
+
+    #hypercube-options {
+        border-radius:3px; 
+        background-color:rgba(0, 0, 255, 0.13);
+        margin: 400px 50px 0 20px;
+        padding:10px 5px 10px 35px;
+    }
+
+    .hyper {
+        text-align: left;
+        margin: 0 40px;
+        color: rgb(0, 0, 139);
+        font-family: Roboto;
+    }
+
+    a.hyper {
+        font-size: 1.7rem;
+    }
+    .hyper-all {
+        background-color: rgba(0, 0, 255, 0.185);
+    }
+    .hyper-caption {
+        background-color: rgba(0, 0, 255, 0.116);
+    }
 </style>
 
 <div id="welcome">
     <h3>Personal site of Thomas Milton Maestas, id est, I'm Tom, Welcome.</h3>
 </div>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script> -->
+<div class="row hyper-all">
+    <div class="col col-xs-4">
+        <canvas id="octaplex-canvas"></canvas>
+    </div>
+    <div class="col col-xs-8">
+        <form id="hypercube-options">
+         <div class="col">
+                <div class="row">
+                <label><input type="checkbox" name="rotate_xy" />Rotate xy&nbsp;</label>
+                <label><input type="checkbox" name="rotate_yz" />Rotate yz&nbsp;</label>
+                <label><input type="checkbox" name="rotate_xz" />Rotate xz </label>
+            </div>
+            <div class="row">
+                <label><input type="checkbox" name="rotate_xw" />Rotate xw</label>
+                <label><input type="checkbox" name="rotate_yw" />Rotate yw</label>
+                <label><input type="checkbox" name="rotate_zw" />Rotate zw</label>
+            </div>
+         </div> 
+        </form> 
+    </div>
+</div> 
+    <div class="pull-left hyper-caption">
+        <h3 class="hyper">4th-dimensional model controller</h3>
+        <a class="hyper"
+            href="http://paulbourke.net/geometry/hyperspace/?fbclid=IwAR1hv0ffL_mPkQuUORxY1NOnhCEQj5NZJDq6ycGBztPcOzwoVG8ebVwJJwo"
+            target="_blank"><em>HyperSpace Manual</em></a>
+    </div>
 
-<canvas id="octaplex-canvas"></canvas>
-<h3 class="hyper">4th-dimensional model controller</h3>
-<a class="hyper" href="http://paulbourke.net/geometry/hyperspace/?fbclid=IwAR1hv0ffL_mPkQuUORxY1NOnhCEQj5NZJDq6ycGBztPcOzwoVG8ebVwJJwo" target="_blank"><em>HyperSpace   Manual</em></a>
-<br />
-<hr>
-<form id="hypercube-options">
-    <label><input type="checkbox" name="rotate_xy" />Rotate xy</label>
-    <label><input type="checkbox" name="rotate_yz" />Rotate yz</label>
-    <label><input type="checkbox" name="rotate_xz" />Rotate xz</label>
-    <label><input type="checkbox" name="rotate_xw" />Rotate xw</label>
-    <label><input type="checkbox" name="rotate_yw" />Rotate yw</label>
-    <label><input type="checkbox" name="rotate_zw" />Rotate zw</label>
-</form>
+
 <script type="text/javascript">
-    d3.text("data/600cell.ascii", function(err, text) {
+    d3.text("data/600cell.ascii", function (err, text) {
         var data = Hypersolid.parseVEF(text);
 
-        function NewShape() {};
+        function NewShape() { };
 
-        Hypersolid.NewShape = function() {
+        Hypersolid.NewShape = function () {
             return new NewShape();
         };
 
@@ -120,7 +145,7 @@
             window.mozRequestAnimationFrame ||
             window.oRequestAnimationFrame ||
             window.msRequestAnimationFrame ||
-            function(callback) {
+            function (callback) {
                 window.setTimeout(callback, 1000 / 60);
             };
 
@@ -148,22 +173,23 @@
         function draw(geo_data) {
             "use strict";
 
-            var margin = 175,
-                width = 1920 - margin,
-                height = 1000 - margin;
+            var margin = 100,
+                width = 960 - margin,
+                height = 700 - margin;
 
             var svg = d3.select(".map")
                 .append("svg")
                 .attr("width", width + margin)
                 .attr("height", height + margin)
-                .attr("overflow-x", "hidden")
+                // .attr("max-width", "100%")
+                .attr("overflow-x", "scroll")
                 .append('g')
                 .attr('class', 'map')
                 .style('z-index', '0');
 
             var projection = d3.geo.mercator()
-                .scale(170)
-                .translate([width / 3.3, height / 1.6]);
+                .scale(140)
+                .translate([width / 2, height / 1.5]);
 
             var path = d3.geo.path().projection(projection);
 

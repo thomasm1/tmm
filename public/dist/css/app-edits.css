@@ -56,8 +56,11 @@ footer {
     font-weight: 100;
     font-size: 1.1rem;
 }
-
-div.row {
+ 
+ .container div.row {
+    background: rgba(0, 0, 139, 0.7);
+}
+ .footer div.row {
     background: rgba(0, 0, 139, 0.7);
 }
 
