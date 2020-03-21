@@ -1,28 +1,13 @@
 <h4>  D3-JS Chloropleth Map</h4>
-<h4>Unemployment Rate by County</h4>
+<h4>Home Ownership by Nation</h4>
 <style>
-    .counties {
-        fill: none;
-    }
-
-    .states {
-        fill: none;
-        stroke: #fff;
-        stroke-linejoin: round;
-    }
-
-    svg#ssvg {
-        min-width: 1000px;
-        min-height: 600px;
-    }
-
-.names {
+  .names {
     fill: none;
     stroke: #fff;
     stroke-linejoin: round;
   }
   
- 
+  Tooltip CSS
   .d3-tip {
     line-height: 1.5;
     font-weight: 400;
@@ -33,7 +18,8 @@
     border-radius: 1px;
     pointer-events: none;
   }
- 
+
+  /* Creates a small triangle extender for the tooltip */
   .d3-tip:after {      
     box-sizing: border-box;
     display: inline;
@@ -45,7 +31,8 @@
     pointer-events: none;
     
   }
- 
+
+  /* Northward tooltips */
   .d3-tip.n:after {
     content: "\25BC";
     margin: -1px 0 0 0;
@@ -53,14 +40,16 @@
     left: 0;
     text-align: center;
   }
- 
+
+  /* Eastward tooltips */
   .d3-tip.e:after {
     content: "\25C0";
     margin: -4px 0 0 0;
     top: 50%;
     left: -8px;
   }
- 
+
+  /* Southward tooltips */
   .d3-tip.s:after {
     content: "\25B2";
     margin: 0 0 1px 0;
@@ -107,10 +96,7 @@
 
 <!-- <div ng-include="'app/templates/geomap.html'" width="400" height="400"></div> -->
 
+
 <svg id="s-ownership-svg"></svg>
-<svg id="ssvg"></svg>
 <div ng-include="'app/templates/home-nav.html'" class="side-nav"></div>
-
-
-
  

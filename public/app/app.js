@@ -20,7 +20,7 @@
                             template: 'This Col'
                         },
                         'columnTwo@home': {
-                            templateUrl: 'app/templates/chlor.html',
+                            // templateUrl: 'app/templates/chlor.html',
                             controller: function($scope) {
                                 $scope.titles = ['title-A', 'title-B', 'title-C'];
                             }
@@ -47,6 +47,14 @@
                 url: '/chloropleth',
                 templateUrl: 'app/templates/chlor.html',
                 controller: 'ChlorController'
+                    // controller: function($scope) {
+                    //     $scope.titles = ['title-A', 'title-B', 'title-C'];
+                    // }
+            })
+             .state('ownership', {
+                url: '/chloropleth-world',
+                templateUrl: 'app/templates/ownership.html',
+                controller: 'ChlorOwnerController'
                     // controller: function($scope) {
                     //     $scope.titles = ['title-A', 'title-B', 'title-C'];
                     // }

@@ -3,7 +3,7 @@
 
 <head lang="en">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
+<script async src="http://www.googletagmanager.com/gtag/js?id=UA-71584977-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -132,24 +132,26 @@ Thomas offers services related to analyzing qualitative &amp; quantitative data 
     <!-- Application code -->
     <script src="app/app.js"></script>
     <script src="app/services/notifier.js"></script>
-    <script src="app/services/d3.js"></script>
-
+    <script src="app/services/d3.js"></script> 
 
     <script src="app/controllers/GlobeController.js"></script>
     <script src="app/controllers/AboutController.js"></script>
     <script src="app/controllers/ProfileController.js"></script>
     <script src="app/controllers/PlanetsController.js"></script>
     <script src="app/controllers/ChlorController.js"></script>
+    <script src="app/controllers/ChlorOwnerController.js"></script>
     <script src="app/controllers/HomeController.js"></script>
 
     <script src="dist/js/d3/d3v4.min.js"></script>
     <script src="dist/js/d3/d3-scale-chromatic.v1.min.js"></script>
-    <script src="dist/js/d3/topojson.v1.min.js"></script>
+    <!-- <script src="dist/js/d3/topojson.v1.min.js"></script> -->
     <script src="dist/js/d3/queue.v1.min.js"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
     <script src="dist/js/d3/d3-geo-projection.v1.min.js"></script>
+    <!-- <script src="https://d3js.org/d3-geo-projection.v1.min.js"></script> -->
     <script src='dist/js/d3/simple-statistics.min.js'></script>
     <script src="dist/js/d3/d3-tip.js"></script>
-    <script>
+    <!-- <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
                 .then((registration) => {
@@ -159,7 +161,7 @@ Thomas offers services related to analyzing qualitative &amp; quantitative data 
                     console.log('SW error', err);
                 });
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
