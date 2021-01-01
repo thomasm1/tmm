@@ -2,9 +2,11 @@
 
     var app = angular.module('app', ['ui.router', 'd3']);
 
-    app.config(['$logProvider', '$stateProvider', '$urlRouterProvider', function($logProvider, $stateProvider, $urlRouterProvider) {
+    app.config(['$logProvider', '$stateProvider', '$urlRouterProvider', '$locationProvider', function($logProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
 
         $logProvider.debugEnabled(true);
+
+        $locationProvider.html5Mode(true);
 
         $urlRouterProvider.otherwise('/');
 
