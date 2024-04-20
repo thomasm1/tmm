@@ -1,11 +1,24 @@
 require('babel-loader');
+require('@babel/preset-env')
+require('core-js/stable');
+require('regenerator-runtime/runtime');
+// require('html-loader');
+// require('css-loader');
+// require('style-loader');
+// require('webpack');
+// require('webpack-cli');
+// require('webpack-dev-server');
+// require('webpack-merge');
+// require('path');
+// require('html-webpack-plugin');
 const path = require('path');  
 
 module.exports = {
   entry: {
     app: [
-      'babel-polyfill',
-      './index.js' 
+      'core-js/stable',
+      'regenerator-runtime/runtime',
+      './index.js'   
     ],
   },
   output: {
@@ -13,14 +26,28 @@ module.exports = {
     filename: 'tmm_bundle.js',
   },
   module: {
-    loaders: [{
-        test: /\.js?$/,
+    rules: [
+      {
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-           presets: ['env', 'stage-0']
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { useBuiltIns: 'usage', corejs: 3 }],
+            ]
+          }
         }
-    }]
+      },
+      // Angular rules + templates+styles  
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
   }
-}
- 
+}; 
