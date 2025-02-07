@@ -298,7 +298,7 @@ a  {
     border: 0;
     overflow: hidden;
     /* IE 6/7 fallback */
-    *text-indent: -9999px;
+    text-indent: -9999px;
 }
 
 .ir:before {
@@ -383,7 +383,7 @@ a  {
  */
 
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 
 /* ==========================================================================
